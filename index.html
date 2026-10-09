@@ -68,9 +68,25 @@ details.sec summary{cursor:pointer;font-family:'Kanit',sans-serif;font-size:18px
 .tn{color:#a0601a;font-size:11.5px}
 .badge.hol{background:#c0392b;color:#fff}
 .pk{cursor:help;color:#c0392b}
+.clsbar{padding:10px 14px}
+.seg.big button{font-size:16px;padding:9px 18px;font-family:'Kanit',sans-serif}
+.seg.big button .en{font-size:12.5px;opacity:.8;margin-left:4px}
+body.biz header{background:linear-gradient(90deg,#1d1230,#4b1a7a);border-bottom:4px solid var(--g)}
+body.biz header h1 .cl{color:#ffd76a}
+body.biz .seg.big button.on{background:#1d1230;color:#ffd76a}
+.cal td.skl{background:#eaf6fd}
+.cal td.sk{background:#cdeefe}
+.cal .hl{display:block;font-size:10.5px;color:#0b6e99;font-weight:700;line-height:1.1}
+.chip.sk{box-shadow:inset 0 0 0 2px #29a3d6}
+.badge.sk{background:#29a3d6;color:#fff}
+.card.skc{background:#eaf6fd;border-color:#9fd8f0}
+.ap{color:var(--mut);font-weight:400}
 .cmpbox{background:var(--pl);border-radius:9px;padding:8px 12px;margin-bottom:12px;font-size:14px}
 footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
 @media(max-width:760px){
+ .seg.big{display:flex;width:100%}
+ .seg.big button{flex:1;padding:8px 6px;font-size:15px}
+ .seg.big button .en{display:block;margin:0}
  header h1{font-size:19px}
  .list thead{display:none}
  .list tr{display:block;border-bottom:2px solid var(--bd);padding:6px 0}
@@ -80,9 +96,10 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
 }
 </style></head>
 <body>
-<header><h1>✈️ แดชบอร์ดตั๋วการบินไทย ชั้นประหยัด จากกรุงเทพฯ</h1>
+<header><h1 id="h1">✈️ แดชบอร์ดตั๋วการบินไทย <span class="cl">ชั้นประหยัด</span> จากกรุงเทพฯ</h1>
 <div class="sub" id="hsub"></div></header>
 <div class="wrap">
+ <div class="bar clsbar"><div class="seg big" id="cls"></div><span class="mut" id="clsnote"></span></div>
  <div class="bar">
   <label>รอบค้นหา <select id="snap"></select></label>
   <label>เทียบกับ <select id="cmp"></select></label>
@@ -91,11 +108,12 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
   <div class="seg" id="months"></div>
   <div class="seg" id="regions"></div>
   <label class="toggle"><input type="checkbox" id="hideRed"> ซ่อนไฟลต์ดึก</label>
+  <label class="toggle"><input type="checkbox" id="onlySk"> เฉพาะทริปสงกรานต์ 💦</label>
  </div>
  <div id="cmpbox"></div>
  <div class="cards" id="cards"></div>
  <section><h2>ปฏิทินวันบินไป</h2>
-  <div class="legend"><span style="background:#ffd76a">ทริปคุ้มสุด</span><span style="background:var(--pl)">ทริปแนะนำ</span><span style="background:var(--pl);border-left:3px solid #2b3a67">มีไฟลต์ดึก</span> ตัวเลข = วันที่บินไป · กดที่ชิปเพื่อเปิด Google Flights</div>
+  <div class="legend"><span style="background:#ffd76a">ทริปคุ้มสุด</span><span style="background:var(--pl)">ทริปแนะนำ</span><span style="background:var(--pl);border-left:3px solid #2b3a67">มีไฟลต์ดึก</span><span style="background:#cdeefe">สงกรานต์ 13–15 เม.ย.</span><span style="background:#eaf6fd">หยุดยาว ~9–16 เม.ย.</span><span style="box-shadow:inset 0 0 0 2px #29a3d6">ทริปสงกรานต์</span> ~ = ราคาประมาณจากปฏิทิน · ตัวเลข = วันที่บินไป · กดที่ชิปเพื่อเปิด Google Flights</div>
   <div class="months" id="cal"></div></section>
  <section><h2>รายการทริป เรียงตามวันบินไป</h2><div class="tblwrap" id="list"></div></section>
  <section><h2>ราคาถูกสุดรายเส้นทาง × เดือน</h2>
@@ -111,6 +129,14 @@ const TH_DAY=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."];
 const TH_MON=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
 const TH_MON_FULL=["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
 const REG={all:"ทุกภูมิภาค",asia:"เอเชีย",europe:"ยุโรป"};
+const CLS={economy:["ชั้นประหยัด","Economy"],business:["ชั้นธุรกิจ","Business"]};
+const cab=s=>s.cabin||"economy";
+// calendar markers: Songkran (main days) + approximate long holiday (not yet officially announced)
+const HOL=[{from:"2027-04-13",to:"2027-04-15",cls:"sk",label:"สงกรานต์"},{from:"2027-04-09",to:"2027-04-16",cls:"skl",label:""},
+  {from:"2027-02-06",to:"2027-02-06",cls:"",label:"ตรุษจีน"},{from:"2027-04-06",to:"2027-04-06",cls:"",label:"วันจักรี"}];
+const holOf=ds=>HOL.filter(h=>ds>=h.from&&ds<=h.to);
+const isSk=t=>t.tag==="songkran"||(t.dep>="2027-04-09"&&t.dep<="2027-04-16");
+const fp=t=>(t.approx?'<span class="ap">~</span>':"")+fmt(t.price);
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"\x26amp;","<":"\x26lt;",">":"\x26gt;",'"':"\x26quot;","'":"\x26#39;"}[c]));
 const D=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
@@ -125,38 +151,53 @@ const snapLabel=s=>`${fdy(s.searched_at)}${s.label?" · "+s.label:""}`;
 function monthsIn(w){const out=[];let d=D(w.from);d.setDate(1);const e=D(w.to);
   while(d<=e){out.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}`);d.setMonth(d.getMonth()+1)}return out}
 
-const st={snap:SNAPS.length-1,cmp:SNAPS.length>1?SNAPS.length-2:-1,month:"all",region:"all",hideRed:false};
+const st={cls:"economy",snap:-1,cmp:-1,month:"all",region:"all",hideRed:false,onlySk:false};
+const pool=()=>SNAPS.map((x,i)=>i).filter(i=>cab(SNAPS[i])===st.cls);   // snapshots of the selected cabin, oldest -> newest
+function pickCls(k){st.cls=CLS[k]?k:"economy";let p=pool();if(!p.length){st.cls=cab(SNAPS[SNAPS.length-1]);p=pool()}
+  st.snap=p[p.length-1];st.cmp=p.length>1?p[p.length-2]:-1;fillSnap();fillCmp()}
 function init(){
-  const hp=new URLSearchParams(location.hash.slice(1));   // e.g. #region=europe&month=2026-11&hidered=1
+  const hp=new URLSearchParams(location.hash.slice(1));   // e.g. #class=business&region=europe&month=2027-04&hidered=1&songkran=1
   if(hp.get("region"))st.region=hp.get("region");if(hp.get("month"))st.month=hp.get("month");
   if(hp.get("hidered")==="1"){st.hideRed=true;$("hideRed").checked=true}
+  if(hp.get("songkran")==="1"){st.onlySk=true;$("onlySk").checked=true}
   const s=$("snap"),c=$("cmp");
-  SNAPS.forEach((x,i)=>s.add(new Option(snapLabel(x),i)));
-  s.value=st.snap;
-  s.onchange=()=>{st.snap=+s.value;if(st.cmp===st.snap)st.cmp=-1;st.month="all";fillCmp();render()};
+  s.onchange=()=>{st.snap=+s.value;if(st.cmp===st.snap)st.cmp=-1;fillCmp();render()};
   c.onchange=()=>{st.cmp=+c.value;render()};
   $("hideRed").onchange=e=>{st.hideRed=e.target.checked;render()};
-  fillCmp();render();
+  $("onlySk").onchange=e=>{st.onlySk=e.target.checked;if(st.onlySk&&st.month!=="all"&&st.month!=="2027-04")st.month="all";render()};
+  pickCls(hp.get("class")||"economy");render();
+  window.addEventListener("hashchange",()=>{const h=new URLSearchParams(location.hash.slice(1));if((h.get("class")||"economy")!==st.cls){pickCls(h.get("class")||"economy");render()}});
 }
+function fillSnap(){const s=$("snap");s.innerHTML="";pool().forEach(i=>s.add(new Option(snapLabel(SNAPS[i]),i)));s.value=st.snap}
 function fillCmp(){const c=$("cmp");c.innerHTML="";c.add(new Option("— ไม่เทียบ —",-1));
-  SNAPS.forEach((x,i)=>{if(i!==st.snap)c.add(new Option(snapLabel(x),i))});
+  pool().forEach(i=>{if(i!==st.snap)c.add(new Option(snapLabel(SNAPS[i]),i))});
   c.value=st.cmp}
-function seg(el,items,cur,cb){el.innerHTML="";items.forEach(([k,l])=>{const b=document.createElement("button");
-  b.textContent=l;if(k===cur)b.className="on";b.onclick=()=>cb(k);el.appendChild(b)})}
+function writeHash(){const h=new URLSearchParams();if(st.cls!=="economy")h.set("class",st.cls);
+  if(st.region!=="all")h.set("region",st.region);if(st.month!=="all")h.set("month",st.month);
+  if(st.hideRed)h.set("hidered","1");if(st.onlySk)h.set("songkran","1");
+  const v=h.toString();history.replaceState(null,"",v?"#"+v:location.pathname+location.search)}
+function seg(el,items,cur,cb,html){el.innerHTML="";items.forEach(([k,l])=>{const b=document.createElement("button");
+  if(html)b.innerHTML=l;else b.textContent=l;if(k===cur)b.className="on";b.onclick=()=>cb(k);el.appendChild(b)})}
 
 function render(){
   const S=SNAPS[st.snap], C=st.cmp>=0?SNAPS[st.cmp]:null;
+  document.body.classList.toggle("biz",st.cls==="business");
+  $("h1").innerHTML=`✈️ แดชบอร์ดตั๋วการบินไทย <span class="cl">${CLS[st.cls][0]}</span> จากกรุงเทพฯ`;
+  document.title=`แดชบอร์ดตั๋วการบินไทย · ${CLS[st.cls][0]}`;
+  seg($("cls"),Object.entries(CLS).filter(([k])=>SNAPS.some(x=>cab(x)===k)).map(([k,[th,en]])=>[k,`${th} <span class="en">(${en})</span>`]),st.cls,k=>{if(k!==st.cls){pickCls(k);render()}},true);
+  $("clsnote").textContent=st.cls==="business"?"ราคาชั้นธุรกิจส่วนใหญ่เป็นราคาประมาณจากปฏิทิน (~)":"";
   const months=monthsIn(S.window);
+  if(st.month!=="all"&&!months.includes(st.month))st.month="all";
   const regions=["all",...new Set(S.routes.map(r=>r.region))];
   if(!regions.includes(st.region))st.region="all";
   seg($("months"),[["all","ทุกเดือน"],...months.map(m=>[m,monShort(m)])],st.month,k=>{st.month=k;render()});
   seg($("regions"),regions.map(r=>[r,REG[r]||r]),st.region,k=>{st.region=k;render()});
   $("hsub").textContent=`ข้อมูลรอบ ${snapLabel(S)} · ช่วงเดินทาง ${fdy(S.window.from)} – ${fdy(S.window.to)} · ${S.source||"Google Flights"}`;
-  const trips=S.trips.filter(t=>(st.month==="all"||monKey(t.dep)===st.month)&&(st.region==="all"||t.region===st.region)&&!(st.hideRed&&t.redeye))
+  const trips=S.trips.filter(t=>(st.month==="all"||monKey(t.dep)===st.month)&&(st.region==="all"||t.region===st.region)&&!(st.hideRed&&t.redeye)&&!(st.onlySk&&!isSk(t)))
      .sort((a,b)=>a.dep.localeCompare(b.dep)||a.price-b.price);
-  renderCmp(S,C);renderCards(S,trips);renderCal(S,trips,months);renderList(trips,C);renderGrid(S,C,months);renderPeak(S);
+  renderCmp(S,C);renderCards(S,trips);renderCal(S,trips,months);renderList(trips,C);renderGrid(S,C,months);renderPeak(S);writeHash();
   const noTg=S.routes.filter(r=>r.tg_service===false).map(r=>`${r.city} (${r.code})`);
-  $("foot").innerHTML=`หมายเหตุ: ราคาเป็นบาท ไป-กลับ 1 ท่าน ชั้นประหยัด เปลี่ยนแปลงได้ตลอด ควรเช็กอีกครั้งก่อนจอง · เวลาเป็นเวลาท้องถิ่น · “วันอื่นราคาเท่ากัน” ยังไม่ได้เช็กเวลาบินของวันนั้น`+
+  $("foot").innerHTML=`หมายเหตุ: ราคาเป็นบาท ไป-กลับ 1 ท่าน ${CLS[st.cls][0]} เปลี่ยนแปลงได้ตลอด · ~ = ราคาประมาณจากปฏิทิน Google Flights (ปัดเศษ) ควรเช็กอีกครั้งก่อนจอง · เวลาเป็นเวลาท้องถิ่น · “วันอื่นราคาเท่ากัน” ยังไม่ได้เช็กเวลาบินของวันนั้น`+
     (noTg.length?` · ไม่มีเที่ยวบินการบินไทย: ${esc(noTg.join(", "))}`:"")+` · มีข้อมูลทั้งหมด ${SNAPS.length} รอบ`;
 }
 function cheapestMap(S){const m={};S.routes.forEach(r=>Object.entries(r.monthly_cheapest||{}).forEach(([k,v])=>m[r.code+"|"+k]=v));return m}
@@ -168,10 +209,11 @@ function renderCmp(S,C){const box=$("cmpbox");if(!C){box.innerHTML="";return}
   for(const k in a)if(b[k]){const d=a[k].price-b[k].price;d<0?dn++:d>0?up++:eq++}
   box.innerHTML=`<div class="cmpbox">เทียบกับรอบ <b>${esc(snapLabel(C))}</b> (เส้นทาง+เดือนเดียวกัน): <span class="dn">▼ ถูกลง ${dn}</span> · <span class="up">▲ แพงขึ้น ${up}</span> · <span class="eq">= เท่าเดิม ${eq}</span>${dn+up+eq===0?" — ไม่มีเส้นทาง/เดือนที่ซ้ำกันให้เทียบ":""}</div>`}
 function card(k,t,cls){if(!t)return `<div class="card"><div class="k">${k}</div><div class="v">–</div><div class="d mut">ไม่มีข้อมูล</div></div>`;
-  return `<div class="card ${cls||""}"><div class="k">${k}</div><div class="v">${fmt(t.price)} ฿</div><div class="d"><b>${esc(t.city)}</b> ${esc(t.country)} · ${fd(t.dep)} → ${fd(t.ret)} (${nights(t)} คืน)</div></div>`}
+  return `<div class="card ${cls||""}"><div class="k">${k}</div><div class="v">${fp(t)} ฿</div><div class="d"><b>${esc(t.city)}</b> ${esc(t.country)} · ${fd(t.dep)} → ${fd(t.ret)} (${nights(t)} คืน)</div></div>`}
 function renderCards(S,trips){const min=a=>a.reduce((x,y)=>!x||y.price<x.price?y:x,null);
   let h=card("ทริปถูกสุด (ตามตัวกรอง)",min(trips),"gold");
   ["asia","europe"].forEach(r=>{if(S.routes.some(x=>x.region===r)&&(st.region==="all"||st.region===r))h+=card(`ถูกสุด${REG[r]}`,min(trips.filter(t=>t.region===r)))});
+  const sk=trips.filter(isSk);if(sk.length)h+=card("สงกรานต์คุ้มสุด 💦",min(sk),"skc");
   const red=trips.filter(t=>t.redeye).length, cities=new Set(trips.map(t=>t.code)).size;
   h+=`<div class="card"><div class="k">จำนวนทริปแนะนำ</div><div class="v">${trips.length}</div><div class="d">${cities} เมือง · มีไฟลต์ดึก ${red} ทริป</div></div>`;
   $("cards").innerHTML=h}
@@ -183,17 +225,18 @@ function renderCal(S,trips,months){const show=st.month==="all"?months:[st.month]
     for(let i=0;i<cells.length;i+=7){h+="<tr>";cells.slice(i,i+7).forEach((c,j)=>{
       if(c===null){h+=`<td class="blank"></td>`;return}
       const ds=`${mk}-${String(c).padStart(2,"0")}`,inW=ds>=S.window.from&&ds<=S.window.to;
-      const chips=(by[ds]||[]).map(t=>`<a class="chip ${t.top?"top":""} ${t.redeye?"red":""}" href="${esc(t.url)}" target="_blank" rel="noopener" title="${esc(t.out+" / "+t.back)}">${t.top?"★ ":""}${esc(t.city)} ${fmt(t.price)}<br><small>กลับ ${fd(t.ret)}${t.redeye?" · ดึก":""}</small></a>`).join("");
-      h+=`<td class="${inW?"":"out"} ${j>=5?"we":""}"><div class="n">${c}</div>${chips}</td>`});h+="</tr>"}
+      const hs=holOf(ds),hc=hs.map(h=>h.cls).join(" "),hl=hs.filter(h=>h.label).map(h=>`<span class="hl">${esc(h.label)}</span>`).join("");
+      const chips=(by[ds]||[]).map(t=>`<a class="chip ${t.top?"top":""} ${t.redeye?"red":""} ${isSk(t)?"sk":""}" href="${esc(t.url)}" target="_blank" rel="noopener" title="${esc(t.out+" / "+t.back)}">${t.top?"★ ":""}${esc(t.city)} ${fp(t)}<br><small>กลับ ${fd(t.ret)}${t.redeye?" · ดึก":""}</small></a>`).join("");
+      h+=`<td class="${inW?"":"out"} ${j>=5?"we":""} ${hc}"><div class="n">${c}</div>${hl}${chips}</td>`});h+="</tr>"}
     return h+"</table></div>"}).join("")}
 function renderList(trips,C){if(!trips.length){$("list").innerHTML=`<div class="empty">ไม่มีทริปตามตัวกรอง</div>`;return}
   const old=C?cheapestMap(C):{};
   $("list").innerHTML=`<table class="list"><thead><tr><th>วันที่</th><th>ปลายทาง</th><th>ขาไป</th><th>ขากลับ</th><th>ราคา (฿)</th><th>ทำไมน่าไป</th><th>วันอื่นราคาเท่ากัน</th><th></th></tr></thead><tbody>`+
   trips.map(t=>{const n=nights(t),o=old[t.code+"|"+monKey(t.dep)];
    return `<tr class="${t.top?"top":""}"><td><b>${fd(t.dep)}</b> → ${fd(t.ret)}<br><span class="mut">${n+1} วัน ${n} คืน</span></td>
-   <td><b>${esc(t.city)}</b>${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.code)}</span></td>
+   <td><b>${esc(t.city)}</b>${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}${isSk(t)?'<span class="badge sk">สงกรานต์</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.code)}</span></td>
    <td>${esc(t.out)}${t.times_note?`<br><span class="tn">⚠ ${esc(t.times_note)}</span>`:""}</td><td>${esc(t.back)}</td>
-   <td class="price">${fmt(t.price)}${t.redeye?'<span class="badge">ดึก</span>':""}${o?delta(t.price,o.price)+'<span class="mut" style="font-size:11px">เทียบราคาถูกสุดเส้นทางนี้รอบก่อน</span>':""}</td>
+   <td class="price">${fp(t)}${t.redeye?'<span class="badge">ดึก</span>':""}${o?delta(t.price,o.price)+'<span class="mut" style="font-size:11px">เทียบราคาถูกสุดเส้นทางนี้รอบก่อน</span>':""}</td>
    <td>${esc(t.why)}</td><td class="mut">${esc(t.also||"–")}</td>
    <td><a class="open" href="${esc(t.url)}" target="_blank" rel="noopener">เปิดดู</a></td></tr>`}).join("")+"</tbody></table>"}
 function renderGrid(S,C,months){const old=C?cheapestMap(C):{};
@@ -207,7 +250,7 @@ function renderGrid(S,C,months){const old=C?cheapestMap(C):{};
       if(r.tg_service===false){h+=`<td class="mut">ไม่มี TG บิน</td>`;return}
       if(!v){h+=`<td class="mut">–</td>`;return}
       const o=old[r.code+"|"+m];
-      h+=`<td style="background:${col(v.price)}" title="${fd(v.dep)} → ${fd(v.ret)}"><b>${fmt(v.price)}</b><br><span class="mut" style="font-size:11px">${fd(v.dep)}</span>${o?delta(v.price,o.price):""}</td>`});
+      h+=`<td style="background:${col(v.price)}" title="${fd(v.dep)} → ${fd(v.ret)}"><b>${fp(v)}</b><br><span class="mut" style="font-size:11px">${fd(v.dep)}</span>${o?delta(v.price,o.price):""}</td>`});
     h+="</tr>"});
   $("grid").innerHTML=rs.length?h+"</table>":`<div class="empty">ไม่มีเส้นทางในภูมิภาคนี้</div>`}
 function renderPeak(S){const rs=S.routes.filter(r=>r.peak&&(st.region==="all"||r.region===st.region));
