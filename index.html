@@ -112,7 +112,7 @@ const TH_MON=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","ม�
 const TH_MON_FULL=["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
 const REG={all:"ทุกภูมิภาค",asia:"เอเชีย",europe:"ยุโรป"};
 const $=id=>document.getElementById(id);
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&","<":"<",">":">",'"':""","'":"&#39;"}[c]));
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"\x26amp;","<":"\x26lt;",">":"\x26gt;",'"':"\x26quot;","'":"\x26#39;"}[c]));
 const D=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
 const fmt=n=>Number(n).toLocaleString("en-US");
 const fd=s=>{const x=D(s);return `${TH_DAY[x.getDay()]} ${x.getDate()} ${TH_MON[x.getMonth()]}`};
