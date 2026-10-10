@@ -82,6 +82,18 @@ body.biz .seg.big button.on{background:#1d1230;color:#ffd76a}
 .chip.sk{box-shadow:inset 0 0 0 2px #29a3d6}
 .badge.sak{background:#f7b6cf;color:#7a1f45}
 .badge.sk{background:#29a3d6;color:#fff}
+.badge.aw{background:#0f9d58;color:#fff;text-decoration:none;white-space:nowrap}
+.chip.aw{background:#e6f4ea;border-left:3px solid #0f9d58;color:#0b5d33}
+.awnote{background:#fff8e1;border:1px solid #f1d58a;border-radius:10px;padding:8px 10px;font-size:13.5px;margin-bottom:10px}
+.awgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:10px}
+.awc{border:1px solid var(--bd);border-radius:10px;padding:10px 12px;min-width:0}
+.awt{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:16px;margin-bottom:2px}.awt .badge{margin-left:auto}
+.awd{border-top:1px dashed var(--bd);margin-top:8px;padding-top:6px;font-size:13.5px}
+.awh{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.awh .badge{margin-left:auto}
+.awl{display:grid;grid-template-columns:30px minmax(0,1fr);gap:4px;margin-top:3px}
+.badge.awok{background:#0f9d58}.badge.awow{background:#e0a100;color:#221c2b}
+.awd.none b{color:var(--mut)}.sm{font-size:13px}.awh3{font-size:15px;margin:14px 0 4px;color:var(--p)}
+.awnone{margin:0 0 8px 18px;font-size:13.5px}.awnone li{margin:3px 0}
 .badge.new{background:#0f9d58;color:#fff;font-weight:700;letter-spacing:.3px}
 .chip .nw{font-size:9px;background:#0f9d58;color:#fff;border-radius:6px;padding:0 3px}
 .grid td.nx{font-size:11px;line-height:1.25}
@@ -131,13 +143,15 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
   <div class="seg" id="months"></div>
   <label class="toggle"><input type="checkbox" id="hideRed"> ซ่อนไฟลต์ดึก</label>
   <label class="toggle"><input type="checkbox" id="onlySk"> เฉพาะทริปสงกรานต์ 💦</label>
+  <label class="toggle"><input type="checkbox" id="showAw" checked> แสดงที่นั่งแลกไมล์ ROP 🎟</label>
  </div>
  <div id="cmpbox"></div>
  <div class="cards" id="cards"></div>
  <section><h2>ปฏิทินวันบินไป (ทุกปลายทางรวมกัน)</h2>
-  <div class="legend"><span style="background:#ffd76a">ทริปคุ้มสุด</span><span style="background:var(--pl)">ทริปแนะนำ</span><span style="background:var(--pl);border-left:3px solid #2b3a67">มีไฟลต์ดึก</span><span style="background:#cdeefe">สงกรานต์ 13–15 เม.ย.</span><span style="background:#eaf6fd">หยุดยาว ~9–16 เม.ย.</span><span style="box-shadow:inset 0 0 0 2px #29a3d6">ทริปสงกรานต์</span> ~ = ราคาประมาณจากปฏิทิน · ตัวเลข = วันที่บินไป · กดที่ชิปเพื่อเปิด Google Flights</div>
+  <div class="legend"><span style="background:#ffd76a">ทริปคุ้มสุด</span><span style="background:var(--pl)">ทริปแนะนำ</span><span style="background:var(--pl);border-left:3px solid #2b3a67">มีไฟลต์ดึก</span><span style="background:#cdeefe">สงกรานต์ 13–15 เม.ย.</span><span style="background:#eaf6fd">หยุดยาว ~9–16 เม.ย.</span><span style="box-shadow:inset 0 0 0 2px #29a3d6">ทริปสงกรานต์</span><span style="background:#e6f4ea;border-left:3px solid #0f9d58">🎟 วันที่มีที่นั่งแลกไมล์ชั้นธุรกิจ ไป-กลับ</span> ~ = ราคาประมาณจากปฏิทิน · ตัวเลข = วันที่บินไป · กดที่ชิปเพื่อเปิด Google Flights</div>
   <div class="months" id="cal"></div></section>
  <section><h2>รายการทริปทุกปลายทาง เรียงตามวันบินไป</h2><div class="tblwrap" id="list"></div></section>
+ <section id="awards"><h2>🎟 แลกไมล์ ROP — ที่นั่งรางวัลชั้นธุรกิจ</h2><div id="aw"></div></section>
  <section><h2>ราคาถูกสุดรายเส้นทาง × เดือน</h2>
   <div class="legend">ทุกเส้นทางในตารางเดียว แบ่งตามภูมิภาค · สีเทียบภายในเส้นทางเดียวกัน: <span style="background:hsl(130,60%,85%)">เดือนถูก</span>→<span style="background:hsl(0,70%,88%)">เดือนแพง</span> · ลูกศรเทียบกับรอบที่เลือกใน “เทียบกับ” (▼ ถูกลง ▲ แพงขึ้น)</div>
   <div class="tblwrap" id="grid"></div></section>
@@ -147,6 +161,7 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
 <script src="snapshots.js"></script>
 <script>
 const SNAPS=window.SNAPS_DATA;
+const AWARDS={"checked":"2026-10-10","first":"ชั้นหนึ่ง (Royal First): ไม่พบที่นั่งรางวัลเลยทุกเส้นทางที่ค้น (ขึ้นว่า “Not available to redeem” หรือไม่มีให้เลือก)","xmn":"เซียะเหมิน (XMN): ยังแลกไมล์ไม่ได้ — ช่องค้นหาแลกไมล์ของการบินไทยขึ้นว่า “Airport, City not found” (ยังไม่ได้ลองผ่าน Star Alliance)","taxes":"ยังไม่รวมภาษี/ค่าธรรมเนียม — เว็บการบินไทยแสดงหลังกด “Continue” ไปขั้นกรอกผู้โดยสาร ซึ่งไม่ได้กด","daily":"ที่นั่งรางวัลเปลี่ยนทุกวัน — ข้อมูลนี้เช็กครั้งเดียว ต้องเช็กใหม่ก่อนแลก","scope":"ค้นไป-กลับ พฤ.–อา. (ยุโรป 6 คืน) · ไมล์ต่อคน · ไม่ได้ค้น: ธ.ค./ก.พ./มี.ค. ของหลายเส้นทาง, ญี่ปุ่น ธ.ค.–มี.ค. (ยกเว้นโอซาก้า มี.ค.), ยุโรป ธ.ค.–มี.ค., เดลี ม.ค. เป็นต้นไป","source_url":"https://www.thaiairways.com/en-th/redemption/select-flight","chart_url":"https://www.thaiairways.com/en-th/content/spend-miles/air-awards/","routes":[{"code":"KMG","city":"คุนหมิง","j":20000,"y":12500,"grp":"จีน","dates":[{"kind":"rt","dep":"2026-11-12","ret":"2026-11-15","out":[{"f":"TG612","t":"10:55 → 14:05","s":1}],"back":[{"f":"TG613","t":"15:20 → 16:35","s":1}],"note":""},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG612","t":"10:55 → 14:05","s":3}],"back":[{"f":"TG613","t":"15:20 → 16:35","s":3}],"note":""}],"unchecked":"ธ.ค., ก.พ., มี.ค.","f":null},{"code":"DEL","city":"เดลี","j":27500,"y":17500,"grp":"อินเดีย","dates":[{"kind":"rt","dep":"2026-11-12","ret":"2026-11-15","out":[{"f":"TG323","t":"","s":2},{"f":"TG315","t":"","s":1},{"f":"TG331","t":"","s":2}],"back":[{"f":"TG324","t":"","s":2}],"note":"เวลาเที่ยวบินอ่านไม่ชัด ไม่ได้บันทึก"}],"unchecked":"ธ.ค.–มี.ค.","f":null},{"code":"BOM","city":"มุมไบ","j":27500,"y":17500,"grp":"อินเดีย","dates":[{"kind":"ow","dep":"2026-11-12","ret":"2026-11-15","out":[{"f":"TG351","t":"","s":2}],"back":[],"note":"ขากลับ (TG352, TG317) ไม่มีที่นั่ง"},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG351","t":"","s":2}],"back":[{"f":"TG318","t":"","s":1}],"note":""}],"unchecked":"ธ.ค., ก.พ., มี.ค.","f":null},{"code":"HKG","city":"ฮ่องกง","j":30000,"y":17500,"grp":"จีน","dates":[{"kind":"rt","dep":"2026-11-12","ret":"2026-11-15","out":[{"f":"TG600","t":"08:00","s":4},{"f":"TG628","t":"10:30","s":2},{"f":"TG638","t":"14:00","s":4},{"f":"TG602","t":"18:10","s":2}],"back":[{"f":"TG603","t":"07:55","s":1},{"f":"TG601","t":"12:55","s":2},{"f":"TG629","t":"15:30","s":1}],"note":""},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG600","t":"08:00","s":1},{"f":"TG638","t":"14:00","s":3},{"f":"TG602","t":"18:10","s":1}],"back":[{"f":"TG603","t":"07:55","s":2},{"f":"TG601","t":"12:55","s":1}],"note":""}],"unchecked":"ธ.ค., ก.พ., มี.ค.","f":null},{"code":"CAN","city":"กวางโจว","j":30000,"y":17500,"grp":"จีน","dates":[{"kind":"ow","dep":"2026-11-12","ret":"2026-11-15","out":[{"f":"TG668","t":"09:20 → 13:20","s":2},{"f":"TG678","t":"15:25 → 19:05","s":2}],"back":[],"note":"ขากลับไม่มีที่นั่งชั้นธุรกิจ"},{"kind":"rt","dep":"2026-12-10","ret":"2026-12-13","out":[{"f":"TG678","t":"15:25 → 19:05","s":2}],"back":[{"f":"TG679","t":"20:25 → 22:45","s":2}],"note":""},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG668","t":"09:20 → 13:20","s":3},{"f":"TG678","t":"15:25 → 19:05","s":2}],"back":[{"f":"TG679","t":"20:25 → 22:45","s":1}],"note":""},{"kind":"rt","dep":"2027-03-11","ret":"2027-03-14","out":[{"f":"TG678","t":"15:25 → 19:05","s":2}],"back":[{"f":"TG669","t":"14:50 → 17:10","s":2},{"f":"TG679","t":"20:25 → 22:45","s":2}],"note":""}],"unchecked":"ก.พ.","f":null},{"code":"TFU","city":"เฉิงตู","j":30000,"y":17500,"grp":"จีน","dates":[{"kind":"ow","dep":"2026-11-12","ret":"2026-11-15","out":[],"back":[{"f":"TG619","t":"15:05 → 17:20","s":1}],"note":"ขาไปไม่มีที่นั่งชั้นธุรกิจ"},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG618","t":"10:05 → 14:00","s":2}],"back":[{"f":"TG619","t":"15:05 → 17:20","s":2}],"note":""}],"unchecked":"ธ.ค., ก.พ., มี.ค.","f":null},{"code":"PVG","city":"เซี่ยงไฮ้","j":30000,"y":17500,"grp":"จีน","dates":[{"kind":"none","dep":"2026-11-12","ret":"2026-11-15","note":"มีแต่ชั้นประหยัด (17,500 · 9 ที่)"},{"kind":"ow","dep":"2026-12-10","ret":"2026-12-13","out":[],"back":[{"f":"TG663","t":"08:15 → 11:55","s":1}],"note":"ขาไปไม่มี"},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG664","t":"10:35 → 15:50","s":3}],"back":[{"f":"TG665","t":"17:15 → 20:55","s":3}],"note":""},{"kind":"ow","dep":"2027-02-11","ret":"2027-02-14","out":[],"back":[{"f":"TG663","t":"08:15 → 11:55","s":3}],"note":"ขาไป: ไม่มีที่นั่งรางวัลทุกชั้น"},{"kind":"none","dep":"2027-03-11","ret":"2027-03-14","note":""}],"f":null},{"code":"PEK","city":"ปักกิ่ง","j":47500,"y":22500,"grp":"จีน","dates":[{"kind":"rt","dep":"2026-11-12","ret":"2026-11-15","out":[{"f":"TG614","t":"10:10 → 15:50","s":1}],"back":[{"f":"TG675","t":"06:50 → 11:05","s":2},{"f":"TG615","t":"17:05 → 21:20","s":1}],"note":""},{"kind":"rt","dep":"2026-12-10","ret":"2026-12-13","out":[{"f":"TG674","t":"23:40 → 05:20+1","s":2}],"back":[{"f":"TG675","t":"06:50 → 11:05","s":2}],"note":""},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-17","out":[{"f":"TG614","t":"10:10 → 15:50","s":3},{"f":"TG674","t":"23:40 → 05:20+1","s":2}],"back":[{"f":"TG675","t":"06:50 → 11:05","s":2},{"f":"TG615","t":"17:05 → 21:20","s":3}],"note":""},{"kind":"ow","dep":"2027-02-11","ret":"2027-02-14","out":[],"back":[{"f":"TG675","t":"06:50 → 11:05","s":2},{"f":"TG615","t":"17:05 → 21:20","s":3}],"note":"ขาไป: ไม่มีที่นั่งรางวัลทุกชั้น"},{"kind":"rt","dep":"2027-03-11","ret":"2027-03-14","out":[{"f":"TG674","t":"23:40 → 05:20+1","s":2}],"back":[{"f":"TG675","t":"06:50 → 11:05","s":2}],"note":""}],"f":67500},{"code":"AMS","city":"อัมสเตอร์ดัม","j":90000,"y":42500,"grp":"ยุโรป","dates":[{"kind":"rt","dep":"2026-11-12","ret":"2026-11-18","out":[{"f":"TG936","t":"05:40 → 12:20","s":8}],"back":[{"f":"TG937","t":"14:20 → 07:25+1","s":4}],"note":""},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-20","out":[{"f":"TG936","t":"05:40 → 12:20","s":3}],"back":[{"f":"TG937","t":"14:20 → 07:25+1","s":3}],"note":""}],"unchecked":"ธ.ค., ก.พ., มี.ค.","f":125000},{"code":"CDG","city":"ปารีส","j":90000,"y":42500,"grp":"ยุโรป","dates":[{"kind":"none","dep":"2026-11-12","ret":"2026-11-18","note":""},{"kind":"rt","dep":"2027-01-14","ret":"2027-01-20","out":[{"f":"TG932","t":"ออกกลางวัน","s":3}],"back":[{"f":"TG931","t":"12:30","s":4}],"note":""}],"unchecked":"ธ.ค., ก.พ., มี.ค.","f":125000}],"none":[{"code":"TYO","city":"โตเกียว (นาริตะ/ฮาเนดะ)","j":47500,"tried":"12–15 พ.ย., 14–17 ม.ค.","f":67500},{"code":"KIX","city":"โอซาก้า","j":47500,"tried":"12–15 พ.ย., 11–14 มี.ค.","f":67500},{"code":"NGO","city":"นาโกย่า","j":47500,"tried":"12–15 พ.ย.","f":67500},{"code":"FUK","city":"ฟุกุโอกะ","j":47500,"tried":"14–17 ม.ค.","f":67500},{"code":"ZRH","city":"ซูริก","j":90000,"tried":"12–18 พ.ย., 14–20 ม.ค.","f":125000},{"code":"MXP","city":"มิลาน","j":90000,"tried":"12–18 พ.ย.","f":125000}]};
 const TH_DAY=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."];
 const TH_MON=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
 const TH_MON_FULL=["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
@@ -178,7 +193,7 @@ const snapLabel=s=>`${fdy(s.searched_at)}${s.label?" · "+s.label:""}`;
 function monthsIn(w){const out=[];let d=D(w.from);d.setDate(1);const e=D(w.to);
   while(d<=e){out.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}`);d.setMonth(d.getMonth()+1)}return out}
 
-const st={cls:"economy",snap:-1,cmp:-1,month:"all",region:"all",hideRed:false,onlySk:false};
+const st={cls:"economy",snap:-1,cmp:-1,month:"all",region:"all",hideRed:false,onlySk:false,aw:true};
 const pool=()=>SNAPS.map((x,i)=>i).filter(i=>cab(SNAPS[i])===st.cls);   // snapshots of the selected cabin, oldest -> newest
 function pickCls(k){st.cls=CLS[k]?k:"economy";let p=pool();if(!p.length){st.cls=cab(SNAPS[SNAPS.length-1]);p=pool()}
   st.snap=p[p.length-1];st.cmp=p.length>1?p[p.length-2]:-1;fillSnap();fillCmp()}
@@ -187,6 +202,8 @@ function init(){
   /* old #region= links are ignored: every destination is always shown */if(hp.get("month"))st.month=hp.get("month");
   if(hp.get("hidered")==="1"){st.hideRed=true;$("hideRed").checked=true}
   if(hp.get("songkran")==="1"){st.onlySk=true;$("onlySk").checked=true}
+  if(hp.get("awards")==="0"){st.aw=false;$("showAw").checked=false}
+  $("showAw").onchange=e=>{st.aw=e.target.checked;render()};
   const s=$("snap"),c=$("cmp");
   s.onchange=()=>{st.snap=+s.value;if(st.cmp===st.snap)st.cmp=-1;fillCmp();render()};
   c.onchange=()=>{st.cmp=+c.value;render()};
@@ -201,7 +218,7 @@ function fillCmp(){const c=$("cmp");c.innerHTML="";c.add(new Option("— ไม�
   c.value=st.cmp}
 function writeHash(){const h=new URLSearchParams();if(st.cls!=="economy")h.set("class",st.cls);
   if(st.month!=="all")h.set("month",st.month);
-  if(st.hideRed)h.set("hidered","1");if(st.onlySk)h.set("songkran","1");
+  if(st.hideRed)h.set("hidered","1");if(st.onlySk)h.set("songkran","1");if(!st.aw)h.set("awards","0");
   const v=h.toString();history.replaceState(null,"",v?"#"+v:location.pathname+location.search)}
 function seg(el,items,cur,cb,html){el.innerHTML="";items.forEach(([k,l])=>{const b=document.createElement("button");
   if(html)b.innerHTML=l;else b.textContent=l;if(k===cur)b.className="on";b.onclick=()=>cb(k);el.appendChild(b)})}
@@ -220,7 +237,7 @@ function render(){
   $("hsub").textContent=`ข้อมูลรอบ ${snapLabel(S)} · ช่วงเดินทาง ${fdy(S.window.from)} – ${fdy(S.window.to)} · ${S.source||"Google Flights"}`;
   const trips=S.trips.filter(t=>(st.month==="all"||monKey(t.dep)===st.month)&&!(st.hideRed&&t.redeye)&&!(st.onlySk&&!isSk(t)))
      .sort((a,b)=>a.dep.localeCompare(b.dep)||a.price-b.price);
-  renderCmp(S,C);renderCards(S,trips);renderCal(S,trips,months);renderList(trips,C);renderGrid(S,C,months);renderPeak(S);writeHash();
+  renderCmp(S,C);renderCards(S,trips);renderCal(S,trips,months);renderList(trips,C);renderGrid(S,C,months);renderPeak(S);renderAw();writeHash();
   const noTg=S.routes.filter(r=>r.tg_service===false).map(r=>`${r.city} (${r.code})`);
   $("foot").innerHTML=`หมายเหตุ: ราคาเป็นบาท ไป-กลับ 1 ท่าน ${CLS[st.cls][0]} เปลี่ยนแปลงได้ตลอด · ~ = ราคาประมาณจากปฏิทิน Google Flights (ปัดเศษ) ควรเช็กอีกครั้งก่อนจอง · เวลาเป็นเวลาท้องถิ่น · “วันอื่นราคาเท่ากัน” ยังไม่ได้เช็กเวลาบินของวันนั้น`+
     (noTg.length?` · ไม่มีเที่ยวบินการบินไทย: ${esc(noTg.join(", "))}`:"")+` · มีข้อมูลทั้งหมด ${SNAPS.length} รอบ`;
@@ -261,18 +278,49 @@ function renderCal(S,trips,months){const show=st.month==="all"?months:[st.month]
       const ds=`${mk}-${String(c).padStart(2,"0")}`,inW=ds>=S.window.from&&ds<=S.window.to;
       const hs=holOf(ds),hc=hs.map(h=>h.cls).join(" "),hl=hs.filter(h=>h.label).map(h=>`<span class="hl">${esc(h.label)}</span>`).join("");
       const chips=(by[ds]||[]).map(t=>`<a class="chip ${t.top?"top":""} ${t.redeye?"red":""} ${isSk(t)?"sk":""}" href="${esc(t.url)}" target="_blank" rel="noopener" title="${esc(t.out+" / "+t.back)}">${t.top?"★ ":""}${esc(cityA(t))}${NEWC.has(t.code)?' <b class="nw">NEW</b>':""} ${fp(t)}<br><small>กลับ ${fd(t.ret)}${t.redeye?" · ดึก":""}</small></a>`).join("");
-      h+=`<td class="${inW?"":"out"} ${j>=5?"we":""} ${hc}"><div class="n">${c}</div>${hl}${chips}</td>`});h+="</tr>"}
+      const AL=st.aw?(AWBY[ds]||[]):[];
+      const awc=AL.length?`<a class="chip aw" href="#awards" title="${esc(AL.map(({r,d})=>`แลกไมล์ชั้นธุรกิจ ไป-กลับ ${r.city} ${fd(d.dep)} → ${fd(d.ret)} · ${nfm(r.j*2)} ไมล์`).join("\n"))} (ยังไม่รวมภาษี)">🎟 แลกไมล์<br><small>${AL.map(({r})=>`${esc(r.code)} ${r.j*2/1000}K`).join(" · ")}</small></a>`:"";
+      h+=`<td class="${inW?"":"out"} ${j>=5?"we":""} ${hc}"><div class="n">${c}</div>${hl}${chips}${awc}</td>`});h+="</tr>"}
     return h+"</table></div>"}).join("")}
 let NEWC=new Set();
 const NEWB='<span class="badge new">NEW</span>';
 const MTH=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
 const dTh=s=>{const [y,m,d]=s.split("-").map(Number);return d+" "+MTH[m-1]};
+/* ---------- ROP award seats (public: route data only) ---------- */
+const nfm=n=>Number(n).toLocaleString("en-US");
+const AWBY={};(AWARDS?AWARDS.routes:[]).forEach(r=>r.dates.forEach(d=>{if(d.kind==="rt")(AWBY[d.dep]=AWBY[d.dep]||[]).push({r,d})}));
+function awMatch(t){if(!AWARDS)return null;const r=AWARDS.routes.find(x=>x.code===t.code);if(!r)return null;const d=r.dates.find(d=>d.kind==="rt"&&d.dep===t.dep&&d.ret===t.ret);return d?{r,d}:null}
+function awBadge(t){if(!st.aw)return"";const m=awMatch(t);return m?`<a class="badge aw" href="#awards" title="มีที่นั่งแลกไมล์ชั้นธุรกิจทั้งไปและกลับวันนี้ (เช็ก ${esc(AWARDS.checked)})">แลกไมล์ได้ ${nfm(m.r.j*2)} ไมล์</a>`:""}
+function awCash(code,dep){const B=SNAPS.filter(x=>cab(x)==="business");const S=B[B.length-1];if(!S)return null;
+  const t=S.trips.find(t=>t.code===code&&t.dep===dep);if(t)return{p:t.price,a:!!t.approx,b:"วันเดียวกัน"};
+  const r=S.routes.find(r=>r.code===code);const mc=(r&&r.monthly_cheapest)||{};const v=mc[dep.slice(0,7)];
+  if(v)return{p:v.price,a:!!v.approx,b:"ถูกสุดของเดือน "+fd(v.dep)};
+  const all=Object.values(mc).filter(Boolean);if(all.length){const m=all.reduce((a,b)=>b.price<a.price?b:a);return{p:m.price,a:!!m.approx,b:"เดือนนี้ไม่มีราคา ใช้ถูกสุดที่มี "+fd(m.dep)}}
+  return null}
+const awFl=L=>L.map(x=>`<div><b>${esc(x.f)}</b>${x.t?" "+esc(x.t):""} <span class="mut">· เหลือ ${x.s} ที่</span></div>`).join("");
+function renderAw(){const box=$("awards");if(!AWARDS||!st.aw){box.style.display="none";return}box.style.display="";
+  const A=AWARDS,rs=A.routes.slice().sort((a,b)=>a.j-b.j||a.city.localeCompare(b.city,"th"));
+  const dRow=(r,d)=>{const rg=`${fd(d.dep)} → ${fd(d.ret)}`;
+    if(d.kind==="none")return `<div class="awd none"><div class="awh"><b>${rg}</b><span class="badge">ไม่มีที่นั่งชั้นธุรกิจ</span></div>${d.note?`<div class="mut sm">${esc(d.note)}</div>`:""}</div>`;
+    const dir=d.kind==="ow"?(d.out.length?"ขาไปเท่านั้น":"ขากลับเท่านั้น"):"";const c=d.kind==="rt"?awCash(r.code,d.dep):null;
+    return `<div class="awd ${d.kind}"><div class="awh"><b>${rg}</b>${d.kind==="rt"?'<span class="badge awok">ไป-กลับได้</span>':`<span class="badge awow">${dir}</span>`}</div>
+     ${d.out.length?`<div class="awl"><span class="mut">ไป</span><div>${awFl(d.out)}</div></div>`:""}${d.back.length?`<div class="awl"><span class="mut">กลับ</span><div>${awFl(d.back)}</div></div>`:""}
+     ${d.note?`<div class="mut sm">${esc(d.note)}</div>`:""}
+     ${c?`<div class="sm">เงินสดชั้นธุรกิจ ${c.a?"~":""}${nfm(c.p)} ฿ <span class="mut">(${esc(c.b)})</span> → <b>${(c.p/(r.j*2)).toFixed(2)} ฿/ไมล์</b></div>`:""}</div>`};
+  const card=r=>{const n=r.dates.filter(d=>d.kind==="rt").length;return `<div class="awc"><div class="awt"><b>${esc(r.city)}</b> <span class="mut">${esc(r.code)}</span><span class="badge ${n?"awok":""}">${n?n+" วันที่ไป-กลับได้":"ยังไม่พบไป-กลับ"}</span></div>
+    <div class="sm">ชั้นธุรกิจ <b>${nfm(r.j)}</b> ไมล์/เที่ยว · ไป-กลับ <b>${nfm(r.j*2)}</b>${r.f?` · ชั้นหนึ่ง (ตามตาราง) ${nfm(r.f)}/${nfm(r.f*2)} — ไม่พบที่นั่ง`:" · ไม่มีชั้นหนึ่ง"}</div>
+    ${r.dates.map(d=>dRow(r,d)).join("")}${r.unchecked?`<div class="mut sm" style="margin-top:6px">ยังไม่ได้ค้น: ${esc(r.unchecked)}</div>`:""}</div>`};
+  $("aw").innerHTML=`<div class="awnote">🕒 เช็กล่าสุด ${fd(A.checked)} ${A.checked.slice(0,4)} · <b>${esc(A.daily)}</b> · <b>ยังไม่รวมภาษี/ค่าธรรมเนียม</b> (เว็บการบินไทยแสดงหลังกด Continue)</div>
+   <div class="awgrid">${rs.map(card).join("")}</div>
+   <h3 class="awh3">ไม่พบที่นั่งชั้นธุรกิจ</h3><ul class="awnone">${A.none.map(n=>`<li><b>${esc(n.city)}</b> <span class="mut">${esc(n.code)}</span> — ค้น ${esc(n.tried)} · ชั้นธุรกิจ ${nfm(n.j)}/${nfm(n.j*2)} ไมล์${n.f?` · ชั้นหนึ่ง ${nfm(n.f)}/${nfm(n.f*2)}`:""}</li>`).join("")}
+   <li>${esc(A.first)}</li><li>${esc(A.xmn)}</li></ul>
+   <p class="mut sm">ไมล์ = ต่อคน (เที่ยวเดียว/ไป-กลับ) ตามตารางแลกไมล์บินตรงของการบินไทย · ฿/ไมล์ = ราคาเงินสดชั้นธุรกิจไป-กลับจากหน้านี้ ÷ ไมล์ไป-กลับ (ยิ่งสูงยิ่งคุ้ม; ยังไม่หักภาษีของตั๋วรางวัล) · ${esc(A.scope)} · ที่มา: <a href="${esc(A.source_url)}" target="_blank" rel="noopener">หน้าแลกไมล์การบินไทย</a> · <a href="${esc(A.chart_url)}" target="_blank" rel="noopener">ตารางไมล์</a></p>`}
 function renderList(trips,C){if(!trips.length){$("list").innerHTML=`<div class="empty">ไม่มีทริปตามตัวกรอง</div>`;return}
   const old=C?cheapestMap(C):{};
   $("list").innerHTML=`<table class="list"><thead><tr><th>วันที่</th><th>ปลายทาง</th><th>ขาไป</th><th>ขากลับ</th><th>ราคา (฿)</th><th>ทำไมน่าไป</th><th>วันอื่นราคาเท่ากัน</th><th></th></tr></thead><tbody>`+
   trips.map(t=>{const n=nights(t),o=old[t.code+"|"+monKey(t.dep)];
    return `<tr id="${esc(tkey(t))}" class="${t.top?"top":""}"><td><b>${fd(t.dep)}</b> → ${fd(t.ret)}<br><span class="mut">${n+1} วัน ${n} คืน</span></td>
-   <td><b>${esc(t.city)}</b>${t.apt?` <span class="mut">${t.apt==="HND"?"ฮาเนดะ":"นาริตะ"}</span>`:""}${NEWC.has(t.code)?NEWB:""}${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}${isSk(t)?'<span class="badge sk">สงกรานต์</span>':""}${t.tag==="sakura"?'<span class="badge sak">ซากุระ</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.apt||t.code)}</span></td>
+   <td><b>${esc(t.city)}</b>${t.apt?` <span class="mut">${t.apt==="HND"?"ฮาเนดะ":"นาริตะ"}</span>`:""}${awBadge(t)}${NEWC.has(t.code)?NEWB:""}${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}${isSk(t)?'<span class="badge sk">สงกรานต์</span>':""}${t.tag==="sakura"?'<span class="badge sak">ซากุระ</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.apt||t.code)}</span></td>
    <td>${esc(t.out)}${t.times_note?`<br><span class="tn">⚠ ${esc(t.times_note)}</span>`:""}</td><td>${esc(t.back)}</td>
    <td class="price">${fp(t)}${t.redeye?'<span class="badge">ดึก</span>':""}${o?delta(t.price,o.price)+'<span class="mut" style="font-size:11px">เทียบราคาถูกสุดเส้นทางนี้รอบก่อน</span>':""}</td>
    <td>${esc(t.why)}</td><td class="mut">${esc(t.also||"–")}</td>
