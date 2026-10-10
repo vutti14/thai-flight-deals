@@ -82,6 +82,17 @@ body.biz .seg.big button.on{background:#1d1230;color:#ffd76a}
 .badge.sak{background:#f7b6cf;color:#7a1f45}
 .badge.sk{background:#29a3d6;color:#fff}
 .card.skc{background:#eaf6fd;border-color:#9fd8f0}
+.card.cn{grid-column:span 2;background:#fff4f2;border-color:#f3b8ad}
+.card.cn .k{color:#9b2c1f;font-weight:700}
+.cnr{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:#fff;border:1px solid #f3cfc8;border-radius:10px;padding:8px 10px;margin-top:6px;cursor:pointer;font:inherit;color:inherit;min-height:44px}
+.cnr:hover{border-color:#e08a7b}.cnr:active{transform:scale(.99)}
+.cnr .rk{flex:none;width:24px;height:24px;border-radius:50%;background:#c0392b;color:#fff;font:600 13px/24px 'Kanit',sans-serif;text-align:center}
+.cnr .rk.r2{background:#e8a598}
+.cnr .ci{flex:1;min-width:0;font-size:13px;line-height:1.35}
+.cnr .ci b{font-size:14px}
+.cnr .cp{font-family:'Kanit',sans-serif;font-size:19px;color:var(--p);white-space:nowrap}
+tr.flash td{animation:flash 2.2s ease}
+@keyframes flash{0%,35%{background:#ffe6a8}100%{background:transparent}}
 .ap{color:var(--mut);font-weight:400}
 .cmpbox{background:var(--pl);border-radius:9px;padding:8px 12px;margin-bottom:12px;font-size:14px}
 footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
@@ -90,6 +101,8 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
  .card{padding:8px 10px}
  .card .v{font-size:19px}
  .card .d{font-size:12px}
+ .card.cn{grid-column:1/-1}
+ .cnr .cp{font-size:17px}
  .seg.big{display:flex;width:100%}
  .seg.big button{flex:1;padding:8px 6px;font-size:15px}
  .seg.big button .en{display:block;margin:0}
@@ -217,13 +230,21 @@ function renderCmp(S,C){const box=$("cmpbox");if(!C){box.innerHTML="";return}
   box.innerHTML=`<div class="cmpbox">เทียบกับรอบ <b>${esc(snapLabel(C))}</b> (เส้นทาง+เดือนเดียวกัน): <span class="dn">▼ ถูกลง ${dn}</span> · <span class="up">▲ แพงขึ้น ${up}</span> · <span class="eq">= เท่าเดิม ${eq}</span>${dn+up+eq===0?" — ไม่มีเส้นทาง/เดือนที่ซ้ำกันให้เทียบ":""}</div>`}
 function card(k,t,cls){if(!t)return `<div class="card"><div class="k">${k}</div><div class="v">–</div><div class="d mut">ไม่มีข้อมูล</div></div>`;
   return `<div class="card ${cls||""}"><div class="k">${k}</div><div class="v">${fp(t)} ฿</div><div class="d"><b>${esc(cityA(t))}</b> ${esc(t.country)} · ${fd(t.dep)} → ${fd(t.ret)} (${nights(t)} คืน)</div></div>`}
+const tkey=t=>"t-"+t.code+"-"+(t.apt||"")+"-"+t.dep+"-"+t.ret;
+const isCN=t=>t.country==="จีน";   // mainland China only (Hong Kong has its own card)
+function cnCard(trips){const L=trips.filter(isCN).slice().sort((a,b)=>a.price-b.price||a.dep.localeCompare(b.dep)).slice(0,2);
+  if(!L.length)return `<div class="card cn"><div class="k">🇨🇳 ถูกสุดจีน</div><div class="d mut">ไม่มีทริปจีนตามตัวกรองนี้</div></div>`;
+  return `<div class="card cn"><div class="k">🇨🇳 ถูกสุดจีน (จีนแผ่นดินใหญ่ · ${CLS[st.cls][0]}${st.month==="all"?"":" · "+monShort(st.month)})</div>`+
+   L.map((t,i)=>`<button class="cnr" data-go="${esc(tkey(t))}" aria-label="ไปที่ทริป ${esc(t.city)} ${fd(t.dep)}"><span class="rk ${i?"r2":""}">${i+1}</span><span class="ci"><b>${esc(cityA(t))}</b> <span class="mut">${esc(t.code)}</span><br>${fd(t.dep)} → ${fd(t.ret)} · ${nights(t)} คืน</span><span class="cp">${fp(t)} ฿</span></button>`).join("")+`</div>`}
+function goTrip(k){const r=document.getElementById(k);if(!r)return;r.scrollIntoView({behavior:"smooth",block:"center"});r.classList.remove("flash");void r.offsetWidth;r.classList.add("flash")}
 function renderCards(S,trips){const min=a=>a.reduce((x,y)=>!x||y.price<x.price?y:x,null);
-  let h=card("ทริปถูกสุด (ตามตัวกรอง)",min(trips),"gold");
+  let h=card("ทริปถูกสุด (ตามตัวกรอง)",min(trips),"gold")+cnCard(trips);
   RORD.forEach(g=>{if(S.routes.some(x=>grp(x)===g))h+=card(`ถูกสุด${GSHORT[g]}`,min(trips.filter(t=>grp(t)===g)))});
   const sk=trips.filter(isSk);if(sk.length)h+=card("สงกรานต์คุ้มสุด 💦",min(sk),"skc");
   const red=trips.filter(t=>t.redeye).length, cities=new Set(trips.map(t=>t.code)).size;
   h+=`<div class="card"><div class="k">จำนวนทริปแนะนำ</div><div class="v">${trips.length}</div><div class="d">${cities} เมือง · มีไฟลต์ดึก ${red} ทริป</div></div>`;
-  $("cards").innerHTML=h}
+  $("cards").innerHTML=h;
+  document.querySelectorAll("#cards [data-go]").forEach(b=>b.onclick=()=>goTrip(b.dataset.go))}
 function renderCal(S,trips,months){const show=st.month==="all"?months:[st.month];const by={};
   trips.forEach(t=>(by[t.dep]=by[t.dep]||[]).push(t));
   $("cal").innerHTML=show.map(mk=>{const [y,m]=mk.split("-").map(Number);const first=new Date(y,m-1,1),days=new Date(y,m,0).getDate();
@@ -240,7 +261,7 @@ function renderList(trips,C){if(!trips.length){$("list").innerHTML=`<div class="
   const old=C?cheapestMap(C):{};
   $("list").innerHTML=`<table class="list"><thead><tr><th>วันที่</th><th>ปลายทาง</th><th>ขาไป</th><th>ขากลับ</th><th>ราคา (฿)</th><th>ทำไมน่าไป</th><th>วันอื่นราคาเท่ากัน</th><th></th></tr></thead><tbody>`+
   trips.map(t=>{const n=nights(t),o=old[t.code+"|"+monKey(t.dep)];
-   return `<tr class="${t.top?"top":""}"><td><b>${fd(t.dep)}</b> → ${fd(t.ret)}<br><span class="mut">${n+1} วัน ${n} คืน</span></td>
+   return `<tr id="${esc(tkey(t))}" class="${t.top?"top":""}"><td><b>${fd(t.dep)}</b> → ${fd(t.ret)}<br><span class="mut">${n+1} วัน ${n} คืน</span></td>
    <td><b>${esc(t.city)}</b>${t.apt?` <span class="mut">${t.apt==="HND"?"ฮาเนดะ":"นาริตะ"}</span>`:""}${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}${isSk(t)?'<span class="badge sk">สงกรานต์</span>':""}${t.tag==="sakura"?'<span class="badge sak">ซากุระ</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.apt||t.code)}</span></td>
    <td>${esc(t.out)}${t.times_note?`<br><span class="tn">⚠ ${esc(t.times_note)}</span>`:""}</td><td>${esc(t.back)}</td>
    <td class="price">${fp(t)}${t.redeye?'<span class="badge">ดึก</span>':""}${o?delta(t.price,o.price)+'<span class="mut" style="font-size:11px">เทียบราคาถูกสุดเส้นทางนี้รอบก่อน</span>':""}</td>
