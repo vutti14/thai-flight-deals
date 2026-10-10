@@ -14,8 +14,9 @@ header h1{font-size:22px}
 header .sub{opacity:.85;font-size:13px;margin-top:2px}
 .wrap{max-width:1320px;margin:0 auto;padding:14px}
 .bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin-bottom:12px}
-.bar label{font-size:13px;color:var(--mut);display:flex;gap:6px;align-items:center}
-select{font:inherit;padding:6px 8px;border:1px solid var(--bd);border-radius:8px;background:#fff;max-width:330px}
+.bar label{font-size:13px;color:var(--mut);display:flex;gap:6px;align-items:center;max-width:100%;min-width:0}
+select{font:inherit;padding:6px 8px;border:1px solid var(--bd);border-radius:8px;background:#fff;max-width:330px;min-width:0;width:auto}
+.bar label select{flex:1 1 auto;max-width:min(330px,100%)}
 .seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--p);border-radius:9px;overflow:hidden}
 .seg button{font:inherit;font-size:14px;border:0;background:#fff;color:var(--p);padding:6px 12px;cursor:pointer;border-right:1px solid var(--bd)}
 .seg button:last-child{border-right:0}
@@ -81,6 +82,9 @@ body.biz .seg.big button.on{background:#1d1230;color:#ffd76a}
 .chip.sk{box-shadow:inset 0 0 0 2px #29a3d6}
 .badge.sak{background:#f7b6cf;color:#7a1f45}
 .badge.sk{background:#29a3d6;color:#fff}
+.badge.new{background:#0f9d58;color:#fff;font-weight:700;letter-spacing:.3px}
+.chip .nw{font-size:9px;background:#0f9d58;color:#fff;border-radius:6px;padding:0 3px}
+.grid td.nx{font-size:11px;line-height:1.25}
 .card.skc{background:#eaf6fd;border-color:#9fd8f0}
 .card.cn{grid-column:span 2;background:#fff4f2;border-color:#f3b8ad}
 .card.cn .k{color:#9b2c1f;font-weight:700}
@@ -204,6 +208,7 @@ function seg(el,items,cur,cb,html){el.innerHTML="";items.forEach(([k,l])=>{const
 
 function render(){
   const S=SNAPS[st.snap], C=st.cmp>=0?SNAPS[st.cmp]:null;
+  NEWC=new Set(S.routes.filter(r=>r.new).map(r=>r.code));
   document.body.classList.toggle("biz",st.cls==="business");
   $("h1").innerHTML=`✈️ แดชบอร์ดตั๋วการบินไทย <span class="cl">${CLS[st.cls][0]}</span> จากกรุงเทพฯ`;
   document.title=`แดชบอร์ดตั๋วการบินไทย · ${CLS[st.cls][0]}`;
@@ -232,7 +237,8 @@ function card(k,t,cls){if(!t)return `<div class="card"><div class="k">${k}</div>
   return `<div class="card ${cls||""}"><div class="k">${k}</div><div class="v">${fp(t)} ฿</div><div class="d"><b>${esc(cityA(t))}</b> ${esc(t.country)} · ${fd(t.dep)} → ${fd(t.ret)} (${nights(t)} คืน)</div></div>`}
 const tkey=t=>"t-"+t.code+"-"+(t.apt||"")+"-"+t.dep+"-"+t.ret;
 const isCN=t=>t.country==="จีน";   // mainland China only (Hong Kong has its own card)
-function cnCard(trips){const L=trips.filter(isCN).slice().sort((a,b)=>a.price-b.price||a.dep.localeCompare(b.dep)).slice(0,2);
+function cnCard(trips){const A=trips.filter(isCN).slice().sort((a,b)=>a.price-b.price||a.dep.localeCompare(b.dep));
+  const L=A.length?[A[0],A.find(t=>t.code!==A[0].code)].filter(Boolean):[];   // #2 = cheapest trip of the next-cheapest city
   if(!L.length)return `<div class="card cn"><div class="k">🇨🇳 ถูกสุดจีน</div><div class="d mut">ไม่มีทริปจีนตามตัวกรองนี้</div></div>`;
   return `<div class="card cn"><div class="k">🇨🇳 ถูกสุดจีน (จีนแผ่นดินใหญ่ · ${CLS[st.cls][0]}${st.month==="all"?"":" · "+monShort(st.month)})</div>`+
    L.map((t,i)=>`<button class="cnr" data-go="${esc(tkey(t))}" aria-label="ไปที่ทริป ${esc(t.city)} ${fd(t.dep)}"><span class="rk ${i?"r2":""}">${i+1}</span><span class="ci"><b>${esc(cityA(t))}</b> <span class="mut">${esc(t.code)}</span><br>${fd(t.dep)} → ${fd(t.ret)} · ${nights(t)} คืน</span><span class="cp">${fp(t)} ฿</span></button>`).join("")+`</div>`}
@@ -254,15 +260,19 @@ function renderCal(S,trips,months){const show=st.month==="all"?months:[st.month]
       if(c===null){h+=`<td class="blank"></td>`;return}
       const ds=`${mk}-${String(c).padStart(2,"0")}`,inW=ds>=S.window.from&&ds<=S.window.to;
       const hs=holOf(ds),hc=hs.map(h=>h.cls).join(" "),hl=hs.filter(h=>h.label).map(h=>`<span class="hl">${esc(h.label)}</span>`).join("");
-      const chips=(by[ds]||[]).map(t=>`<a class="chip ${t.top?"top":""} ${t.redeye?"red":""} ${isSk(t)?"sk":""}" href="${esc(t.url)}" target="_blank" rel="noopener" title="${esc(t.out+" / "+t.back)}">${t.top?"★ ":""}${esc(cityA(t))} ${fp(t)}<br><small>กลับ ${fd(t.ret)}${t.redeye?" · ดึก":""}</small></a>`).join("");
+      const chips=(by[ds]||[]).map(t=>`<a class="chip ${t.top?"top":""} ${t.redeye?"red":""} ${isSk(t)?"sk":""}" href="${esc(t.url)}" target="_blank" rel="noopener" title="${esc(t.out+" / "+t.back)}">${t.top?"★ ":""}${esc(cityA(t))}${NEWC.has(t.code)?' <b class="nw">NEW</b>':""} ${fp(t)}<br><small>กลับ ${fd(t.ret)}${t.redeye?" · ดึก":""}</small></a>`).join("");
       h+=`<td class="${inW?"":"out"} ${j>=5?"we":""} ${hc}"><div class="n">${c}</div>${hl}${chips}</td>`});h+="</tr>"}
     return h+"</table></div>"}).join("")}
+let NEWC=new Set();
+const NEWB='<span class="badge new">NEW</span>';
+const MTH=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+const dTh=s=>{const [y,m,d]=s.split("-").map(Number);return d+" "+MTH[m-1]};
 function renderList(trips,C){if(!trips.length){$("list").innerHTML=`<div class="empty">ไม่มีทริปตามตัวกรอง</div>`;return}
   const old=C?cheapestMap(C):{};
   $("list").innerHTML=`<table class="list"><thead><tr><th>วันที่</th><th>ปลายทาง</th><th>ขาไป</th><th>ขากลับ</th><th>ราคา (฿)</th><th>ทำไมน่าไป</th><th>วันอื่นราคาเท่ากัน</th><th></th></tr></thead><tbody>`+
   trips.map(t=>{const n=nights(t),o=old[t.code+"|"+monKey(t.dep)];
    return `<tr id="${esc(tkey(t))}" class="${t.top?"top":""}"><td><b>${fd(t.dep)}</b> → ${fd(t.ret)}<br><span class="mut">${n+1} วัน ${n} คืน</span></td>
-   <td><b>${esc(t.city)}</b>${t.apt?` <span class="mut">${t.apt==="HND"?"ฮาเนดะ":"นาริตะ"}</span>`:""}${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}${isSk(t)?'<span class="badge sk">สงกรานต์</span>':""}${t.tag==="sakura"?'<span class="badge sak">ซากุระ</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.apt||t.code)}</span></td>
+   <td><b>${esc(t.city)}</b>${t.apt?` <span class="mut">${t.apt==="HND"?"ฮาเนดะ":"นาริตะ"}</span>`:""}${NEWC.has(t.code)?NEWB:""}${t.top?'<span class="badge gold">คุ้มสุด</span>':""}${t.tag==="holiday"?'<span class="badge hol">ช่วงเทศกาล</span>':""}${isSk(t)?'<span class="badge sk">สงกรานต์</span>':""}${t.tag==="sakura"?'<span class="badge sak">ซากุระ</span>':""}<br><span class="mut">${esc(t.country)} · ${esc(t.apt||t.code)}</span></td>
    <td>${esc(t.out)}${t.times_note?`<br><span class="tn">⚠ ${esc(t.times_note)}</span>`:""}</td><td>${esc(t.back)}</td>
    <td class="price">${fp(t)}${t.redeye?'<span class="badge">ดึก</span>':""}${o?delta(t.price,o.price)+'<span class="mut" style="font-size:11px">เทียบราคาถูกสุดเส้นทางนี้รอบก่อน</span>':""}</td>
    <td>${esc(t.why)}</td><td class="mut">${esc(t.also||"–")}</td>
@@ -274,9 +284,11 @@ function renderGrid(S,C,months){const old=C?cheapestMap(C):{};
   const col=(r,p)=>{const [lo,hi]=rng[r.code];const f=hi>lo?(p-lo)/(hi-lo):0;const h=130-130*f;return `hsl(${h},60%,${86-2*f}%)`};
   let h=`<table class="grid"><tr><th>เส้นทาง</th><th>ประเทศ</th>${months.map(m=>`<th>${monShort(m)}</th>`).join("")}</tr>`;let lastG="";
   rs.forEach(r=>{const g=grp(r);if(g!==lastG){lastG=g;h+=`<tr class="gh"><td colspan="${months.length+2}">${GRP[g]||g}</td></tr>`}
-    h+=`<tr><td class="r"><b>${esc(r.city)}</b> <span class="mut">${esc(r.code)}</span>${r.peak?` <span class="pk" title="ช่วงแพง: ${esc(r.peak)}">⚠</span>`:""}</td><td class="r">${esc(r.country)}</td>`;
+    h+=`<tr><td class="r"><b>${esc(r.city)}</b> <span class="mut">${esc(r.code)}</span>${r.new?NEWB:""}${r.peak?` <span class="pk" title="ช่วงแพง: ${esc(r.peak)}">⚠</span>`:""}</td><td class="r">${esc(r.country)}</td>`;
     months.forEach(m=>{const v=r.monthly_cheapest?.[m];
       if(r.tg_service===false){h+=`<td class="mut">ไม่มี TG บิน</td>`;return}
+      if(!v&&r.starts&&m<=r.starts.slice(0,7)){h+=`<td class="mut nx">เริ่มบิน ${dTh(r.starts)}</td>`;return}
+      if(!v&&r.pending_from&&m>=r.pending_from){h+=`<td class="mut nx" title="ตารางบินยังไม่เปิด — จะเช็กในรอบหน้า">ตารางยังไม่เปิด<br><small>รอบหน้า</small></td>`;return}
       if(!v){h+=`<td class="mut">–</td>`;return}
       const o=old[r.code+"|"+m];
       h+=`<td style="background:${col(r,v.price)}" title="${fd(v.dep)} → ${fd(v.ret)}"><b>${fp(v)}</b><br><span class="mut" style="font-size:11px">${fd(v.dep)}${v.apt?" · "+v.apt:""}</span>${o?delta(v.price,o.price):""}</td>`});
