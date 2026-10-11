@@ -189,7 +189,7 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
  <div class="sticky" id="stk">
   <div class="grp">
    <span class="lbl">ไปกี่คน</span>
-   <div class="step"><button id="nm" aria-label="ลดจำนวนคน">−</button><input id="n" type="number" inputmode="numeric" min="1" max="99" value="10" aria-label="จำนวนคน"><button id="np" aria-label="เพิ่มจำนวนคน">+</button></div>
+   <div class="step"><button id="nm" aria-label="ลดจำนวนคน">−</button><input id="n" type="number" inputmode="numeric" min="1" max="99" value="1" aria-label="จำนวนคน"><button id="np" aria-label="เพิ่มจำนวนคน">+</button></div>
    <div class="qn" id="qn"></div>
    <label class="sw bagd"><input type="checkbox" id="bag"> รวมกระเป๋า 20 กก. <span class="mut">(ประมาณ)</span></label>
    <button class="pill ftog" id="ftog" aria-expanded="false">ตัวกรอง</button>
@@ -245,7 +245,8 @@ function tags(o){const ri=DB.rinfo[o.c+"|"+o.a];const out=[];if(!ri)return out;
   if(/\bNew\b/.test(ri.note||""))out.push(["new","เส้นทางใหม่"]);
   if(ri.days&&ri.days!=="daily"&&ri.days.includes("/"))out.push(["","บินเฉพาะ "+ri.days.split("/").map(x=>EN_DAY[x]||x).join(" ")]);
   return out}
-const st={n:10,bag:false,mon:"all",dur:"all",apt:"all",reg:"all",nored:false};
+const grpT=(p,pre,suf)=>st.n>1?`${pre}${st.n} คน รวม ฿${fmt(p*st.n)}${suf} · `:"";
+const st={n:1,bag:false,mon:"all",dur:"all",apt:"all",reg:"all",nored:false};
 const C=c=>DB.cities[c]||{th:c,country_th:"",region:""};
 // enrich options
 DB.opts.forEach(o=>{o.nt=nights(o.d,o.r);o.qo=q(o.od,o.oa,o.nx);o.rq=retQ(o.c,o.a);const b=bagSector(o.a,o.m);o.bag=b==null?null:b*2;o.key=o.c+"_"+o.d+"_"+o.r});
@@ -258,10 +259,10 @@ function searches(opts){const m={};opts.forEach(o=>{(m[o.key]=m[o.key]||{key:o.k
   return Object.values(m).map(s=>{s.opts.sort((a,b)=>price(a)-price(b));const seen=new Set(),A=[],B=[];s.opts.forEach(o=>{(seen.has(o.a)?B:A).push(o);seen.add(o.a)});s.opts=A.concat(B);s.best=s.opts[0];return s}).sort((a,b)=>a.d.localeCompare(b.d)||price(a.best)-price(b.best))}
 // ---------- header / controls ----------
 function readHash(){const h=new URLSearchParams(location.hash.slice(1));
-  if(h.get("n"))st.n=Math.max(1,Math.min(99,+h.get("n")||10));else{const v=+localStorage.getItem("budget.n");if(v)st.n=v}
+  if(h.get("n"))st.n=Math.max(1,Math.min(99,+h.get("n")||1));
   ["mon","dur","apt","reg"].forEach(k=>{if(h.get(k))st[k]=h.get(k)});if(h.get("bag")==="1")st.bag=true;if(h.get("nored")==="1")st.nored=true}
-function writeHash(){const h=new URLSearchParams();if(st.n!==10)h.set("n",st.n);["mon","dur","apt","reg"].forEach(k=>{if(st[k]!=="all")h.set(k,st[k])});
-  if(st.bag)h.set("bag",1);if(st.nored)h.set("nored",1);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search);try{localStorage.setItem("budget.n",st.n)}catch(e){}}
+function writeHash(){const h=new URLSearchParams();if(st.n!==1)h.set("n",st.n);["mon","dur","apt","reg"].forEach(k=>{if(st[k]!=="all")h.set(k,st[k])});
+  if(st.bag)h.set("bag",1);if(st.nored)h.set("nored",1);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search)}
 function seg(el,items,k){el.innerHTML=items.map(([v,l])=>`<button data-v="${v}" class="${st[k]===v?"on":""}" aria-pressed="${st[k]===v}">${l}</button>`).join("");
   el.onclick=e=>{const b=e.target.closest("button");if(!b)return;st[k]=b.dataset.v;render()}}
 function controls(){
@@ -277,9 +278,9 @@ function controls(){
 function cardOne(k,o,cls){if(!o)return `<div class="card"><div class="k">${k}</div><div class="v">–</div><div class="d2">ไม่มีทริปตามตัวกรอง</div></div>`;
   return `<button class="card ${cls||""}" data-go="${o.key}"><div class="k">${k}</div><div class="v">฿${fmt(price(o))} <small>/คน</small></div>
    <div class="t">${esc(C(o.c).th)} · ${AL[o.a]}</div><div class="d">${fdr(o.d,o.r)} · ${durL(o.nt)}</div><div class="d2">ไป ${o.od} · ${QL[o.qo]}${o.rq.q!=="na"?` / กลับ ${o.rq.t} · ${QL[o.rq.q]}`:""}</div>
-   <div class="d2">${st.n} คน รวม ฿${fmt(price(o)*st.n)}${st.bag?" (รวมกระเป๋า ~)":""} · ${o.o}</div></button>`}
+   <div class="d2">${grpT(price(o),"","")}${o.o}${st.bag?" · รวมกระเป๋า ~":""}</div></button>`}
 function cnCard(opts){const A=opts.filter(o=>C(o.c).region==="china").sort((a,b)=>price(a)-price(b));const a=A[0];const b=a&&A.find(x=>x.c!==a.c);
-  const row=(o,i)=>o?`<button class="cnr" data-go="${o.key}"><span class="rk ${i?"r2":""}">${i+1}</span><span class="ci"><b>${esc(C(o.c).th)}</b> · ${AL[o.a]} <span class="b ap-${o.o}">${o.o}</span><br>${fdr(o.d,o.r)} · ${durL(o.nt)} ${qb(o.qo,"ไป")} ${o.rq.q!=="na"?qb(o.rq.q,"กลับ"):""}</span><span class="cp">฿${fmt(price(o))}<small>${st.n} คน ฿${fmt(price(o)*st.n)}</small></span></button>`:"";
+  const row=(o,i)=>o?`<button class="cnr" data-go="${o.key}"><span class="rk ${i?"r2":""}">${i+1}</span><span class="ci"><b>${esc(C(o.c).th)}</b> · ${AL[o.a]} <span class="b ap-${o.o}">${o.o}</span><br>${fdr(o.d,o.r)} · ${durL(o.nt)} ${qb(o.qo,"ไป")} ${o.rq.q!=="na"?qb(o.rq.q,"กลับ"):""}</span><span class="cp">฿${fmt(price(o))}<small>${st.n>1?`${st.n} คน ฿${fmt(price(o)*st.n)}`:"/คน"}</small></span></button>`:"";
   return `<div class="card cn"><div class="k">ถูกสุดจีน (2 เมืองไม่ซ้ำกัน)</div>${a?row(a,0)+row(b,1):`<div class="d2">ไม่มีทริปจีนตามตัวกรอง</div>`}</div>`}
 function renderCards(opts){const min=f=>opts.filter(f).reduce((x,y)=>!x||price(y)<price(x)?y:x,null);
   $("cards").innerHTML=cardOne("ถูกสุดต่อคน",min(()=>true),"hero")+cardOne("ถูกสุด + เวลาบินดี",min(goodBoth))+cnCard(opts)
@@ -303,7 +304,7 @@ function tgLine(s){const code=DB.tgmap[s.c]||s.c,m=s.d.slice(0,7),x=DB.tgx[code+
   const lc=s.best,base=lc.p,bagRt=lc.bag;
   if(x){const df=x-base;return `<div class="tgc">การบินไทยวันเดียวกัน <b>฿${fmt(x)}</b>/คน · ${df>0?`จ่ายเพิ่ม <b>฿${fmt(df)}</b>/คน`:`ถูกกว่า ฿${fmt(-df)}`} ได้กระเป๋าโหลด + อาหาร${bagRt!=null&&df>0?` · เทียบแบบรวมกระเป๋าแล้ว ต่างกันราว ฿${fmt(df-bagRt)}`:""}</div>`}
   const df=t.p-base;
-  return `<div class="tgc">การบินไทย ถูกสุดเดือนนี้ <b>฿${fmt(t.p)}</b>${t.approx?" (ประมาณ)":""} · ${fdr(t.dep,t.ret)} · ${df>0?`จ่ายเพิ่ม <b>฿${fmt(df)}</b>/คน (ทั้งกลุ่ม ฿${fmt(df*st.n)})`:`<b>ถูกกว่า ฿${fmt(-df)}</b>/คน`} ได้กระเป๋าโหลดและอาหาร${bagRt!=null&&df>0?` · ถ้าเผื่อค่ากระเป๋า LCC แล้ว ต่างกันราว ฿${fmt(Math.max(0,df-bagRt))}`:""} <span class="mut">(คนละวันได้ · ข้อมูลจากแดชบอร์ดการบินไทย)</span></div>`}
+  return `<div class="tgc">การบินไทย ถูกสุดเดือนนี้ <b>฿${fmt(t.p)}</b>${t.approx?" (ประมาณ)":""} · ${fdr(t.dep,t.ret)} · ${df>0?`จ่ายเพิ่ม <b>฿${fmt(df)}</b>/คน${st.n>1?` (${st.n} คน ฿${fmt(df*st.n)})`:""}`:`<b>ถูกกว่า ฿${fmt(-df)}</b>/คน`} ได้กระเป๋าโหลดและอาหาร${bagRt!=null&&df>0?` · ถ้าเผื่อค่ากระเป๋า LCC แล้ว ต่างกันราว ฿${fmt(Math.max(0,df-bagRt))}`:""} <span class="mut">(คนละวันได้ · ข้อมูลจากแดชบอร์ดการบินไทย)</span></div>`}
 function opRow(o,i){const tg=tags(o).map(([c,l])=>`<span class="b tag ${c}">${l}</span>`).join("");
   const bagTxt=o.bag==null?(o.a==="SL"?"กระเป๋า: ดูหมายเหตุ":"กระเป๋า: ไม่ทราบ"):`+กระเป๋า ~฿${fmt(o.bag)}`;
   return `<div class="op ${i>=2?"hid":""}"><div class="who"><span class="b al-${o.a}">${AL[o.a]}</span><span class="b ap-${o.o}" title="${APN[o.o]}">${o.o}</span>${tg}</div>
@@ -315,7 +316,7 @@ function renderList(S){$("lleg").innerHTML=`<span><span class="b q-good">ดี<
   $("list").innerHTML=S.map(s=>{const c=C(s.c),b=s.best;
    return `<article class="trip" id="t_${s.key}"><div class="th"><div class="city"><b>${esc(c.th)}</b><span class="cy">${esc(c.en)} · ${esc(c.country_th)} · ${s.c}</span>
      <div class="dt">${fdr(s.d,s.r)} <span class="nn">${durL(s.nt)}</span></div></div>
-     <div class="pr"><div class="pp">฿${fmt(price(b))} <small>/คน</small></div><div class="tt">${st.n} คน รวม <b>฿${fmt(price(b)*st.n)}</b></div></div></div>
+     <div class="pr"><div class="pp">฿${fmt(price(b))} <small>/คน</small></div>${st.n>1?`<div class="tt">${st.n} คน รวม <b>฿${fmt(price(b)*st.n)}</b></div>`:""}</div></div>
     <div class="opts">${s.opts.map(opRow).join("")}</div>${s.opts.length>2?`<button class="more" data-more>ดูอีก ${s.opts.length-2} เที่ยวบิน ▾</button>`:""}
     ${tgLine(s)}<div class="links"><a class="open" href="${esc(s.u)}" target="_blank" rel="noopener">ค้นใน Google Flights ↗</a><span class="mut">ราคา ณ ${fdy(DB.captured)} · ราคาเปลี่ยนได้ทุกวัน</span></div></article>`}).join("")}
 // ---------- static sections ----------
