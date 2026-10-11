@@ -112,6 +112,11 @@ tr.flash td{animation:flash 2.2s ease}
 .ap{color:var(--mut);font-weight:400}
 .cmpbox{background:var(--pl);border-radius:9px;padding:8px 12px;margin-bottom:12px;font-size:14px}
 footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
+.tabs{display:flex;gap:4px;padding:10px 14px 0;background:#2f0f50;overflow-x:auto}
+.tabs a{flex:none;color:#fff;opacity:.75;text-decoration:none;font:500 14.5px 'Kanit',sans-serif;padding:9px 16px;border-radius:10px 10px 0 0;min-height:42px;display:flex;align-items:center}
+.tabs a:hover{opacity:1;background:rgba(255,255,255,.08)}
+.tabs a.on{background:var(--p);opacity:1}
+body.biz .tabs{background:#120a1f}body.biz .tabs a.on{background:#1d1230;color:#ffd76a}
 @media(max-width:760px){
  .cards{grid-template-columns:1fr 1fr;gap:8px}
  .card{padding:8px 10px}
@@ -131,6 +136,7 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
 }
 </style></head>
 <body>
+<nav class="tabs" aria-label="เลือกแดชบอร์ด"><a class="on" href="./" aria-current="page">การบินไทย</a><a href="budget/">สายการบินราคาประหยัด</a></nav>
 <header><h1 id="h1">✈️ แดชบอร์ดตั๋วการบินไทย <span class="cl">ชั้นประหยัด</span> จากกรุงเทพฯ</h1>
 <div class="sub" id="hsub"></div></header>
 <div class="wrap">
