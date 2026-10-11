@@ -15,7 +15,7 @@ body{margin:0;font-family:'Sarabun','Kanit',sans-serif;color:var(--ink);backgrou
 h1,h2,h3{font-family:'Kanit','Sarabun',sans-serif;font-weight:600;margin:0}
 a{color:var(--p)}
 button{font:inherit;color:inherit}
-.tabs{display:flex;gap:4px;padding:10px 14px 0;background:var(--p);overflow-x:auto}
+.tabs{display:flex;gap:4px;padding:10px 14px 0;background:var(--p);overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
 .tabs a{flex:none;color:#fff;opacity:.78;text-decoration:none;font:500 14.5px 'Kanit',sans-serif;padding:9px 16px;border-radius:10px 10px 0 0;min-height:42px;display:flex;align-items:center}
 .tabs a:hover{opacity:1;background:rgba(255,255,255,.08)}
 .tabs a.on{background:var(--bg);color:var(--p);opacity:1}
@@ -150,7 +150,8 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
 @media(max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){
  header h1{font-size:20px}
- .tabs a{padding:8px 12px;font-size:14px}
+ .tabs{padding:8px 8px 0;gap:2px}
+ .tabs a{padding:8px 10px;font-size:13.5px}
  .grp{padding:6px 8px;gap:6px 10px}
  .qn .pill{min-height:34px;padding:0 11px}
  .cards{gap:8px}
@@ -182,7 +183,7 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
 @media(max-width:640px){.ftog{display:inline-flex}}
 </style></head>
 <body>
-<nav class="tabs" aria-label="เลือกแดชบอร์ด"><a href="../">การบินไทย</a><a class="on" href="./" aria-current="page">สายการบินราคาประหยัด</a></nav>
+<nav class="tabs" aria-label="เลือกแดชบอร์ด"><a href="../">การบินไทย</a><a class="on" href="./" aria-current="page">สายการบินราคาประหยัด</a><a href="../gba/">โซน GBA</a></nav>
 <header><h1>ตั๋วสายการบิน<span class="ac">ราคาประหยัด</span> ไปเป็นกลุ่ม</h1>
 <div class="sub" id="hsub"></div></header>
 <div class="wrap">

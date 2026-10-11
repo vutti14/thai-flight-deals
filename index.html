@@ -117,6 +117,7 @@ footer{color:var(--mut);font-size:12.5px;padding:4px 4px 30px}
 .tabs a:hover{opacity:1;background:rgba(255,255,255,.08)}
 .tabs a.on{background:var(--p);opacity:1}
 body.biz .tabs{background:#120a1f}body.biz .tabs a.on{background:#1d1230;color:#ffd76a}
+.tabs{scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}@media(max-width:640px){.tabs{padding:8px 8px 0;gap:2px}.tabs a{padding:8px 10px;font-size:13.5px}}
 @media(max-width:760px){
  .cards{grid-template-columns:1fr 1fr;gap:8px}
  .card{padding:8px 10px}
@@ -136,7 +137,7 @@ body.biz .tabs{background:#120a1f}body.biz .tabs a.on{background:#1d1230;color:#
 }
 </style></head>
 <body>
-<nav class="tabs" aria-label="เลือกแดชบอร์ด"><a class="on" href="./" aria-current="page">การบินไทย</a><a href="budget/">สายการบินราคาประหยัด</a></nav>
+<nav class="tabs" aria-label="เลือกแดชบอร์ด"><a class="on" href="./" aria-current="page">การบินไทย</a><a href="budget/">สายการบินราคาประหยัด</a><a href="gba/">โซน GBA</a></nav>
 <header><h1 id="h1">✈️ แดชบอร์ดตั๋วการบินไทย <span class="cl">ชั้นประหยัด</span> จากกรุงเทพฯ</h1>
 <div class="sub" id="hsub"></div></header>
 <div class="wrap">
