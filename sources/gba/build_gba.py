@@ -2,7 +2,9 @@
 """Build the public Zone GBA dashboard -> ../site/gba/index.html (self-contained, data inline).
 Inputs: raw/sweep1-google.md (Google Flights results, index = line number in urls-sweep1.txt; a later block with the same index
 (recheck) replaces the earlier one), urls-sweep1.txt, routes.json, tfs_gba.js (Business links for Economy-only dates)."""
-import json, re, pathlib, subprocess, statistics, datetime as dt
+import json, re, pathlib, subprocess, statistics, datetime as dt, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from excluded_airlines import is_excluded   # permanent rule: Spring (9C/IJ) and 9 Air (AQ) rows are dropped
 ROOT = pathlib.Path(__file__).resolve().parent
 CAPTURED = "2026-10-11"
 R = json.loads((ROOT / "routes.json").read_text())
@@ -10,7 +12,7 @@ U = [l.split() for l in (ROOT / "urls-sweep1.txt").read_text().splitlines() if l
 UK = {tuple(x[:4]): x for x in U}
 NAMES = [("Cathay Pacific","CX"),("Hong Kong Express","UO"),("Hong Kong Airlines","HX"),("Greater Bay Airlines","HB"),("Emirates","EK"),("United","UA"),
  ("Thai Lion Air","SL"),("Thai AirAsia","FD"),("Thai Vietjet","VZ"),("THAI","TG"),("China Southern","CZ"),("China Eastern","MU"),("Shenzhen","ZH"),
- ("Spring","9C"),("9 Air","AQ"),("Kenya Airways","KQ"),("Air Macau","NX")]
+ ("Kenya Airways","KQ"),("Air Macau","NX")]
 def al(name):
     for n, c in NAMES:
         if name.startswith(n): return c, name[len(n):].strip(" ,")
@@ -24,6 +26,7 @@ def mins(t): h, m = map(int, t.split(":")); return h * 60 + m
 FL = {}; BACK = {}
 for r in R["routes"]:
     for c in r["carriers"]:
+        if is_excluded(c["code"]): continue
         for f in c["flights"]:
             for season in ("winter", "summer"):
                 if f.get(season) and f.get("flt"):
@@ -41,7 +44,7 @@ def fltno(city, direction, code, dep, d):
         if best: return best[1]
     return None
 # parse sweep
-S = {}
+S = {}; DROPPED = []
 blocks = re.split(r"^## ", (ROOT / "raw/sweep1-google.md").read_text(), flags=re.M)[1:]
 for b in blocks:
     lines = b.split("\n"); hd = lines[0].split()
@@ -50,7 +53,10 @@ for b in blocks:
     for l in lines[1:]:
         f = l.split(" | ")
         if len(f) < 5 or l.startswith(("Bangkok and", "Macao to", "title")): continue
-        code, cs = al(f[0]); org, dst = f[1].split("–")
+        if is_excluded(name=f[0]): DROPPED.append((city, cab, typ, dep, f[0])); continue
+        code, cs = al(f[0])
+        if is_excluded(code): DROPPED.append((city, cab, typ, dep, f[0])); continue
+        org, dst = f[1].split("–")
         a, z = f[2].split("–"); nx = "+1" in z; z = z.replace("+1", "")
         p = f[-1].strip(); price = int(p.replace("THB", "").replace(",", "").strip()) if p.startswith("THB") else None
         od, oa = h24(a), h24(z); legd = dep
@@ -88,7 +94,7 @@ for r in R["routes"]:
                   fl=[{k: f.get(k) for k in ("dir", "flt", "winter", "summer", "freq", "fits_2d1n", "aircraft", "start", "note")} for f in c["flights"]]) for c in r["carriers"]]))
 empty = [dict(c=s["c"], cab=s["cab"], t=s["t"], d=s["d"], r=s["r"], u=s["u"]) for s in S.values() if not s["o"]]
 DATA = dict(captured=CAPTURED, trips=sorted(trips.values(), key=lambda t: (t["d"], t["c"], t["t"])), cities=cities, sched=sched, back=BACK,
-            empty=empty, nsearch=len(S), meta=dict(rules=R["meta"]["rules"], caveats=R["meta"]["caveats"]))
+            empty=empty, nsearch=len(S))
 out = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("&", "\\u0026")
 html = (ROOT / "gba_template.html").read_text().replace("/*__DATA__*/null", out)
 dst = ROOT.parent / "site" / "gba"; dst.mkdir(parents=True, exist_ok=True); (dst / "index.html").write_text(html, encoding="utf-8")
@@ -96,4 +102,5 @@ nopt = sum(len(x["o"]) for s in S.values() for x in [s]); npr = sum(1 for s in S
 print("built", dst / "index.html", "| searches", len(S), "| trips", len(trips), "| flight rows", nopt, "priced", npr, "| empty", len(empty),
       "| unmatched flt", sum(1 for s in S.values() for o in s["o"] if not o["f"]))
 print("unmatched:", sorted({(s["c"], o["a"], o["od"]) for s in S.values() for o in s["o"] if not o["f"]}))
+print("dropped (excluded airlines):", len(DROPPED))
 print("outliers:", [(s["c"], s["d"], o["a"], o["p"]) for s in S.values() for o in s["o"] if o.get("x")])

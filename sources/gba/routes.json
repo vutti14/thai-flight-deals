@@ -13,6 +13,7 @@
    "AeroRoutes, Shenzhen Airlines timetable PDF, flightmapper.net, airportia/planemapper/airpaz (see per-city notes)"
   ],
   "caveats": [
+   "Excluded by user rule (all sweeps and dashboards): Spring Airlines (9C), Spring Japan (IJ), 9 Air (AQ).",
    "Google returns at most ~20 flights per search, so on busy routes (HKG, CAN) 'some days' usually means the flight was cut off the list (per-airline searches found more), not a non-daily service.",
    "Winter flight numbers are matched to the October (summer) 2LNR flight with the nearest departure (≤90 min) — likely right, confirm on booking.",
    "Google returned nothing for several DMK one-way queries on 17 Nov and drops Thai AirAsia/Thai Lion on some dates; DMK flights marked 'some days' are often daily in 2LNR.",
@@ -1647,104 +1648,6 @@
      ]
     },
     {
-     "code": "9C",
-     "airline": "Spring Airlines",
-     "kind": "lcc",
-     "bangkok_airport": "BKK",
-     "business": "no",
-     "flights": [
-      {
-       "dir": "out",
-       "flt": null,
-       "winter": "21:55→01:50",
-       "summer": null,
-       "aircraft": null,
-       "seen_winter": "1/5 sample dates",
-       "seen_dates": [
-        "2026-11-17"
-       ],
-       "freq": "some days",
-       "fits_2d1n": false
-      },
-      {
-       "dir": "out",
-       "flt": null,
-       "winter": "21:55→02:00",
-       "summer": null,
-       "aircraft": null,
-       "seen_winter": "4/5 sample dates",
-       "seen_dates": [
-        "2026-11-20",
-        "2026-11-22",
-        "2027-01-16",
-        "2027-03-06"
-       ],
-       "freq": "some days",
-       "fits_2d1n": false
-      },
-      {
-       "dir": "back",
-       "flt": null,
-       "winter": "05:55→07:50",
-       "summer": null,
-       "aircraft": null,
-       "seen_winter": "5/5 sample dates",
-       "seen_dates": [
-        "2026-11-17",
-        "2026-11-20",
-        "2026-11-22",
-        "2027-01-16",
-        "2027-03-06"
-       ],
-       "freq": "daily",
-       "fits_2d1n": false
-      }
-     ]
-    },
-    {
-     "code": "AQ",
-     "airline": "9 Air",
-     "kind": "lcc",
-     "bangkok_airport": "BKK",
-     "business": "no",
-     "flights": [
-      {
-       "dir": "out",
-       "flt": null,
-       "winter": "00:10→04:00",
-       "summer": null,
-       "aircraft": null,
-       "seen_winter": "5/5 sample dates",
-       "seen_dates": [
-        "2026-11-17",
-        "2026-11-20",
-        "2026-11-22",
-        "2027-01-16",
-        "2027-03-06"
-       ],
-       "freq": "daily",
-       "fits_2d1n": false
-      },
-      {
-       "dir": "back",
-       "flt": null,
-       "winter": "21:10→23:10",
-       "summer": null,
-       "aircraft": null,
-       "seen_winter": "5/5 sample dates",
-       "seen_dates": [
-        "2026-11-17",
-        "2026-11-20",
-        "2026-11-22",
-        "2027-01-16",
-        "2027-03-06"
-       ],
-       "freq": "daily",
-       "fits_2d1n": true
-      }
-     ]
-    },
-    {
      "code": "FD",
      "airline": "Thai AirAsia",
      "kind": "lcc",
@@ -1823,8 +1726,6 @@
    ],
    "news": [
     "THAI 2 daily BKK–CAN (TG668/669; TG678/679 from 1 Aug 2026) — AeroRoutes 29 Jun 2026 https://www.aeroroutes.com/eng/260629-tgaug26can; winter on Google: 09:20→13:20 & 15:25→19:05 out, 14:50→17:10 & 20:25→22:45 back.",
-    "Spring Airlines (9C) BKK–CAN launched 29 Mar 2026 (trip.com); Google shows it continuing in winter (BKK 21:55→02:00, CAN 05:55→07:50).",
-    "9 Air (AQ) BKK 00:10→04:00 / CAN 21:10→23:10 daily on Google winter samples (not in 2LNR's Oct table).",
     "Kenya Airways KQ886/887 (fifth-freedom, 787) some days; China Eastern MU2077/2078 daily red-eye."
    ],
    "fit_2d1n": {
@@ -1836,8 +1737,7 @@
      "CZ 361 20:25→22:30",
      "CZ 3035 23:00→01:05",
      "KQ 887 21:40→23:35 [some days]",
-     "TG 679 20:25→22:45",
-     "AQ 21:10→23:10"
+     "TG 679 20:25→22:45"
     ]
    }
   },

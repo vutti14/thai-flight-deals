@@ -2,6 +2,9 @@
 """Build the public budget-airline dashboard -> ../site/budget/index.html (self-contained, data inline).
 Inputs: raw/sweep1-parsed.json (from parse_sweep.py), routes.json, ../data/snapshots/*-full.json (public TG economy)."""
 import json, pathlib, re
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from excluded_airlines import is_excluded   # permanent rule: no Spring (9C/IJ) or 9 Air (AQ)
 ROOT = pathlib.Path(__file__).resolve().parent
 P = json.loads((ROOT / "raw/sweep1-parsed.json").read_text())
 R = json.loads((ROOT / "routes.json").read_text())
@@ -30,6 +33,7 @@ def dmin(s):
     return (int(h.group(1)) if h else 0) * 60 + (int(m.group(1)) if m else 0)
 opts = []
 for e in P["priced"]:
+    if is_excluded(e["al"]) or is_excluded(name=e.get("alname")): continue
     opts.append(dict(c=e["code"], d=e["dep"], r=e["ret"], a=e["al"], o=e["org"], od=e["out_dep"], oa=e["out_arr"], nx=e["out_next"],
                      m=dmin(e["dur"]), p=e["price"], u=e["url"]))
 sched = [dict(c=e["code"], d=e["dep"], r=e["ret"], a=e["al"], o=e["org"], od=e["out_dep"], oa=e["out_arr"], nx=e["out_next"], m=dmin(e["dur"]), u=e["url"]) for e in P["unpriced"]]

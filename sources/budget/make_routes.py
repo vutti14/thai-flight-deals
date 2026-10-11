@@ -2,6 +2,9 @@
 Inputs: src/2lnr_routes.json, src/2lnr_sched.json (2LNR schedule pages fetched 11 Oct 2026), manual seasonal notes below
 (AeroRoutes / airline newsroom / TRAICY / Khaosod), optional probe.json (Google Flights live check, Dec 2026 dates)."""
 import json, re, collections, datetime as dt, os, html
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from excluded_airlines import is_excluded   # permanent rule: no Spring (9C/IJ) or 9 Air (AQ)
 OUR = {"FD":"Thai AirAsia","XJ":"Thai AirAsia X","AK":"AirAsia (Malaysia)","Z2":"AirAsia Philippines","QZ":"Indonesia AirAsia",
        "VZ":"Thai Vietjet","VJ":"VietJet Air","SL":"Thai Lion Air","DD":"Nok Air","OD":"Batik Air Malaysia","ID":"Batik Air (Indonesia)"}
 TH = set("HDY KBV KKC UTH CEI CNX NAW CJM LPT LOE KOP NST NNT PHS HKT UNN ROI SNO BFV URT TST UBP MAQ HHQ UTP".split())
@@ -204,6 +207,7 @@ USABLE = {"operating", "resumes", "seasonal", "suspended", "tentative", "charter
 out = []
 for dst, cs in routes.items():
     if dst not in CITY: continue
+    cs = [c for c in cs if not is_excluded(c["carrier"])]
     en, th, country, region = CITY[dst]
     good = [c for c in cs if c["status"] in {"operating", "resumes", "seasonal"}]
     out.append(dict(code=dst, city=en, city_th=th, country=country, region=region, in_tg_dashboard=dst in TG or (dst == "NRT" and True),
@@ -212,7 +216,7 @@ for dst, cs in routes.items():
                     carriers=sorted(cs, key=lambda c: (c["status"] not in USABLE, c["carrier"]))))
 ORDER = ["china","hk-mo","taiwan","japan","korea","vietnam","india","myanmar","asean","other"]
 out.sort(key=lambda r: (ORDER.index(r["region"]), -len(r["carriers_nonstop"]), -r["total_per_week_approx"], r["code"]))
-no_lcc = {"XMN":"Xiamen — no in-scope LCC nonstop (only Xiamen Air / Spring Airlines etc.); TG flies from 25 Oct 2026",
+no_lcc = {"XMN":"Xiamen — no in-scope LCC nonstop (only Xiamen Air and other Chinese carriers); TG flies from 25 Oct 2026",
           "PEK":"Beijing — no in-scope LCC nonstop operating (VZ PKX listed but no flights scheduled; FD/SL PKX not in schedule data)",
           "HND":"Tokyo Haneda — no LCC; use NRT (XJ, VZ)", "PUS":"Busan — no in-scope LCC nonstop found",
           "MDL":"Mandalay — no in-scope LCC nonstop found", "BOM/MAA/BLR/COK/CCU/DEL via SL":"Thai Lion India: suspended until mid-Dec 2026 (tentative)"}

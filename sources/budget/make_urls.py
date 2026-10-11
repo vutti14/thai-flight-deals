@@ -4,7 +4,10 @@ Same idea as the TG sweep: one anchor URL per route/month/duration, opened in Go
 Date grid / Price graph around it. Anchors are shifted (±3 days) so the out AND return weekday exist for
 at least one carrier on low-frequency routes."""
 import json, subprocess, datetime as dt
-AL = "FD,XJ,D7,AK,VZ,VJ,SL,DD"
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from excluded_airlines import is_excluded   # permanent rule: no Spring (9C/IJ) or 9 Air (AQ)
+AL = ",".join(c for c in "FD,XJ,D7,AK,VZ,VJ,SL,DD".split(",") if not is_excluded(c))
 D = {r["code"]: r for r in json.load(open("routes.json"))["routes"]}
 ANCH = {  # month: {nights: (dep, label)}
  "2026-11": {2: ("2026-11-20", "Fri-Sun"), 3: ("2026-11-19", "Thu-Sun")},

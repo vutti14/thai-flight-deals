@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Build gba/routes.json + routes.md: nonstop Bangkok (BKK+DMK) <-> GBA (CAN, SZX, HKG, MFM), Oct 2026 - Apr 2027.
 Inputs: src/2lnr_parsed.json (parse_2lnr.py), src/probe-gf-oneway.json (probe_gba.py) + manual EXTRA/NEWS from web sources."""
-import json, re, collections
+import json, re, collections, sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from excluded_airlines import is_excluded, EXCLUDED_AIRLINES   # permanent rule: no Spring (9C/IJ) or 9 Air (AQ)
 L = json.load(open("src/2lnr_parsed.json"))
 G = json.load(open("src/probe-gf-oneway.json"))
 CITY = {"HKG": ("Hong Kong", "ฮ่องกง"), "CAN": ("Guangzhou", "กวางโจว"), "SZX": ("Shenzhen", "เซินเจิ้น"), "MFM": ("Macau", "มาเก๊า")}
@@ -51,8 +53,6 @@ NEWS = {
          "Greater Bay Airlines BKK–HKG was cut to 2 weekly in parts of May–Aug 2026 (AeroRoutes 19 Apr 2026 https://www.aeroroutes.com/eng/260419-hbmay26); Google shows HB daily 01:45 BKK→HKG / 20:55 HKG→BKK on every winter sample.",
          "Thai AirAsia FD518 DMK–HKG resumes 25 Oct 2026 08:45→12:25 (flightmapper.net). Thai Lion Air 2nd daily DMK–HKG (15:30 out / 20:25 back) on Google from Jan 2027."],
  "CAN": ["THAI 2 daily BKK–CAN (TG668/669; TG678/679 from 1 Aug 2026) — AeroRoutes 29 Jun 2026 https://www.aeroroutes.com/eng/260629-tgaug26can; winter on Google: 09:20→13:20 & 15:25→19:05 out, 14:50→17:10 & 20:25→22:45 back.",
-         "Spring Airlines (9C) BKK–CAN launched 29 Mar 2026 (trip.com); Google shows it continuing in winter (BKK 21:55→02:00, CAN 05:55→07:50).",
-         "9 Air (AQ) BKK 00:10→04:00 / CAN 21:10→23:10 daily on Google winter samples (not in 2LNR's Oct table).",
          "Kenya Airways KQ886/887 (fifth-freedom, 787) some days; China Eastern MU2077/2078 daily red-eye."],
  "SZX": ["Shenzhen Airlines timetable (to 24 Oct 2026): ZH306/305, ZH310/309, ZH308/307 daily — globalpage.shenzhenair.com FlightTimetable_EN20260821.pdf; THAI sells ZH306 as codeshare TG6456. A THAI-operated BKK–SZX route was reported as 'planned late 2026' (travelandtourworld.com) but nothing is filed — not included.",
          "Thai AirAsia DMK–SZX (FD596/597) cut to 4–5 weekly May–Jul 2026; daily in 2LNR Oct table and on Google Nov samples.",
@@ -66,7 +66,7 @@ def fit_out(dep, gba=""): return (0 if gba == "SZX" else 300) <= mins(dep) < 660
 def fit_back(dep): return mins(dep) >= 1080
 routes = []
 for gba in ["HKG", "CAN", "SZX", "MFM"]:
-    keys = sorted({k[2:] for k in list(gf) + list(ln) if k[0] == gba} | {(x["code"], x["apt"]) for x in EXTRA if x["gba"] == gba},
+    keys = sorted({k for k in {k[2:] for k in list(gf) + list(ln) if k[0] == gba} | {(x["code"], x["apt"]) for x in EXTRA if x["gba"] == gba} if not is_excluded(k[0])},
                   key=lambda x: (KIND.get(x[0], "z"), x[0], x[1]))
     carriers = []
     for code, bk in keys:
@@ -112,7 +112,8 @@ meta = dict(built="2026-10-11", window="2026-10-17 – 2027-04-30", seasons="IAT
   sources=["2LNR route pages (schedule data dated 4 Oct 2026, departures 9–15 Oct 2026; fetched 11 Oct 2026) https://www.2lnr.com/routes/bkk-hkg etc. — flight numbers, aircraft, summer times",
            "Google Flights one-way nonstop probe, fetched 11 Oct 2026, dates 17/20/22 Nov 2026, 16 Jan, 6 Mar, 13 Apr 2027 (src/probe-gf-oneway.json) — winter times + carriers",
            "AeroRoutes, Shenzhen Airlines timetable PDF, flightmapper.net, airportia/planemapper/airpaz (see per-city notes)"],
-  caveats=["Google returns at most ~20 flights per search, so on busy routes (HKG, CAN) 'some days' usually means the flight was cut off the list (per-airline searches found more), not a non-daily service.",
+  caveats=["Excluded by user rule (all sweeps and dashboards): " + ", ".join(f"{v} ({k})" for k, v in EXCLUDED_AIRLINES.items()) + ".",
+           "Google returns at most ~20 flights per search, so on busy routes (HKG, CAN) 'some days' usually means the flight was cut off the list (per-airline searches found more), not a non-daily service.",
            "Winter flight numbers are matched to the October (summer) 2LNR flight with the nearest departure (≤90 min) — likely right, confirm on booking.",
            "Google returned nothing for several DMK one-way queries on 17 Nov and drops Thai AirAsia/Thai Lion on some dates; DMK flights marked 'some days' are often daily in 2LNR.",
            "Thai AirAsia DMK–HKG and Thai Vietjet BKK–MFM never appear on Google Flights."],

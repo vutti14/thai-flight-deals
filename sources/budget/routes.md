@@ -180,7 +180,7 @@ Status: `operating` = in current schedule; `resumes` = resumes on start date; `s
 
 ## No in-scope LCC nonstop
 
-- **XMN**: Xiamen — no in-scope LCC nonstop (only Xiamen Air / Spring Airlines etc.); TG flies from 25 Oct 2026
+- **XMN**: Xiamen — no in-scope LCC nonstop (only Xiamen Air and other Chinese carriers); TG flies from 25 Oct 2026
 - **PEK**: Beijing — no in-scope LCC nonstop operating (VZ PKX listed but no flights scheduled; FD/SL PKX not in schedule data)
 - **HND**: Tokyo Haneda — no LCC; use NRT (XJ, VZ)
 - **PUS**: Busan — no in-scope LCC nonstop found

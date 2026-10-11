@@ -31,7 +31,7 @@
   },
   "google_flights_finding": "Google Flights shows Thai AirAsia / AirAsia X schedules but 'Total price is unavailable' (no fares) in our checks; Thai Vietjet/VietJet are priced; Thai Lion Air appears only on some routes (e.g. HGH priced) and is missing on others (e.g. PVG). A fare sweep via Google Flights therefore covers VZ/VJ (+ some SL) prices; FD/XJ/SL fares need airasia.com / lionairthai.com (or an OTA) for exact prices.",
   "no_lcc_nonstop": {
-   "XMN": "Xiamen — no in-scope LCC nonstop (only Xiamen Air / Spring Airlines etc.); TG flies from 25 Oct 2026",
+   "XMN": "Xiamen — no in-scope LCC nonstop (only Xiamen Air and other Chinese carriers); TG flies from 25 Oct 2026",
    "PEK": "Beijing — no in-scope LCC nonstop operating (VZ PKX listed but no flights scheduled; FD/SL PKX not in schedule data)",
    "HND": "Tokyo Haneda — no LCC; use NRT (XJ, VZ)",
    "PUS": "Busan — no in-scope LCC nonstop found",

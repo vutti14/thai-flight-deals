@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """GBA sweep 1 URL list -> urls-sweep1.txt + urls-sweep1-plan.md
 Line format: <IATA> <ECO|BIZ> <2D1N|3D2N|OW-OUT|OW-BACK> <depart> <return|-> <url>
-All airlines (no filter), nonstop, 1 adult, THB, origin BKK+DMK combined.
+All airlines except the excluded list in ../excluded_airlines.py (Spring 9C/IJ, 9 Air AQ — Google tfs has no exclude field, so build_gba.py drops their rows), nonstop, 1 adult, THB, origin BKK+DMK combined.
 2D1N round trips carry Google's per-leg departure-hour window (leg f8/f9): out 05-10h (SZX 00-10h: only red-eyes before 11:00), back 18-23h.
 Macau: round-trip 2D1N returned no priced pairing in testing (5 Dec: Air Macau has no MFM departure after 16:50 in winter; Air Macau + Thai AirAsia
 show 'price unavailable'), but Thai Lion Air one-ways are priced (16 Jan: SL 10:15 out 2,745 + SL 22:05 back 2,535). So Macau Economy 2D1N =

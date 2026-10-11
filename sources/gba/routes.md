@@ -119,11 +119,6 @@ Notes / sources:
 | Thai Airways (TG) | BKK | BKK→ | TG 678 | 15:25→19:05 | 16:00→19:50 | daily | Airbus A321neo family | yes |  |
 | Thai Airways (TG) | BKK | →BKK | TG 669 | 14:50→17:10 | 15:45→17:45 | daily | Boeing 787-8 Dreamliner | yes |  |
 | Thai Airways (TG) | BKK | →BKK | TG 679 | 20:25→22:45 | 21:05→23:05 | daily | Airbus A321neo family | yes | ✅ |
-| Spring Airlines (9C LCC) | BKK | BKK→ | – | 21:55→01:50 | – | some days | – | no |  |
-| Spring Airlines (9C LCC) | BKK | BKK→ | – | 21:55→02:00 | – | some days | – | no |  |
-| Spring Airlines (9C LCC) | BKK | →BKK | – | 05:55→07:50 | – | daily | – | no |  |
-| 9 Air (AQ LCC) | BKK | BKK→ | – | 00:10→04:00 | – | daily | – | no |  |
-| 9 Air (AQ LCC) | BKK | →BKK | – | 21:10→23:10 | – | daily | – | no | ✅ |
 | Thai AirAsia (FD LCC) | DMK | BKK→ | FD 530 | 18:55→23:00 | 19:05→23:10 | some days | Airbus A320 | no |  |
 | Thai AirAsia (FD LCC) | DMK | →BKK | FD 531 | 00:05→01:55 | 00:10→01:55 | some days | Airbus A320 | no |  |
 | Thai Lion Air (SL LCC) | DMK | BKK→ | SL 900 | 21:50→01:50 | 21:40→01:40 | some days | Boeing 737-800 | no |  |
@@ -131,12 +126,10 @@ Notes / sources:
 
 **2D1N morning out (winter):** CZ 362 08:10→11:55, TG 668 09:20→13:20
 
-**2D1N late back (winter):** CZ 361 20:25→22:30, CZ 3035 23:00→01:05, KQ 887 21:40→23:35 [some days], TG 679 20:25→22:45, AQ 21:10→23:10
+**2D1N late back (winter):** CZ 361 20:25→22:30, CZ 3035 23:00→01:05, KQ 887 21:40→23:35 [some days], TG 679 20:25→22:45
 
 Notes / sources:
 - THAI 2 daily BKK–CAN (TG668/669; TG678/679 from 1 Aug 2026) — AeroRoutes 29 Jun 2026 https://www.aeroroutes.com/eng/260629-tgaug26can; winter on Google: 09:20→13:20 & 15:25→19:05 out, 14:50→17:10 & 20:25→22:45 back.
-- Spring Airlines (9C) BKK–CAN launched 29 Mar 2026 (trip.com); Google shows it continuing in winter (BKK 21:55→02:00, CAN 05:55→07:50).
-- 9 Air (AQ) BKK 00:10→04:00 / CAN 21:10→23:10 daily on Google winter samples (not in 2LNR's Oct table).
 - Kenya Airways KQ886/887 (fifth-freedom, 787) some days; China Eastern MU2077/2078 daily red-eye.
 
 ## SZX Shenzhen (เซินเจิ้น)
@@ -240,6 +233,7 @@ Notes / sources:
 
 ## Caveats
 
+- Excluded by user rule (all sweeps and dashboards): Spring Airlines (9C), Spring Japan (IJ), 9 Air (AQ).
 - Google returns at most ~20 flights per search, so on busy routes (HKG, CAN) 'some days' usually means the flight was cut off the list (per-airline searches found more), not a non-daily service.
 - Winter flight numbers are matched to the October (summer) 2LNR flight with the nearest departure (≤90 min) — likely right, confirm on booking.
 - Google returned nothing for several DMK one-way queries on 17 Nov and drops Thai AirAsia/Thai Lion on some dates; DMK flights marked 'some days' are often daily in 2LNR.

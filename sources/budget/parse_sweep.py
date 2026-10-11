@@ -1,4 +1,7 @@
 import re, json
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
+from excluded_airlines import is_excluded   # permanent rule: no Spring (9C/IJ) or 9 Air (AQ)
 txt = open("raw/sweep1-google.md").read()
 secs = re.split(r"\n## ", txt)[1:]
 AL = {"Thai AirAsia":"FD","Thai AirAsia X":"XJ","AirAsia":"AK","Thai Lion Air":"SL","Thai Vietjet Air":"VZ","Vietjet":"VJ","Nok Air":"DD"}
@@ -15,6 +18,7 @@ for s in secs:
     for r in rows:
         p = [x.strip() for x in r.split("|")]
         al, rt, tm, du, pr = p[:5]
+        if is_excluded(name=al) or is_excluded(AL.get(al)): continue
         a, b = tm.split("–"); od, _ = h24(a); oa, nx = h24(b)
         o, d = rt.split("–")
         e = dict(n=int(n), code=code, dep=dep, ret=ret, al=AL.get(al, al), alname=al, org=o, out_dep=od, out_arr=oa, out_next=nx,
