@@ -1,0 +1,5821 @@
+{
+ "PVG 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829653
+ },
+ "PVG 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "13424",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "8:10\u202fPM",
+    "to": "Shanghai Pudong International Airport",
+    "arr": "1:30\u202fAM"
+   }
+  ],
+  "size": 1901141
+ },
+ "PVG 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839789
+ },
+ "PVG 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Shanghai Pudong International Airport",
+    "arr": "1:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Shanghai Pudong International Airport",
+    "arr": "1:20\u202fAM"
+   }
+  ],
+  "size": 1928896
+ },
+ "PVG 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830549
+ },
+ "PVG 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "13424",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "8:10\u202fPM",
+    "to": "Shanghai Pudong International Airport",
+    "arr": "1:30\u202fAM"
+   }
+  ],
+  "size": 1891162
+ },
+ "PVG 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829952
+ },
+ "PVG 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Shanghai | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Shanghai Pudong International Airport",
+    "arr": "1:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Shanghai Pudong International Airport",
+    "arr": "1:20\u202fAM"
+   }
+  ],
+  "size": 1940801
+ },
+ "PKX 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819582
+ },
+ "PKX 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830828
+ },
+ "PKX 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819264
+ },
+ "PKX 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823252
+ },
+ "PKX 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816649
+ },
+ "PKX 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816520
+ },
+ "PKX 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815929
+ },
+ "PKX 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819281
+ },
+ "PEK 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828788
+ },
+ "PEK 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828885
+ },
+ "PEK 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839305
+ },
+ "PEK 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831385
+ },
+ "PEK 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1838985
+ },
+ "PEK 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826606
+ },
+ "PEK 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826359
+ },
+ "PEK 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Beijing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829143
+ },
+ "CAN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833696
+ },
+ "CAN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833744
+ },
+ "CAN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833568
+ },
+ "CAN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Guangzhou Baiyun International Airport",
+    "arr": "2:10\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Guangzhou Baiyun International Airport",
+    "arr": "2:10\u202fAM"
+   }
+  ],
+  "size": 1933214
+ },
+ "CAN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:55\u202fPM",
+    "to": "Guangzhou Baiyun International Airport",
+    "arr": "11:00\u202fPM"
+   }
+  ],
+  "size": 1891395
+ },
+ "CAN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833546
+ },
+ "CAN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1844627
+ },
+ "CAN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Guangzhou | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Guangzhou Baiyun International Airport",
+    "arr": "2:10\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Guangzhou Baiyun International Airport",
+    "arr": "2:10\u202fAM"
+   }
+  ],
+  "size": 1944025
+ },
+ "SZX 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828508
+ },
+ "SZX 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828690
+ },
+ "SZX 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1838827
+ },
+ "SZX 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831289
+ },
+ "SZX 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1843823
+ },
+ "SZX 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833010
+ },
+ "SZX 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832268
+ },
+ "SZX 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Shenzhen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1835445
+ },
+ "TFU 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839299
+ },
+ "TFU 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839457
+ },
+ "TFU 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830112
+ },
+ "TFU 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Chengdu Tianfu International",
+    "arr": "2:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Chengdu Tianfu International",
+    "arr": "2:20\u202fAM"
+   }
+  ],
+  "size": 1938245
+ },
+ "TFU 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:10\u202fPM",
+    "to": "Chengdu Tianfu International",
+    "arr": "2:00\u202fAM"
+   }
+  ],
+  "size": 1885415
+ },
+ "TFU 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1838422
+ },
+ "TFU 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827313
+ },
+ "TFU 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Chengdu | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Chengdu Tianfu International",
+    "arr": "2:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Chengdu Tianfu International",
+    "arr": "2:20\u202fAM"
+   }
+  ],
+  "size": 1937253
+ },
+ "CKG 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:15\u202fAM",
+    "to": "Chongqing Jiangbei International Airport",
+    "arr": "10:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:45\u202fPM",
+    "to": "Chongqing Jiangbei International Airport",
+    "arr": "6:50\u202fPM"
+   }
+  ],
+  "size": 1919015
+ },
+ "CKG 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820561
+ },
+ "CKG 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820570
+ },
+ "CKG 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833881
+ },
+ "CKG 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:15\u202fAM",
+    "to": "Chongqing Jiangbei International Airport",
+    "arr": "10:20\u202fAM"
+   }
+  ],
+  "size": 1888857
+ },
+ "CKG 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819964
+ },
+ "CKG 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830672
+ },
+ "CKG 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Chongqing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822573
+ },
+ "KMG 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:15\u202fAM",
+    "to": "Kunming Changshui International Airport",
+    "arr": "12:30\u202fPM"
+   }
+  ],
+  "size": 1885367
+ },
+ "KMG 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827422
+ },
+ "KMG 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837603
+ },
+ "KMG 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Kunming Changshui International Airport",
+    "arr": "1:35\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Kunming Changshui International Airport",
+    "arr": "1:35\u202fAM"
+   }
+  ],
+  "size": 1926579
+ },
+ "KMG 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:15\u202fAM",
+    "to": "Kunming Changshui International Airport",
+    "arr": "12:30\u202fPM"
+   }
+  ],
+  "size": 1888765
+ },
+ "KMG 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819324
+ },
+ "KMG 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819023
+ },
+ "KMG 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Kunming | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822110
+ },
+ "HGH 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830650
+ },
+ "HGH 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "9744",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "4:50\u202fPM",
+    "to": "Hangzhou International Airport",
+    "arr": "10:00\u202fPM"
+   }
+  ],
+  "size": 1880319
+ },
+ "HGH 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "8305",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "5:10\u202fPM",
+    "to": "Hangzhou International Airport",
+    "arr": "10:20\u202fPM"
+   }
+  ],
+  "size": 1885208
+ },
+ "HGH 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822042
+ },
+ "HGH 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822579
+ },
+ "HGH 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824220
+ },
+ "HGH 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "8605",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "5:10\u202fPM",
+    "to": "Hangzhou International Airport",
+    "arr": "10:20\u202fPM"
+   }
+  ],
+  "size": 1899227
+ },
+ "HGH 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Hangzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825189
+ },
+ "XMN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826027
+ },
+ "XMN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826130
+ },
+ "XMN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825539
+ },
+ "XMN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Xiamen Gaoqi International Airport",
+    "arr": "10:30\u202fPM"
+   }
+  ],
+  "size": 1894602
+ },
+ "XMN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1838412
+ },
+ "XMN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827326
+ },
+ "XMN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826965
+ },
+ "XMN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Xiamen | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830479
+ },
+ "CSX 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:55\u202fAM",
+    "to": "Changsha Huanghua International Airport",
+    "arr": "12:05\u202fPM"
+   }
+  ],
+  "size": 1898210
+ },
+ "CSX 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828947
+ },
+ "CSX 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828461
+ },
+ "CSX 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832530
+ },
+ "CSX 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:55\u202fAM",
+    "to": "Changsha Huanghua International Airport",
+    "arr": "12:05\u202fPM"
+   }
+  ],
+  "size": 1884226
+ },
+ "CSX 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836952
+ },
+ "CSX 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825904
+ },
+ "CSX 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Changsha | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Changsha Huanghua International Airport",
+    "arr": "1:10\u202fAM"
+   }
+  ],
+  "size": 1892749
+ },
+ "WUH 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825606
+ },
+ "WUH 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826061
+ },
+ "WUH 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825540
+ },
+ "WUH 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fPM",
+    "to": "Wuhan Tianhe International Airport",
+    "arr": "11:15\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:30\u202fPM",
+    "to": "Wuhan Tianhe International Airport",
+    "arr": "11:15\u202fPM"
+   }
+  ],
+  "size": 1934442
+ },
+ "WUH 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:05\u202fAM",
+    "to": "Wuhan Tianhe International Airport",
+    "arr": "11:35\u202fAM"
+   }
+  ],
+  "size": 1882702
+ },
+ "WUH 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824369
+ },
+ "WUH 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824128
+ },
+ "WUH 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Wuhan | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fPM",
+    "to": "Wuhan Tianhe International Airport",
+    "arr": "11:15\u202fPM"
+   }
+  ],
+  "size": 1889775
+ },
+ "XIY 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825302
+ },
+ "XIY 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825528
+ },
+ "XIY 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824996
+ },
+ "XIY 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839021
+ },
+ "XIY 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826891
+ },
+ "XIY 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837584
+ },
+ "XIY 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826392
+ },
+ "XIY 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Xi&#39;An | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829407
+ },
+ "NKG 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822502
+ },
+ "NKG 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822530
+ },
+ "NKG 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832944
+ },
+ "NKG 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836077
+ },
+ "NKG 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821552
+ },
+ "NKG 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821372
+ },
+ "NKG 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820767
+ },
+ "NKG 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Nanjing | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824185
+ },
+ "CGO 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821366
+ },
+ "CGO 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820586
+ },
+ "CGO 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819820
+ },
+ "CGO 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Zhengzhou Xinzheng International Airport",
+    "arr": "10:00\u202fPM"
+   }
+  ],
+  "size": 1895700
+ },
+ "CGO 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831471
+ },
+ "CGO 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820888
+ },
+ "CGO 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819951
+ },
+ "CGO 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Zhengzhou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823294
+ },
+ "TSN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819500
+ },
+ "TSN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830307
+ },
+ "TSN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818644
+ },
+ "TSN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832852
+ },
+ "TSN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820305
+ },
+ "TSN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831696
+ },
+ "TSN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819869
+ },
+ "TSN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Tianjin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822788
+ },
+ "SWA 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834330
+ },
+ "SWA 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823430
+ },
+ "SWA 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822900
+ },
+ "SWA 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825684
+ },
+ "SWA 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820491
+ },
+ "SWA 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820172
+ },
+ "SWA 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819677
+ },
+ "SWA 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Shantou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822665
+ },
+ "NGB 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821342
+ },
+ "NGB 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821895
+ },
+ "NGB 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820988
+ },
+ "NGB 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823584
+ },
+ "NGB 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823568
+ },
+ "NGB 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823627
+ },
+ "NGB 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823335
+ },
+ "NGB 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Ningbo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826248
+ },
+ "SYX 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826051
+ },
+ "SYX 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826277
+ },
+ "SYX 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825743
+ },
+ "SYX 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828440
+ },
+ "SYX 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836613
+ },
+ "SYX 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837047
+ },
+ "SYX 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825025
+ },
+ "SYX 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Sanya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839383
+ },
+ "KWL 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818523
+ },
+ "KWL 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829415
+ },
+ "KWL 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817697
+ },
+ "KWL 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820661
+ },
+ "KWL 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819799
+ },
+ "KWL 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819544
+ },
+ "KWL 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818790
+ },
+ "KWL 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Guilin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822917
+ },
+ "HRB 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834169
+ },
+ "HRB 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834172
+ },
+ "HRB 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833930
+ },
+ "HRB 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836973
+ },
+ "HRB 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834196
+ },
+ "HRB 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834440
+ },
+ "HRB 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833845
+ },
+ "HRB 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Harbin | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836486
+ },
+ "TAO 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831180
+ },
+ "TAO 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830900
+ },
+ "TAO 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1841817
+ },
+ "TAO 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833301
+ },
+ "TAO 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828921
+ },
+ "TAO 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1840300
+ },
+ "TAO 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828590
+ },
+ "TAO 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Qingdao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831773
+ },
+ "DLC 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831188
+ },
+ "DLC 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831344
+ },
+ "DLC 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830684
+ },
+ "DLC 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1844758
+ },
+ "DLC 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831355
+ },
+ "DLC 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830163
+ },
+ "DLC 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829912
+ },
+ "DLC 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Dalian | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832911
+ },
+ "KWE 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828276
+ },
+ "KWE 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828357
+ },
+ "KWE 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827668
+ },
+ "KWE 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1841843
+ },
+ "KWE 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834337
+ },
+ "KWE 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823082
+ },
+ "KWE 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833884
+ },
+ "KWE 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Guiyang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826107
+ },
+ "NNG 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831356
+ },
+ "NNG 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831411
+ },
+ "NNG 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1842362
+ },
+ "NNG 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833775
+ },
+ "NNG 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833501
+ },
+ "NNG 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1844377
+ },
+ "NNG 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1843976
+ },
+ "NNG 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Nanning | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1835952
+ },
+ "HAK 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827148
+ },
+ "HAK 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827052
+ },
+ "HAK 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826782
+ },
+ "HAK 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829538
+ },
+ "HAK 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825060
+ },
+ "HAK 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824973
+ },
+ "HAK 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824326
+ },
+ "HAK 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Haikou | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827582
+ },
+ "HKG 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839327
+ },
+ "HKG 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828505
+ },
+ "HKG 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1840197
+ },
+ "HKG 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Hong Kong International Airport",
+    "arr": "2:10\u202fPM"
+   }
+  ],
+  "size": 1896868
+ },
+ "HKG 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837860
+ },
+ "HKG 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826738
+ },
+ "HKG 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827447
+ },
+ "HKG 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Hong Kong | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "1 stop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Hong Kong International Airport",
+    "arr": "2:10\u202fPM"
+   }
+  ],
+  "size": 1895574
+ },
+ "MFM 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:45\u202fAM",
+    "to": "Macau International Airport",
+    "arr": "10:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:50\u202fPM",
+    "to": "Macau International Airport",
+    "arr": "5:25\u202fPM"
+   }
+  ],
+  "size": 1915440
+ },
+ "MFM 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818815
+ },
+ "MFM 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819833
+ },
+ "MFM 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832535
+ },
+ "MFM 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:45\u202fAM",
+    "to": "Macau International Airport",
+    "arr": "10:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:50\u202fPM",
+    "to": "Macau International Airport",
+    "arr": "5:25\u202fPM"
+   }
+  ],
+  "size": 1903570
+ },
+ "MFM 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829187
+ },
+ "MFM 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829845
+ },
+ "MFM 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Macao | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820308
+ },
+ "TPE 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:45\u202fAM",
+    "to": "Taiwan Taoyuan International Airport",
+    "arr": "12:30\u202fPM"
+   }
+  ],
+  "size": 1880786
+ },
+ "TPE 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823464
+ },
+ "TPE 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": "8925",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:00\u202fAM",
+    "to": "Taiwan Taoyuan International Airport",
+    "arr": "8:00\u202fAM"
+   },
+   {
+    "price": "9425",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:20\u202fAM",
+    "to": "Taiwan Taoyuan International Airport",
+    "arr": "11:10\u202fAM"
+   }
+  ],
+  "size": 1919403
+ },
+ "TPE 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825953
+ },
+ "TPE 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:45\u202fAM",
+    "to": "Taiwan Taoyuan International Airport",
+    "arr": "12:30\u202fPM"
+   }
+  ],
+  "size": 1888984
+ },
+ "TPE 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830891
+ },
+ "TPE 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "7125",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:00\u202fAM",
+    "to": "Taiwan Taoyuan International Airport",
+    "arr": "8:00\u202fAM"
+   }
+  ],
+  "size": 1885926
+ },
+ "TPE 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Taipei City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822475
+ },
+ "KHH 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:35\u202fAM",
+    "to": "Kaohsiung International Airport",
+    "arr": "7:00\u202fAM"
+   }
+  ],
+  "size": 1876689
+ },
+ "KHH 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818667
+ },
+ "KHH 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "6265",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "5:40\u202fAM",
+    "to": "Kaohsiung International Airport",
+    "arr": "10:10\u202fAM"
+   }
+  ],
+  "size": 1884120
+ },
+ "KHH 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820898
+ },
+ "KHH 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:35\u202fAM",
+    "to": "Kaohsiung International Airport",
+    "arr": "7:00\u202fAM"
+   }
+  ],
+  "size": 1886334
+ },
+ "KHH 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817041
+ },
+ "KHH 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "9265",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:45\u202fAM",
+    "to": "Kaohsiung International Airport",
+    "arr": "7:15\u202fAM"
+   }
+  ],
+  "size": 1882725
+ },
+ "KHH 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Kaohsiung City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820042
+ },
+ "NRT 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fAM",
+    "to": "Narita International Airport",
+    "arr": "9:45\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:25\u202fAM",
+    "to": "Narita International Airport",
+    "arr": "6:30\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "11:55\u202fPM",
+    "to": "Narita International Airport",
+    "arr": "8:00\u202fAM"
+   }
+  ],
+  "size": 1951992
+ },
+ "NRT 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "16564",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "11:50\u202fPM",
+    "to": "Narita International Airport",
+    "arr": "7:55\u202fAM"
+   }
+  ],
+  "size": 1888287
+ },
+ "NRT 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827157
+ },
+ "NRT 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830352
+ },
+ "NRT 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fAM",
+    "to": "Narita International Airport",
+    "arr": "9:45\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:25\u202fAM",
+    "to": "Narita International Airport",
+    "arr": "6:30\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "11:55\u202fPM",
+    "to": "Narita International Airport",
+    "arr": "8:00\u202fAM"
+   }
+  ],
+  "size": 1953704
+ },
+ "NRT 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": "16564",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "9:35\u202fAM",
+    "to": "Narita International Airport",
+    "arr": "5:30\u202fPM"
+   },
+   {
+    "price": "16564",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "11:50\u202fPM",
+    "to": "Narita International Airport",
+    "arr": "7:55\u202fAM"
+   }
+  ],
+  "size": 1918723
+ },
+ "NRT 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839515
+ },
+ "NRT 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831869
+ },
+ "HND 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828672
+ },
+ "HND 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828298
+ },
+ "HND 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827673
+ },
+ "HND 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1842072
+ },
+ "HND 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828246
+ },
+ "HND 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828667
+ },
+ "HND 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827796
+ },
+ "HND 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Tokyo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830751
+ },
+ "KIX 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fAM",
+    "to": "Kansai International Airport",
+    "arr": "9:15\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:40\u202fAM",
+    "to": "Kansai International Airport",
+    "arr": "6:15\u202fPM"
+   }
+  ],
+  "size": 1927690
+ },
+ "KIX 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "18704",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "12:25\u202fAM",
+    "to": "Kansai International Airport",
+    "arr": "7:55\u202fAM"
+   }
+  ],
+  "size": 1902986
+ },
+ "KIX 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830898
+ },
+ "KIX 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834128
+ },
+ "KIX 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:40\u202fAM",
+    "to": "Kansai International Airport",
+    "arr": "6:15\u202fPM"
+   }
+  ],
+  "size": 1887213
+ },
+ "KIX 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "19004",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "12:25\u202fAM",
+    "to": "Kansai International Airport",
+    "arr": "7:55\u202fAM"
+   }
+  ],
+  "size": 1890526
+ },
+ "KIX 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829694
+ },
+ "KIX 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Osaka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832963
+ },
+ "NGO 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837844
+ },
+ "NGO 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826991
+ },
+ "NGO 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826666
+ },
+ "NGO 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829419
+ },
+ "NGO 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824906
+ },
+ "NGO 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824944
+ },
+ "NGO 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1835642
+ },
+ "NGO 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Nagoya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827452
+ },
+ "CTS 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:50\u202fAM",
+    "to": "New Chitose Airport",
+    "arr": "10:40\u202fAM"
+   }
+  ],
+  "size": 1893912
+ },
+ "CTS 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836560
+ },
+ "CTS 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836220
+ },
+ "CTS 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839105
+ },
+ "CTS 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:50\u202fAM",
+    "to": "New Chitose Airport",
+    "arr": "10:40\u202fAM"
+   }
+  ],
+  "size": 1884897
+ },
+ "CTS 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837393
+ },
+ "CTS 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825930
+ },
+ "CTS 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Sapporo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1840255
+ },
+ "FUK 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:50\u202fAM",
+    "to": "Fukuoka Airport",
+    "arr": "8:55\u202fAM"
+   }
+  ],
+  "size": 1891740
+ },
+ "FUK 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "19019",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "12:50\u202fAM",
+    "to": "Fukuoka Airport",
+    "arr": "7:55\u202fAM"
+   }
+  ],
+  "size": 1885072
+ },
+ "FUK 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833914
+ },
+ "FUK 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836674
+ },
+ "FUK 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:50\u202fAM",
+    "to": "Fukuoka Airport",
+    "arr": "8:55\u202fAM"
+   }
+  ],
+  "size": 1880492
+ },
+ "FUK 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824494
+ },
+ "FUK 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833299
+ },
+ "FUK 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Fukuoka | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836663
+ },
+ "OKA 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:30\u202fAM",
+    "to": "Naha International Airport",
+    "arr": "2:55\u202fPM"
+   }
+  ],
+  "size": 1877826
+ },
+ "OKA 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819636
+ },
+ "OKA 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819279
+ },
+ "OKA 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822282
+ },
+ "OKA 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817413
+ },
+ "OKA 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817400
+ },
+ "OKA 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817409
+ },
+ "OKA 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Okinawa | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831225
+ },
+ "ICN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829241
+ },
+ "ICN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "14434",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "2:40\u202fAM",
+    "to": "Incheon International Airport",
+    "arr": "10:00\u202fAM"
+   }
+  ],
+  "size": 1889635
+ },
+ "ICN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828497
+ },
+ "ICN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1842401
+ },
+ "ICN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829728
+ },
+ "ICN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "13764",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "2:40\u202fAM",
+    "to": "Incheon International Airport",
+    "arr": "10:00\u202fAM"
+   }
+  ],
+  "size": 1890009
+ },
+ "ICN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830384
+ },
+ "ICN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Seoul | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832097
+ },
+ "PUS 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822023
+ },
+ "PUS 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832884
+ },
+ "PUS 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821547
+ },
+ "PUS 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824724
+ },
+ "PUS 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821520
+ },
+ "PUS 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821154
+ },
+ "PUS 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831693
+ },
+ "PUS 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Busan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834636
+ },
+ "HAN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:55\u202fAM",
+    "to": "Noi Bai International Airport",
+    "arr": "8:45\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:55\u202fAM",
+    "to": "Noi Bai International Airport",
+    "arr": "11:50\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:30\u202fPM",
+    "to": "Noi Bai International Airport",
+    "arr": "8:15\u202fPM"
+   }
+  ],
+  "size": 1939873
+ },
+ "HAN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": "5904",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "6:35\u202fPM",
+    "to": "Noi Bai International Airport",
+    "arr": "8:25\u202fPM"
+   },
+   {
+    "price": "6202",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "3:05\u202fPM",
+    "to": "Noi Bai International Airport",
+    "arr": "5:00\u202fPM"
+   }
+  ],
+  "size": 1926454
+ },
+ "HAN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825566
+ },
+ "HAN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829995
+ },
+ "HAN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:55\u202fAM",
+    "to": "Noi Bai International Airport",
+    "arr": "8:45\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:55\u202fAM",
+    "to": "Noi Bai International Airport",
+    "arr": "11:50\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:30\u202fPM",
+    "to": "Noi Bai International Airport",
+    "arr": "8:15\u202fPM"
+   }
+  ],
+  "size": 1940201
+ },
+ "HAN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": "6251",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "6:35\u202fPM",
+    "to": "Noi Bai International Airport",
+    "arr": "8:25\u202fPM"
+   },
+   {
+    "price": "6742",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "3:05\u202fPM",
+    "to": "Noi Bai International Airport",
+    "arr": "5:00\u202fPM"
+   }
+  ],
+  "size": 1915230
+ },
+ "HAN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836560
+ },
+ "HAN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Hanoi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829054
+ },
+ "SGN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824816
+ },
+ "SGN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 4,
+  "flights": [
+   {
+    "price": "6124",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "2:00\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "3:30\u202fPM"
+   },
+   {
+    "price": "6124",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "4:05\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "5:35\u202fPM"
+   },
+   {
+    "price": "6124",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "8:05\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "9:35\u202fPM"
+   },
+   {
+    "price": "7803",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "11:45\u202fAM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "1:10\u202fPM"
+   }
+  ],
+  "size": 1980408
+ },
+ "SGN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821434
+ },
+ "SGN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824647
+ },
+ "SGN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:30\u202fAM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "9:15\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:40\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "5:30\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:25\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "9:05\u202fPM"
+   }
+  ],
+  "size": 1937107
+ },
+ "SGN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 4,
+  "flights": [
+   {
+    "price": "5775",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "11:45\u202fAM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "1:10\u202fPM"
+   },
+   {
+    "price": "5775",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "2:00\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "3:30\u202fPM"
+   },
+   {
+    "price": "5775",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "4:05\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "5:35\u202fPM"
+   },
+   {
+    "price": "5775",
+    "stops": "Nonstop",
+    "al": "Vietjet",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "8:05\u202fPM",
+    "to": "Tan Son Nhat International Airport",
+    "arr": "9:35\u202fPM"
+   }
+  ],
+  "size": 1970171
+ },
+ "SGN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822185
+ },
+ "SGN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Ho Chi Minh City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825549
+ },
+ "DAD 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:25\u202fAM",
+    "to": "Danang International Airport",
+    "arr": "9:05\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:35\u202fAM",
+    "to": "Danang International Airport",
+    "arr": "12:10\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:40\u202fPM",
+    "to": "Danang International Airport",
+    "arr": "6:20\u202fPM"
+   }
+  ],
+  "size": 1940623
+ },
+ "DAD 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816354
+ },
+ "DAD 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814940
+ },
+ "DAD 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819109
+ },
+ "DAD 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:25\u202fAM",
+    "to": "Danang International Airport",
+    "arr": "9:05\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:35\u202fAM",
+    "to": "Danang International Airport",
+    "arr": "12:10\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:40\u202fPM",
+    "to": "Danang International Airport",
+    "arr": "6:20\u202fPM"
+   }
+  ],
+  "size": 1929752
+ },
+ "DAD 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816014
+ },
+ "DAD 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826560
+ },
+ "DAD 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Da Nang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818846
+ },
+ "CXR 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:55\u202fAM",
+    "to": "Cam Ranh International Airport",
+    "arr": "9:55\u202fAM"
+   }
+  ],
+  "size": 1882592
+ },
+ "CXR 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824982
+ },
+ "CXR 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813307
+ },
+ "CXR 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816436
+ },
+ "CXR 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:55\u202fAM",
+    "to": "Cam Ranh International Airport",
+    "arr": "9:55\u202fAM"
+   }
+  ],
+  "size": 1885317
+ },
+ "CXR 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816658
+ },
+ "CXR 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815504
+ },
+ "CXR 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Nha Trang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830001
+ },
+ "PQC 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "12:00\u202fPM",
+    "to": "Ph\u00fa Qu\u1ed1c International Airport",
+    "arr": "1:20\u202fPM"
+   }
+  ],
+  "size": 1870069
+ },
+ "PQC 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822998
+ },
+ "PQC 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811940
+ },
+ "PQC 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814684
+ },
+ "PQC 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "12:00\u202fPM",
+    "to": "Ph\u00fa Qu\u1ed1c International Airport",
+    "arr": "1:20\u202fPM"
+   }
+  ],
+  "size": 1868566
+ },
+ "PQC 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810780
+ },
+ "PQC 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810053
+ },
+ "PQC 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Ph\u00fa Qu\u1ed1c | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813237
+ },
+ "HPH 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808835
+ },
+ "HPH 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808909
+ },
+ "HPH 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819486
+ },
+ "HPH 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811351
+ },
+ "HPH 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814168
+ },
+ "HPH 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814277
+ },
+ "HPH 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814029
+ },
+ "HPH 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Haiphong | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816926
+ },
+ "DEL 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:45\u202fPM",
+    "to": "Indira Gandhi International Airport",
+    "arr": "7:50\u202fPM"
+   }
+  ],
+  "size": 1894556
+ },
+ "DEL 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827577
+ },
+ "DEL 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837063
+ },
+ "DEL 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1839836
+ },
+ "DEL 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1838633
+ },
+ "DEL 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828079
+ },
+ "DEL 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1838007
+ },
+ "DEL 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to New Delhi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830360
+ },
+ "BOM 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820276
+ },
+ "BOM 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "9527",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "8:40\u202fPM",
+    "to": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+    "arr": "11:50\u202fPM"
+   }
+  ],
+  "size": 1881095
+ },
+ "BOM 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820017
+ },
+ "BOM 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1834256
+ },
+ "BOM 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820837
+ },
+ "BOM 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "12267",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "8:40\u202fPM",
+    "to": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+    "arr": "11:50\u202fPM"
+   }
+  ],
+  "size": 1892446
+ },
+ "BOM 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820774
+ },
+ "BOM 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Mumbai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823353
+ },
+ "CCU 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:45\u202fPM",
+    "to": "Netaji Subhash Chandra Bose International Airport",
+    "arr": "11:55\u202fPM"
+   }
+  ],
+  "size": 1875389
+ },
+ "CCU 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818039
+ },
+ "CCU 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827777
+ },
+ "CCU 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819941
+ },
+ "CCU 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:45\u202fPM",
+    "to": "Netaji Subhash Chandra Bose International Airport",
+    "arr": "11:55\u202fPM"
+   }
+  ],
+  "size": 1873237
+ },
+ "CCU 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "8841",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "10:30\u202fPM",
+    "to": "Netaji Subhash Chandra Bose International Airport",
+    "arr": "11:50\u202fPM"
+   }
+  ],
+  "size": 1875526
+ },
+ "CCU 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825426
+ },
+ "CCU 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Kolkata | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818147
+ },
+ "MAA 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:00\u202fPM",
+    "to": "Chennai International Airport",
+    "arr": "10:55\u202fPM"
+   }
+  ],
+  "size": 1879162
+ },
+ "MAA 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832405
+ },
+ "MAA 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831786
+ },
+ "MAA 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823182
+ },
+ "MAA 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:00\u202fPM",
+    "to": "Chennai International Airport",
+    "arr": "10:55\u202fPM"
+   }
+  ],
+  "size": 1876267
+ },
+ "MAA 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818113
+ },
+ "MAA 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828460
+ },
+ "MAA 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Chennai | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820669
+ },
+ "BLR 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:10\u202fPM",
+    "to": "Kempegowda International Airport Bengaluru",
+    "arr": "10:30\u202fPM"
+   }
+  ],
+  "size": 1881929
+ },
+ "BLR 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822892
+ },
+ "BLR 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833472
+ },
+ "BLR 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825305
+ },
+ "BLR 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:10\u202fPM",
+    "to": "Kempegowda International Airport Bengaluru",
+    "arr": "10:30\u202fPM"
+   }
+  ],
+  "size": 1880309
+ },
+ "BLR 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831755
+ },
+ "BLR 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819794
+ },
+ "BLR 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Bengaluru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823129
+ },
+ "HYD 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820943
+ },
+ "HYD 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821299
+ },
+ "HYD 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831524
+ },
+ "HYD 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824648
+ },
+ "HYD 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820130
+ },
+ "HYD 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819866
+ },
+ "HYD 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819605
+ },
+ "HYD 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Hyderabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824022
+ },
+ "COK 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:15\u202fPM",
+    "to": "Cochin International Airport",
+    "arr": "10:30\u202fPM"
+   }
+  ],
+  "size": 1889211
+ },
+ "COK 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820317
+ },
+ "COK 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819569
+ },
+ "COK 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822842
+ },
+ "COK 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:15\u202fPM",
+    "to": "Cochin International Airport",
+    "arr": "10:30\u202fPM"
+   }
+  ],
+  "size": 1875241
+ },
+ "COK 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817502
+ },
+ "COK 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828061
+ },
+ "COK 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Kochi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819819
+ },
+ "AMD 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818997
+ },
+ "AMD 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819103
+ },
+ "AMD 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818739
+ },
+ "AMD 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821948
+ },
+ "AMD 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829197
+ },
+ "AMD 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817796
+ },
+ "AMD 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828930
+ },
+ "AMD 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Ahmedabad | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820758
+ },
+ "JAI 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814550
+ },
+ "JAI 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815870
+ },
+ "JAI 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814069
+ },
+ "JAI 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817220
+ },
+ "JAI 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813575
+ },
+ "JAI 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814843
+ },
+ "JAI 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812950
+ },
+ "JAI 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Jaipur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816175
+ },
+ "GAY 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818979
+ },
+ "GAY 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808423
+ },
+ "GAY 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1807577
+ },
+ "GAY 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811137
+ },
+ "GAY 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808072
+ },
+ "GAY 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808113
+ },
+ "GAY 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818614
+ },
+ "GAY 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Gaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810783
+ },
+ "LKO 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1807328
+ },
+ "LKO 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1807863
+ },
+ "LKO 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1807376
+ },
+ "LKO 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821116
+ },
+ "LKO 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810548
+ },
+ "LKO 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810691
+ },
+ "LKO 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820860
+ },
+ "LKO 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Lucknow | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813103
+ },
+ "GAU 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821213
+ },
+ "GAU 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810528
+ },
+ "GAU 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820957
+ },
+ "GAU 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813011
+ },
+ "GAU 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811713
+ },
+ "GAU 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811659
+ },
+ "GAU 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810878
+ },
+ "GAU 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Guwahati | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814026
+ },
+ "ATQ 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815642
+ },
+ "ATQ 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815775
+ },
+ "ATQ 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815684
+ },
+ "ATQ 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818405
+ },
+ "ATQ 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821442
+ },
+ "ATQ 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811798
+ },
+ "ATQ 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810307
+ },
+ "ATQ 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Amritsar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824624
+ },
+ "VNS 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821632
+ },
+ "VNS 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810432
+ },
+ "VNS 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810204
+ },
+ "VNS 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824049
+ },
+ "VNS 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821626
+ },
+ "VNS 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810529
+ },
+ "VNS 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1809926
+ },
+ "VNS 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Varanasi | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813481
+ },
+ "BWA 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1804074
+ },
+ "BWA 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1804124
+ },
+ "BWA 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814604
+ },
+ "BWA 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817903
+ },
+ "BWA 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815131
+ },
+ "BWA 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815008
+ },
+ "BWA 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814714
+ },
+ "BWA 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Siddharthanagar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1806992
+ },
+ "KTM 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833875
+ },
+ "KTM 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822685
+ },
+ "KTM 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833229
+ },
+ "KTM 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836378
+ },
+ "KTM 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822632
+ },
+ "KTM 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833822
+ },
+ "KTM 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822243
+ },
+ "KTM 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Kathmandu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825493
+ },
+ "CMB 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:10\u202fPM",
+    "to": "Colombo Bandaranaike International Airport",
+    "arr": "10:00\u202fPM"
+   }
+  ],
+  "size": 1880854
+ },
+ "CMB 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833978
+ },
+ "CMB 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833175
+ },
+ "CMB 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825026
+ },
+ "CMB 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:10\u202fPM",
+    "to": "Colombo Bandaranaike International Airport",
+    "arr": "10:00\u202fPM"
+   }
+  ],
+  "size": 1891007
+ },
+ "CMB 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821770
+ },
+ "CMB 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821102
+ },
+ "CMB 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Colombo | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824132
+ },
+ "MLE 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:15\u202fAM",
+    "to": "Velana International Airport",
+    "arr": "11:30\u202fAM"
+   }
+  ],
+  "size": 1877066
+ },
+ "MLE 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830297
+ },
+ "MLE 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818658
+ },
+ "MLE 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822143
+ },
+ "MLE 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:15\u202fAM",
+    "to": "Velana International Airport",
+    "arr": "11:30\u202fAM"
+   }
+  ],
+  "size": 1891366
+ },
+ "MLE 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822597
+ },
+ "MLE 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821917
+ },
+ "MLE 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Mal\u00e9 | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1835944
+ },
+ "RGN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:20\u202fAM",
+    "to": "Yangon International Airport",
+    "arr": "8:05\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:20\u202fPM",
+    "to": "Yangon International Airport",
+    "arr": "5:05\u202fPM"
+   }
+  ],
+  "size": 1900800
+ },
+ "RGN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814912
+ },
+ "RGN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814318
+ },
+ "RGN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828110
+ },
+ "RGN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:20\u202fAM",
+    "to": "Yangon International Airport",
+    "arr": "8:05\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:20\u202fPM",
+    "to": "Yangon International Airport",
+    "arr": "5:05\u202fPM"
+   }
+  ],
+  "size": 1895632
+ },
+ "RGN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820682
+ },
+ "RGN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1809179
+ },
+ "RGN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Yangon | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812099
+ },
+ "MDL 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1806291
+ },
+ "MDL 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1806351
+ },
+ "MDL 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816668
+ },
+ "MDL 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808845
+ },
+ "MDL 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1806005
+ },
+ "MDL 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1806225
+ },
+ "MDL 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1805826
+ },
+ "MDL 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Mandalay | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808908
+ },
+ "SIN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:00\u202fAM",
+    "to": "Singapore Changi Airport",
+    "arr": "10:30\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:50\u202fAM",
+    "to": "Singapore Changi Airport",
+    "arr": "2:30\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:35\u202fPM",
+    "to": "Singapore Changi Airport",
+    "arr": "8:10\u202fPM"
+   }
+  ],
+  "size": 1930074
+ },
+ "SIN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816857
+ },
+ "SIN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": "7200",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:50\u202fAM",
+    "to": "Singapore Changi Airport",
+    "arr": "11:20\u202fAM"
+   },
+   {
+    "price": "7200",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "5:10\u202fPM",
+    "to": "Singapore Changi Airport",
+    "arr": "8:40\u202fPM"
+   }
+  ],
+  "size": 1922116
+ },
+ "SIN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819423
+ },
+ "SIN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:00\u202fAM",
+    "to": "Singapore Changi Airport",
+    "arr": "10:30\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:50\u202fAM",
+    "to": "Singapore Changi Airport",
+    "arr": "2:30\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:35\u202fPM",
+    "to": "Singapore Changi Airport",
+    "arr": "8:10\u202fPM"
+   }
+  ],
+  "size": 1933520
+ },
+ "SIN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819631
+ },
+ "SIN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": "8778",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:50\u202fAM",
+    "to": "Singapore Changi Airport",
+    "arr": "11:20\u202fAM"
+   },
+   {
+    "price": "11078",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "5:10\u202fPM",
+    "to": "Singapore Changi Airport",
+    "arr": "8:40\u202fPM"
+   }
+  ],
+  "size": 1925573
+ },
+ "SIN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Singapore | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822141
+ },
+ "KUL 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:40\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "9:55\u202fAM"
+   }
+  ],
+  "size": 1880263
+ },
+ "KUL 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "7443",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "11:00\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "2:05\u202fPM"
+   }
+  ],
+  "size": 1882625
+ },
+ "KUL 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821289
+ },
+ "KUL 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 11,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:35\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "11:55\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:55\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "1:20\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "12:05\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "3:15\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "5:05\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "5:00\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:10\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "6:35\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:50\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "8:10\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "9:15\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:40\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "10:00\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:45\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "11:05\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:30\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "12:45\u202fAM"
+   }
+  ],
+  "size": 2175007
+ },
+ "KUL 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:40\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "9:55\u202fAM"
+   }
+  ],
+  "size": 1882046
+ },
+ "KUL 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "8273",
+    "stops": "Nonstop",
+    "al": "Thai Vietjet Air",
+    "frm": "Suvarnabhumi Airport",
+    "dep": "11:00\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "2:05\u202fPM"
+   }
+  ],
+  "size": 1885670
+ },
+ "KUL 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823700
+ },
+ "KUL 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Federal Territory of Kuala Lumpur | Google Flights",
+  "n": 12,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:35\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "11:55\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:55\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "1:20\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "11:40\u202fAM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "3:00\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "12:05\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "3:15\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "5:05\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:45\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "5:00\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:10\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "6:35\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "4:50\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "8:10\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "9:15\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:40\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "10:00\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:45\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "11:05\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:30\u202fPM",
+    "to": "Kuala Lumpur International Airport",
+    "arr": "12:45\u202fAM"
+   }
+  ],
+  "size": 2193336
+ },
+ "PEN 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:50\u202fAM",
+    "to": "Penang International Airport",
+    "arr": "1:40\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fPM",
+    "to": "Penang International Airport",
+    "arr": "4:25\u202fPM"
+   }
+  ],
+  "size": 1899716
+ },
+ "PEN 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813751
+ },
+ "PEN 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813448
+ },
+ "PEN 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827305
+ },
+ "PEN 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "10:50\u202fAM",
+    "to": "Penang International Airport",
+    "arr": "1:40\u202fPM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:40\u202fPM",
+    "to": "Penang International Airport",
+    "arr": "4:25\u202fPM"
+   }
+  ],
+  "size": 1899475
+ },
+ "PEN 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814021
+ },
+ "PEN 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813257
+ },
+ "PEN 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Penang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816324
+ },
+ "JHB 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "8:30\u202fAM",
+    "to": "Johor Bahru Senai International Airport",
+    "arr": "11:55\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "11:55\u202fAM",
+    "to": "Johor Bahru Senai International Airport",
+    "arr": "3:15\u202fPM"
+   }
+  ],
+  "size": 1903935
+ },
+ "JHB 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816625
+ },
+ "JHB 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816372
+ },
+ "JHB 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830034
+ },
+ "JHB 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:30\u202fAM",
+    "to": "Johor Bahru Senai International Airport",
+    "arr": "10:55\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "11:55\u202fAM",
+    "to": "Johor Bahru Senai International Airport",
+    "arr": "3:15\u202fPM"
+   }
+  ],
+  "size": 1899833
+ },
+ "JHB 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813341
+ },
+ "JHB 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814463
+ },
+ "JHB 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Johor Bahru | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826956
+ },
+ "BKI 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816246
+ },
+ "BKI 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816101
+ },
+ "BKI 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815594
+ },
+ "BKI 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818894
+ },
+ "BKI 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816544
+ },
+ "BKI 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818197
+ },
+ "BKI 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815814
+ },
+ "BKI 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Kota Kinabalu | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819211
+ },
+ "CGK 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817596
+ },
+ "CGK 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817683
+ },
+ "CGK 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "9168",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Soekarno\u2013Hatta International Airport",
+    "arr": "9:30\u202fPM"
+   }
+  ],
+  "size": 1883277
+ },
+ "CGK 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "10947",
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:05\u202fPM",
+    "to": "Soekarno\u2013Hatta International Airport",
+    "arr": "5:40\u202fPM"
+   }
+  ],
+  "size": 1889992
+ },
+ "CGK 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816290
+ },
+ "CGK 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816265
+ },
+ "CGK 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "9825",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:00\u202fPM",
+    "to": "Soekarno\u2013Hatta International Airport",
+    "arr": "9:30\u202fPM"
+   }
+  ],
+  "size": 1882316
+ },
+ "CGK 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Jakarta | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "10947",
+    "stops": "Nonstop",
+    "al": "Batik Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:05\u202fPM",
+    "to": "Soekarno\u2013Hatta International Airport",
+    "arr": "5:40\u202fPM"
+   }
+  ],
+  "size": 1877507
+ },
+ "DPS 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815338
+ },
+ "DPS 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815358
+ },
+ "DPS 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "14038",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:45\u202fAM",
+    "to": "I Gusti Ngurah Rai International Airport",
+    "arr": "1:10\u202fPM"
+   }
+  ],
+  "size": 1881193
+ },
+ "DPS 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818079
+ },
+ "DPS 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818441
+ },
+ "DPS 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816816
+ },
+ "DPS 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": "15163",
+    "stops": "Nonstop",
+    "al": "Thai Lion Air",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:45\u202fAM",
+    "to": "I Gusti Ngurah Rai International Airport",
+    "arr": "1:10\u202fPM"
+   }
+  ],
+  "size": 1882783
+ },
+ "DPS 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Denpasar | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830355
+ },
+ "SUB 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815316
+ },
+ "SUB 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814672
+ },
+ "SUB 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814417
+ },
+ "SUB 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817469
+ },
+ "SUB 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814119
+ },
+ "SUB 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813993
+ },
+ "SUB 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813524
+ },
+ "SUB 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Surabaya | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1828780
+ },
+ "KNO 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810957
+ },
+ "KNO 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811309
+ },
+ "KNO 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810687
+ },
+ "KNO 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Indonesia AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:25\u202fPM",
+    "to": "Kualanamu International Airport",
+    "arr": "4:30\u202fPM"
+   }
+  ],
+  "size": 1865149
+ },
+ "KNO 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810106
+ },
+ "KNO 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1820720
+ },
+ "KNO 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814279
+ },
+ "KNO 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Medan | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Indonesia AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:25\u202fPM",
+    "to": "Kualanamu International Airport",
+    "arr": "4:30\u202fPM"
+   }
+  ],
+  "size": 1864119
+ },
+ "MNL 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1831091
+ },
+ "MNL 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819727
+ },
+ "MNL 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819285
+ },
+ "MNL 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822698
+ },
+ "MNL 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817766
+ },
+ "MNL 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816354
+ },
+ "MNL 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815847
+ },
+ "MNL 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Manila | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1819175
+ },
+ "CEB 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814570
+ },
+ "CEB 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814759
+ },
+ "CEB 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825151
+ },
+ "CEB 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817395
+ },
+ "CEB 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815426
+ },
+ "CEB 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815357
+ },
+ "CEB 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815565
+ },
+ "CEB 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Cebu City | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1829513
+ },
+ "CRK 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812117
+ },
+ "CRK 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812238
+ },
+ "CRK 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822677
+ },
+ "CRK 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815014
+ },
+ "CRK 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1813664
+ },
+ "CRK 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824619
+ },
+ "CRK 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812968
+ },
+ "CRK 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Angeles | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1816140
+ },
+ "PNH 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1804451
+ },
+ "PNH 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1815306
+ },
+ "PNH 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1803794
+ },
+ "PNH 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817555
+ },
+ "PNH 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1804259
+ },
+ "PNH 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1804089
+ },
+ "PNH 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1803994
+ },
+ "PNH 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1807073
+ },
+ "KTI 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:05\u202fPM",
+    "to": "Techo International Airport",
+    "arr": "2:20\u202fPM"
+   }
+  ],
+  "size": 1877309
+ },
+ "KTI 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822976
+ },
+ "KTI 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822659
+ },
+ "KTI 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825634
+ },
+ "KTI 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:05\u202fPM",
+    "to": "Techo International Airport",
+    "arr": "2:20\u202fPM"
+   }
+  ],
+  "size": 1887946
+ },
+ "KTI 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1833794
+ },
+ "KTI 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822494
+ },
+ "KTI 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Phnom Penh | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1836745
+ },
+ "SAI 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:55\u202fAM",
+    "to": "Siem Reap International Airport",
+    "arr": "11:00\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:00\u202fPM",
+    "to": "Siem Reap International Airport",
+    "arr": "4:00\u202fPM"
+   }
+  ],
+  "size": 1897923
+ },
+ "SAI 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812044
+ },
+ "SAI 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822769
+ },
+ "SAI 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1814664
+ },
+ "SAI 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 3,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:15\u202fAM",
+    "to": "Siem Reap International Airport",
+    "arr": "8:20\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "9:55\u202fAM",
+    "to": "Siem Reap International Airport",
+    "arr": "11:00\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "3:00\u202fPM",
+    "to": "Siem Reap International Airport",
+    "arr": "4:00\u202fPM"
+   }
+  ],
+  "size": 1925444
+ },
+ "SAI 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822928
+ },
+ "SAI 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1811267
+ },
+ "SAI 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Krong Siem Reap | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825544
+ },
+ "VTE 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:25\u202fAM",
+    "to": "Wattay International Airport",
+    "arr": "7:35\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:05\u202fPM",
+    "to": "Wattay International Airport",
+    "arr": "2:15\u202fPM"
+   }
+  ],
+  "size": 1908700
+ },
+ "VTE 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823091
+ },
+ "VTE 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1822278
+ },
+ "VTE 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1825082
+ },
+ "VTE 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "6:25\u202fAM",
+    "to": "Wattay International Airport",
+    "arr": "7:35\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "1:05\u202fPM",
+    "to": "Wattay International Airport",
+    "arr": "2:15\u202fPM"
+   }
+  ],
+  "size": 1905411
+ },
+ "VTE 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1818306
+ },
+ "VTE 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1817532
+ },
+ "VTE 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Vientiane | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1832003
+ },
+ "LPQ 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 2,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "7:40\u202fAM",
+    "to": "Luang Prabang International Airport",
+    "arr": "9:05\u202fAM"
+   },
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:10\u202fPM",
+    "to": "Luang Prabang International Airport",
+    "arr": "3:35\u202fPM"
+   }
+  ],
+  "size": 1907670
+ },
+ "LPQ 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810506
+ },
+ "LPQ 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1810380
+ },
+ "LPQ 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1812986
+ },
+ "LPQ 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia",
+    "frm": "Don Mueang International Airport",
+    "dep": "2:10\u202fPM",
+    "to": "Luang Prabang International Airport",
+    "arr": "3:35\u202fPM"
+   }
+  ],
+  "size": 1866900
+ },
+ "LPQ 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808869
+ },
+ "LPQ 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1808297
+ },
+ "LPQ 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Luang Prabang | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1821915
+ },
+ "ALA 2026-12-10 AA": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827585
+ },
+ "ALA 2026-12-10 VJ": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1827782
+ },
+ "ALA 2026-12-10 SL": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1837941
+ },
+ "ALA 2026-12-10 OT": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1830413
+ },
+ "ALA 2026-12-14 AA": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 1,
+  "flights": [
+   {
+    "price": null,
+    "stops": "Nonstop",
+    "al": "Thai AirAsia X",
+    "frm": "Don Mueang International Airport",
+    "dep": "5:55\u202fPM",
+    "to": "Almaty International Airport",
+    "arr": "11:05\u202fPM"
+   }
+  ],
+  "size": 1892254
+ },
+ "ALA 2026-12-14 VJ": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1824425
+ },
+ "ALA 2026-12-14 SL": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1823794
+ },
+ "ALA 2026-12-14 OT": {
+  "title": "Bangkok and 1 more to Almaty | Google Flights",
+  "n": 0,
+  "flights": [],
+  "size": 1826665
+ }
+}

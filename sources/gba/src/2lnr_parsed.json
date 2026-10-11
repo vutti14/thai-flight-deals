@@ -1,0 +1,3628 @@
+{
+ "BKK-CAN": {
+  "summary": "China Southern Airlines, Thai Airways International, China Eastern Airlines, and Kenya Airways",
+  "per_week": 94,
+  "shown": [
+   "40",
+   "95",
+   "7"
+  ],
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 3036",
+    "al": "China Southern Airlines",
+    "dep": "03:00",
+    "arr": "07:00",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "MU 2078",
+    "al": "China Eastern Airlines",
+    "dep": "03:00",
+    "arr": "06:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 362",
+    "al": "China Southern Airlines",
+    "dep": "08:20",
+    "arr": "12:20",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "TG 668",
+    "al": "Thai Airways International",
+    "dep": "10:30",
+    "arr": "14:30",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 358",
+    "al": "China Southern Airlines",
+    "dep": "11:20",
+    "arr": "15:20",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8080",
+    "al": "China Southern Airlines",
+    "dep": "12:45",
+    "arr": "16:40",
+    "dur": "2h 55m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8100",
+    "al": "China Southern Airlines",
+    "dep": "13:45",
+    "arr": "18:00",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "KQ 886",
+    "al": "Kenya Airways",
+    "dep": "15:05",
+    "arr": "19:00",
+    "dur": "2h 55m",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 5096",
+    "al": "China Southern Airlines",
+    "dep": "15:10",
+    "arr": "19:05",
+    "dur": "2h 55m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 3082",
+    "al": "China Southern Airlines",
+    "dep": "15:55",
+    "arr": "20:00",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "TG 678",
+    "al": "Thai Airways International",
+    "dep": "16:00",
+    "arr": "19:50",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8024",
+    "al": "China Southern Airlines",
+    "dep": "18:05",
+    "arr": "22:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 364",
+    "al": "China Southern Airlines",
+    "dep": "19:00",
+    "arr": "23:10",
+    "dur": "3h 10m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8020",
+    "al": "China Southern Airlines",
+    "dep": "19:55",
+    "arr": "23:55",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 3036",
+    "al": "China Southern Airlines",
+    "dep": "03:00",
+    "arr": "07:00",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "MU 2078",
+    "al": "China Eastern Airlines",
+    "dep": "03:00",
+    "arr": "06:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 362",
+    "al": "China Southern Airlines",
+    "dep": "08:20",
+    "arr": "12:20",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 668",
+    "al": "Thai Airways International",
+    "dep": "10:30",
+    "arr": "14:30",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 358",
+    "al": "China Southern Airlines",
+    "dep": "11:20",
+    "arr": "15:20",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8080",
+    "al": "China Southern Airlines",
+    "dep": "12:45",
+    "arr": "16:40",
+    "dur": "2h 55m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8100",
+    "al": "China Southern Airlines",
+    "dep": "13:45",
+    "arr": "18:00",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 5096",
+    "al": "China Southern Airlines",
+    "dep": "15:10",
+    "arr": "19:05",
+    "dur": "2h 55m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 3082",
+    "al": "China Southern Airlines",
+    "dep": "15:55",
+    "arr": "20:00",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 678",
+    "al": "Thai Airways International",
+    "dep": "16:00",
+    "arr": "19:50",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8024",
+    "al": "China Southern Airlines",
+    "dep": "18:05",
+    "arr": "22:15",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 364",
+    "al": "China Southern Airlines",
+    "dep": "19:00",
+    "arr": "23:10",
+    "dur": "3h 10m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8020",
+    "al": "China Southern Airlines",
+    "dep": "19:55",
+    "arr": "23:55",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 3036",
+    "al": "China Southern Airlines",
+    "dep": "03:00",
+    "arr": "07:00",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "MU 2078",
+    "al": "China Eastern Airlines",
+    "dep": "03:00",
+    "arr": "06:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 362",
+    "al": "China Southern Airlines",
+    "dep": "08:20",
+    "arr": "12:20",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 668",
+    "al": "Thai Airways International",
+    "dep": "10:30",
+    "arr": "14:30",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 358",
+    "al": "China Southern Airlines",
+    "dep": "11:20",
+    "arr": "15:20",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8080",
+    "al": "China Southern Airlines",
+    "dep": "12:45",
+    "arr": "16:40",
+    "dur": "2h 55m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8100",
+    "al": "China Southern Airlines",
+    "dep": "13:45",
+    "arr": "18:00",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "KQ 886",
+    "al": "Kenya Airways",
+    "dep": "15:05",
+    "arr": "19:05",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 5096",
+    "al": "China Southern Airlines",
+    "dep": "15:10",
+    "arr": "19:05",
+    "dur": "2h 55m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 3082",
+    "al": "China Southern Airlines",
+    "dep": "15:55",
+    "arr": "20:00",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 678",
+    "al": "Thai Airways International",
+    "dep": "16:00",
+    "arr": "19:50",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8024",
+    "al": "China Southern Airlines",
+    "dep": "18:05",
+    "arr": "22:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 364",
+    "al": "China Southern Airlines",
+    "dep": "19:00",
+    "arr": "23:10",
+    "dur": "3h 10m",
+    "ac": "Airbus A321neo family"
+   }
+  ]
+ },
+ "BKK-HKG": {
+  "summary": "Cathay Pacific, Thai Airways International, Hong Kong Express Airways, Hong Kong Airlines, and United Airlines",
+  "per_week": 158,
+  "shown": [
+   "40",
+   "155",
+   "7"
+  ],
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 733",
+    "al": "Hong Kong Express Airways",
+    "dep": "00:20",
+    "arr": "04:30",
+    "dur": "3h 10m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "HX 760",
+    "al": "Hong Kong Airlines",
+    "dep": "02:00",
+    "arr": "05:55",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "HX 768",
+    "al": "Hong Kong Airlines",
+    "dep": "02:40",
+    "arr": "07:00",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 700",
+    "al": "Cathay Pacific",
+    "dep": "07:35",
+    "arr": "11:35",
+    "dur": "3h",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 600",
+    "al": "Thai Airways International",
+    "dep": "08:00",
+    "arr": "11:45",
+    "dur": "2h 45m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 705",
+    "al": "Hong Kong Express Airways",
+    "dep": "10:15",
+    "arr": "14:20",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 628",
+    "al": "Thai Airways International",
+    "dep": "10:30",
+    "arr": "14:20",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 750",
+    "al": "Cathay Pacific",
+    "dep": "11:00",
+    "arr": "15:05",
+    "dur": "3h 5m",
+    "ac": "Boeing 777-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 774",
+    "al": "Cathay Pacific",
+    "dep": "12:10",
+    "arr": "16:15",
+    "dur": "3h 5m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 754",
+    "al": "Cathay Pacific",
+    "dep": "12:35",
+    "arr": "16:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 638",
+    "al": "Thai Airways International",
+    "dep": "14:00",
+    "arr": "17:45",
+    "dur": "2h 45m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "EK 384",
+    "al": "Emirates",
+    "dep": "14:15",
+    "arr": "18:15",
+    "dur": "3h",
+    "ac": "Airbus A380-800"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 735",
+    "al": "Hong Kong Express Airways",
+    "dep": "14:50",
+    "arr": "18:50",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 654",
+    "al": "Cathay Pacific",
+    "dep": "15:00",
+    "arr": "19:05",
+    "dur": "3h 5m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UA 821",
+    "al": "United Airlines",
+    "dep": "15:45",
+    "arr": "19:45",
+    "dur": "3h",
+    "ac": "Boeing 787-9 Dreamliner"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "HX 776",
+    "al": "Hong Kong Airlines",
+    "dep": "15:55",
+    "arr": "19:55",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 701",
+    "al": "Hong Kong Express Airways",
+    "dep": "16:15",
+    "arr": "20:15",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 706",
+    "al": "Cathay Pacific",
+    "dep": "16:25",
+    "arr": "20:30",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 708",
+    "al": "Cathay Pacific",
+    "dep": "17:30",
+    "arr": "21:30",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 602",
+    "al": "Thai Airways International",
+    "dep": "18:10",
+    "arr": "22:00",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 704",
+    "al": "Cathay Pacific",
+    "dep": "19:10",
+    "arr": "23:05",
+    "dur": "2h 55m",
+    "ac": "Boeing 777-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 703",
+    "al": "Hong Kong Express Airways",
+    "dep": "19:40",
+    "arr": "23:40",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 733",
+    "al": "Hong Kong Express Airways",
+    "dep": "00:20",
+    "arr": "04:30",
+    "dur": "3h 10m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "HX 760",
+    "al": "Hong Kong Airlines",
+    "dep": "02:00",
+    "arr": "05:55",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "HX 768",
+    "al": "Hong Kong Airlines",
+    "dep": "02:40",
+    "arr": "07:00",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 700",
+    "al": "Cathay Pacific",
+    "dep": "07:35",
+    "arr": "11:35",
+    "dur": "3h",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 600",
+    "al": "Thai Airways International",
+    "dep": "08:00",
+    "arr": "11:45",
+    "dur": "2h 45m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 705",
+    "al": "Hong Kong Express Airways",
+    "dep": "10:10",
+    "arr": "14:20",
+    "dur": "3h 10m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 628",
+    "al": "Thai Airways International",
+    "dep": "10:30",
+    "arr": "14:20",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 750",
+    "al": "Cathay Pacific",
+    "dep": "11:00",
+    "arr": "15:05",
+    "dur": "3h 5m",
+    "ac": "Boeing 777-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 774",
+    "al": "Cathay Pacific",
+    "dep": "12:10",
+    "arr": "16:15",
+    "dur": "3h 5m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 754",
+    "al": "Cathay Pacific",
+    "dep": "12:35",
+    "arr": "16:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 638",
+    "al": "Thai Airways International",
+    "dep": "14:00",
+    "arr": "17:45",
+    "dur": "2h 45m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "EK 384",
+    "al": "Emirates",
+    "dep": "14:15",
+    "arr": "18:15",
+    "dur": "3h",
+    "ac": "Airbus A380-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 654",
+    "al": "Cathay Pacific",
+    "dep": "15:00",
+    "arr": "19:05",
+    "dur": "3h 5m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UA 821",
+    "al": "United Airlines",
+    "dep": "15:45",
+    "arr": "19:45",
+    "dur": "3h",
+    "ac": "Boeing 787-9 Dreamliner"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "HX 776",
+    "al": "Hong Kong Airlines",
+    "dep": "15:55",
+    "arr": "19:55",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 701",
+    "al": "Hong Kong Express Airways",
+    "dep": "16:15",
+    "arr": "20:15",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 706",
+    "al": "Cathay Pacific",
+    "dep": "16:25",
+    "arr": "20:30",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 708",
+    "al": "Cathay Pacific",
+    "dep": "17:30",
+    "arr": "21:30",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   }
+  ]
+ },
+ "BKK-MFM": {
+  "summary": "Air Macau and Thai Vietjet Air",
+  "per_week": 24,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Thu, Oct 8",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:25",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:25",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:45",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:25",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:25",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:25",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "NX 995",
+    "al": "Air Macau",
+    "dep": "10:35",
+    "arr": "14:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "NX 935",
+    "al": "Air Macau",
+    "dep": "14:40",
+    "arr": "18:45",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "NX 991",
+    "al": "Air Macau",
+    "dep": "22:05",
+    "arr": "01:50",
+    "dur": "2h 45m",
+    "ac": "Airbus A321neo family"
+   }
+  ]
+ },
+ "BKK-SZX": {
+  "summary": "China Southern Airlines and Shenzhen Airlines",
+  "per_week": 42,
+  "shown": [
+   "40",
+   "41",
+   "7"
+  ],
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8158",
+    "al": "China Southern Airlines",
+    "dep": "02:40",
+    "arr": "07:05",
+    "dur": "3h 25m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "16:05",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:40",
+    "arr": "16:40",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "21:40",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "ZH 308",
+    "al": "Shenzhen Airlines",
+    "dep": "19:15",
+    "arr": "23:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "16:05",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:20",
+    "arr": "16:10",
+    "dur": "2h 50m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "22:05",
+    "dur": "3h 40m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "ZH 308",
+    "al": "Shenzhen Airlines",
+    "dep": "19:15",
+    "arr": "23:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8158",
+    "al": "China Southern Airlines",
+    "dep": "02:40",
+    "arr": "07:05",
+    "dur": "3h 25m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "16:05",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:40",
+    "arr": "16:40",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "22:05",
+    "dur": "3h 40m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "ZH 308",
+    "al": "Shenzhen Airlines",
+    "dep": "19:15",
+    "arr": "23:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8158",
+    "al": "China Southern Airlines",
+    "dep": "02:40",
+    "arr": "07:05",
+    "dur": "3h 25m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:10",
+    "arr": "16:10",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "16:05",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "22:05",
+    "dur": "3h 40m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "ZH 308",
+    "al": "Shenzhen Airlines",
+    "dep": "19:15",
+    "arr": "23:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "CZ 8158",
+    "al": "China Southern Airlines",
+    "dep": "02:40",
+    "arr": "07:05",
+    "dur": "3h 25m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "15:50",
+    "dur": "2h 40m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:20",
+    "arr": "16:10",
+    "dur": "2h 50m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "21:55",
+    "dur": "3h 30m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "ZH 308",
+    "al": "Shenzhen Airlines",
+    "dep": "19:15",
+    "arr": "23:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "CZ 8158",
+    "al": "China Southern Airlines",
+    "dep": "02:40",
+    "arr": "07:05",
+    "dur": "3h 25m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "16:05",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:40",
+    "arr": "16:40",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "21:40",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "ZH 308",
+    "al": "Shenzhen Airlines",
+    "dep": "19:15",
+    "arr": "23:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "CZ 8158",
+    "al": "China Southern Airlines",
+    "dep": "02:40",
+    "arr": "07:05",
+    "dur": "3h 25m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "ZH 306",
+    "al": "Shenzhen Airlines",
+    "dep": "03:15",
+    "arr": "07:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "ZH 310",
+    "al": "Shenzhen Airlines",
+    "dep": "12:10",
+    "arr": "16:05",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "CZ 8076",
+    "al": "China Southern Airlines",
+    "dep": "12:20",
+    "arr": "16:10",
+    "dur": "2h 50m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "CZ 8324",
+    "al": "China Southern Airlines",
+    "dep": "17:25",
+    "arr": "22:05",
+    "dur": "3h 40m",
+    "ac": "Airbus A321"
+   }
+  ]
+ },
+ "CAN-BKK": {
+  "summary": "China Southern Airlines, Thai Airways International, China Eastern Airlines, and Kenya Airways",
+  "per_week": 95,
+  "shown": [
+   "40",
+   "95",
+   "7"
+  ],
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 357",
+    "al": "China Southern Airlines",
+    "dep": "08:15",
+    "arr": "10:20",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8079",
+    "al": "China Southern Airlines",
+    "dep": "09:40",
+    "arr": "11:40",
+    "dur": "3h",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8099",
+    "al": "China Southern Airlines",
+    "dep": "10:40",
+    "arr": "12:50",
+    "dur": "3h 10m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 5095",
+    "al": "China Southern Airlines",
+    "dep": "11:50",
+    "arr": "14:05",
+    "dur": "3h 15m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 3081",
+    "al": "China Southern Airlines",
+    "dep": "12:45",
+    "arr": "14:40",
+    "dur": "2h 55m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8023",
+    "al": "China Southern Airlines",
+    "dep": "14:50",
+    "arr": "16:50",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 669",
+    "al": "Thai Airways International",
+    "dep": "15:45",
+    "arr": "17:45",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 363",
+    "al": "China Southern Airlines",
+    "dep": "15:55",
+    "arr": "17:55",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8019",
+    "al": "China Southern Airlines",
+    "dep": "16:55",
+    "arr": "18:55",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 361",
+    "al": "China Southern Airlines",
+    "dep": "20:05",
+    "arr": "22:00",
+    "dur": "2h 55m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 679",
+    "al": "Thai Airways International",
+    "dep": "21:05",
+    "arr": "23:05",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "MU 2077",
+    "al": "China Eastern Airlines",
+    "dep": "23:05",
+    "arr": "01:15",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 3035",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:30",
+    "dur": "2h 55m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 357",
+    "al": "China Southern Airlines",
+    "dep": "08:15",
+    "arr": "10:20",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8079",
+    "al": "China Southern Airlines",
+    "dep": "09:40",
+    "arr": "11:40",
+    "dur": "3h",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8099",
+    "al": "China Southern Airlines",
+    "dep": "10:40",
+    "arr": "12:50",
+    "dur": "3h 10m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 5095",
+    "al": "China Southern Airlines",
+    "dep": "11:50",
+    "arr": "14:05",
+    "dur": "3h 15m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 3081",
+    "al": "China Southern Airlines",
+    "dep": "12:45",
+    "arr": "14:40",
+    "dur": "2h 55m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8023",
+    "al": "China Southern Airlines",
+    "dep": "14:50",
+    "arr": "16:50",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 669",
+    "al": "Thai Airways International",
+    "dep": "15:45",
+    "arr": "17:45",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 363",
+    "al": "China Southern Airlines",
+    "dep": "15:55",
+    "arr": "17:55",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8019",
+    "al": "China Southern Airlines",
+    "dep": "16:55",
+    "arr": "18:55",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 361",
+    "al": "China Southern Airlines",
+    "dep": "20:05",
+    "arr": "22:00",
+    "dur": "2h 55m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 679",
+    "al": "Thai Airways International",
+    "dep": "21:05",
+    "arr": "23:05",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "KQ 887",
+    "al": "Kenya Airways",
+    "dep": "22:10",
+    "arr": "23:35",
+    "dur": "2h 25m",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "MU 2077",
+    "al": "China Eastern Airlines",
+    "dep": "23:05",
+    "arr": "01:15",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 3035",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:30",
+    "dur": "2h 55m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 357",
+    "al": "China Southern Airlines",
+    "dep": "08:15",
+    "arr": "10:20",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8079",
+    "al": "China Southern Airlines",
+    "dep": "09:40",
+    "arr": "11:40",
+    "dur": "3h",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8099",
+    "al": "China Southern Airlines",
+    "dep": "10:40",
+    "arr": "12:50",
+    "dur": "3h 10m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 5095",
+    "al": "China Southern Airlines",
+    "dep": "11:50",
+    "arr": "14:05",
+    "dur": "3h 15m",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 3081",
+    "al": "China Southern Airlines",
+    "dep": "12:45",
+    "arr": "14:40",
+    "dur": "2h 55m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8023",
+    "al": "China Southern Airlines",
+    "dep": "14:50",
+    "arr": "16:50",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "TG 669",
+    "al": "Thai Airways International",
+    "dep": "15:45",
+    "arr": "17:45",
+    "dur": "3h",
+    "ac": "Boeing 787-8 Dreamliner"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 363",
+    "al": "China Southern Airlines",
+    "dep": "15:55",
+    "arr": "17:55",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8019",
+    "al": "China Southern Airlines",
+    "dep": "16:55",
+    "arr": "18:55",
+    "dur": "3h",
+    "ac": "Boeing 737 MAX 8"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 361",
+    "al": "China Southern Airlines",
+    "dep": "20:05",
+    "arr": "22:00",
+    "dur": "2h 55m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "TG 679",
+    "al": "Thai Airways International",
+    "dep": "21:05",
+    "arr": "23:05",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "MU 2077",
+    "al": "China Eastern Airlines",
+    "dep": "23:05",
+    "arr": "01:15",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 3035",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:30",
+    "dur": "2h 55m",
+    "ac": "Boeing 737 MAX 8"
+   }
+  ]
+ },
+ "CAN-DMK": {
+  "summary": null,
+  "per_week": null,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 901",
+    "al": "Thai Lion Mentari",
+    "dep": "02:45",
+    "arr": "04:45",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 901",
+    "al": "Thai Lion Mentari",
+    "dep": "02:45",
+    "arr": "04:45",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 901",
+    "al": "Thai Lion Mentari",
+    "dep": "02:45",
+    "arr": "04:45",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 901",
+    "al": "Thai Lion Mentari",
+    "dep": "02:45",
+    "arr": "04:45",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "FD 531",
+    "al": "Royal Flying Doctor Service",
+    "dep": "00:10",
+    "arr": "01:55",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "SL 901",
+    "al": "Thai Lion Mentari",
+    "dep": "02:45",
+    "arr": "04:45",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   }
+  ]
+ },
+ "DMK-CAN": {
+  "summary": null,
+  "per_week": null,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Thu, Oct 8",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "SL 900",
+    "al": "Thai Lion Mentari",
+    "dep": "21:40",
+    "arr": "01:40",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 900",
+    "al": "Thai Lion Mentari",
+    "dep": "21:40",
+    "arr": "01:40",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 900",
+    "al": "Thai Lion Mentari",
+    "dep": "21:40",
+    "arr": "01:40",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 900",
+    "al": "Thai Lion Mentari",
+    "dep": "21:40",
+    "arr": "01:40",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "FD 530",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:05",
+    "arr": "23:10",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 900",
+    "al": "Thai Lion Mentari",
+    "dep": "21:40",
+    "arr": "01:40",
+    "dur": "3h",
+    "ac": "Boeing 737-800"
+   }
+  ]
+ },
+ "DMK-HKG": {
+  "summary": null,
+  "per_week": null,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "SL 360",
+    "al": "Thai Lion Mentari",
+    "dep": "09:20",
+    "arr": "13:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   }
+  ]
+ },
+ "DMK-MFM": {
+  "summary": "Thai Lion Mentari and Royal Flying Doctor Service",
+  "per_week": 24,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 766",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:35",
+    "arr": "18:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 766",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:35",
+    "arr": "18:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-900"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "FD 762",
+    "al": "Royal Flying Doctor Service",
+    "dep": "10:00",
+    "arr": "13:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "SL 372",
+    "al": "Thai Lion Mentari",
+    "dep": "10:10",
+    "arr": "13:50",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "FD 766",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:35",
+    "arr": "18:20",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "SL 370",
+    "al": "Thai Lion Mentari",
+    "dep": "17:25",
+    "arr": "21:05",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   }
+  ]
+ },
+ "DMK-SZX": {
+  "summary": null,
+  "per_week": null,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 902",
+    "al": "Thai Lion Mentari",
+    "dep": "22:40",
+    "arr": "02:30",
+    "dur": "2h 50m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 902",
+    "al": "Thai Lion Mentari",
+    "dep": "22:40",
+    "arr": "02:30",
+    "dur": "2h 50m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "FD 596",
+    "al": "Royal Flying Doctor Service",
+    "dep": "18:30",
+    "arr": "22:25",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   }
+  ]
+ },
+ "HKG-BKK": {
+  "summary": "Cathay Pacific, Thai Airways International, Hong Kong Express Airways, Hong Kong Airlines, and United Airlines",
+  "per_week": 151,
+  "shown": [
+   "40",
+   "153",
+   "7"
+  ],
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 704",
+    "al": "Hong Kong Express Airways",
+    "dep": "07:25",
+    "arr": "09:25",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UA 820",
+    "al": "United Airlines",
+    "dep": "07:40",
+    "arr": "09:35",
+    "dur": "2h 55m",
+    "ac": "Boeing 787-9 Dreamliner"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 603",
+    "al": "Thai Airways International",
+    "dep": "07:50",
+    "arr": "09:35",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 705",
+    "al": "Cathay Pacific",
+    "dep": "08:00",
+    "arr": "10:00",
+    "dur": "3h",
+    "ac": "Boeing 777-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 717",
+    "al": "Cathay Pacific",
+    "dep": "09:00",
+    "arr": "11:05",
+    "dur": "3h 5m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 755",
+    "al": "Cathay Pacific",
+    "dep": "09:25",
+    "arr": "11:30",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 734",
+    "al": "Hong Kong Express Airways",
+    "dep": "11:30",
+    "arr": "13:40",
+    "dur": "3h 10m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 653",
+    "al": "Cathay Pacific",
+    "dep": "12:00",
+    "arr": "14:00",
+    "dur": "3h",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "HX 775",
+    "al": "Hong Kong Airlines",
+    "dep": "12:45",
+    "arr": "14:55",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 601",
+    "al": "Thai Airways International",
+    "dep": "12:55",
+    "arr": "14:45",
+    "dur": "2h 50m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 775",
+    "al": "Cathay Pacific",
+    "dep": "13:20",
+    "arr": "15:25",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 700",
+    "al": "Hong Kong Express Airways",
+    "dep": "13:30",
+    "arr": "15:30",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 751",
+    "al": "Cathay Pacific",
+    "dep": "14:30",
+    "arr": "16:30",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 629",
+    "al": "Thai Airways International",
+    "dep": "15:30",
+    "arr": "17:20",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 701",
+    "al": "Cathay Pacific",
+    "dep": "16:05",
+    "arr": "18:00",
+    "dur": "2h 55m",
+    "ac": "Boeing 777-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 702",
+    "al": "Hong Kong Express Airways",
+    "dep": "16:55",
+    "arr": "18:55",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "TG 639",
+    "al": "Thai Airways International",
+    "dep": "19:05",
+    "arr": "20:45",
+    "dur": "2h 40m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "EK 385",
+    "al": "Emirates",
+    "dep": "21:30",
+    "arr": "23:45",
+    "dur": "3h 15m",
+    "ac": "Airbus A380-800"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "UO 732",
+    "al": "Hong Kong Express Airways",
+    "dep": "21:30",
+    "arr": "23:20",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CX 617",
+    "al": "Cathay Pacific",
+    "dep": "22:15",
+    "arr": "00:10",
+    "dur": "2h 55m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "HX 759",
+    "al": "Hong Kong Airlines",
+    "dep": "23:00",
+    "arr": "01:00",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "HX 767",
+    "al": "Hong Kong Airlines",
+    "dep": "23:40",
+    "arr": "01:40",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 704",
+    "al": "Hong Kong Express Airways",
+    "dep": "07:25",
+    "arr": "09:25",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UA 820",
+    "al": "United Airlines",
+    "dep": "07:40",
+    "arr": "09:35",
+    "dur": "2h 55m",
+    "ac": "Boeing 787-9 Dreamliner"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 603",
+    "al": "Thai Airways International",
+    "dep": "07:50",
+    "arr": "09:35",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 705",
+    "al": "Cathay Pacific",
+    "dep": "08:00",
+    "arr": "10:00",
+    "dur": "3h",
+    "ac": "Boeing 777-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 717",
+    "al": "Cathay Pacific",
+    "dep": "09:00",
+    "arr": "11:05",
+    "dur": "3h 5m",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 755",
+    "al": "Cathay Pacific",
+    "dep": "09:25",
+    "arr": "11:30",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 734",
+    "al": "Hong Kong Express Airways",
+    "dep": "11:30",
+    "arr": "13:40",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 653",
+    "al": "Cathay Pacific",
+    "dep": "12:00",
+    "arr": "14:00",
+    "dur": "3h",
+    "ac": "Airbus A330-300"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "HX 775",
+    "al": "Hong Kong Airlines",
+    "dep": "12:45",
+    "arr": "14:55",
+    "dur": "3h 10m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 601",
+    "al": "Thai Airways International",
+    "dep": "12:55",
+    "arr": "14:45",
+    "dur": "2h 50m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 775",
+    "al": "Cathay Pacific",
+    "dep": "13:20",
+    "arr": "15:25",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 700",
+    "al": "Hong Kong Express Airways",
+    "dep": "13:30",
+    "arr": "15:30",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 751",
+    "al": "Cathay Pacific",
+    "dep": "14:30",
+    "arr": "16:30",
+    "dur": "3h",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 629",
+    "al": "Thai Airways International",
+    "dep": "15:30",
+    "arr": "17:20",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CX 701",
+    "al": "Cathay Pacific",
+    "dep": "16:05",
+    "arr": "18:00",
+    "dur": "2h 55m",
+    "ac": "Airbus A350-900"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "UO 702",
+    "al": "Hong Kong Express Airways",
+    "dep": "16:55",
+    "arr": "18:55",
+    "dur": "3h",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "TG 639",
+    "al": "Thai Airways International",
+    "dep": "19:05",
+    "arr": "20:45",
+    "dur": "2h 40m",
+    "ac": "Boeing 777-300ER"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "EK 385",
+    "al": "Emirates",
+    "dep": "21:30",
+    "arr": "23:45",
+    "dur": "3h 15m",
+    "ac": "Airbus A380-800"
+   }
+  ]
+ },
+ "HKG-DMK": {
+  "summary": null,
+  "per_week": null,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "SL 361",
+    "al": "Thai Lion Mentari",
+    "dep": "14:20",
+    "arr": "16:05",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   }
+  ]
+ },
+ "MFM-BKK": {
+  "summary": "Air Macau and Thai Vietjet Air",
+  "per_week": 21,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Thu, Oct 8",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "NX 996",
+    "al": "Air Macau",
+    "dep": "07:45",
+    "arr": "09:35",
+    "dur": "2h 50m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "NX 936",
+    "al": "Air Macau",
+    "dep": "11:35",
+    "arr": "13:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A321neo family"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "NX 992",
+    "al": "Air Macau",
+    "dep": "18:55",
+    "arr": "21:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A321neo family"
+   }
+  ]
+ },
+ "MFM-DMK": {
+  "summary": "Thai Lion Mentari and Royal Flying Doctor Service",
+  "per_week": 24,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Thu, Oct 8",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "FD 767",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:00",
+    "arr": "20:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 8",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 767",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:00",
+    "arr": "20:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 767",
+    "al": "Royal Flying Doctor Service",
+    "dep": "19:00",
+    "arr": "20:45",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "FD 763",
+    "al": "Royal Flying Doctor Service",
+    "dep": "14:15",
+    "arr": "16:05",
+    "dur": "2h 50m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 373",
+    "al": "Thai Lion Mentari",
+    "dep": "14:50",
+    "arr": "16:30",
+    "dur": "2h 40m",
+    "ac": "Boeing 737-900"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 371",
+    "al": "Thai Lion Mentari",
+    "dep": "22:05",
+    "arr": "23:50",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   }
+  ]
+ },
+ "SZX-BKK": {
+  "summary": "Shenzhen Airlines and China Southern Airlines",
+  "per_week": 42,
+  "shown": [
+   "40",
+   "42",
+   "7"
+  ],
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:15",
+    "arr": "02:15",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "09:05",
+    "arr": "11:20",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "09:10",
+    "arr": "11:10",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "14:20",
+    "arr": "16:25",
+    "dur": "3h 5m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "ZH 307",
+    "al": "Shenzhen Airlines",
+    "dep": "15:55",
+    "arr": "18:15",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Fri, Oct 9",
+    "flt": "CZ 8157",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:15",
+    "arr": "02:15",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "08:55",
+    "arr": "11:20",
+    "dur": "3h 25m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "08:55",
+    "arr": "11:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "13:50",
+    "arr": "16:25",
+    "dur": "3h 35m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "ZH 307",
+    "al": "Shenzhen Airlines",
+    "dep": "15:55",
+    "arr": "18:15",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "CZ 8157",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:15",
+    "arr": "02:15",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "09:05",
+    "arr": "11:20",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "09:10",
+    "arr": "11:10",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "14:20",
+    "arr": "16:25",
+    "dur": "3h 5m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "ZH 307",
+    "al": "Shenzhen Airlines",
+    "dep": "15:55",
+    "arr": "18:15",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "CZ 8157",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:15",
+    "arr": "02:15",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "08:55",
+    "arr": "11:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "09:05",
+    "arr": "11:20",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "14:20",
+    "arr": "16:25",
+    "dur": "3h 5m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "ZH 307",
+    "al": "Shenzhen Airlines",
+    "dep": "15:55",
+    "arr": "18:15",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "CZ 8157",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:15",
+    "arr": "02:15",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "08:55",
+    "arr": "11:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "09:05",
+    "arr": "11:20",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "13:50",
+    "arr": "16:25",
+    "dur": "3h 35m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "ZH 307",
+    "al": "Shenzhen Airlines",
+    "dep": "15:55",
+    "arr": "18:15",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "CZ 8157",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:20",
+    "arr": "02:15",
+    "dur": "2h 55m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "09:05",
+    "arr": "11:20",
+    "dur": "3h 15m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "09:10",
+    "arr": "11:10",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "14:20",
+    "arr": "16:25",
+    "dur": "3h 5m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "ZH 307",
+    "al": "Shenzhen Airlines",
+    "dep": "15:55",
+    "arr": "18:15",
+    "dur": "3h 20m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "CZ 8157",
+    "al": "China Southern Airlines",
+    "dep": "23:35",
+    "arr": "01:40",
+    "dur": "3h 5m",
+    "ac": "Airbus A320neo"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "ZH 305",
+    "al": "Shenzhen Airlines",
+    "dep": "00:15",
+    "arr": "02:15",
+    "dur": "3h",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "CZ 8075",
+    "al": "China Southern Airlines",
+    "dep": "08:55",
+    "arr": "11:20",
+    "dur": "3h 25m",
+    "ac": "Airbus A321"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "ZH 309",
+    "al": "Shenzhen Airlines",
+    "dep": "08:55",
+    "arr": "11:10",
+    "dur": "3h 15m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "CZ 8323",
+    "al": "China Southern Airlines",
+    "dep": "13:50",
+    "arr": "16:25",
+    "dur": "3h 35m",
+    "ac": "Airbus A321"
+   }
+  ]
+ },
+ "SZX-DMK": {
+  "summary": null,
+  "per_week": null,
+  "shown": null,
+  "confirmed": "October 4, 2026",
+  "rows": [
+   {
+    "date": "Fri, Oct 9",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sat, Oct 10",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Sun, Oct 11",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "SL 903",
+    "al": "Thai Lion Mentari",
+    "dep": "03:30",
+    "arr": "05:15",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Mon, Oct 12",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Tue, Oct 13",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "SL 903",
+    "al": "Thai Lion Mentari",
+    "dep": "03:30",
+    "arr": "05:15",
+    "dur": "2h 45m",
+    "ac": "Boeing 737-800"
+   },
+   {
+    "date": "Wed, Oct 14",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   },
+   {
+    "date": "Thu, Oct 15",
+    "flt": "FD 597",
+    "al": "Royal Flying Doctor Service",
+    "dep": "23:30",
+    "arr": "01:15",
+    "dur": "2h 45m",
+    "ac": "Airbus A320"
+   }
+  ]
+ }
+}

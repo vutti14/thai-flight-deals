@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ตั๋วสายการบินราคาประหยัด · ไปเป็นกลุ่ม | แดชบอร์ดตั๋วเครื่องบิน</title>
+<meta name="description" content="ราคาตั๋วไป-กลับ สายการบินราคาประหยัด บินตรงจากกรุงเทพฯ สำหรับทริปกลุ่ม">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&family=Kanit:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--p:#4b1a7a;--p2:#7a4aa8;--pl:#efe7f7;--a:#e8590c;--al:#fff1e8;--bd:#e4e0ea;--mut:#6b6577;--bg:#f7f5fa;--ink:#221c2b;
+ --ok:#137a43;--okl:#e3f5ea;--mid:#9a6200;--midl:#fff4d6;--red:#3b3f8f;--redl:#e8e9f8;--r:14px;--sh:0 1px 2px rgba(40,20,70,.06),0 4px 14px rgba(40,20,70,.06)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Sarabun','Kanit',sans-serif;color:var(--ink);background:var(--bg);font-size:15px;line-height:1.45}
+h1,h2,h3{font-family:'Kanit','Sarabun',sans-serif;font-weight:600;margin:0}
+a{color:var(--p)}
+button{font:inherit;color:inherit}
+.tabs{display:flex;gap:4px;padding:10px 14px 0;background:var(--p);overflow-x:auto}
+.tabs a{flex:none;color:#fff;opacity:.78;text-decoration:none;font:500 14.5px 'Kanit',sans-serif;padding:9px 16px;border-radius:10px 10px 0 0;min-height:42px;display:flex;align-items:center}
+.tabs a:hover{opacity:1;background:rgba(255,255,255,.08)}
+.tabs a.on{background:var(--bg);color:var(--p);opacity:1}
+header{background:linear-gradient(180deg,var(--bg),var(--bg));padding:14px 16px 4px;max-width:1320px;margin:0 auto}
+header h1{font-size:24px;color:var(--p);line-height:1.25}
+header h1 .ac{color:var(--a)}
+header .sub{color:var(--mut);font-size:13.5px;margin-top:4px}
+.wrap{max-width:1320px;margin:0 auto;padding:8px 14px 0}
+.sticky{position:sticky;top:0;z-index:20;background:rgba(247,245,250,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:8px 0;margin:0 -14px;padding-left:14px;padding-right:14px;border-bottom:1px solid transparent}
+.sticky.sc{border-bottom-color:var(--bd)}
+.grp{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:8px 10px;box-shadow:var(--sh)}
+.grp .lbl{font:500 14px 'Kanit',sans-serif;color:var(--p)}
+.step{display:flex;align-items:center;border:1px solid var(--bd);border-radius:12px;overflow:hidden;background:#fff}
+.step button{width:44px;height:44px;border:0;background:#fff;font-size:22px;color:var(--p);cursor:pointer}
+.step button:active{background:var(--pl)}
+.step input{width:56px;height:44px;border:0;border-left:1px solid var(--bd);border-right:1px solid var(--bd);text-align:center;font:600 18px 'Kanit',sans-serif;color:var(--ink);-moz-appearance:textfield}
+.step input::-webkit-inner-spin-button{-webkit-appearance:none}
+.qn{display:flex;gap:6px;flex-wrap:wrap}
+.pill{border:1px solid var(--bd);background:#fff;border-radius:999px;padding:0 14px;min-height:36px;cursor:pointer;font-size:14px;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.pill.on{background:var(--p);border-color:var(--p);color:#fff}
+.pill .ct{font-size:12px;opacity:.75}
+.sw{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:14px;min-height:36px;user-select:none}
+.sw input{appearance:none;-webkit-appearance:none;width:40px;height:24px;border-radius:12px;background:#cfc9d8;position:relative;transition:.2s;cursor:pointer;flex:none;margin:0}
+.sw input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.sw input:checked{background:var(--a)}
+.sw input:checked::after{left:19px}
+.filters{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.seg{display:inline-flex;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:3px;gap:2px;max-width:100%;overflow-x:auto}
+.seg button{border:0;background:transparent;border-radius:9px;padding:0 12px;min-height:36px;cursor:pointer;font-size:14px;white-space:nowrap;color:var(--ink)}
+.seg button.on{background:var(--p);color:#fff}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 0;max-width:100%}
+.chips::-webkit-scrollbar{display:none}
+.note{background:#fff;border:1px solid var(--bd);border-left:4px solid var(--a);border-radius:12px;padding:10px 12px;font-size:13.5px;margin:12px 0}
+.note summary{cursor:pointer;font:500 14.5px 'Kanit',sans-serif;color:var(--ink);min-height:28px}
+.note ul{margin:6px 0 0 18px;padding:0}.note li{margin:3px 0}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:12px 0 14px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:12px 14px;box-shadow:var(--sh);min-width:0;cursor:pointer;text-align:left;display:block;width:100%}
+.card:hover{border-color:var(--p2)}
+.card .k{font-size:12.5px;color:var(--mut);font-weight:600;letter-spacing:.2px}
+.card .v{font:600 26px 'Kanit',sans-serif;color:var(--p);margin:2px 0 0;line-height:1.15}
+.card .v small{font:400 13px 'Sarabun',sans-serif;color:var(--mut)}
+.card .t{font:600 14px 'Kanit',sans-serif;color:var(--a);margin-top:2px}
+.card .d{font-size:13px;margin-top:2px;color:var(--ink)}
+.card .d2{font-size:12.5px;color:var(--mut);margin-top:3px}
+.card.hero{background:linear-gradient(135deg,#4b1a7a,#7a3aa8);color:#fff;border:0}
+.card.hero .k,.card.hero .d2{color:rgba(255,255,255,.82)}.card.hero .v{color:#fff}.card.hero .t{color:#ffd2b8}.card.hero .d{color:#fff}
+.card.cn{grid-column:span 2;background:#fff6f3;border-color:#f3cdbf;cursor:default}
+.cnr{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:#fff;border:1px solid #f3d6cb;border-radius:12px;padding:8px 10px;margin-top:8px;cursor:pointer;min-height:48px}
+.cnr:hover{border-color:#e39a80}
+.cnr .rk{flex:none;width:26px;height:26px;border-radius:50%;background:#c2410c;color:#fff;font:600 13px/26px 'Kanit',sans-serif;text-align:center}
+.cnr .rk.r2{background:#f0a487}
+.cnr .ci{flex:1;min-width:0;font-size:13px;line-height:1.35}
+.cnr .ci b{font-size:14.5px}
+.cnr .cp{font:600 20px 'Kanit',sans-serif;color:var(--p);white-space:nowrap;text-align:right}
+.cnr .cp small{display:block;font:400 11.5px 'Sarabun',sans-serif;color:var(--mut)}
+section.box{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px;margin-bottom:14px;box-shadow:var(--sh)}
+section.box>h2{font-size:19px;color:var(--p);margin-bottom:4px}
+.legend{font-size:12.5px;color:var(--mut);margin:0 0 10px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+.months{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:18px}
+.cal h3{font-size:16px;margin:2px 0 6px}
+.cal table{width:100%;border-collapse:separate;border-spacing:3px;table-layout:fixed}
+.cal th{font:500 12px 'Kanit',sans-serif;color:var(--mut);padding:2px}
+.cal td{background:#faf9fc;border-radius:8px;vertical-align:top;height:72px;padding:4px;font-size:12px}
+.cal td.x{background:transparent}
+.cal td.has{background:#fff;box-shadow:inset 0 0 0 1px var(--bd)}
+.cal td.hol{box-shadow:inset 0 0 0 2px #f2b8a2}
+.cal .n{font-weight:700;font-size:12px;color:var(--mut)}
+.cal td.we .n{color:#b03a6b}
+.cal .hl{display:block;font-size:10px;color:#c2410c;font-weight:700;line-height:1.1}
+.ch{display:block;width:100%;border:0;text-align:left;background:var(--pl);border-radius:6px;padding:2px 5px;margin-top:3px;line-height:1.2;font-size:11.5px;cursor:pointer;color:var(--ink)}
+.ch b{font-weight:700}.ch .kp{display:none}.ch.mo{background:transparent;color:var(--p);font-weight:600;padding-left:2px}
+.ch.best{background:#ffd8bf}
+.ch.q-red{box-shadow:inset 3px 0 0 var(--red)}
+.ch:hover{outline:1px solid var(--p2)}
+.list{display:flex;flex-direction:column;gap:10px}
+.trip{border:1px solid var(--bd);border-radius:var(--r);padding:12px;background:#fff;scroll-margin-top:150px}
+.trip.flash{animation:fl 2.2s ease}
+@keyframes fl{0%,40%{background:#fff0d6;border-color:var(--a)}100%{background:#fff}}
+.th{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.th .city{flex:1 1 220px;min-width:0}
+.th .city b{font:600 18px 'Kanit',sans-serif;color:var(--ink)}
+.th .city .cy{color:var(--mut);font-size:13px;margin-left:4px}
+.th .dt{font-size:14px;margin-top:2px}
+.th .dt .nn{display:inline-block;background:var(--pl);color:var(--p);border-radius:6px;font-size:12px;padding:0 6px;margin-left:4px;font-weight:600}
+.th .pr{text-align:right;flex:none}
+.th .pr .pp{font:600 24px 'Kanit',sans-serif;color:var(--p);line-height:1.1}
+.th .pr .pp small{font:400 12.5px 'Sarabun',sans-serif;color:var(--mut)}
+.th .pr .tt{font-size:13px;color:var(--ink)}
+.th .pr .tt b{color:var(--a)}
+.opts{margin-top:8px;border-top:1px dashed var(--bd)}
+.op{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.6fr) auto;gap:4px 12px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--bd)}
+.op:last-child{border-bottom:0}
+.op .who{display:flex;flex-wrap:wrap;gap:4px;align-items:center;min-width:0}
+.op .tm{font-size:13.5px;min-width:0}
+.op .tm .ln{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+.op .tm .mut{font-size:12px}
+.op .p{text-align:right;font-weight:700;white-space:nowrap;font-size:15.5px}
+.op .p small{display:block;font-weight:400;font-size:11.5px;color:var(--mut)}
+.op.hid{display:none}
+.more{border:0;background:none;color:var(--p);cursor:pointer;font-size:13.5px;padding:8px 0 0;min-height:36px}
+.b{display:inline-flex;align-items:center;font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:999px;white-space:nowrap;line-height:1.5}
+.al-FD,.al-XJ,.al-AK{background:#fde8e8;color:#b4161b}
+.al-SL{background:#fbe7f3;color:#9d1468}
+.al-VZ,.al-VJ{background:#fff3cc;color:#7a5600}
+.ap-DMK{background:#fef3c7;color:#92400e;border:1px solid #f5d98a}
+.ap-BKK{background:#e0e7ff;color:#3730a3;border:1px solid #c3cdfb}
+.q-good{background:var(--okl);color:var(--ok)}
+.q-ok{background:var(--midl);color:var(--mid)}
+.q-red{background:var(--redl);color:var(--red)}
+.q-na{background:#f0eef3;color:var(--mut)}
+.tag{background:#f3f0f7;color:#4d4359}
+.tag.warn{background:#fff1e8;color:#b0410a}
+.tag.new{background:#0f9d58;color:#fff}
+.tgc{margin-top:8px;background:var(--pl);border-radius:10px;padding:7px 10px;font-size:13px}
+.tgc b{color:var(--p)}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center}
+a.open{display:inline-flex;align-items:center;gap:6px;background:var(--p);color:#fff;text-decoration:none;padding:0 14px;min-height:38px;border-radius:10px;font-size:13.5px;white-space:nowrap}
+a.open.sec{background:#fff;color:var(--p);border:1px solid var(--bd)}
+.mut{color:var(--mut);font-size:12.5px}
+.empty{color:var(--mut);padding:16px;text-align:center}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th,.tbl td{border-bottom:1px solid var(--bd);padding:7px 6px;text-align:left;vertical-align:top}
+.tbl th{font:500 13px 'Kanit',sans-serif;color:var(--p);background:var(--pl)}
+.tblw{overflow-x:auto}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px}
+.tip{border:1px solid var(--bd);border-radius:12px;padding:10px 12px;font-size:13.5px}
+.tip h3{font-size:15px;color:var(--p);margin-bottom:3px}
+details.box>summary{cursor:pointer;font:600 19px 'Kanit',sans-serif;color:var(--p);min-height:30px;list-style-position:outside}
+footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
+@media(max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+ header h1{font-size:20px}
+ .tabs a{padding:8px 12px;font-size:14px}
+ .grp{padding:6px 8px;gap:6px 10px}
+ .qn .pill{min-height:34px;padding:0 11px}
+ .cards{gap:8px}
+ .card{padding:10px 11px}
+ .card .v{font-size:21px}
+ .card.cn{grid-column:1/-1}
+ .cnr .cp{font-size:18px}
+ .cal table{border-spacing:2px}
+ .cal td{height:62px;padding:2px;font-size:10.5px;border-radius:6px}
+ .ch{font-size:10px;padding:1px 3px}
+ .ch .cty{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .ch .kp{display:inline}.ch .fp{display:none}
+ .cal td{height:40px}.cal td.has{height:62px}
+ .qn{display:none}
+ .grp .lbl{font-size:13.5px}
+ .step button{width:42px;height:42px}.step input{height:42px;width:50px}
+ .ftog{margin-left:auto}
+ .op{grid-template-columns:minmax(0,1fr) auto}
+ .op .tm{grid-column:1/-1;grid-row:2}
+ .th .pr{text-align:left;width:100%;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+ section.box{padding:12px}
+ .sticky .frow{display:none}
+ .sticky.open .frow{display:flex}
+ .bagd{display:none}
+ .filters{margin-top:8px;gap:8px}
+}
+.ftog{display:none}.bagm{display:none}@media(max-width:640px){.bagm{display:inline-flex}}
+.card.hero .v small{color:rgba(255,255,255,.75)}
+@media(max-width:640px){.ftog{display:inline-flex}}
+</style></head>
+<body>
+<nav class="tabs" aria-label="เลือกแดชบอร์ด"><a href="../">การบินไทย</a><a class="on" href="./" aria-current="page">สายการบินราคาประหยัด</a></nav>
+<header><h1>ตั๋วสายการบิน<span class="ac">ราคาประหยัด</span> ไปเป็นกลุ่ม</h1>
+<div class="sub" id="hsub"></div></header>
+<div class="wrap">
+ <div class="sticky" id="stk">
+  <div class="grp">
+   <span class="lbl">ไปกี่คน</span>
+   <div class="step"><button id="nm" aria-label="ลดจำนวนคน">−</button><input id="n" type="number" inputmode="numeric" min="1" max="99" value="1" aria-label="จำนวนคน"><button id="np" aria-label="เพิ่มจำนวนคน">+</button></div>
+   <div class="qn" id="qn"></div>
+   <label class="sw bagd"><input type="checkbox" id="bag"> รวมกระเป๋า 20 กก. <span class="mut">(ประมาณ)</span></label>
+   <button class="pill ftog" id="ftog" aria-expanded="false">ตัวกรอง</button>
+  </div>
+  <div class="filters">
+   <div class="row frow"><label class="sw bagm"><input type="checkbox" id="bag2"> รวมกระเป๋า 20 กก. <span class="mut">(ประมาณ)</span></label><div class="seg" id="mon"></div><div class="seg" id="dur"></div><div class="seg" id="apt"></div>
+    <label class="sw"><input type="checkbox" id="nored"> ซ่อนเที่ยวบินดึก</label></div>
+   <div class="chips" id="reg"></div>
+  </div>
+ </div>
+ <details class="note" id="cov"><summary>ข้อมูลครอบคลุมแค่ไหน · ข้อจำกัดที่ควรรู้</summary><div id="covb"></div></details>
+ <div class="cards" id="cards"></div>
+ <section class="box"><h2>ปฏิทินวันบินไป</h2>
+  <div class="legend"><span><i style="background:#ffd8bf"></i>ถูกสุดของเดือน</span><span><i style="background:var(--pl);box-shadow:inset 3px 0 0 var(--red)"></i>ถูกสุดเป็นเที่ยวบินดึก</span><span><i style="box-shadow:inset 0 0 0 2px #f2b8a2;background:#fff"></i>วันหยุดยาว</span><span>ราคา = ถูกสุดต่อคน ไป-กลับ · กดเพื่อดูรายละเอียด</span></div>
+  <div class="months" id="cal"></div></section>
+ <section class="box"><h2>ทริปทั้งหมด เรียงตามวันบินไป</h2><div class="legend" id="lleg"></div><div class="list" id="list"></div></section>
+ <section class="box"><h2>มีเที่ยวบินแต่ Google ไม่แสดงราคา</h2><div class="mut" style="margin-bottom:8px">ตารางบินยืนยันแล้ว ให้เช็กราคาที่เว็บสายการบินโดยตรง</div><div id="sched"></div></section>
+ <section class="box"><h2>ค่ากระเป๋าโหลด 20 กก. (ประมาณการ)</h2><div id="bagt"></div></section>
+ <details class="box" open id="tipsbox" style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px;margin-bottom:14px;box-shadow:var(--sh)"><summary>เคล็ดลับจองตั๋วไปเป็นกลุ่ม</summary><div class="tips" id="tips" style="margin-top:10px"></div></details>
+ <footer id="foot"></footer>
+</div>
+<script>
+const DB=/*__DATA__*/null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[\x26<>"']/g,c=>({"\x26":"\x26amp;","<":"\x26lt;",">":"\x26gt;",'"':"\x26quot;","'":"\x26#39;"}[c]));
+const TH_DAY=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."],TH_MON=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
+const TH_MONF=["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
+const EN_DAY={Mon:"จ.",Tue:"อ.",Wed:"พ.",Thu:"พฤ.",Fri:"ศ.",Sat:"ส.",Sun:"อา."};
+const D=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
+const fmt=n=>Math.round(n).toLocaleString("en-US");
+const fd=s=>{const x=D(s);return `${TH_DAY[x.getDay()]} ${x.getDate()} ${TH_MON[x.getMonth()]}`};
+const fdr=(a,b)=>{const x=D(a),y=D(b);return x.getMonth()===y.getMonth()?`${TH_DAY[x.getDay()]} ${x.getDate()} – ${TH_DAY[y.getDay()]} ${y.getDate()} ${TH_MON[y.getMonth()]}`:`${fd(a)} – ${fd(b)}`};
+const fdy=s=>{const x=D(s);return `${x.getDate()} ${TH_MON[x.getMonth()]} ${x.getFullYear()+543}`};
+const nights=(a,b)=>Math.round((D(b)-D(a))/864e5);
+const durL=n=>`${n+1} วัน ${n} คืน`;
+const AL={FD:"ไทยแอร์เอเชีย",XJ:"ไทยแอร์เอเชีย เอ็กซ์",AK:"แอร์เอเชีย",SL:"ไทยไลออนแอร์",VZ:"ไทยเวียตเจ็ท",VJ:"เวียตเจ็ท",DD:"นกแอร์"};
+const APN={DMK:"ดอนเมือง",BKK:"สุวรรณภูมิ"};
+const REG=[["all","ทุกที่"],["china","จีน"],["hk-mo","ฮ่องกง · มาเก๊า"],["taiwan","ไต้หวัน"],["japan","ญี่ปุ่น"],["korea","เกาหลี"],["vietnam","เวียดนาม"],["india","อินเดีย"],["myanmar","เมียนมา"],["asean","อาเซียน"]];
+const HOL={"2026-12-05":"วันพ่อ","2026-12-07":"หยุดชดเชย","2026-12-10":"รัฐธรรมนูญ","2026-12-31":"สิ้นปี","2027-01-01":"ปีใหม่"};
+// ---- bag estimates: THB per person per sector, 20 kg, bought online at booking (sources in table) ----
+function bagSector(a,m){if(a==="FD"||a==="AK")return 1830;if(a==="XJ")return 2000;if(a==="VZ")return m<120?790:m<=240?1300:1450;if(a==="VJ")return 760;return null}
+const toMin=t=>{const [h,m]=t.split(":").map(Number);return h*60+m};
+function q(dep,arr,next){const d=toMin(dep),a=toMin(arr);if(next||a<d)return "red";
+  if(d>=420&&d<=900&&a<=1320)return "good";if(d>=300&&d<1200&&a<=1410)return "ok";return "red"}
+const QL={good:"ดี",ok:"พอใช้",red:"ดึก",na:"ไม่ทราบ"};
+function retQ(c,a){const ri=DB.rinfo[c+"|"+a];if(!ri||!ri.ret_times||!ri.ret_times.length)return {q:"na"};
+  let best=null;const rank={good:0,ok:1,red:2};
+  ri.ret_times.forEach(s=>{const m=s.match(/(\d\d:\d\d)→(\d\d:\d\d)(\+1)?/);if(!m)return;const qq=q(m[1],m[2],!!m[3]);if(!best||rank[qq]<rank[best.q])best={q:qq,t:m[1],arr:m[2]}});
+  return best||{q:"na"}}
+function tags(o){const ri=DB.rinfo[o.c+"|"+o.a];const out=[];if(!ri)return out;
+  if(ri.start&&o.d<ri.start)out.push(["warn","เริ่มบิน "+fd(ri.start)]);
+  if(ri.status==="charter")out.push(["warn","เช่าเหมาลำ"]);
+  if(/\bNew\b/.test(ri.note||""))out.push(["new","เส้นทางใหม่"]);
+  if(ri.days&&ri.days!=="daily"&&ri.days.includes("/"))out.push(["","บินเฉพาะ "+ri.days.split("/").map(x=>EN_DAY[x]||x).join(" ")]);
+  return out}
+const grpT=(p,pre,suf)=>st.n>1?`${pre}${st.n} คน รวม ฿${fmt(p*st.n)}${suf} · `:"";
+const st={n:1,bag:false,mon:"all",dur:"all",apt:"all",reg:"all",nored:false};
+const C=c=>DB.cities[c]||{th:c,country_th:"",region:""};
+// enrich options
+DB.opts.forEach(o=>{o.nt=nights(o.d,o.r);o.qo=q(o.od,o.oa,o.nx);o.rq=retQ(o.c,o.a);const b=bagSector(o.a,o.m);o.bag=b==null?null:b*2;o.key=o.c+"_"+o.d+"_"+o.r});
+const price=o=>o.p+(st.bag&&o.bag!=null?o.bag:0);
+const isRed=o=>o.qo==="red"||o.rq.q==="red";
+const goodBoth=o=>o.qo!=="red"&&(o.rq.q==="good"||o.rq.q==="ok")&&(o.qo==="good"||o.rq.q==="good");
+function filtered(){return DB.opts.filter(o=>(st.mon==="all"||o.d.slice(0,7)===st.mon)&&(st.dur==="all"||o.nt===+st.dur)&&(st.apt==="all"||o.o===st.apt)
+  &&(st.reg==="all"||C(o.c).region===st.reg)&&(!st.nored||!isRed(o))&&(!st.bag||o.bag!=null))}
+function searches(opts){const m={};opts.forEach(o=>{(m[o.key]=m[o.key]||{key:o.key,c:o.c,d:o.d,r:o.r,nt:o.nt,u:o.u,opts:[]}).opts.push(o)});
+  return Object.values(m).map(s=>{s.opts.sort((a,b)=>price(a)-price(b));const seen=new Set(),A=[],B=[];s.opts.forEach(o=>{(seen.has(o.a)?B:A).push(o);seen.add(o.a)});s.opts=A.concat(B);s.best=s.opts[0];return s}).sort((a,b)=>a.d.localeCompare(b.d)||price(a.best)-price(b.best))}
+// ---------- header / controls ----------
+function readHash(){const h=new URLSearchParams(location.hash.slice(1));
+  if(h.get("n"))st.n=Math.max(1,Math.min(99,+h.get("n")||1));
+  ["mon","dur","apt","reg"].forEach(k=>{if(h.get(k))st[k]=h.get(k)});if(h.get("bag")==="1")st.bag=true;if(h.get("nored")==="1")st.nored=true}
+function writeHash(){const h=new URLSearchParams();if(st.n!==1)h.set("n",st.n);["mon","dur","apt","reg"].forEach(k=>{if(st[k]!=="all")h.set(k,st[k])});
+  if(st.bag)h.set("bag",1);if(st.nored)h.set("nored",1);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search)}
+function seg(el,items,k){el.innerHTML=items.map(([v,l])=>`<button data-v="${v}" class="${st[k]===v?"on":""}" aria-pressed="${st[k]===v}">${l}</button>`).join("");
+  el.onclick=e=>{const b=e.target.closest("button");if(!b)return;st[k]=b.dataset.v;render()}}
+function controls(){
+  $("n").value=st.n;$("qn").innerHTML=[1,5,10,15,20,30].map(v=>`<button class="pill ${st.n===v?"on":""}" data-n="${v}">${v}</button>`).join("");
+  seg($("mon"),[["all","ทุกเดือน"],["2026-11","พ.ย."],["2026-12","ธ.ค."],["2027-01","ม.ค."]],"mon");
+  seg($("dur"),[["all","ทุกแบบ"],["2","3 วัน 2 คืน"],["3","4 วัน 3 คืน"]],"dur");
+  seg($("apt"),[["all","ทุกสนามบิน"],["DMK","ดอนเมือง DMK"],["BKK","สุวรรณภูมิ BKK"]],"apt");
+  const cnt={};DB.opts.forEach(o=>{const r=C(o.c).region;cnt[r]=cnt[r]||new Set();cnt[r].add(o.c)});
+  $("reg").innerHTML=REG.filter(([k])=>k==="all"||cnt[k]).map(([k,l])=>`<button class="pill ${st.reg===k?"on":""}" data-r="${k}" aria-pressed="${st.reg===k}">${l}${k!=="all"?` <span class="ct">${cnt[k].size}</span>`:""}</button>`).join("");
+  $("bag").checked=st.bag;$("bag2").checked=st.bag;$("nored").checked=st.nored;
+  const nf=["mon","dur","apt"].filter(k=>st[k]!=="all").length+(st.bag?1:0)+(st.nored?1:0);$("ftog").textContent=nf?`ตัวกรอง (${nf})`:"ตัวกรอง"}
+// ---------- cards ----------
+function cardOne(k,o,cls){if(!o)return `<div class="card"><div class="k">${k}</div><div class="v">–</div><div class="d2">ไม่มีทริปตามตัวกรอง</div></div>`;
+  return `<button class="card ${cls||""}" data-go="${o.key}"><div class="k">${k}</div><div class="v">฿${fmt(price(o))} <small>/คน</small></div>
+   <div class="t">${esc(C(o.c).th)} · ${AL[o.a]}</div><div class="d">${fdr(o.d,o.r)} · ${durL(o.nt)}</div><div class="d2">ไป ${o.od} · ${QL[o.qo]}${o.rq.q!=="na"?` / กลับ ${o.rq.t} · ${QL[o.rq.q]}`:""}</div>
+   <div class="d2">${grpT(price(o),"","")}${o.o}${st.bag?" · รวมกระเป๋า ~":""}</div></button>`}
+function cnCard(opts){const A=opts.filter(o=>C(o.c).region==="china").sort((a,b)=>price(a)-price(b));const a=A[0];const b=a&&A.find(x=>x.c!==a.c);
+  const row=(o,i)=>o?`<button class="cnr" data-go="${o.key}"><span class="rk ${i?"r2":""}">${i+1}</span><span class="ci"><b>${esc(C(o.c).th)}</b> · ${AL[o.a]} <span class="b ap-${o.o}">${o.o}</span><br>${fdr(o.d,o.r)} · ${durL(o.nt)} ${qb(o.qo,"ไป")} ${o.rq.q!=="na"?qb(o.rq.q,"กลับ"):""}</span><span class="cp">฿${fmt(price(o))}<small>${st.n>1?`${st.n} คน ฿${fmt(price(o)*st.n)}`:"/คน"}</small></span></button>`:"";
+  return `<div class="card cn"><div class="k">ถูกสุดจีน (2 เมืองไม่ซ้ำกัน)</div>${a?row(a,0)+row(b,1):`<div class="d2">ไม่มีทริปจีนตามตัวกรอง</div>`}</div>`}
+function renderCards(opts){const min=f=>opts.filter(f).reduce((x,y)=>!x||price(y)<price(x)?y:x,null);
+  $("cards").innerHTML=cardOne("ถูกสุดต่อคน",min(()=>true),"hero")+cardOne("ถูกสุด + เวลาบินดี",min(goodBoth))+cnCard(opts)
+   +cardOne("ญี่ปุ่น ถูกสุด",min(o=>C(o.c).region==="japan"))+cardOne("เวียดนาม ถูกสุด",min(o=>C(o.c).region==="vietnam"))
+   +cardOne("ฮ่องกง · มาเก๊า · ไต้หวัน ถูกสุด",min(o=>["hk-mo","taiwan"].includes(C(o.c).region)))+cardOne("อาเซียน ถูกสุด",min(o=>C(o.c).region==="asean"))}
+// ---------- calendar ----------
+function renderCal(S){const mons=st.mon==="all"?["2026-11","2026-12","2027-01"]:[st.mon];const by={};S.forEach(s=>(by[s.d]=by[s.d]||[]).push(s));
+  const minM={};S.forEach(s=>{const k=s.d.slice(0,7);if(minM[k]==null||price(s.best)<minM[k])minM[k]=price(s.best)});
+  $("cal").innerHTML=mons.map(k=>{const [y,m]=k.split("-").map(Number);const first=new Date(y,m-1,1),days=new Date(y,m,0).getDate();
+   let h=`<div class="cal"><h3>${TH_MONF[m-1]} ${y+543}</h3><table><thead><tr>${["จ.","อ.","พ.","พฤ.","ศ.","ส.","อา."].map(x=>`<th>${x}</th>`).join("")}</tr></thead><tbody><tr>`;
+   const off=(first.getDay()+6)%7;for(let i=0;i<off;i++)h+=`<td class="x"></td>`;
+   for(let d=1;d<=days;d++){const ds=`${k}-${String(d).padStart(2,"0")}`,wd=(off+d-1)%7,L=(by[ds]||[]).slice().sort((a,b)=>price(a.best)-price(b.best));
+    h+=`<td class="${L.length?"has":""} ${wd>=5?"we":""} ${HOL[ds]?"hol":""}"><span class="n">${d}</span>${HOL[ds]?`<span class="hl">${HOL[ds]}</span>`:""}`+
+     L.slice(0,4).map(s=>`<button class="ch ${price(s.best)===minM[k]?"best":""} ${isRed(s.best)?"q-red":""}" data-go="${s.key}" title="${esc(C(s.c).th)} ${durL(s.nt)} ฿${fmt(price(s.best))}"><span class="cty">${esc(C(s.c).th)}</span> <b class="kp">${(price(s.best)/1000).toFixed(1)}k</b><b class="fp">฿${fmt(price(s.best))}</b></button>`).join("")+
+     (L.length>4?`<button class="ch mo" data-go="${L[4].key}">+${L.length-4} ทริป</button>`:"")+`</td>`;
+    if(wd===6&&d<days)h+=`</tr><tr>`}
+   const tail=(7-(off+days)%7)%7;for(let i=0;i<tail;i++)h+=`<td class="x"></td>`;return h+`</tr></tbody></table></div>`}).join("")}
+// ---------- list ----------
+function qb(qq,lbl,t){return `<span class="b q-${qq}" title="${lbl}${t?" "+t:""}">${lbl} ${QL[qq]}</span>`}
+function tgLine(s){const code=DB.tgmap[s.c]||s.c,m=s.d.slice(0,7),x=DB.tgx[code+"|"+s.d+"|"+s.r],t=DB.tg[code+"|"+m];if(!t&&!x)return "";
+  const lc=s.best,base=lc.p,bagRt=lc.bag;
+  if(x){const df=x-base;return `<div class="tgc">การบินไทยวันเดียวกัน <b>฿${fmt(x)}</b>/คน · ${df>0?`จ่ายเพิ่ม <b>฿${fmt(df)}</b>/คน`:`ถูกกว่า ฿${fmt(-df)}`} ได้กระเป๋าโหลด + อาหาร${bagRt!=null&&df>0?` · เทียบแบบรวมกระเป๋าแล้ว ต่างกันราว ฿${fmt(df-bagRt)}`:""}</div>`}
+  const df=t.p-base;
+  return `<div class="tgc">การบินไทย ถูกสุดเดือนนี้ <b>฿${fmt(t.p)}</b>${t.approx?" (ประมาณ)":""} · ${fdr(t.dep,t.ret)} · ${df>0?`จ่ายเพิ่ม <b>฿${fmt(df)}</b>/คน${st.n>1?` (${st.n} คน ฿${fmt(df*st.n)})`:""}`:`<b>ถูกกว่า ฿${fmt(-df)}</b>/คน`} ได้กระเป๋าโหลดและอาหาร${bagRt!=null&&df>0?` · ถ้าเผื่อค่ากระเป๋า LCC แล้ว ต่างกันราว ฿${fmt(Math.max(0,df-bagRt))}`:""} <span class="mut">(คนละวันได้ · ข้อมูลจากแดชบอร์ดการบินไทย)</span></div>`}
+function opRow(o,i){const tg=tags(o).map(([c,l])=>`<span class="b tag ${c}">${l}</span>`).join("");
+  const bagTxt=o.bag==null?(o.a==="SL"?"กระเป๋า: ดูหมายเหตุ":"กระเป๋า: ไม่ทราบ"):`+กระเป๋า ~฿${fmt(o.bag)}`;
+  return `<div class="op ${i>=2?"hid":""}"><div class="who"><span class="b al-${o.a}">${AL[o.a]}</span><span class="b ap-${o.o}" title="${APN[o.o]}">${o.o}</span>${tg}</div>
+   <div class="tm"><div class="ln">ไป ${o.od} → ${o.oa}${o.nx?"<sup>+1</sup>":""} <span class="mut">${Math.floor(o.m/60)} ชม. ${o.m%60?o.m%60+" น.":""}</span> ${qb(o.qo,"ไป")}</div>
+    <div class="ln mut">${o.rq.q!=="na"?`กลับ (เที่ยวที่เวลาดีสุด) ${o.rq.t} → ${o.rq.arr} ${qb(o.rq.q,"กลับ")}`:"กลับ: ดูเวลาใน Google Flights"}</div></div>
+   <div class="p">฿${fmt(price(o))}<small>${st.bag?(o.bag!=null?"รวมกระเป๋า ~":""):bagTxt}</small></div></div>`}
+function renderList(S){$("lleg").innerHTML=`<span><span class="b q-good">ดี</span> ออก 07:00–15:00 ถึงก่อน 22:00</span><span><span class="b q-ok">พอใช้</span> ออกเช้ามืด 05:00–07:00 หรือ 15:00–20:00</span><span><span class="b q-red">ดึก</span> ออกหลัง 20:00 / ก่อน 05:00 หรือถึงหลังเที่ยงคืน</span><span>ราคาไป-กลับต่อคน ชั้นประหยัด ไม่รวมกระเป๋าโหลด (ถือขึ้นเครื่อง 7 กก.)</span>`;
+  if(!S.length){$("list").innerHTML=`<div class="empty">ไม่มีทริปตามตัวกรอง ลองล้างตัวกรองดูนะ</div>`;return}
+  $("list").innerHTML=S.map(s=>{const c=C(s.c),b=s.best;
+   return `<article class="trip" id="t_${s.key}"><div class="th"><div class="city"><b>${esc(c.th)}</b><span class="cy">${esc(c.en)} · ${esc(c.country_th)} · ${s.c}</span>
+     <div class="dt">${fdr(s.d,s.r)} <span class="nn">${durL(s.nt)}</span></div></div>
+     <div class="pr"><div class="pp">฿${fmt(price(b))} <small>/คน</small></div>${st.n>1?`<div class="tt">${st.n} คน รวม <b>฿${fmt(price(b)*st.n)}</b></div>`:""}</div></div>
+    <div class="opts">${s.opts.map(opRow).join("")}</div>${s.opts.length>2?`<button class="more" data-more>ดูอีก ${s.opts.length-2} เที่ยวบิน ▾</button>`:""}
+    ${tgLine(s)}<div class="links"><a class="open" href="${esc(s.u)}" target="_blank" rel="noopener">ค้นใน Google Flights ↗</a><span class="mut">ราคา ณ ${fdy(DB.captured)} · ราคาเปลี่ยนได้ทุกวัน</span></div></article>`}).join("")}
+// ---------- static sections ----------
+function renderStatic(){
+  const sc=DB.sched,byc={};sc.forEach(o=>{const k=o.c+"|"+o.a;(byc[k]=byc[k]||{c:o.c,a:o.a,o:o.o,t:new Set(),d:new Set()});byc[k].t.add(o.od+"→"+o.oa+(o.nx?"+1":""));byc[k].d.add(o.d)});
+  $("sched").innerHTML=`<div class="tblw"><table class="tbl"><thead><tr><th>ปลายทาง</th><th>สายการบิน</th><th>เวลาออก (ไป)</th><th>วันที่ค้น</th></tr></thead><tbody>`+
+   Object.values(byc).map(x=>`<tr><td>${esc(C(x.c).th)} (${x.c})</td><td><span class="b al-${x.a}">${AL[x.a]}</span> <span class="b ap-${x.o}">${x.o}</span></td><td>${[...x.t].join(", ")}</td><td>${[...x.d].sort().map(fd).join(", ")}</td></tr>`).join("")+
+   `</tbody></table></div><div class="mut" style="margin-top:6px">เช็กราคาไทยแอร์เอเชีย / แอร์เอเชีย เอ็กซ์ ได้ที่ airasia.com (ปฏิทินราคาถูก)</div>`;
+  $("bagt").innerHTML=`<div class="tblw"><table class="tbl"><thead><tr><th>สายการบิน</th><th>20 กก. ต่อคน ต่อเที่ยว (ซื้อตอนจอง)</th><th>ที่ใช้คำนวณ (ไป-กลับ)</th><th>แหล่งข้อมูล</th></tr></thead><tbody>
+   <tr><td><span class="b al-FD">ไทยแอร์เอเชีย</span> / <span class="b al-AK">แอร์เอเชีย</span></td><td>~฿1,670–1,990 (ระหว่างประเทศ)</td><td>~฿3,660</td><td><a href="https://www.airasia.com/aa/pdf/about-us/thth-fee-charges-fd.pdf" target="_blank" rel="noopener">ตารางค่าธรรมเนียม FD (airasia.com)</a></td></tr>
+   <tr><td><span class="b al-XJ">ไทยแอร์เอเชีย เอ็กซ์</span></td><td>~฿2,000 (เส้นทางไกล ประมาณคร่าว ๆ)</td><td>~฿4,000</td><td><a href="https://www.airasia.com/aa/pdf/about-us/fee-charges-d7.pdf" target="_blank" rel="noopener">ตารางค่าธรรมเนียมกลุ่ม AirAsia X</a> · ยืนยันตอนจอง</td></tr>
+   <tr><td><span class="b al-VZ">ไทยเวียตเจ็ท</span></td><td>~฿790 (บินไม่ถึง 2 ชม.) · ~฿1,300 (2–4 ชม.) · ~฿1,450 (เกิน 4 ชม.)</td><td>฿1,580–2,900</td><td><a href="https://uat.skyfun.biz/page/taxes-and-fares" target="_blank" rel="noopener">ตารางค่าธรรมเนียม Thai Vietjet</a> · <a href="https://vietjetthai.com/travelexpense" target="_blank" rel="noopener">vietjetthai.com</a></td></tr>
+   <tr><td><span class="b al-VJ">เวียตเจ็ท (เวียดนาม)</span></td><td>~฿600–900 (480,000–720,000 ดอง)</td><td>~฿1,520</td><td><a href="https://www.vietjetair.com/en/pages/to-have-a-good-flight-1599448842652/fee-and-charges-1599130343851" target="_blank" rel="noopener">vietjetair.com ค่าธรรมเนียม</a></td></tr>
+   <tr><td><span class="b al-SL">ไทยไลออนแอร์</span></td><td>ตั๋ว Lion Economy รวม 20 กก. แล้ว · ตั๋ว Lion Promo ไม่รวม (ยกเว้นบางเส้นทาง)</td><td>ไม่คำนวณ (ไม่รู้ว่าราคาใน Google เป็นตั๋วแบบไหน)</td><td><a href="https://www.lionairthai.com/en/ThaiLionAir-Experience/Baggage-Allowance" target="_blank" rel="noopener">lionairthai.com</a></td></tr>
+   </tbody></table></div><p class="mut">ตัวเลขทั้งหมดเป็น<b>ค่าประมาณ</b>จากตารางค่าธรรมเนียมที่สายการบินเผยแพร่ (เช็กเมื่อ ${fdy(DB.captured)}) ราคาจริงขึ้นกับเส้นทางและช่วงเวลาที่ซื้อ ซื้อที่สนามบินแพงกว่ามาก ถ้าเปิดสวิตช์ “รวมกระเป๋า” ระบบจะซ่อนเที่ยวบินที่ยังประมาณค่ากระเป๋าไม่ได้ (ไทยไลออนแอร์)</p>`;
+  $("tips").innerHTML=[
+   ["เช็กราคาด้วยจำนวนคนจริง","ตั๋วราคาถูกสุดมักมีไม่กี่ที่ ลองค้นด้วยจำนวนคนจริง หรือแบ่งจองทีละ 4–6 คน ราคาในหน้านี้เป็นราคาสำหรับ 1 ที่นั่ง"],
+   ["10 คนขึ้นไป ขอราคากรุ๊ป","แอร์เอเชีย ไลออนแอร์ และเวียตเจ็ทมีแบบฟอร์มจองแบบกลุ่ม เทียบราคากับการแบ่งจองก่อน และถามเงื่อนไขเปลี่ยนชื่อ มัดจำ และวันออกตั๋วให้ชัด"],
+   ["ซื้อกระเป๋าตอนจอง","ซื้อออนไลน์ล่วงหน้าถูกกว่าที่สนามบินมาก น้ำหนักถือขึ้นเครื่องจำกัด 7 กก. ต่อคนและมีการชั่งจริง แอร์เอเชียให้รวมน้ำหนักกระเป๋ากันได้เฉพาะคนในเลขจองเดียวกันที่เช็กอินพร้อมกัน"],
+   ["อยากนั่งด้วยกัน","การเลือกที่นั่งเสียเงินเพิ่ม ถ้าไม่ซื้อที่นั่ง ให้เช็กอินออนไลน์พร้อมกันทันทีที่เปิด หรือซื้อที่นั่งให้แกนนำกลุ่มก่อน"],
+   ["ดอนเมือง vs สุวรรณภูมิ","แอร์เอเชีย ไลออนแอร์ และนกแอร์ใช้ดอนเมือง (อาคาร 1 ระหว่างประเทศ) ส่วนไทยเวียตเจ็ทใช้สุวรรณภูมิ นัดจุดเจอให้ถูกสนามบิน สองสนามบินห่างกันราว 1 ชม. ขึ้นไปทางถนน"],
+   ["เผื่อเวลาขากลับ","อย่ากลับด้วยเที่ยวสุดท้ายถ้าวันรุ่งขึ้นต้องทำงาน ถ้าเที่ยวบินล่าช้าหรือยกเลิก สายการบินราคาประหยัดมักไม่ย้ายไปสายการบินอื่นให้"],
+   ["ดูชนิดตั๋วก่อนจ่าย","ชื่อแพ็กเกจของแต่ละสายต่างกัน (Value Pack / Premium Flex / Lion Economy / Deluxe) บางแบบรวมกระเป๋าและอาหารแล้ว อาจคุ้มกว่าซื้อแยก อย่าลืมดูค่าธรรมเนียมบัตรด้วย"],
+   ["เที่ยวบินดึก","หลายเส้นทาง (ญี่ปุ่น เกาหลี อินเดีย เฉิงตู) มีแต่เที่ยวดึก ถ้าไปเป็นกลุ่มควรจองโรงแรมให้เช็กอินเช้าได้ หรือเผื่อวันพัก"]
+  ].map(([h,t])=>`<div class="tip"><h3>${h}</h3>${t}</div>`).join("");
+  const em=DB.empty;
+  $("covb").innerHTML=`<ul>
+   <li>ค้นใน Google Flights เมื่อ <b>${fdy(DB.captured)}</b>: ${new Set(DB.opts.map(o=>o.key)).size + em.length} การค้นหา แบบบินตรง ชั้นประหยัด 1 คน ไป-กลับ เฉพาะไทยแอร์เอเชีย แอร์เอเชีย เอ็กซ์ ไทยไลออนแอร์ ไทยเวียตเจ็ท เวียตเจ็ท และนกแอร์</li>
+   <li>ค้นเฉพาะช่วงวันที่ที่เลือกไว้ (สุดสัปดาห์ และวันหยุดยาว 5–7 ธ.ค., 10–13 ธ.ค.) ใน พ.ย. 69 – ม.ค. 70 ไม่ใช่ทุกวัน วันอื่นอาจถูกหรือแพงกว่านี้ กด “ค้นใน Google Flights” เพื่อดูกราฟราคาทั้งเดือน</li>
+   <li>บางเที่ยวบิน Google ไม่แสดงราคา (ส่วนใหญ่เป็นแอร์เอเชีย เอ็กซ์ ญี่ปุ่น และไทยแอร์เอเชีย ไทเป) ดูได้ในหัวข้อ “มีเที่ยวบินแต่ Google ไม่แสดงราคา”</li>
+   <li>ค้นแล้วไม่เจอราคาเลย ${em.length} ครั้ง: ${em.map(e=>`${esc(C(e.c).th)} ${fdr(e.d,e.r)}`).join(" · ")}</li>
+   <li>บางสายการบินไม่ขึ้นใน Google บางเส้นทาง เช่น ไทยแอร์เอเชีย กวางโจว/เฉิงตู, ไทยไลออนแอร์ เซี่ยงไฮ้/เซินเจิ้น, ไทยเวียตเจ็ท ฮานอย/โฮจิมินห์/โกลกาตา ราคาจริงอาจถูกกว่าที่แสดง</li>
+   <li>เวลาขากลับใช้ตารางบินปกติของสายการบินนั้น (ไม่ใช่เวลาของตั๋วใบนั้นโดยตรง) · ราคาไม่รวมกระเป๋าโหลด ยกเว้นเปิดสวิตช์ “รวมกระเป๋า” (ประมาณการ)</li>
+   <li>หน้านี้แสดงเฉพาะข้อมูลสาธารณะ ไม่มีข้อมูลส่วนตัว</li></ul>`;
+  $("hsub").textContent=`บินตรงจากกรุงเทพฯ (ดอนเมือง / สุวรรณภูมิ) · ราคาไป-กลับต่อคน ชั้นประหยัด · ${new Set(DB.opts.map(o=>o.c)).size} เมือง · ค้นเมื่อ ${fdy(DB.captured)}`;
+  $("foot").innerHTML=`ข้อมูล: Google Flights (ค้นเมื่อ ${fdy(DB.captured)}), ตารางบินจาก AeroRoutes · 2LNR · ข่าวสายการบิน, ราคาการบินไทยจาก<a href="../">แดชบอร์ดการบินไทย</a> (รอบ ${fdy(DB.tg_snap)}) · ราคาและตารางบินเปลี่ยนได้ ตรวจสอบกับสายการบินก่อนจองทุกครั้ง`}
+// ---------- render ----------
+function render(){writeHash();controls();const F=filtered();const S=searches(F);renderCards(F);renderCal(S);renderList(S)}
+function go(k){const el=document.getElementById("t_"+k);if(!el){st.mon="all";st.dur="all";st.apt="all";st.reg="all";st.nored=false;render();return go2(k)}go2(k)}
+function go2(k){const el=document.getElementById("t_"+k);if(!el)return;el.scrollIntoView({behavior:"smooth",block:"start"});el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
+  const m=e.target.closest("[data-more]");if(m){m.parentElement.querySelectorAll(".op.hid").forEach(x=>x.classList.remove("hid"));m.remove();return}
+  const n=e.target.closest("[data-n]");if(n){st.n=+n.dataset.n;render();return}
+  const r=e.target.closest("[data-r]");if(r){st.reg=r.dataset.r;render();return}});
+$("nm").onclick=()=>{st.n=Math.max(1,st.n-1);render()};$("np").onclick=()=>{st.n=Math.min(99,st.n+1);render()};
+$("n").onchange=e=>{st.n=Math.max(1,Math.min(99,Math.round(+e.target.value)||1));render()};
+$("bag").onchange=$("bag2").onchange=e=>{st.bag=e.target.checked;render()};$("nored").onchange=e=>{st.nored=e.target.checked;render()};
+$("ftog").onclick=()=>{const s=$("stk");s.classList.toggle("open");$("ftog").setAttribute("aria-expanded",s.classList.contains("open"))};
+addEventListener("scroll",()=>$("stk").classList.toggle("sc",scrollY>120),{passive:true});
+readHash();renderStatic();render();
+</script>
+</body></html>

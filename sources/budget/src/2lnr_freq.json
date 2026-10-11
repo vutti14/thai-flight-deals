@@ -1,0 +1,1085 @@
+{
+ "BKK-BOM": {
+  "VZ": {
+   "wk": 5,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 6,
+   "first": "2026-10-09",
+   "last": "2026-10-13"
+  }
+ },
+ "BKK-CCU": {
+  "VZ": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-14"
+  }
+ },
+ "BKK-CKG": {
+  "VZ": {
+   "wk": 2,
+   "dows": [
+    "Wed",
+    "Sat"
+   ],
+   "span": 7,
+   "first": "2026-10-10",
+   "last": "2026-10-14"
+  }
+ },
+ "BKK-CXR": {
+  "VZ": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "BKK-DAD": {
+  "VZ": {
+   "wk": 21,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "BKK-ENH": {
+  "VZ": {
+   "wk": 1,
+   "dows": [
+    "Tue",
+    "Thu"
+   ],
+   "span": 15,
+   "first": "2026-10-08",
+   "last": "2026-10-22"
+  }
+ },
+ "BKK-HAN": {
+  "VZ": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Sat",
+    "Sun"
+   ],
+   "span": 5,
+   "first": "2026-10-10",
+   "last": "2026-10-13"
+  },
+  "VJ": {
+   "wk": 8,
+   "dows": [
+    "Mon",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 5,
+   "first": "2026-10-09",
+   "last": "2026-10-12"
+  }
+ },
+ "BKK-HGH": {
+  "VZ": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-13"
+  }
+ },
+ "BKK-ICN": {
+  "VZ": {
+   "wk": 3,
+   "dows": [
+    "Thu",
+    "Fri",
+    "Sat"
+   ],
+   "span": 3,
+   "first": "2026-10-08",
+   "last": "2026-10-10"
+  }
+ },
+ "BKK-KIX": {
+  "VZ": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-13"
+  }
+ },
+ "BKK-KTI": {
+  "VZ": {
+   "wk": 7,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 6,
+   "first": "2026-10-09",
+   "last": "2026-10-14"
+  }
+ },
+ "BKK-KUL": {
+  "VZ": {
+   "wk": 5,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 5,
+   "first": "2026-10-09",
+   "last": "2026-10-13"
+  }
+ },
+ "BKK-NRT": {
+  "VZ": {
+   "wk": 5,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 6,
+   "first": "2026-10-09",
+   "last": "2026-10-13"
+  }
+ },
+ "BKK-PQC": {
+  "VZ": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "BKK-PVG": {
+  "VZ": {
+   "wk": 3,
+   "dows": [
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 4,
+   "first": "2026-10-09",
+   "last": "2026-10-11"
+  }
+ },
+ "BKK-SGN": {
+  "VZ": {
+   "wk": 1,
+   "dows": [
+    "Sat"
+   ],
+   "span": 4,
+   "first": "2026-10-10",
+   "last": "2026-10-10"
+  },
+  "VJ": {
+   "wk": 16,
+   "dows": [
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 4,
+   "first": "2026-10-08",
+   "last": "2026-10-11"
+  }
+ },
+ "BKK-TAO": {
+  "VZ": {
+   "wk": 3,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat"
+   ],
+   "span": 7,
+   "first": "2026-10-10",
+   "last": "2026-10-15"
+  }
+ },
+ "BKK-TPE": {
+  "VZ": {
+   "wk": 7,
+   "dows": [
+    "Thu",
+    "Fri",
+    "Sat"
+   ],
+   "span": 3,
+   "first": "2026-10-08",
+   "last": "2026-10-10"
+  }
+ },
+ "BKK-YNT": {
+  "VZ": {
+   "wk": 3,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat"
+   ],
+   "span": 15,
+   "first": "2026-10-10",
+   "last": "2026-10-24"
+  }
+ },
+ "DMK-ALA": {
+  "XJ": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-09",
+   "last": "2026-10-19"
+  }
+ },
+ "DMK-AMD": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-10",
+   "last": "2026-10-20"
+  }
+ },
+ "DMK-BLR": {
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-09",
+   "last": "2026-10-19"
+  }
+ },
+ "DMK-BOM": {
+  "SL": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-CAN": {
+  "SL": {
+   "wk": 5,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat"
+   ],
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  },
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-CCU": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Thu",
+    "Sat"
+   ],
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-13"
+  },
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-CGK": {
+  "SL": {
+   "wk": 5,
+   "dows": [
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  },
+  "ID": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-CGO": {
+  "SL": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-CKG": {
+  "SL": {
+   "wk": 3,
+   "dows": [
+    "Thu",
+    "Fri",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  },
+  "FD": {
+   "wk": 10,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-CMB": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-COK": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-CSX": {
+  "SL": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  },
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-CTS": {
+  "XJ": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-08",
+   "last": "2026-10-18"
+  }
+ },
+ "DMK-CXR": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-DAD": {
+  "FD": {
+   "wk": 21,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-DEL": {
+  "XJ": {
+   "wk": 5,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 9,
+   "first": "2026-10-10",
+   "last": "2026-10-18"
+  }
+ },
+ "DMK-DPS": {
+  "SL": {
+   "wk": 5,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 9,
+   "first": "2026-10-09",
+   "last": "2026-10-17"
+  },
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 9,
+   "first": "2026-10-09",
+   "last": "2026-10-16"
+  }
+ },
+ "DMK-FUK": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-GAU": {
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 12,
+   "first": "2026-11-16",
+   "last": "2026-11-27"
+  }
+ },
+ "DMK-GAY": {
+  "FD": {
+   "wk": 2,
+   "dows": [
+    "Fri",
+    "Sun"
+   ],
+   "span": 22,
+   "first": "2026-10-30",
+   "last": "2026-11-20"
+  }
+ },
+ "DMK-HAN": {
+  "FD": {
+   "wk": 21,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-HGH": {
+  "SL": {
+   "wk": 3,
+   "dows": [
+    "Wed",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 9,
+   "first": "2026-10-09",
+   "last": "2026-10-14"
+  },
+  "FD": {
+   "wk": 5,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sat"
+   ],
+   "span": 9,
+   "first": "2026-10-09",
+   "last": "2026-10-17"
+  }
+ },
+ "DMK-HKG": {
+  "SL": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-HYD": {
+  "DD": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 12,
+   "first": "2026-10-14",
+   "last": "2026-10-25"
+  }
+ },
+ "DMK-ICN": {
+  "FD": {
+   "wk": 8,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-JAI": {
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-11-17",
+   "last": "2026-11-27"
+  }
+ },
+ "DMK-JHB": {
+  "FD": {
+   "wk": 10,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-KHH": {
+  "SL": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  },
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-KIX": {
+  "XJ": {
+   "wk": 11,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-KMG": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-KNO": {
+  "QZ": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-KTI": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-KTM": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-09",
+   "last": "2026-10-19"
+  },
+  "FD": {
+   "wk": 1,
+   "dows": [
+    "Mon",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-18",
+   "last": "2026-10-19"
+  }
+ },
+ "DMK-KUL": {
+  "AK": {
+   "wk": 26,
+   "dows": [
+    "Mon",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 4,
+   "first": "2026-10-09",
+   "last": "2026-10-12"
+  },
+  "OD": {
+   "wk": 14,
+   "dows": [
+    "Mon",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 4,
+   "first": "2026-10-09",
+   "last": "2026-10-12"
+  }
+ },
+ "DMK-LKO": {
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 12,
+   "first": "2026-11-16",
+   "last": "2026-11-27"
+  }
+ },
+ "DMK-LPQ": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-MAA": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-MFM": {
+  "SL": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  },
+  "FD": {
+   "wk": 10,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-MLE": {
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-MNL": {
+  "Z2": {
+   "wk": 9,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 8,
+   "first": "2026-10-09",
+   "last": "2026-10-16"
+  }
+ },
+ "DMK-NGO": {
+  "XJ": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-09",
+   "last": "2026-10-19"
+  }
+ },
+ "DMK-NRT": {
+  "XJ": {
+   "wk": 15,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-NTG": {
+  "DD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Tue",
+    "Thu",
+    "Sat"
+   ],
+   "span": 12,
+   "first": "2026-10-08",
+   "last": "2026-10-19"
+  }
+ },
+ "DMK-OKA": {
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-08",
+   "last": "2026-10-18"
+  }
+ },
+ "DMK-PEN": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-12"
+  },
+  "FD": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-PQC": {
+  "FD": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-PVG": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-08",
+   "last": "2026-10-18"
+  }
+ },
+ "DMK-RGN": {
+  "FD": {
+   "wk": 10,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-SAI": {
+  "FD": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-SGN": {
+  "FD": {
+   "wk": 21,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-SIN": {
+  "SL": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  },
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-SZB": {
+  "OD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-SZX": {
+  "SL": {
+   "wk": 2,
+   "dows": [
+    "Tue",
+    "Sun"
+   ],
+   "span": 7,
+   "first": "2026-10-11",
+   "last": "2026-10-13"
+  },
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-09",
+   "last": "2026-10-15"
+  }
+ },
+ "DMK-TFU": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Wed",
+    "Fri",
+    "Sat",
+    "Sun"
+   ],
+   "span": 9,
+   "first": "2026-10-09",
+   "last": "2026-10-17"
+  },
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 9,
+   "first": "2026-10-10",
+   "last": "2026-10-17"
+  }
+ },
+ "DMK-TPE": {
+  "SL": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  },
+  "FD": {
+   "wk": 7,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-TSN": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Tue",
+    "Thu",
+    "Sat",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-10",
+   "last": "2026-10-20"
+  }
+ },
+ "DMK-VTE": {
+  "FD": {
+   "wk": 14,
+   "dows": "daily",
+   "span": 7,
+   "first": "2026-10-08",
+   "last": "2026-10-14"
+  }
+ },
+ "DMK-WUH": {
+  "FD": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-09",
+   "last": "2026-10-19"
+  }
+ },
+ "DMK-XIY": {
+  "SL": {
+   "wk": 4,
+   "dows": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+   ],
+   "span": 11,
+   "first": "2026-10-09",
+   "last": "2026-10-19"
+  }
+ }
+}

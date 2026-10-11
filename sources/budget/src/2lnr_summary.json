@@ -1,0 +1,2172 @@
+{
+ "BKK-BOM": {
+  "VZ": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "VZ 760"
+   ],
+   "dep": [
+    "21:05\u219223:50"
+   ],
+   "ret": [
+    "00:55\u219206:50"
+   ],
+   "ret_flights": [
+    "VZ 761"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 6
+  }
+ },
+ "BKK-CCU": {
+  "VZ": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "VZ 770"
+   ],
+   "dep": [
+    "22:25\u219223:50"
+   ],
+   "ret": [
+    "01:00\u219205:00"
+   ],
+   "ret_flights": [
+    "VZ 771"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-CKG": {
+  "VZ": {
+   "per_wk": 2,
+   "days": 2,
+   "flights": [
+    "VZ 3606"
+   ],
+   "dep": [
+    "21:55\u219202:15"
+   ],
+   "ret": [
+    "03:15\u219205:30"
+   ],
+   "ret_flights": [
+    "VZ 3607"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-CXR": {
+  "VZ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "VZ 968"
+   ],
+   "dep": [
+    "11:35\u219213:30"
+   ],
+   "ret": [
+    "14:20\u219216:20"
+   ],
+   "ret_flights": [
+    "VZ 969"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-DAD": {
+  "VZ": {
+   "per_wk": 21,
+   "days": 7,
+   "flights": [
+    "VZ 960",
+    "VZ 962",
+    "VZ 964"
+   ],
+   "dep": [
+    "08:10\u219209:55",
+    "10:45\u219212:30",
+    "15:45\u219217:30"
+   ],
+   "ret": [
+    "10:40\u219212:25",
+    "13:15\u219215:00",
+    "18:10\u219219:55"
+   ],
+   "ret_flights": [
+    "VZ 961",
+    "VZ 963",
+    "VZ 965"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-ENH": {
+  "VZ": {
+   "per_wk": 3,
+   "days": 3,
+   "flights": [
+    "VZ 3706"
+   ],
+   "dep": [
+    "16:15\u219220:30"
+   ],
+   "ret": [
+    "21:30\u219223:50"
+   ],
+   "ret_flights": [
+    "VZ 3707"
+   ],
+   "first": "Thu, Oct 22",
+   "conf": null,
+   "ndays_table": 3
+  }
+ },
+ "BKK-HAN": {
+  "VJ": {
+   "per_wk": 8,
+   "days": 4,
+   "flights": [
+    "VJ 902",
+    "VJ 904"
+   ],
+   "dep": [
+    "14:00\u219215:50",
+    "18:45\u219220:25"
+   ],
+   "ret": [
+    "11:10\u219213:00",
+    "15:45\u219217:45"
+   ],
+   "ret_flights": [
+    "VJ 901",
+    "VJ 903"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 5
+  },
+  "VZ": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "VZ 930"
+   ],
+   "dep": [
+    "11:15\u219213:10"
+   ],
+   "ret": [
+    "14:00\u219215:55"
+   ],
+   "ret_flights": [
+    "VZ 931"
+   ],
+   "first": "Mon, Oct 12",
+   "conf": null,
+   "ndays_table": 5
+  }
+ },
+ "BKK-HGH": {
+  "VZ": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "VZ 3536"
+   ],
+   "dep": [
+    "16:45\u219222:00"
+   ],
+   "ret": [
+    "23:05\u219202:20"
+   ],
+   "ret_flights": [
+    "VZ 3537"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-ICN": {
+  "VZ": {
+   "per_wk": 3,
+   "days": 3,
+   "flights": [
+    "VZ 850"
+   ],
+   "dep": [
+    "02:25\u219210:00"
+   ],
+   "ret": [
+    "12:10\u219216:00"
+   ],
+   "ret_flights": [
+    "VZ 851"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 3
+  }
+ },
+ "BKK-KIX": {
+  "VZ": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "VZ 820"
+   ],
+   "dep": [
+    "00:15\u219207:55"
+   ],
+   "ret": [
+    "08:55\u219212:55"
+   ],
+   "ret_flights": [
+    "VZ 821"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-KTI": {
+  "VZ": {
+   "per_wk": 7,
+   "days": 6,
+   "flights": [
+    "VZ 720",
+    "VZ 722"
+   ],
+   "dep": [
+    "08:40\u219209:55",
+    "17:00\u219218:15"
+   ],
+   "ret": [
+    "11:05\u219212:30"
+   ],
+   "ret_flights": [
+    "VZ 721"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 6
+  }
+ },
+ "BKK-KUL": {
+  "VZ": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "VZ 680"
+   ],
+   "dep": [
+    "11:00\u219214:10"
+   ],
+   "ret": [
+    "15:15\u219216:30"
+   ],
+   "ret_flights": [
+    "VZ 681"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 5
+  }
+ },
+ "BKK-NRT": {
+  "VZ": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "VZ 830"
+   ],
+   "dep": [
+    "23:35\u219207:55"
+   ],
+   "ret": [
+    "08:55\u219213:45"
+   ],
+   "ret_flights": [
+    "VZ 831"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 6
+  }
+ },
+ "BKK-PQC": {
+  "VZ": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "VZ 980",
+    "VZ 982"
+   ],
+   "dep": [
+    "09:15\u219210:40",
+    "14:35\u219215:55"
+   ],
+   "ret": [
+    "11:45\u219213:05",
+    "16:45\u219218:05"
+   ],
+   "ret_flights": [
+    "VZ 981",
+    "VZ 983"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-PVG": {
+  "VZ": {
+   "per_wk": 3,
+   "days": 3,
+   "flights": [
+    "VZ 3524"
+   ],
+   "dep": [
+    "20:05\u219201:40"
+   ],
+   "ret": [
+    "02:40\u219206:10"
+   ],
+   "ret_flights": [
+    "VZ 3525"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 4
+  }
+ },
+ "BKK-SGN": {
+  "VJ": {
+   "per_wk": 16,
+   "days": 4,
+   "flights": [
+    "VJ 800",
+    "VJ 802",
+    "VJ 804",
+    "VJ 806"
+   ],
+   "dep": [
+    "11:30\u219213:00",
+    "13:50\u219215:20",
+    "15:45\u219217:15",
+    "19:55\u219221:25"
+   ],
+   "ret": [
+    "08:35\u219210:05",
+    "11:15\u219212:45",
+    "13:15\u219214:45",
+    "17:15\u219218:45"
+   ],
+   "ret_flights": [
+    "VJ 801",
+    "VJ 803",
+    "VJ 805",
+    "VJ 807"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 4
+  },
+  "VZ": {
+   "per_wk": 1,
+   "days": 1,
+   "flights": [
+    "VZ 970"
+   ],
+   "dep": [
+    "12:25\u219214:05"
+   ],
+   "ret": [
+    "14:45\u219216:25",
+    "15:05\u219216:45"
+   ],
+   "ret_flights": [
+    "VZ 971"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 4
+  }
+ },
+ "BKK-TAO": {
+  "VZ": {
+   "per_wk": 3,
+   "days": 3,
+   "flights": [
+    "VZ 3670"
+   ],
+   "dep": [
+    "14:10\u219220:00"
+   ],
+   "ret": [
+    "21:00\u219201:00"
+   ],
+   "ret_flights": [
+    "VZ 3671"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "BKK-TPE": {
+  "VZ": {
+   "per_wk": 7,
+   "days": 3,
+   "flights": [
+    "VZ 566",
+    "VZ 568",
+    "VZ 570"
+   ],
+   "dep": [
+    "01:55\u219206:45",
+    "02:40\u219207:30",
+    "09:10\u219213:55",
+    "20:25\u219201:15"
+   ],
+   "ret": [
+    "13:25\u219216:10",
+    "15:25\u219218:15",
+    "19:55\u219222:40"
+   ],
+   "ret_flights": [
+    "VZ 567",
+    "VZ 569",
+    "VZ 571"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 3
+  }
+ },
+ "BKK-YNT": {
+  "VZ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "VZ 3758"
+   ],
+   "dep": [
+    "16:10\u219222:00"
+   ],
+   "ret": [
+    "22:55\u219203:05"
+   ],
+   "ret_flights": [
+    "VZ 3759"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-ALA": {
+  "XJ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "XJ 864"
+   ],
+   "dep": [
+    "19:30\u219200:10"
+   ],
+   "ret": [
+    "01:30\u219210:20"
+   ],
+   "ret_flights": [
+    "XJ 865"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-AMD": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 212"
+   ],
+   "dep": [
+    "21:40\u219200:25"
+   ],
+   "ret": [
+    "01:25\u219207:15"
+   ],
+   "ret_flights": [
+    "SL 213"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-BLR": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 137"
+   ],
+   "dep": [
+    "20:25\u219222:40"
+   ],
+   "ret": [
+    "23:20\u219204:40"
+   ],
+   "ret_flights": [
+    "FD 138"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-BOM": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 218"
+   ],
+   "dep": [
+    "20:50\u219223:35"
+   ],
+   "ret": [
+    "00:40\u219206:30"
+   ],
+   "ret_flights": [
+    "SL 219"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CAN": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 530"
+   ],
+   "dep": [
+    "19:05\u219223:10"
+   ],
+   "ret": [
+    "00:10\u219201:55"
+   ],
+   "ret_flights": [
+    "FD 531"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "SL 900"
+   ],
+   "dep": [
+    "21:40\u219201:40"
+   ],
+   "ret": [
+    "02:45\u219204:45"
+   ],
+   "ret_flights": [
+    "SL 901"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CCU": {
+  "SL": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "SL 242"
+   ],
+   "dep": [
+    "00:30\u219201:35"
+   ],
+   "ret": [
+    "02:35\u219206:35"
+   ],
+   "ret_flights": [
+    "SL 243"
+   ],
+   "first": "Mon, Oct 12",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 120"
+   ],
+   "dep": [
+    "22:45\u219223:50"
+   ],
+   "ret": [
+    "00:30\u219204:35"
+   ],
+   "ret_flights": [
+    "FD 121"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CGK": {
+  "ID": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "ID 7630"
+   ],
+   "dep": [
+    "14:05\u219217:40"
+   ],
+   "ret": [
+    "09:25\u219213:00"
+   ],
+   "ret_flights": [
+    "ID 7631"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "SL 116"
+   ],
+   "dep": [
+    "16:30\u219220:00"
+   ],
+   "ret": [
+    "08:00\u219211:35"
+   ],
+   "ret_flights": [
+    "SL 117"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CGO": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 964"
+   ],
+   "dep": [
+    "12:15\u219217:20"
+   ],
+   "ret": [
+    "18:20\u219221:25"
+   ],
+   "ret_flights": [
+    "SL 965"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CKG": {
+  "FD": {
+   "per_wk": 10,
+   "days": 7,
+   "flights": [
+    "FD 552",
+    "FD 556"
+   ],
+   "dep": [
+    "06:00\u219210:10",
+    "13:45\u219218:00"
+   ],
+   "ret": [
+    "11:10\u219213:20",
+    "18:55\u219221:00"
+   ],
+   "ret_flights": [
+    "FD 553",
+    "FD 557"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 3,
+   "days": 3,
+   "flights": [
+    "SL 930"
+   ],
+   "dep": [
+    "20:50\u219201:05"
+   ],
+   "ret": [
+    "02:10\u219204:20"
+   ],
+   "ret_flights": [
+    "SL 931"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CMB": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 140"
+   ],
+   "dep": [
+    "20:25\u219222:15"
+   ],
+   "ret": [
+    "23:15\u219204:20"
+   ],
+   "ret_flights": [
+    "FD 141"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-COK": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 170"
+   ],
+   "dep": [
+    "20:15\u219222:30"
+   ],
+   "ret": [
+    "23:10\u219204:40"
+   ],
+   "ret_flights": [
+    "FD 171"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CSX": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 480"
+   ],
+   "dep": [
+    "07:50\u219212:10"
+   ],
+   "ret": [
+    "12:55\u219215:10"
+   ],
+   "ret_flights": [
+    "FD 481"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 934"
+   ],
+   "dep": [
+    "09:20\u219213:35"
+   ],
+   "ret": [
+    "14:35\u219217:00"
+   ],
+   "ret_flights": [
+    "SL 935"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CTS": {
+  "XJ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "XJ 620"
+   ],
+   "dep": [
+    "01:55\u219211:05"
+   ],
+   "ret": [
+    "12:20\u219217:45"
+   ],
+   "ret_flights": [
+    "XJ 621"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-CXR": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 646"
+   ],
+   "dep": [
+    "08:00\u219210:00"
+   ],
+   "ret": [
+    "10:30\u219212:25"
+   ],
+   "ret_flights": [
+    "FD 647"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-DAD": {
+  "FD": {
+   "per_wk": 21,
+   "days": 7,
+   "flights": [
+    "FD 634",
+    "FD 636",
+    "FD 638"
+   ],
+   "dep": [
+    "07:50\u219209:30",
+    "09:50\u219211:30",
+    "16:00\u219217:40"
+   ],
+   "ret": [
+    "10:05\u219211:45",
+    "12:00\u219213:40",
+    "18:10\u219219:55"
+   ],
+   "ret_flights": [
+    "FD 635",
+    "FD 637",
+    "FD 639"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-DEL": {
+  "XJ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "XJ 230"
+   ],
+   "dep": [
+    "16:45\u219219:40"
+   ],
+   "ret": [
+    "20:55\u219202:40"
+   ],
+   "ret_flights": [
+    "XJ 231"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-DPS": {
+  "FD": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "FD 396"
+   ],
+   "dep": [
+    "06:20\u219211:40"
+   ],
+   "ret": [
+    "12:10\u219215:40"
+   ],
+   "ret_flights": [
+    "FD 397"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 258"
+   ],
+   "dep": [
+    "06:50\u219212:10"
+   ],
+   "ret": [
+    "13:25\u219216:50"
+   ],
+   "ret_flights": [
+    "SL 259"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-FUK": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 236"
+   ],
+   "dep": [
+    "23:45\u219207:05"
+   ],
+   "ret": [
+    "08:15\u219211:45"
+   ],
+   "ret_flights": [
+    "FD 237"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-GAU": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 124"
+   ],
+   "dep": [
+    "22:00\u219223:10"
+   ],
+   "ret": [
+    "23:40\u219203:50"
+   ],
+   "ret_flights": [
+    "FD 125"
+   ],
+   "first": "Fri, Nov 20",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-GAY": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 122"
+   ],
+   "dep": [
+    "09:15\u219210:50"
+   ],
+   "ret": [
+    "12:45\u219217:15"
+   ],
+   "ret_flights": [
+    "FD 123"
+   ],
+   "first": "Fri, Nov 13",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-HAN": {
+  "FD": {
+   "per_wk": 21,
+   "days": 7,
+   "flights": [
+    "FD 640",
+    "FD 642",
+    "FD 644"
+   ],
+   "dep": [
+    "06:40\u219208:30",
+    "09:55\u219211:50",
+    "18:25\u219220:20"
+   ],
+   "ret": [
+    "09:05\u219210:55",
+    "12:20\u219214:10",
+    "20:55\u219222:40"
+   ],
+   "ret_flights": [
+    "FD 641",
+    "FD 643",
+    "FD 645"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-HGH": {
+  "FD": {
+   "per_wk": 6,
+   "days": 6,
+   "flights": [
+    "FD 496"
+   ],
+   "dep": [
+    "11:50\u219217:10"
+   ],
+   "ret": [
+    "18:10\u219221:20"
+   ],
+   "ret_flights": [
+    "FD 497"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "SL 920"
+   ],
+   "dep": [
+    "19:05\u219200:15"
+   ],
+   "ret": [
+    "01:20\u219204:30"
+   ],
+   "ret_flights": [
+    "SL 921"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-HKG": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 360"
+   ],
+   "dep": [
+    "09:20\u219213:05"
+   ],
+   "ret": [
+    "14:20\u219216:05"
+   ],
+   "ret_flights": [
+    "SL 361"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-HYD": {
+  "DD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "DD 958"
+   ],
+   "dep": [
+    "21:35\u219223:45",
+    "21:45\u219223:45"
+   ],
+   "ret": [
+    "00:45\u219205:45"
+   ],
+   "ret_flights": [
+    "DD 959"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-ICN": {
+  "FD": {
+   "per_wk": 8,
+   "days": 7,
+   "flights": [
+    "FD 677",
+    "FD 7280"
+   ],
+   "dep": [
+    "02:45\u219210:35",
+    "05:10\u219213:00"
+   ],
+   "ret": [
+    "12:05\u219215:50",
+    "14:35\u219218:20"
+   ],
+   "ret_flights": [
+    "FD 678",
+    "FD 7281"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-JAI": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 130"
+   ],
+   "dep": [
+    "19:10\u219222:10"
+   ],
+   "ret": [
+    "23:10\u219204:30"
+   ],
+   "ret_flights": [
+    "FD 131"
+   ],
+   "first": "Fri, Nov 20",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-JHB": {
+  "FD": {
+   "per_wk": 10,
+   "days": 7,
+   "flights": [
+    "FD 510",
+    "FD 512"
+   ],
+   "dep": [
+    "08:00\u219211:15",
+    "12:00\u219215:15"
+   ],
+   "ret": [
+    "11:45\u219213:10",
+    "15:45\u219217:10"
+   ],
+   "ret_flights": [
+    "FD 511",
+    "FD 513"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KHH": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 390",
+    "SL 392"
+   ],
+   "dep": [
+    "02:45\u219207:15",
+    "05:10\u219209:40"
+   ],
+   "ret": [
+    "13:40\u219216:05",
+    "21:55\u219200:20"
+   ],
+   "ret_flights": [
+    "SL 391",
+    "SL 393"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "FD": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "FD 234"
+   ],
+   "dep": [
+    "02:35\u219207:05"
+   ],
+   "ret": [
+    "18:05\u219220:30"
+   ],
+   "ret_flights": [
+    "FD 235"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KIX": {
+  "XJ": {
+   "per_wk": 11,
+   "days": 7,
+   "flights": [
+    "XJ 610",
+    "XJ 612"
+   ],
+   "dep": [
+    "01:15\u219209:10",
+    "03:55\u219211:50",
+    "09:50\u219218:25",
+    "10:30\u219218:25"
+   ],
+   "ret": [
+    "10:25\u219214:25",
+    "13:05\u219217:05",
+    "19:55\u219200:05"
+   ],
+   "ret_flights": [
+    "XJ 611",
+    "XJ 613"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KMG": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 582"
+   ],
+   "dep": [
+    "08:10\u219211:25"
+   ],
+   "ret": [
+    "12:30\u219213:45"
+   ],
+   "ret_flights": [
+    "FD 583"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KNO": {
+  "QZ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "QZ 155"
+   ],
+   "dep": [
+    "11:20\u219213:25",
+    "14:20\u219216:20"
+   ],
+   "ret": [
+    "08:45\u219210:50",
+    "11:50\u219213:50"
+   ],
+   "ret_flights": [
+    "QZ 154"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KTI": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 606"
+   ],
+   "dep": [
+    "16:35\u219217:45",
+    "17:10\u219218:25"
+   ],
+   "ret": [
+    "18:35\u219219:55",
+    "19:15\u219220:35"
+   ],
+   "ret_flights": [
+    "FD 607"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KTM": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 220"
+   ],
+   "dep": [
+    "12:00\u219214:05"
+   ],
+   "ret": [
+    "15:05\u219219:40"
+   ],
+   "ret_flights": [
+    "SL 221"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "FD": {
+   "per_wk": 2,
+   "days": 2,
+   "flights": [
+    "FD 182"
+   ],
+   "dep": [
+    "11:55\u219214:10"
+   ],
+   "ret": [
+    "15:10\u219219:50"
+   ],
+   "ret_flights": [
+    "FD 183"
+   ],
+   "first": "Mon, Oct 19",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-KUL": {
+  "AK": {
+   "per_wk": 26,
+   "days": 4,
+   "flights": [
+    "AK 881",
+    "AK 883",
+    "AK 885",
+    "AK 887",
+    "AK 889",
+    "AK 891",
+    "AK 893",
+    "AK 897"
+   ],
+   "dep": [
+    "07:55\u219211:15",
+    "10:05\u219213:20",
+    "13:35\u219216:55",
+    "15:15\u219218:35",
+    "16:45\u219220:05",
+    "18:45\u219222:00",
+    "19:50\u219223:00",
+    "21:30\u219200:45"
+   ],
+   "ret": [
+    "06:00\u219207:10",
+    "08:10\u219209:30",
+    "09:50\u219211:10",
+    "11:45\u219213:00",
+    "13:30\u219214:45",
+    "15:00\u219216:15",
+    "16:55\u219218:10",
+    "18:00\u219219:20",
+    "19:40\u219220:50"
+   ],
+   "ret_flights": [
+    "AK 880",
+    "AK 882",
+    "AK 884",
+    "AK 886",
+    "AK 888",
+    "AK 890",
+    "AK 892",
+    "AK 896",
+    "AK 898"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 4
+  },
+  "OD": {
+   "per_wk": 14,
+   "days": 4,
+   "flights": [
+    "OD 521",
+    "OD 523",
+    "OD 527",
+    "OD 529"
+   ],
+   "dep": [
+    "09:15\u219212:30",
+    "11:50\u219215:05",
+    "13:45\u219217:00",
+    "16:30\u219219:45",
+    "18:00\u219221:15"
+   ],
+   "ret": [
+    "07:00\u219208:15",
+    "09:50\u219211:05",
+    "11:25\u219212:40",
+    "14:15\u219215:30",
+    "15:45\u219217:00"
+   ],
+   "ret_flights": [
+    "OD 520",
+    "OD 522",
+    "OD 526",
+    "OD 528"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 4
+  }
+ },
+ "DMK-LKO": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 146"
+   ],
+   "dep": [
+    "20:25\u219222:35"
+   ],
+   "ret": [
+    "23:30\u219204:20"
+   ],
+   "ret_flights": [
+    "FD 147"
+   ],
+   "first": "Fri, Nov 20",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-LPQ": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 1030"
+   ],
+   "dep": [
+    "13:05\u219214:30"
+   ],
+   "ret": [
+    "15:00\u219216:20"
+   ],
+   "ret_flights": [
+    "FD 1031"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-MAA": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 153"
+   ],
+   "dep": [
+    "21:05\u219223:00"
+   ],
+   "ret": [
+    "23:40\u219204:35"
+   ],
+   "ret_flights": [
+    "FD 154"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-MFM": {
+  "FD": {
+   "per_wk": 10,
+   "days": 7,
+   "flights": [
+    "FD 762",
+    "FD 766"
+   ],
+   "dep": [
+    "10:00\u219213:45",
+    "14:35\u219218:20"
+   ],
+   "ret": [
+    "14:15\u219216:05",
+    "19:00\u219220:45"
+   ],
+   "ret_flights": [
+    "FD 763",
+    "FD 767"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "SL 370",
+    "SL 372"
+   ],
+   "dep": [
+    "10:10\u219213:50",
+    "17:25\u219221:05"
+   ],
+   "ret": [
+    "14:50\u219216:30",
+    "22:05\u219223:50"
+   ],
+   "ret_flights": [
+    "SL 371",
+    "SL 373"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-MLE": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 175"
+   ],
+   "dep": [
+    "09:20\u219211:35"
+   ],
+   "ret": [
+    "12:30\u219219:05"
+   ],
+   "ret_flights": [
+    "FD 176"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-MNL": {
+  "Z2": {
+   "per_wk": 10,
+   "days": 5,
+   "flights": [
+    "Z2 286",
+    "Z2 288"
+   ],
+   "dep": [
+    "12:20\u219216:55",
+    "20:05\u219200:55"
+   ],
+   "ret": [
+    "09:05\u219211:25",
+    "15:30\u219217:55"
+   ],
+   "ret_flights": [
+    "Z2 285",
+    "Z2 287"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-NGO": {
+  "XJ": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "XJ 638"
+   ],
+   "dep": [
+    "00:45\u219208:50"
+   ],
+   "ret": [
+    "10:30\u219214:40"
+   ],
+   "ret_flights": [
+    "XJ 639"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-NRT": {
+  "XJ": {
+   "per_wk": 15,
+   "days": 7,
+   "flights": [
+    "XJ 600",
+    "XJ 602",
+    "XJ 606"
+   ],
+   "dep": [
+    "01:15\u219209:45",
+    "11:15\u219219:45",
+    "23:30\u219208:00"
+   ],
+   "ret": [
+    "09:15\u219214:00",
+    "11:10\u219215:45",
+    "21:35\u219202:20"
+   ],
+   "ret_flights": [
+    "XJ 601",
+    "XJ 603",
+    "XJ 607"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-NTG": {
+  "DD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "DD 3116"
+   ],
+   "dep": [
+    "09:40\u219215:00"
+   ],
+   "ret": [],
+   "ret_flights": [],
+   "first": "Mon, Oct 12",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-OKA": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 240"
+   ],
+   "dep": [
+    "08:25\u219215:05"
+   ],
+   "ret": [
+    "16:05\u219218:35"
+   ],
+   "ret_flights": [
+    "FD 241"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-PEN": {
+  "FD": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "FD 321",
+    "FD 323"
+   ],
+   "dep": [
+    "10:50\u219213:35",
+    "15:40\u219218:25"
+   ],
+   "ret": [
+    "14:05\u219214:55",
+    "18:55\u219219:40"
+   ],
+   "ret_flights": [
+    "FD 322",
+    "FD 324"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 4,
+   "days": 4,
+   "flights": [
+    "SL 132"
+   ],
+   "dep": [
+    "07:35\u219210:30"
+   ],
+   "ret": [
+    "11:30\u219212:15"
+   ],
+   "ret_flights": [
+    "SL 133"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-PQC": {
+  "FD": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "FD 660",
+    "FD 662"
+   ],
+   "dep": [
+    "12:00\u219213:20",
+    "15:35\u219217:00"
+   ],
+   "ret": [
+    "13:50\u219215:05",
+    "17:30\u219218:55"
+   ],
+   "ret_flights": [
+    "FD 661",
+    "FD 663"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-PVG": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 926"
+   ],
+   "dep": [
+    "19:50\u219201:05"
+   ],
+   "ret": [
+    "02:20\u219205:30"
+   ],
+   "ret_flights": [
+    "SL 927"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-RGN": {
+  "FD": {
+   "per_wk": 10,
+   "days": 7,
+   "flights": [
+    "FD 251",
+    "FD 253"
+   ],
+   "dep": [
+    "07:15\u219208:00",
+    "17:00\u219217:45"
+   ],
+   "ret": [
+    "08:30\u219210:20",
+    "18:15\u219220:05"
+   ],
+   "ret_flights": [
+    "FD 252",
+    "FD 254"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-SAI": {
+  "FD": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "FD 610",
+    "FD 614"
+   ],
+   "dep": [
+    "10:05\u219211:10",
+    "15:10\u219216:10"
+   ],
+   "ret": [
+    "11:55\u219213:00",
+    "16:55\u219218:05"
+   ],
+   "ret_flights": [
+    "FD 611",
+    "FD 615"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-SGN": {
+  "FD": {
+   "per_wk": 21,
+   "days": 7,
+   "flights": [
+    "FD 654",
+    "FD 656",
+    "FD 658"
+   ],
+   "dep": [
+    "07:30\u219209:15",
+    "13:40\u219215:20",
+    "19:25\u219221:05"
+   ],
+   "ret": [
+    "09:45\u219211:20",
+    "15:55\u219217:35",
+    "21:35\u219223:05"
+   ],
+   "ret_flights": [
+    "FD 655",
+    "FD 657",
+    "FD 659"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-SIN": {
+  "SL": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "SL 100",
+    "SL 104"
+   ],
+   "dep": [
+    "07:45\u219211:10",
+    "17:15\u219220:45"
+   ],
+   "ret": [
+    "12:10\u219213:40",
+    "21:45\u219223:15"
+   ],
+   "ret_flights": [
+    "SL 101",
+    "SL 105"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 357"
+   ],
+   "dep": [
+    "10:40\u219214:05"
+   ],
+   "ret": [
+    "14:40\u219216:20"
+   ],
+   "ret_flights": [
+    "FD 356"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-SZB": {
+  "OD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "OD 531",
+    "OD 533"
+   ],
+   "dep": [
+    "11:35\u219214:40",
+    "18:55\u219222:00"
+   ],
+   "ret": [
+    "09:30\u219210:45",
+    "16:50\u219218:05"
+   ],
+   "ret_flights": [
+    "OD 530",
+    "OD 532"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-SZX": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 596"
+   ],
+   "dep": [
+    "18:30\u219222:25"
+   ],
+   "ret": [
+    "23:30\u219201:15"
+   ],
+   "ret_flights": [
+    "FD 597"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "SL": {
+   "per_wk": 2,
+   "days": 2,
+   "flights": [
+    "SL 902"
+   ],
+   "dep": [
+    "22:40\u219202:30"
+   ],
+   "ret": [
+    "03:30\u219205:15"
+   ],
+   "ret_flights": [
+    "SL 903"
+   ],
+   "first": "Sun, Oct 11",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-TFU": {
+  "SL": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "SL 932"
+   ],
+   "dep": [
+    "17:15\u219221:15"
+   ],
+   "ret": [
+    "22:15\u219200:15"
+   ],
+   "ret_flights": [
+    "SL 933"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "FD": {
+   "per_wk": 5,
+   "days": 5,
+   "flights": [
+    "FD 562"
+   ],
+   "dep": [
+    "22:05\u219202:00"
+   ],
+   "ret": [
+    "02:50\u219204:45"
+   ],
+   "ret_flights": [
+    "FD 563"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-TPE": {
+  "SL": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "SL 380",
+    "SL 394",
+    "SL 396"
+   ],
+   "dep": [
+    "03:00\u219207:55",
+    "06:15\u219211:10",
+    "09:40\u219214:30"
+   ],
+   "ret": [
+    "13:50\u219216:40",
+    "16:35\u219219:30",
+    "16:40\u219219:30",
+    "21:15\u219200:15",
+    "21:20\u219200:15"
+   ],
+   "ret_flights": [
+    "SL 381",
+    "SL 395",
+    "SL 397"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  },
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 230"
+   ],
+   "dep": [
+    "07:25\u219212:20"
+   ],
+   "ret": [
+    "18:30\u219221:20"
+   ],
+   "ret_flights": [
+    "FD 231"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-TSN": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 962"
+   ],
+   "dep": [
+    "16:40\u219222:20"
+   ],
+   "ret": [
+    "23:50\u219203:35"
+   ],
+   "ret_flights": [
+    "SL 963"
+   ],
+   "first": "Sat, Oct 10",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-VTE": {
+  "FD": {
+   "per_wk": 14,
+   "days": 7,
+   "flights": [
+    "FD 1040",
+    "FD 1042"
+   ],
+   "dep": [
+    "06:25\u219207:35",
+    "12:10\u219213:20"
+   ],
+   "ret": [
+    "08:05\u219209:15",
+    "13:50\u219215:00"
+   ],
+   "ret_flights": [
+    "FD 1041",
+    "FD 1043"
+   ],
+   "first": "Fri, Oct 9",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-WUH": {
+  "FD": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "FD 572"
+   ],
+   "dep": [
+    "12:45\u219217:25"
+   ],
+   "ret": [
+    "18:25\u219220:55"
+   ],
+   "ret_flights": [
+    "FD 573"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ },
+ "DMK-XIY": {
+  "SL": {
+   "per_wk": 7,
+   "days": 7,
+   "flights": [
+    "SL 950"
+   ],
+   "dep": [
+    "20:40\u219201:20"
+   ],
+   "ret": [
+    "02:20\u219205:10"
+   ],
+   "ret_flights": [
+    "SL 951"
+   ],
+   "first": "Fri, Oct 16",
+   "conf": null,
+   "ndays_table": 7
+  }
+ }
+}

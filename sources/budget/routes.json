@@ -1,0 +1,4470 @@
+{
+ "meta": {
+  "title": "Budget-airline (LCC) nonstop route matrix from Bangkok",
+  "window": "Oct 2026 – Apr 2027",
+  "built": "2026-10-11",
+  "carriers_in_scope": {
+   "FD": "Thai AirAsia",
+   "XJ": "Thai AirAsia X",
+   "AK": "AirAsia (Malaysia)",
+   "Z2": "AirAsia Philippines",
+   "QZ": "Indonesia AirAsia",
+   "VZ": "Thai Vietjet",
+   "VJ": "VietJet Air",
+   "SL": "Thai Lion Air",
+   "DD": "Nok Air",
+   "OD": "Batik Air Malaysia",
+   "ID": "Batik Air (Indonesia)"
+  },
+  "scope_note": "Nonstop from DMK or BKK only. Thai domestic excluded. Times local; schedule tables are Oct 2026 (pre-winter) unless a note gives winter times; frequencies estimated from 2LNR next-7-service-days table.",
+  "status_legend": {
+   "operating": "in current schedule",
+   "resumes": "resumes on start date",
+   "seasonal": "winter-seasonal",
+   "suspended": "currently suspended; tentative restart on start date",
+   "tentative": "filed but not bookable yet",
+   "charter": "scheduled charter / charter-type flight numbers (often sold via tour agents)",
+   "ended": "ends before window",
+   "not_nonstop": "same-plane via another city",
+   "not_operating": "listed somewhere but no flights scheduled",
+   "not_in_schedule": "listed by 2LNR, no flights in next 7 service days"
+  },
+  "google_flights_finding": "Google Flights shows Thai AirAsia / AirAsia X schedules but 'Total price is unavailable' (no fares) in our checks; Thai Vietjet/VietJet are priced; Thai Lion Air appears only on some routes (e.g. HGH priced) and is missing on others (e.g. PVG). A fare sweep via Google Flights therefore covers VZ/VJ (+ some SL) prices; FD/XJ/SL fares need airasia.com / lionairthai.com (or an OTA) for exact prices.",
+  "no_lcc_nonstop": {
+   "XMN": "Xiamen — no in-scope LCC nonstop (only Xiamen Air / Spring Airlines etc.); TG flies from 25 Oct 2026",
+   "PEK": "Beijing — no in-scope LCC nonstop operating (VZ PKX listed but no flights scheduled; FD/SL PKX not in schedule data)",
+   "HND": "Tokyo Haneda — no LCC; use NRT (XJ, VZ)",
+   "PUS": "Busan — no in-scope LCC nonstop found",
+   "MDL": "Mandalay — no in-scope LCC nonstop found",
+   "BOM/MAA/BLR/COK/CCU/DEL via SL": "Thai Lion India: suspended until mid-Dec 2026 (tentative)"
+  },
+  "sources": {
+   "2lnr": "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)",
+   "aa_news": "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+   "ar_fd4q": "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+   "ar_xjhrb": "https://www.aeroroutes.com/eng/260929-xjnw26hrb (29 Sep 2026)",
+   "tr_cts": "https://en.traicy.com/posts/2026082839472/ (Aug 2026)",
+   "tr_ngo": "https://en.traicy.com/posts/2026091740140/ (17 Sep 2026)",
+   "tr_fdfuk": "https://en.traicy.com/posts/2026082139200/",
+   "tr_vzfuk": "https://en.traicy.com/posts/2026093040658/ (30 Sep 2026)",
+   "kh_icn": "https://www.khaosodenglish.com/news/transpo/2026/09/16/thai-airasia-to-end-don-mueang-incheon-route-after-12-years/ (16 Sep 2026)",
+   "ar_slin": "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+   "ar_slicn": "https://www.aeroroutes.com/eng/260813-slnw26icn (13 Aug 2026)",
+   "ar_slnrt": "https://www.aeroroutes.com/eng/260728-slnw26nrt (27 Jul 2026)",
+   "ar_slns": "https://www.aeroroutes.com/eng/260525-slns26int (25 May 2026)",
+   "ar_thns": "https://www.aeroroutes.com/eng/260722-thns26 (22 Jul 2026)",
+   "ar_vznrt": "https://www.aeroroutes.com/eng/260528-vznw26nrt (28 May 2026)",
+   "ar_vzkix": "https://www.aeroroutes.com/eng/260814-vjnw26kix (14 Aug 2026)",
+   "ar_vzkul": "https://www.aeroroutes.com/eng/260603-vz4q26kul (3 Jun 2026)",
+   "ar_vzhan": "https://www.aeroroutes.com/eng/260605-vz4q26han (5 Jun 2026)",
+   "ar_vz1q": "https://www.aeroroutes.com/eng/260202-vz1q267m8 (2 Feb 2026)",
+   "ttw_vzicn": "https://www.travelandtourworld.com/news/article/thai-vietjet-air-introduces-737-max-8-on-bangkokseoul-service/",
+   "ar_vjred": "https://www.aeroroutes.com/eng/261002-vjnov26int (2 Oct 2026)",
+   "ar_dd": "https://www.aeroroutes.com/eng/260811-dd4q26int (11 Aug 2026)",
+   "wiki_dmk": "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport (airlines & destinations, read 11 Oct 2026)",
+   "wiki_bkk": "https://en.wikipedia.org/wiki/Suvarnabhumi_Airport (airlines & destinations, read 11 Oct 2026)",
+   "bp_china": "https://www.bangkokpost.com/business/general/3324390/airasia-cuts-some-china-routes-amid-competition (23 Sep 2026)",
+   "gf_probe": "Google Flights live results (curl of server-rendered search, Dec 10/14 2026 sample dates, run 11 Oct 2026)"
+  }
+ },
+ "routes": [
+  {
+   "code": "HGH",
+   "city": "Hangzhou",
+   "city_th": "หางโจว",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL",
+    "VZ"
+   ],
+   "total_per_week_approx": 13,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 5,
+     "days": "Mon/Wed/Fri/Sat",
+     "flights": [
+      "FD 496"
+     ],
+     "out_times": [
+      "11:50→17:10"
+     ],
+     "ret_times": [
+      "18:10→21:20"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sat",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Wed/Fri/Sat/Sun",
+     "flights": [
+      "SL 920"
+     ],
+     "out_times": [
+      "19:05→00:15"
+     ],
+     "ret_times": [
+      "01:20→04:30"
+     ],
+     "ret_days": "Mon/Thu/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "17:10"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "VZ 3536"
+     ],
+     "out_times": [
+      "16:45→22:00"
+     ],
+     "ret_times": [
+      "23:05→02:20"
+     ],
+     "ret_days": "Tue/Thu/Sat/Sun",
+     "note": "Charter-style flight number (VZ 3xxx) but sold publicly — priced on Google Flights Dec 2026.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "16:50"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "CSX",
+   "city": "Changsha",
+   "city_th": "ฉางซา",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 14,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 480"
+     ],
+     "out_times": [
+      "07:50→12:10"
+     ],
+     "ret_times": [
+      "12:55→15:10"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:55"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "SL 934"
+     ],
+     "out_times": [
+      "09:20→13:35"
+     ],
+     "ret_times": [
+      "14:35→17:00"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CKG",
+   "city": "Chongqing",
+   "city_th": "ฉงชิ่ง",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 13,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 10,
+     "days": "daily",
+     "flights": [
+      "FD 552",
+      "FD 556"
+     ],
+     "out_times": [
+      "06:00→10:10",
+      "13:45→18:00"
+     ],
+     "ret_times": [
+      "11:10→13:20",
+      "18:55→21:00"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "06:15",
+       "14:45"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 3,
+     "days": "Thu/Fri/Sun",
+     "flights": [
+      "SL 930"
+     ],
+     "out_times": [
+      "20:50→01:05"
+     ],
+     "ret_times": [
+      "02:10→04:20"
+     ],
+     "ret_days": "Mon/Thu/Sat",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "per_week": 2,
+     "days": "Wed/Sat",
+     "flights": [
+      "VZ 3606"
+     ],
+     "out_times": [
+      "21:55→02:15"
+     ],
+     "ret_times": [
+      "03:15→05:30"
+     ],
+     "ret_days": "Thu/Sun",
+     "note": "Charter-style flight number (3xxx); may be sold mainly via tour agents — verify on airline site.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CAN",
+   "city": "Guangzhou",
+   "city_th": "กวางโจว",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 12,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 530"
+     ],
+     "out_times": [
+      "19:05→23:10"
+     ],
+     "ret_times": [
+      "00:10→01:55"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "18:55"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 5,
+     "days": "Mon/Wed/Thu/Fri/Sat",
+     "flights": [
+      "SL 900"
+     ],
+     "out_times": [
+      "21:40→01:40"
+     ],
+     "ret_times": [
+      "02:45→04:45"
+     ],
+     "ret_days": "Tue/Thu/Fri/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "SZX",
+   "city": "Shenzhen",
+   "city_th": "เซินเจิ้น",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 9,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 596"
+     ],
+     "out_times": [
+      "18:30→22:25"
+     ],
+     "ret_times": [
+      "23:30→01:15"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 2,
+     "days": "Tue/Sun",
+     "flights": [
+      "SL 902"
+     ],
+     "out_times": [
+      "22:40→02:30"
+     ],
+     "ret_times": [
+      "03:30→05:15"
+     ],
+     "ret_days": "Mon/Wed",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "TFU",
+   "city": "Chengdu (Tianfu)",
+   "city_th": "เฉิงตู",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 8,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "FD 562"
+     ],
+     "out_times": [
+      "22:05→02:00"
+     ],
+     "ret_times": [
+      "02:50→04:45"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "22:10"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Wed/Fri/Sat/Sun",
+     "flights": [
+      "SL 932"
+     ],
+     "out_times": [
+      "17:15→21:15"
+     ],
+     "ret_times": [
+      "22:15→00:15"
+     ],
+     "ret_days": "Wed/Fri/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "PVG",
+   "city": "Shanghai",
+   "city_th": "เซี่ยงไฮ้",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "SL",
+    "VZ"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "SL 926"
+     ],
+     "out_times": [
+      "19:50→01:05"
+     ],
+     "ret_times": [
+      "02:20→05:30"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 3,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "VZ 3524"
+     ],
+     "out_times": [
+      "20:05→01:40"
+     ],
+     "ret_times": [
+      "02:40→06:10"
+     ],
+     "ret_days": null,
+     "note": "Charter-style flight number (VZ 3xxx) but sold publicly — priced on Google Flights Dec 2026.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "20:10"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "CGO",
+   "city": "Zhengzhou",
+   "city_th": "เจิ้งโจว",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "SL"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "SL 964"
+     ],
+     "out_times": [
+      "12:15→17:20"
+     ],
+     "ret_times": [
+      "18:20→21:25"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "KMG",
+   "city": "Kunming",
+   "city_th": "คุนหมิง",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 582"
+     ],
+     "out_times": [
+      "08:10→11:25"
+     ],
+     "ret_times": [
+      "12:30→13:45"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "09:15"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "TSN",
+   "city": "Tianjin",
+   "city_th": "เทียนจิน",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "SL"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "SL 962"
+     ],
+     "out_times": [
+      "16:40→22:20"
+     ],
+     "ret_times": [
+      "23:50→03:35"
+     ],
+     "ret_days": "Tue/Thu/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "WUH",
+   "city": "Wuhan",
+   "city_th": "อู่ฮั่น",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "FD 572"
+     ],
+     "out_times": [
+      "12:45→17:25"
+     ],
+     "ret_times": [
+      "18:25→20:55"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:05"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "XIY",
+   "city": "Xi'an",
+   "city_th": "ซีอาน",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "SL"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "SL 950"
+     ],
+     "out_times": [
+      "20:40→01:20"
+     ],
+     "ret_times": [
+      "02:20→05:10"
+     ],
+     "ret_days": "Mon/Tue/Thu/Sat",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "DSN",
+   "city": "Ordos",
+   "city_th": "ออร์ดอส",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "note": "Charter-type; no flights in next-7-day schedule",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "DYG",
+   "city": "Zhangjiajie",
+   "city_th": "จางเจียเจี้ย",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "note": "Charter-type; inbound only in schedule data",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "ENH",
+   "city": "Enshi",
+   "city_th": "เอินซือ",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "per_week": 2,
+     "days": "Tue/Thu",
+     "flights": [
+      "VZ 3706"
+     ],
+     "out_times": [
+      "16:15→20:30"
+     ],
+     "ret_times": [
+      "21:30→23:50"
+     ],
+     "ret_days": "Tue/Thu/Sat",
+     "note": "Charter-style flight number (3xxx); may be sold mainly via tour agents — verify on airline site.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "HRB",
+   "city": "Harbin",
+   "city_th": "ฮาร์บิน",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "charter",
+     "per_week": 6,
+     "days": "6/wk",
+     "flights": [
+      "XJ 750"
+     ],
+     "out_times": [
+      "18:05→01:00+1"
+     ],
+     "ret_times": [
+      "02:15→07:45"
+     ],
+     "start": "2026-12-15",
+     "end": "2027-01-24",
+     "note": "Scheduled charter 15 Dec 2026–24 Jan 2027, 6/wk, XJ750/751, A330-300",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260929-xjnw26hrb (29 Sep 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "NTG",
+   "city": "Nantong",
+   "city_th": "หนานทง",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "DD",
+     "airline": "Nok Air",
+     "origin": "DMK",
+     "status": "charter",
+     "per_week": 4,
+     "days": "Mon/Tue/Thu/Sat",
+     "flights": [
+      "DD 3116"
+     ],
+     "out_times": [
+      "09:40→15:00"
+     ],
+     "ret_times": [],
+     "ret_days": null,
+     "note": "Charter-style flight number (3xxx); may be sold mainly via tour agents — verify on airline site.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "PKX",
+   "city": "Beijing (Daxing)",
+   "city_th": "ปักกิ่ง",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "not_operating",
+     "note": "Listed by 2LNR but no flights in next-7-day schedule — verify",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "TAO",
+   "city": "Qingdao",
+   "city_th": "ชิงเต่า",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "per_week": 3,
+     "days": "Tue/Thu/Sat",
+     "flights": [
+      "VZ 3670"
+     ],
+     "out_times": [
+      "14:10→20:00"
+     ],
+     "ret_times": [
+      "21:00→01:00"
+     ],
+     "ret_days": "Tue/Thu/Sat",
+     "note": "Charter-style flight number (3xxx); may be sold mainly via tour agents — verify on airline site.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "WUX",
+   "city": "Wuxi",
+   "city_th": "อู๋ซี",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "note": "Charter-type (VZ 3xxx); no flights in next-7-day schedule",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "YNT",
+   "city": "Yantai",
+   "city_th": "เยียนไถ",
+   "country": "China",
+   "region": "china",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "per_week": 3,
+     "days": "Tue/Thu/Sat",
+     "flights": [
+      "VZ 3758"
+     ],
+     "out_times": [
+      "16:10→22:00"
+     ],
+     "ret_times": [
+      "22:55→03:05"
+     ],
+     "ret_days": "Tue/Thu/Sat",
+     "note": "Charter-style flight number (3xxx); may be sold mainly via tour agents — verify on airline site.",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "MFM",
+   "city": "Macau",
+   "city_th": "มาเก๊า",
+   "country": "Macau",
+   "region": "hk-mo",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 24,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 10,
+     "days": "daily",
+     "flights": [
+      "FD 762",
+      "FD 766"
+     ],
+     "out_times": [
+      "10:00→13:45",
+      "14:35→18:20"
+     ],
+     "ret_times": [
+      "14:15→16:05",
+      "19:00→20:45"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "06:45",
+       "13:50"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "SL 370",
+      "SL 372"
+     ],
+     "out_times": [
+      "10:10→13:50",
+      "17:25→21:05"
+     ],
+     "ret_times": [
+      "14:50→16:30",
+      "22:05→23:50"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "charter",
+     "note": "Scheduled charter in early 2026; not in current schedule data — verify",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260202-vz1q267m8 (2 Feb 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "HKG",
+   "city": "Hong Kong",
+   "city_th": "ฮ่องกง",
+   "country": "Hong Kong",
+   "region": "hk-mo",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "SL"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "SL 360"
+     ],
+     "out_times": [
+      "09:20→13:05"
+     ],
+     "ret_times": [
+      "14:20→16:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "not_operating",
+     "note": "FD HKG cancelled from 11 May 2026; no flights in current schedule data, no resumption found",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260722-thns26 (22 Jul 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "TPE",
+   "city": "Taipei",
+   "city_th": "ไทเป",
+   "country": "Taiwan",
+   "region": "taiwan",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL",
+    "VZ"
+   ],
+   "total_per_week_approx": 28,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 230"
+     ],
+     "out_times": [
+      "07:25→12:20"
+     ],
+     "ret_times": [
+      "18:30→21:20"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:45"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "SL 380",
+      "SL 394",
+      "SL 396"
+     ],
+     "out_times": [
+      "03:00→07:55",
+      "06:15→11:10",
+      "09:40→14:30"
+     ],
+     "ret_times": [
+      "13:50→16:40",
+      "16:35→19:30",
+      "16:40→19:30",
+      "21:15→00:15",
+      "21:20→00:15"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "03:00",
+       "06:20"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "VZ 566",
+      "VZ 568",
+      "VZ 570"
+     ],
+     "out_times": [
+      "01:55→06:45",
+      "02:40→07:30",
+      "09:10→13:55",
+      "20:25→01:15"
+     ],
+     "ret_times": [
+      "13:25→16:10",
+      "15:25→18:15",
+      "19:55→22:40"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "KHH",
+   "city": "Kaohsiung",
+   "city_th": "เกาสง",
+   "country": "Taiwan",
+   "region": "taiwan",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 11,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "FD 234"
+     ],
+     "out_times": [
+      "02:35→07:05"
+     ],
+     "ret_times": [
+      "18:05→20:30"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "02:35"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "SL 390",
+      "SL 392"
+     ],
+     "out_times": [
+      "02:45→07:15",
+      "05:10→09:40"
+     ],
+     "ret_times": [
+      "13:40→16:05",
+      "21:55→00:20"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "02:45",
+       "05:40"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "NRT",
+   "city": "Tokyo (Narita)",
+   "city_th": "โตเกียว",
+   "country": "Japan",
+   "region": "japan",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "VZ",
+    "XJ"
+   ],
+   "total_per_week_approx": 26,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 11,
+     "days": "daily",
+     "flights": [
+      "VZ 830"
+     ],
+     "out_times": [
+      "09:30→17:30 (x246)",
+      "23:55→07:55+1"
+     ],
+     "ret_times": [
+      "08:55→14:30",
+      "18:30→00:05+1 (x246)"
+     ],
+     "ret_days": "daily",
+     "note": "11/wk from 6 Nov 2026 (VZ832 daytime x Tue/Thu/Sat + VZ830 red-eye daily), 737 MAX 8",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260528-vznw26nrt (28 May 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "09:35",
+       "23:50"
+      ]
+     }
+    },
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 15,
+     "days": "daily",
+     "flights": [
+      "XJ 600",
+      "XJ 602",
+      "XJ 606"
+     ],
+     "out_times": [
+      "01:15→09:45",
+      "11:15→19:45",
+      "23:30→08:00"
+     ],
+     "ret_times": [
+      "09:15→14:00",
+      "11:10→15:45",
+      "21:35→02:20"
+     ],
+     "ret_days": "daily",
+     "note": "Up to 21/wk in Q4 2026",
+     "sources": [
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "01:40",
+       "10:25",
+       "23:55"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "not_nonstop",
+     "note": "Operated DMK–Taipei–Narita (tag flight, 5/wk from 25 Oct 2026) — not nonstop",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260728-slnw26nrt (27 Jul 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "KIX",
+   "city": "Osaka (Kansai)",
+   "city_th": "โอซาก้า",
+   "country": "Japan",
+   "region": "japan",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "VZ",
+    "XJ"
+   ],
+   "total_per_week_approx": 18,
+   "carriers": [
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "VZ 820"
+     ],
+     "out_times": [
+      "00:25→07:55"
+     ],
+     "ret_times": [
+      "08:55→13:30"
+     ],
+     "ret_days": "daily",
+     "note": "Daily from 13 Nov 2026 (was 4/wk), VZ820 red-eye, 737 MAX 8",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260814-vjnw26kix (14 Aug 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "00:25"
+      ]
+     }
+    },
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 11,
+     "days": "daily",
+     "flights": [
+      "XJ 610",
+      "XJ 612"
+     ],
+     "out_times": [
+      "01:15→09:10",
+      "03:55→11:50",
+      "09:50→18:25",
+      "10:30→18:25"
+     ],
+     "ret_times": [
+      "10:25→14:25",
+      "13:05→17:05",
+      "19:55→00:05"
+     ],
+     "ret_days": "daily",
+     "note": "Up to 14/wk in Q4 2026",
+     "sources": [
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "01:40",
+       "10:40"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "not_nonstop",
+     "note": "Operated via Taipei (tag) — not nonstop; not in current schedule data",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260525-slns26int (25 May 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "FUK",
+   "city": "Fukuoka",
+   "city_th": "ฟุกุโอกะ",
+   "country": "Japan",
+   "region": "japan",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VZ"
+   ],
+   "total_per_week_approx": 11,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 236"
+     ],
+     "out_times": [
+      "23:45→07:05"
+     ],
+     "ret_times": [
+      "08:15→11:45"
+     ],
+     "ret_days": "daily",
+     "note": "Daily since 22 Sep 2026",
+     "sources": [
+      "https://en.traicy.com/posts/2026082139200/",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "01:50"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "resumes",
+     "per_week": 4,
+     "start": "2026-10-25",
+     "note": "Resumes 25 Oct 2026, 4/wk",
+     "sources": [
+      "https://en.traicy.com/posts/2026093040658/ (30 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "00:50"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "NGO",
+   "city": "Nagoya",
+   "city_th": "นาโงย่า",
+   "country": "Japan",
+   "region": "japan",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "XJ"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "XJ 638"
+     ],
+     "out_times": [
+      "00:45→08:50"
+     ],
+     "ret_times": [
+      "10:30→14:40"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "XJ638 DMK 00:45→08:50 Mon/Wed/Fri/Sun, A330, 2 Oct 2026–26 Mar 2027 (typically suspended in summer)",
+     "sources": [
+      "https://en.traicy.com/posts/2026091740140/ (17 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "not_nonstop",
+     "note": "Operated via Taipei (tag) — not nonstop; not in current schedule data",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260525-slns26int (25 May 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "OKA",
+   "city": "Okinawa",
+   "city_th": "โอกินาวา",
+   "country": "Japan",
+   "region": "japan",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "FD 240"
+     ],
+     "out_times": [
+      "08:25→15:05"
+     ],
+     "ret_times": [
+      "16:05→18:35"
+     ],
+     "ret_days": "Tue/Thu/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "08:30"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "not_nonstop",
+     "note": "Operated DMK–Taipei–Okinawa (4/wk from 26 Oct 2026) — not nonstop",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260728-slnw26nrt (27 Jul 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CTS",
+   "city": "Sapporo",
+   "city_th": "ซัปโปโร",
+   "country": "Japan",
+   "region": "japan",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "XJ"
+   ],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": "4 (Oct–Nov) → 7 (1 Dec–27 Mar)",
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "XJ 620"
+     ],
+     "out_times": [
+      "01:55→11:05"
+     ],
+     "ret_times": [
+      "12:20→17:45"
+     ],
+     "ret_days": "Tue/Thu/Sat/Sun",
+     "note": "XJ622 DMK 01:55→11:05 Tue/Thu/Sat/Sun to 30 Nov, daily 1 Dec 2026–27 Mar 2027, A330; to 29 Apr 2027",
+     "sources": [
+      "https://en.traicy.com/posts/2026082839472/ (Aug 2026)",
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "01:50"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "ICN",
+   "city": "Seoul (Incheon)",
+   "city_th": "โซล",
+   "country": "South Korea",
+   "region": "korea",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK"
+   ],
+   "carriers_nonstop": [
+    "VZ"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "tentative",
+     "per_week": 7,
+     "out_times": [
+      "03:15→10:55"
+     ],
+     "ret_times": [
+      "13:35→17:20"
+     ],
+     "start": "2026-12-01",
+     "note": "Tentatively resumes 1 Dec 2026 daily (SL352/353, 737-900ER) but reservations NOT open as of Aug 2026 — treat as unconfirmed",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260813-slnw26icn (13 Aug 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "VZ 850"
+     ],
+     "out_times": [
+      "02:25→10:00"
+     ],
+     "ret_times": [
+      "12:10→16:00"
+     ],
+     "ret_days": "daily",
+     "note": "Daily (temporarily 4/wk 15–24 Oct 2026), 737 MAX 8",
+     "sources": [
+      "https://www.travelandtourworld.com/news/article/thai-vietjet-air-introduces-737-max-8-on-bangkokseoul-service/",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "02:40"
+      ]
+     }
+    },
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "ended",
+     "per_week": 8,
+     "days": "daily",
+     "flights": [
+      "FD 677",
+      "FD 7280"
+     ],
+     "out_times": [
+      "02:45→10:35",
+      "05:10→13:00"
+     ],
+     "ret_times": [
+      "12:05→15:50",
+      "14:35→18:20"
+     ],
+     "ret_days": "daily",
+     "end": "2026-10-24",
+     "note": "Thai AirAsia ends DMK–Incheon after 24 Oct 2026 (until further notice) — no FD Korea in Nov–Apr",
+     "sources": [
+      "https://www.khaosodenglish.com/news/transpo/2026/09/16/thai-airasia-to-end-don-mueang-incheon-route-after-12-years/ (16 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "HAN",
+   "city": "Hanoi",
+   "city_th": "ฮานอย",
+   "country": "Vietnam",
+   "region": "vietnam",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VJ",
+    "VZ"
+   ],
+   "total_per_week_approx": 36,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 21,
+     "days": "daily",
+     "flights": [
+      "FD 640",
+      "FD 642",
+      "FD 644"
+     ],
+     "out_times": [
+      "06:40→08:30",
+      "09:55→11:50",
+      "18:25→20:20"
+     ],
+     "ret_times": [
+      "09:05→10:55",
+      "12:20→14:10",
+      "20:55→22:40"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "06:55",
+       "09:55",
+       "18:30"
+      ]
+     }
+    },
+    {
+     "carrier": "VJ",
+     "airline": "VietJet Air",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 8,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "VJ 902",
+      "VJ 904"
+     ],
+     "out_times": [
+      "14:00→15:50",
+      "18:45→20:25"
+     ],
+     "ret_times": [
+      "11:10→13:00",
+      "15:45→17:45"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "15:05",
+       "18:35"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "VZ 930"
+     ],
+     "out_times": [
+      "09:25→11:15"
+     ],
+     "ret_times": [
+      "12:05→14:05"
+     ],
+     "ret_days": "daily",
+     "note": "New, daily from 5 Oct 2026 (winter times shown), 737 MAX 8",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260605-vz4q26han (5 Jun 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "15:05",
+       "18:35"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "SGN",
+   "city": "Ho Chi Minh City",
+   "city_th": "โฮจิมินห์",
+   "country": "Vietnam",
+   "region": "vietnam",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VJ",
+    "VZ"
+   ],
+   "total_per_week_approx": 22,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 21,
+     "days": "daily",
+     "flights": [
+      "FD 654",
+      "FD 656",
+      "FD 658"
+     ],
+     "out_times": [
+      "07:30→09:15",
+      "13:40→15:20",
+      "19:25→21:05"
+     ],
+     "ret_times": [
+      "09:45→11:20",
+      "15:55→17:35",
+      "21:35→23:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:30",
+       "15:40",
+       "19:25"
+      ]
+     }
+    },
+    {
+     "carrier": "VJ",
+     "airline": "VietJet Air",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": "21 (25 Oct–6 Dec) → 28",
+     "days": null,
+     "flights": [
+      "VJ 800",
+      "VJ 802",
+      "VJ 804",
+      "VJ 806"
+     ],
+     "out_times": [
+      "11:30→13:00",
+      "13:50→15:20",
+      "15:45→17:15",
+      "19:55→21:25"
+     ],
+     "ret_times": [
+      "08:35→10:05",
+      "11:15→12:45",
+      "13:15→14:45",
+      "17:15→18:45"
+     ],
+     "ret_days": null,
+     "note": "VietJet (Vietnam) 4 daily, cut to 3 daily 25 Oct–6 Dec 2026",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261002-vjnov26int (2 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "11:45",
+       "14:00",
+       "16:05",
+       "20:05"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 1,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "VZ 970"
+     ],
+     "out_times": [
+      "12:25→14:05"
+     ],
+     "ret_times": [
+      "14:45→16:25",
+      "15:05→16:45"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "11:45",
+       "14:00",
+       "16:05",
+       "20:05"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "DAD",
+   "city": "Da Nang",
+   "city_th": "ดานัง",
+   "country": "Vietnam",
+   "region": "vietnam",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VZ"
+   ],
+   "total_per_week_approx": 42,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 21,
+     "days": "daily",
+     "flights": [
+      "FD 634",
+      "FD 636",
+      "FD 638"
+     ],
+     "out_times": [
+      "07:50→09:30",
+      "09:50→11:30",
+      "16:00→17:40"
+     ],
+     "ret_times": [
+      "10:05→11:45",
+      "12:00→13:40",
+      "18:10→19:55"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:25",
+       "10:35",
+       "16:40"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 21,
+     "days": "daily",
+     "flights": [
+      "VZ 960",
+      "VZ 962",
+      "VZ 964"
+     ],
+     "out_times": [
+      "08:10→09:55",
+      "10:45→12:30",
+      "15:45→17:30"
+     ],
+     "ret_times": [
+      "10:40→12:25",
+      "13:15→15:00",
+      "18:10→19:55"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "PQC",
+   "city": "Phu Quoc",
+   "city_th": "ฟูก๊วก",
+   "country": "Vietnam",
+   "region": "vietnam",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VZ"
+   ],
+   "total_per_week_approx": 28,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "FD 660",
+      "FD 662"
+     ],
+     "out_times": [
+      "12:00→13:20",
+      "15:35→17:00"
+     ],
+     "ret_times": [
+      "13:50→15:05",
+      "17:30→18:55"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "12:00"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "VZ 980",
+      "VZ 982"
+     ],
+     "out_times": [
+      "09:15→10:40",
+      "14:35→15:55"
+     ],
+     "ret_times": [
+      "11:45→13:05",
+      "16:45→18:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CXR",
+   "city": "Nha Trang (Cam Ranh)",
+   "city_th": "ญาจาง",
+   "country": "Vietnam",
+   "region": "vietnam",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VZ"
+   ],
+   "total_per_week_approx": 14,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 646"
+     ],
+     "out_times": [
+      "08:00→10:00"
+     ],
+     "ret_times": [
+      "10:30→12:25"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:55"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "VZ 968"
+     ],
+     "out_times": [
+      "11:35→13:30"
+     ],
+     "ret_times": [
+      "14:20→16:20"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CCU",
+   "city": "Kolkata",
+   "city_th": "โกลกาตา",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VZ"
+   ],
+   "total_per_week_approx": 11,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 120"
+     ],
+     "out_times": [
+      "22:45→23:50"
+     ],
+     "ret_times": [
+      "00:30→04:35"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "22:45"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 4,
+     "days": "Mon/Tue/Thu/Sat",
+     "flights": [
+      "SL 242"
+     ],
+     "out_times": [
+      "00:30→01:35"
+     ],
+     "ret_times": [
+      "02:35→06:35"
+     ],
+     "ret_days": "Mon/Tue/Thu/Sat",
+     "start": "2026-12-19",
+     "note": "Suspended since 15 Sep 2026; tentative 19 Dec 2026 (4/wk)",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "VZ 770"
+     ],
+     "out_times": [
+      "22:25→23:50"
+     ],
+     "ret_times": [
+      "01:00→05:00"
+     ],
+     "ret_days": "Mon/Tue/Thu/Sat",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "22:30"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "HYD",
+   "city": "Hyderabad",
+   "city_th": "ไฮเดอราบาด",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "DD",
+    "FD"
+   ],
+   "total_per_week_approx": 8,
+   "carriers": [
+    {
+     "carrier": "DD",
+     "airline": "Nok Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Wed/Fri/Sun",
+     "flights": [
+      "DD 958"
+     ],
+     "out_times": [
+      "21:35→23:45"
+     ],
+     "ret_times": [
+      "00:45→05:45"
+     ],
+     "ret_days": "Mon/Wed/Thu/Sat",
+     "note": "Resumed 14 Oct 2026, 4/wk 737-800 (DD958/959) through Mar 2027",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260811-dd4q26int (11 Aug 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "resumes",
+     "per_week": 4,
+     "start": "2026-11-16",
+     "note": "Resumes 16 Nov 2026, 4/wk A320",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "COK",
+   "city": "Kochi",
+   "city_th": "โคชิ",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 170"
+     ],
+     "out_times": [
+      "20:15→22:30"
+     ],
+     "ret_times": [
+      "23:10→04:40"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "20:15"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 7,
+     "start": "2026-12-17",
+     "note": "Suspended since 15 Sep 2026; tentative 17 Dec 2026 (daily)",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "MAA",
+   "city": "Chennai",
+   "city_th": "เจนไน",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 153"
+     ],
+     "out_times": [
+      "21:05→23:00"
+     ],
+     "ret_times": [
+      "23:40→04:35"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "21:00"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 4,
+     "start": "2026-12-17",
+     "note": "Suspended since 21 Jun 2026; tentative 17 Dec 2026 (4/wk)",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "BOM",
+   "city": "Mumbai",
+   "city_th": "มุมไบ",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": true,
+   "origins": [
+    "BKK"
+   ],
+   "carriers_nonstop": [
+    "VZ"
+   ],
+   "total_per_week_approx": 5,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "SL 218"
+     ],
+     "out_times": [
+      "20:50→23:35"
+     ],
+     "ret_times": [
+      "00:40→06:30"
+     ],
+     "ret_days": "daily",
+     "start": "2026-12-17",
+     "note": "Suspended since 13 Sep 2026; tentative 17 Dec 2026 (daily)",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 5,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "VZ 760"
+     ],
+     "out_times": [
+      "21:05→23:50"
+     ],
+     "ret_times": [
+      "00:55→06:50"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "20:40"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "AMD",
+   "city": "Ahmedabad",
+   "city_th": "อาเมดาบัด",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "resumes",
+     "per_week": 4,
+     "start": "2026-11-06",
+     "note": "Resumes 6 Nov 2026, 4/wk A320neo",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 4,
+     "days": "Tue/Thu/Sat/Sun",
+     "flights": [
+      "SL 212"
+     ],
+     "out_times": [
+      "21:40→00:25"
+     ],
+     "ret_times": [
+      "01:25→07:15"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "start": "2026-12-17",
+     "note": "Suspended since 13 Sep 2026; tentative resumption 17 Dec 2026 (4/wk) — may change",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "BLR",
+   "city": "Bengaluru",
+   "city_th": "เบงกาลูรู",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "FD 137"
+     ],
+     "out_times": [
+      "20:25→22:40"
+     ],
+     "ret_times": [
+      "23:20→04:40"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "20:10"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 4,
+     "start": "2026-12-18",
+     "note": "Suspended; tentative resumption 18 Dec 2026 (4/wk)",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "DEL",
+   "city": "Delhi",
+   "city_th": "เดลี",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "XJ"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "suspended",
+     "per_week": 4,
+     "start": "2026-12-18",
+     "note": "Suspended since 20 Jun 2026; tentative 18 Dec 2026 (4/wk)",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Tue/Thu/Fri/Sat/Sun",
+     "flights": [
+      "XJ 230"
+     ],
+     "out_times": [
+      "16:45→19:40"
+     ],
+     "ret_times": [
+      "20:55→02:40"
+     ],
+     "ret_days": "Tue/Thu/Fri/Sat/Sun",
+     "note": "4/wk",
+     "sources": [
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "16:45"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "GAU",
+   "city": "Guwahati",
+   "city_th": "กูวาหาติ",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "resumes",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "FD 124"
+     ],
+     "out_times": [
+      "22:00→23:10"
+     ],
+     "ret_times": [
+      "23:40→03:50"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "start": "2026-11-16",
+     "note": "Resumes 16 Nov 2026, 4/wk",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "JAI",
+   "city": "Jaipur",
+   "city_th": "ชัยปุระ",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "resumes",
+     "per_week": 4,
+     "days": "Tue/Wed/Fri/Sun",
+     "flights": [
+      "FD 130"
+     ],
+     "out_times": [
+      "19:10→22:10"
+     ],
+     "ret_times": [
+      "23:10→04:30"
+     ],
+     "ret_days": "Tue/Wed/Fri/Sun",
+     "start": "2026-11-17",
+     "note": "Resumes 17 Nov 2026, 4/wk A320neo",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "LKO",
+   "city": "Lucknow",
+   "city_th": "ลัคเนา",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "resumes",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "FD 146"
+     ],
+     "out_times": [
+      "20:25→22:35"
+     ],
+     "ret_times": [
+      "23:30→04:20"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "start": "2026-11-16",
+     "note": "Resumes 16 Nov 2026, 4/wk A320neo",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "GAY",
+   "city": "Bodh Gaya",
+   "city_th": "พุทธคยา",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 2,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "seasonal",
+     "per_week": 2,
+     "days": "Fri/Sun",
+     "flights": [
+      "FD 122"
+     ],
+     "out_times": [
+      "09:15→10:50"
+     ],
+     "ret_times": [
+      "12:45→17:15"
+     ],
+     "ret_days": "Tue",
+     "start": "2026-10-25",
+     "note": "Winter-seasonal (pilgrim season) from 25 Oct 2026",
+     "sources": [
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "ATQ",
+   "city": "Amritsar",
+   "city_th": "อมฤตสาร์",
+   "country": "India",
+   "region": "india",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "not_operating",
+     "note": "Suspended since 26 May 2026, no resumption date filed",
+     "sources": [
+      "https://www.aeroroutes.com/eng/261007-sl2h26in (7 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "RGN",
+   "city": "Yangon",
+   "city_th": "ย่างกุ้ง",
+   "country": "Myanmar",
+   "region": "myanmar",
+   "in_tg_dashboard": true,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 10,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 10,
+     "days": "daily",
+     "flights": [
+      "FD 251",
+      "FD 253"
+     ],
+     "out_times": [
+      "07:15→08:00",
+      "17:00→17:45"
+     ],
+     "ret_times": [
+      "08:30→10:20",
+      "18:15→20:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:20",
+       "16:20"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "KUL",
+   "city": "Kuala Lumpur",
+   "city_th": "กัวลาลัมเปอร์",
+   "country": "Malaysia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "AK",
+    "FD",
+    "OD",
+    "VZ"
+   ],
+   "total_per_week_approx": 54,
+   "carriers": [
+    {
+     "carrier": "AK",
+     "airline": "AirAsia (Malaysia)",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 26,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "AK 881",
+      "AK 883",
+      "AK 885",
+      "AK 887",
+      "AK 889",
+      "AK 891",
+      "AK 893",
+      "AK 897"
+     ],
+     "out_times": [
+      "07:55→11:15",
+      "10:05→13:20",
+      "13:35→16:55",
+      "15:15→18:35",
+      "16:45→20:05",
+      "18:45→22:00",
+      "19:50→23:00",
+      "21:30→00:45"
+     ],
+     "ret_times": [
+      "06:00→07:10",
+      "08:10→09:30",
+      "09:50→11:10",
+      "11:45→13:00",
+      "13:30→14:45",
+      "15:00→16:15",
+      "16:55→18:10",
+      "18:00→19:20",
+      "19:40→20:50"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "08:35",
+       "09:55",
+       "11:40",
+       "13:40",
+       "15:10",
+       "16:50",
+       "18:40",
+       "19:45",
+       "21:30"
+      ]
+     }
+    },
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "resumes",
+     "per_week": 7,
+     "start": "2026-10-25",
+     "note": "Resumes 25 Oct 2026, 1 daily A320",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260923-fdnw26int (23 Sep 2026)",
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "06:40"
+      ]
+     }
+    },
+    {
+     "carrier": "OD",
+     "airline": "Batik Air Malaysia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "OD 521",
+      "OD 523",
+      "OD 527",
+      "OD 529"
+     ],
+     "out_times": [
+      "09:15→12:30",
+      "11:50→15:05",
+      "13:45→17:00",
+      "16:30→19:45",
+      "18:00→21:15"
+     ],
+     "ret_times": [
+      "07:00→08:15",
+      "09:50→11:05",
+      "11:25→12:40",
+      "14:15→15:30",
+      "15:45→17:00"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "12:05",
+       "13:45",
+       "18:00"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "VZ 680"
+     ],
+     "out_times": [
+      "11:00→14:10"
+     ],
+     "ret_times": [
+      "15:15→16:30"
+     ],
+     "ret_days": "daily",
+     "note": "New, daily from 9 Oct 2026, 737 MAX 8",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260603-vz4q26kul (3 Jun 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "11:00"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "SIN",
+   "city": "Singapore",
+   "city_th": "สิงคโปร์",
+   "country": "Singapore",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 21,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 357"
+     ],
+     "out_times": [
+      "10:40→14:05"
+     ],
+     "ret_times": [
+      "14:40→16:20"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:00",
+       "10:50",
+       "16:35"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "SL 100",
+      "SL 104"
+     ],
+     "out_times": [
+      "07:45→11:10",
+      "17:15→20:45"
+     ],
+     "ret_times": [
+      "12:10→13:40",
+      "21:45→23:15"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "07:50",
+       "17:10"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "PEN",
+   "city": "Penang",
+   "city_th": "ปีนัง",
+   "country": "Malaysia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 18,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "FD 321",
+      "FD 323"
+     ],
+     "out_times": [
+      "10:50→13:35",
+      "15:40→18:25"
+     ],
+     "ret_times": [
+      "14:05→14:55",
+      "18:55→19:40"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "10:50",
+       "13:40"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Fri/Sat/Sun",
+     "flights": [
+      "SL 132"
+     ],
+     "out_times": [
+      "07:35→10:30"
+     ],
+     "ret_times": [
+      "11:30→12:15"
+     ],
+     "ret_days": "Mon/Fri/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "KTI",
+   "city": "Phnom Penh (Techo)",
+   "city_th": "พนมเปญ",
+   "country": "Cambodia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "BKK",
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "VZ"
+   ],
+   "total_per_week_approx": 14,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 606"
+     ],
+     "out_times": [
+      "16:35→17:45",
+      "17:10→18:25"
+     ],
+     "ret_times": [
+      "18:35→19:55",
+      "19:15→20:35"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "13:05"
+      ]
+     }
+    },
+    {
+     "carrier": "VZ",
+     "airline": "Thai Vietjet",
+     "origin": "BKK",
+     "status": "operating",
+     "per_week": 7,
+     "per_week_note": "approx (schedule table truncated on busy route)",
+     "days": null,
+     "flights": [
+      "VZ 720",
+      "VZ 722"
+     ],
+     "out_times": [
+      "08:40→09:55",
+      "17:00→18:15"
+     ],
+     "ret_times": [
+      "11:05→12:30"
+     ],
+     "ret_days": null,
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CGK",
+   "city": "Jakarta",
+   "city_th": "จาการ์ตา",
+   "country": "Indonesia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "ID",
+    "SL"
+   ],
+   "total_per_week_approx": 12,
+   "carriers": [
+    {
+     "carrier": "ID",
+     "airline": "Batik Air (Indonesia)",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "ID 7630"
+     ],
+     "out_times": [
+      "14:05→17:40"
+     ],
+     "ret_times": [
+      "09:25→13:00"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "14:05"
+      ]
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 5,
+     "days": "Tue/Wed/Thu/Fri/Sun",
+     "flights": [
+      "SL 116"
+     ],
+     "out_times": [
+      "16:30→20:00"
+     ],
+     "ret_times": [
+      "08:00→11:35"
+     ],
+     "ret_days": "Mon/Wed/Thu/Sat",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "18:00"
+      ]
+     }
+    },
+    {
+     "carrier": "QZ",
+     "airline": "Indonesia AirAsia",
+     "origin": "DMK",
+     "status": "not_operating",
+     "note": "Listed but no flights in schedule data",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "DPS",
+   "city": "Bali (Denpasar)",
+   "city_th": "บาหลี",
+   "country": "Indonesia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 9,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "FD 396"
+     ],
+     "out_times": [
+      "06:20→11:40"
+     ],
+     "ret_times": [
+      "12:10→15:40"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 5,
+     "days": "Mon/Wed/Fri/Sat/Sun",
+     "flights": [
+      "SL 258"
+     ],
+     "out_times": [
+      "06:50→12:10"
+     ],
+     "ret_times": [
+      "13:25→16:50"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sat/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": true,
+      "dec_dep_times": [
+       "07:45"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "SAI",
+   "city": "Siem Reap (Angkor)",
+   "city_th": "เสียมราฐ",
+   "country": "Cambodia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 14,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "FD 610",
+      "FD 614"
+     ],
+     "out_times": [
+      "10:05→11:10",
+      "15:10→16:10"
+     ],
+     "ret_times": [
+      "11:55→13:00",
+      "16:55→18:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:15",
+       "09:55",
+       "15:00"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "VTE",
+   "city": "Vientiane",
+   "city_th": "เวียงจันทน์",
+   "country": "Laos",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 14,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 14,
+     "days": "daily",
+     "flights": [
+      "FD 1040",
+      "FD 1042"
+     ],
+     "out_times": [
+      "06:25→07:35",
+      "12:10→13:20"
+     ],
+     "ret_times": [
+      "08:05→09:15",
+      "13:50→15:00"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "06:25",
+       "13:05"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "JHB",
+   "city": "Johor Bahru",
+   "city_th": "ยะโฮร์บาห์รู",
+   "country": "Malaysia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 10,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 10,
+     "days": "daily",
+     "flights": [
+      "FD 510",
+      "FD 512"
+     ],
+     "out_times": [
+      "08:00→11:15",
+      "12:00→15:15"
+     ],
+     "ret_times": [
+      "11:45→13:10",
+      "15:45→17:10"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:30",
+       "08:30",
+       "11:55"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "MNL",
+   "city": "Manila",
+   "city_th": "มะนิลา",
+   "country": "Philippines",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "Z2"
+   ],
+   "total_per_week_approx": 9,
+   "carriers": [
+    {
+     "carrier": "Z2",
+     "airline": "AirAsia Philippines",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 9,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "Z2 286",
+      "Z2 288"
+     ],
+     "out_times": [
+      "12:20→16:55",
+      "20:05→00:55"
+     ],
+     "ret_times": [
+      "09:05→11:25",
+      "15:30→17:55"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "KNO",
+   "city": "Medan",
+   "city_th": "เมดาน",
+   "country": "Indonesia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "QZ"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "QZ",
+     "airline": "Indonesia AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "QZ 155"
+     ],
+     "out_times": [
+      "11:20→13:25",
+      "14:20→16:20"
+     ],
+     "ret_times": [
+      "08:45→10:50",
+      "11:50→13:50"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "14:25"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "LPQ",
+   "city": "Luang Prabang",
+   "city_th": "หลวงพระบาง",
+   "country": "Laos",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 1030"
+     ],
+     "out_times": [
+      "13:05→14:30"
+     ],
+     "ret_times": [
+      "15:00→16:20"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "07:40",
+       "14:10"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "SZB",
+   "city": "Kuala Lumpur (Subang)",
+   "city_th": "กัวลาลัมเปอร์ (ซูบัง)",
+   "country": "Malaysia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "OD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "OD",
+     "airline": "Batik Air Malaysia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "OD 531",
+      "OD 533"
+     ],
+     "out_times": [
+      "11:35→14:40",
+      "18:55→22:00"
+     ],
+     "ret_times": [
+      "09:30→10:45",
+      "16:50→18:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  },
+  {
+   "code": "SUB",
+   "city": "Surabaya",
+   "city_th": "สุราบายา",
+   "country": "Indonesia",
+   "region": "asean",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "not_operating",
+     "note": "Suspended 2 Jun–1 Oct 2026; no flights in current schedule data",
+     "sources": [
+      "https://www.aeroroutes.com/eng/260722-thns26 (22 Jul 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "KTM",
+   "city": "Kathmandu",
+   "city_th": "กาฐมาณฑุ",
+   "country": "Nepal",
+   "region": "other",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD",
+    "SL"
+   ],
+   "total_per_week_approx": 6,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 2,
+     "days": "Mon/Sun",
+     "flights": [
+      "FD 182"
+     ],
+     "out_times": [
+      "11:55→14:10"
+     ],
+     "ret_times": [
+      "15:10→19:50"
+     ],
+     "ret_days": "Mon/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    },
+    {
+     "carrier": "SL",
+     "airline": "Thai Lion Air",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "SL 220"
+     ],
+     "out_times": [
+      "12:00→14:05"
+     ],
+     "ret_times": [
+      "15:05→19:40"
+     ],
+     "ret_days": "Mon/Wed/Fri/Sun",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": false
+     }
+    }
+   ]
+  },
+  {
+   "code": "CMB",
+   "city": "Colombo",
+   "city_th": "โคลัมโบ",
+   "country": "Sri Lanka",
+   "region": "other",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 140"
+     ],
+     "out_times": [
+      "20:25→22:15"
+     ],
+     "ret_times": [
+      "23:15→04:20"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "20:10"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "MLE",
+   "city": "Male",
+   "city_th": "มาเล่",
+   "country": "Maldives",
+   "region": "other",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "FD"
+   ],
+   "total_per_week_approx": 7,
+   "carriers": [
+    {
+     "carrier": "FD",
+     "airline": "Thai AirAsia",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 7,
+     "days": "daily",
+     "flights": [
+      "FD 175"
+     ],
+     "out_times": [
+      "09:20→11:35"
+     ],
+     "ret_times": [
+      "12:30→19:05"
+     ],
+     "ret_days": "daily",
+     "note": "",
+     "sources": [
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "09:15"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "ALA",
+   "city": "Almaty",
+   "city_th": "อัลมาตี",
+   "country": "Kazakhstan",
+   "region": "other",
+   "in_tg_dashboard": false,
+   "origins": [
+    "DMK"
+   ],
+   "carriers_nonstop": [
+    "XJ"
+   ],
+   "total_per_week_approx": 4,
+   "carriers": [
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "operating",
+     "per_week": 4,
+     "days": "Mon/Wed/Fri/Sun",
+     "flights": [
+      "XJ 864"
+     ],
+     "out_times": [
+      "19:30→00:10"
+     ],
+     "ret_times": [
+      "01:30→10:20"
+     ],
+     "ret_days": "Mon/Thu/Sat",
+     "note": "4/wk",
+     "sources": [
+      "https://newsroom.airasia.com/news/airasia-gears-up-for-high-season-with-major-international-expansion (22 Sep 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ],
+     "google_flights": {
+      "listed": true,
+      "priced": false,
+      "dec_dep_times": [
+       "17:55"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "RUH",
+   "city": "Riyadh",
+   "city_th": "ริยาด",
+   "country": "Saudi Arabia",
+   "region": "other",
+   "in_tg_dashboard": false,
+   "origins": [],
+   "carriers_nonstop": [],
+   "total_per_week_approx": 0,
+   "carriers": [
+    {
+     "carrier": "XJ",
+     "airline": "Thai AirAsia X",
+     "origin": "DMK",
+     "status": "not_operating",
+     "note": "Suspended",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Don_Mueang_International_Airport (airlines & destinations, read 11 Oct 2026)",
+      "2LNR schedule data (route pages 2lnr.com/routes/<org>-<dst>, schedule dated 4 Oct 2026, fetched 11 Oct 2026)"
+     ]
+    }
+   ]
+  }
+ ]
+}

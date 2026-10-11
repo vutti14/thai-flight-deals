@@ -1,0 +1,2574 @@
+{
+ "meta": {
+  "built": "2026-10-11",
+  "window": "2026-10-17 – 2027-04-30",
+  "seasons": "IATA winter 25 Oct 2026 – 27 Mar 2027; summer from 28 Mar 2027",
+  "rules": {
+   "two_d1n": "2D1N = leave Bangkok 05:00–10:59 (SZX 00:00–10:59, red-eye only) and leave GBA 18:00–23:59 next day (MFM sweep uses 17:00+ to catch Thai AirAsia 17:55)",
+   "three_d2n": "3D2N = any times"
+  },
+  "sources": [
+   "2LNR route pages (schedule data dated 4 Oct 2026, departures 9–15 Oct 2026; fetched 11 Oct 2026) https://www.2lnr.com/routes/bkk-hkg etc. — flight numbers, aircraft, summer times",
+   "Google Flights one-way nonstop probe, fetched 11 Oct 2026, dates 17/20/22 Nov 2026, 16 Jan, 6 Mar, 13 Apr 2027 (src/probe-gf-oneway.json) — winter times + carriers",
+   "AeroRoutes, Shenzhen Airlines timetable PDF, flightmapper.net, airportia/planemapper/airpaz (see per-city notes)"
+  ],
+  "caveats": [
+   "Google returns at most ~20 flights per search, so on busy routes (HKG, CAN) 'some days' usually means the flight was cut off the list (per-airline searches found more), not a non-daily service.",
+   "Winter flight numbers are matched to the October (summer) 2LNR flight with the nearest departure (≤90 min) — likely right, confirm on booking.",
+   "Google returned nothing for several DMK one-way queries on 17 Nov and drops Thai AirAsia/Thai Lion on some dates; DMK flights marked 'some days' are often daily in 2LNR.",
+   "Thai AirAsia DMK–HKG and Thai Vietjet BKK–MFM never appear on Google Flights."
+  ],
+  "holidays": {
+   "thai": {
+    "2026-10-23": "วันปิยมหาราช (Fri)",
+    "2026-12-05": "วันพ่อ (Sat)",
+    "2026-12-07": "ชดเชยวันพ่อ (Mon)",
+    "2026-12-10": "วันรัฐธรรมนูญ (Thu)",
+    "2026-12-31": "สิ้นปี (Thu)",
+    "2027-01-01": "ปีใหม่ (Fri)",
+    "2027-02-21": "มาฆบูชา (Sun)",
+    "2027-02-22": "ชดเชยมาฆบูชา (Mon)",
+    "2027-04-06": "วันจักรี (Tue)",
+    "2027-04-13": "สงกรานต์ (Tue)",
+    "2027-04-14": "สงกรานต์",
+    "2027-04-15": "สงกรานต์ (Thu)"
+   },
+   "china_hk_macau": {
+    "2027-02-06": "Chinese New Year (Sat; eve Fri 5 Feb) — mainland Spring Festival holiday expected ~5–13 Feb; HK/Macau 6–9 Feb; fares/hotels peak ~1–15 Feb",
+    "2026-12-25": "Christmas (HK/Macau holiday)",
+    "2027-04-05": "Ching Ming (approx.; HK/Macau/China)"
+   },
+   "sources": [
+    "myhora.com/calendar/holiday-2570.aspx (มาฆบูชา 21 ก.พ. 2570 + ชดเชย 22 ก.พ.)",
+    "bot.or.th holiday notice 2570"
+   ]
+  }
+ },
+ "routes": [
+  {
+   "code": "HKG",
+   "city": "Hong Kong",
+   "city_th": "ฮ่องกง",
+   "carriers": [
+    {
+     "code": "CX",
+     "airline": "Cathay Pacific",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "CX 700",
+       "winter": "07:30→11:15",
+       "summer": "07:35→11:35",
+       "aircraft": "Airbus A330-300",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "CX 750",
+       "winter": null,
+       "summer": "11:00→15:05",
+       "aircraft": "Boeing 777-300",
+       "summer_days": "Fri/Sat (2LNR table truncated)",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CX 774",
+       "winter": "11:45→15:35",
+       "summer": "12:10→16:15",
+       "aircraft": "Airbus A330-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CX 754",
+       "winter": "12:45→16:35",
+       "summer": "12:35→16:40",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "13:05→17:00",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CX 654",
+       "winter": "15:10→19:15",
+       "summer": "15:00→19:05",
+       "aircraft": "Airbus A330-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CX 708",
+       "winter": "17:00→20:50",
+       "summer": "17:30→21:30",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CX 706",
+       "winter": "17:45→21:35",
+       "summer": "16:25→20:30",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CX 704",
+       "winter": "19:15→23:00",
+       "summer": "19:10→23:05",
+       "aircraft": "Boeing 777-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 705",
+       "winter": "08:30→10:35",
+       "summer": "08:00→10:00",
+       "aircraft": "Boeing 777-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 717",
+       "winter": "09:10→11:20",
+       "summer": "09:00→11:05",
+       "aircraft": "Airbus A330-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 755",
+       "winter": "09:55→12:00",
+       "summer": "09:25→11:30",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 653",
+       "winter": "12:00→14:05",
+       "summer": "12:00→14:00",
+       "aircraft": "Airbus A330-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 775",
+       "winter": "13:45→15:55",
+       "summer": "13:20→15:25",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 751",
+       "winter": "14:30→16:40",
+       "summer": "14:30→16:30",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 701",
+       "winter": "16:00→18:05",
+       "summer": "16:05→18:00",
+       "aircraft": "Boeing 777-300",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CX 617",
+       "winter": "22:10→00:15",
+       "summer": "22:15→00:10",
+       "aircraft": "Airbus A330-300",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "EK",
+     "airline": "Emirates",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes (A380; First also sold)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "EK 384",
+       "winter": "13:45→17:40",
+       "summer": "14:15→18:15",
+       "aircraft": "Airbus A380-800",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "EK 385",
+       "winter": "21:00→23:15",
+       "summer": "21:30→23:45",
+       "aircraft": "Airbus A380-800",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "HB",
+     "airline": "Greater Bay Airlines",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "check (sweep will show)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "01:45→05:40",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "20:55→23:05",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "HX",
+     "airline": "Hong Kong Airlines",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "HX 760",
+       "winter": "01:55→05:55",
+       "summer": "02:00→05:55",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "HX 768",
+       "winter": "02:40→06:20",
+       "summer": "02:40→07:00",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "HX 776",
+       "winter": "15:35→19:30",
+       "summer": "15:55→19:55",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "19:10→22:50",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2027-01-16"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "HX 775",
+       "winter": "12:20→14:35",
+       "summer": "12:45→14:55",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "15:50→18:10",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2027-01-16"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "HX 759",
+       "winter": "22:10→00:25",
+       "summer": "23:00→01:00",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "back",
+       "flt": "HX 767",
+       "winter": "23:35→01:40",
+       "summer": "23:40→01:40",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "TG",
+     "airline": "Thai Airways",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "TG 600",
+       "winter": "08:00→11:45",
+       "summer": "08:00→11:45",
+       "aircraft": "Boeing 777-300ER",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "TG 628",
+       "winter": "10:30→14:20",
+       "summer": "10:30→14:20",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "TG 638",
+       "winter": "14:00→17:45",
+       "summer": "14:00→17:45",
+       "aircraft": "Boeing 777-300ER",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "TG 606",
+       "winter": "15:35→19:30",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "TG 602",
+       "winter": "18:10→21:55",
+       "summer": "18:10→22:00",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "TG 603",
+       "winter": "07:55→09:50",
+       "summer": "07:50→09:35",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "TG 601",
+       "winter": "12:55→14:55",
+       "summer": "12:55→14:45",
+       "aircraft": "Boeing 777-300ER",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "TG 629",
+       "winter": "15:30→17:15",
+       "summer": "15:30→17:20",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "TG 639",
+       "winter": "18:55→20:55",
+       "summer": "19:05→20:45",
+       "aircraft": "Boeing 777-300ER",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "back",
+       "flt": "TG 607",
+       "winter": "20:30→22:25",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "UA",
+     "airline": "United Airlines",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes (Polaris, 787-9)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "UA 821",
+       "winter": "16:55→20:45",
+       "summer": "15:45→19:45",
+       "aircraft": "Boeing 787-9 Dreamliner",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "UA 820",
+       "winter": null,
+       "summer": "07:40→09:35",
+       "aircraft": "Boeing 787-9 Dreamliner",
+       "summer_days": "Fri/Sat (2LNR table truncated)",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "09:20→11:30",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      }
+     ]
+    },
+    {
+     "code": "FD",
+     "airline": "Thai AirAsia",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "FD 518",
+       "winter": "08:45→12:25",
+       "summer": null,
+       "freq": "daily",
+       "start": "2026-10-25",
+       "fits_2d1n": true,
+       "source": "flightmapper.net Thai AirAsia DMK-HKG (FD518 daily eff 25 Oct 2026, continues HKG-OKA)",
+       "note": "Thai AirAsia resumes DMK–HKG 25 Oct 2026 (FD518 continues to Okinawa). Not shown on Google Flights in our probe — verify on airasia.com; no return flight found in sources."
+      }
+     ]
+    },
+    {
+     "code": "SL",
+     "airline": "Thai Lion Air",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "SL 360",
+       "winter": "09:15→13:00",
+       "summer": "09:20→13:05",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "15:30→19:25",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "SL 361",
+       "winter": "14:00→15:45",
+       "summer": "14:20→16:05",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "20:25→22:15",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "UO",
+     "airline": "HK Express",
+     "kind": "lcc",
+     "bangkok_airport": "BKK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "UO 733",
+       "winter": "00:35→04:30",
+       "summer": "00:20→04:30",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "UO 705",
+       "winter": "10:40→14:35",
+       "summer": "10:15→14:20",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "12:00→15:55",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "UO 735",
+       "winter": null,
+       "summer": "14:50→18:50",
+       "aircraft": "Airbus A320",
+       "summer_days": "Fri (2LNR table truncated)",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "UO 701",
+       "winter": "16:25→20:20",
+       "summer": "16:15→20:15",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "UO 703",
+       "winter": "19:45→23:40",
+       "summer": "19:40→23:40",
+       "aircraft": "Airbus A321",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "UO 704",
+       "winter": "07:50→09:55",
+       "summer": "07:25→09:25",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "09:15→11:20",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "UO 734",
+       "winter": null,
+       "summer": "11:30→13:40",
+       "aircraft": "Airbus A320neo",
+       "summer_days": "Fri/Sat (2LNR table truncated)",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "UO 700",
+       "winter": "13:35→15:40",
+       "summer": "13:30→15:30",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "UO 702",
+       "winter": "16:55→19:00",
+       "summer": "16:55→18:55",
+       "aircraft": "Airbus A321",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "UO 732",
+       "winter": "21:40→23:40",
+       "summer": "21:30→23:20",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": true
+      }
+     ]
+    }
+   ],
+   "news": [
+    "THAI 5th daily BKK–HKG from 1 Dec 2026: TG606 BKK 16:05→20:00 / TG607 HKG 21:00→22:55 (A320) — AeroRoutes 14 Jul 2026 https://www.aeroroutes.com/eng/260714-tgnw26hkg (Google shows 15:35→19:30 / 20:30→22:25 in Jan–Mar samples).",
+    "HK Express 4 daily BKK–HKG (UO704/705, 700/701, 702/703, 732/733) — AeroRoutes 4 Mar 2026 https://www.aeroroutes.com/eng/260304-uons26bkk; winter retimes from Google probe.",
+    "Greater Bay Airlines BKK–HKG was cut to 2 weekly in parts of May–Aug 2026 (AeroRoutes 19 Apr 2026 https://www.aeroroutes.com/eng/260419-hbmay26); Google shows HB daily 01:45 BKK→HKG / 20:55 HKG→BKK on every winter sample.",
+    "Thai AirAsia FD518 DMK–HKG resumes 25 Oct 2026 08:45→12:25 (flightmapper.net). Thai Lion Air 2nd daily DMK–HKG (15:30 out / 20:25 back) on Google from Jan 2027."
+   ],
+   "fit_2d1n": {
+    "morning_out": [
+     "CX 700 07:30→11:15",
+     "TG 600 08:00→11:45",
+     "TG 628 10:30→14:20",
+     "FD 518 08:45→12:25 from 2026-10-25",
+     "SL 360 09:15→13:00 [some days]",
+     "UO 705 10:40→14:35 [from Jan 2027]"
+    ],
+    "late_back": [
+     "CX 617 22:10→00:15",
+     "EK 385 21:00→23:15",
+     "HB 20:55→23:05",
+     "HX 759 22:10→00:25",
+     "HX 767 23:35→01:40",
+     "TG 639 18:55→20:55",
+     "TG 607 20:30→22:25 [from Jan 2027]",
+     "SL 20:25→22:15 [from Jan 2027]",
+     "UO 732 21:40→23:40 [some days]"
+    ]
+   }
+  },
+  {
+   "code": "CAN",
+   "city": "Guangzhou",
+   "city_th": "กวางโจว",
+   "carriers": [
+    {
+     "code": "CZ",
+     "airline": "China Southern",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes (small J cabin on A320/A321/737)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "CZ 3036",
+       "winter": "02:10→06:05",
+       "summer": "03:00→07:00",
+       "aircraft": "Boeing 737 MAX 8",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 362",
+       "winter": "08:10→11:55",
+       "summer": "08:20→12:20",
+       "aircraft": "Airbus A321",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 358",
+       "winter": "11:25→15:20",
+       "summer": "11:20→15:20",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 8080",
+       "winter": "12:25→16:20",
+       "summer": "12:45→16:40",
+       "aircraft": "Airbus A320neo",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 8100",
+       "winter": "13:55→18:00",
+       "summer": "13:45→18:00",
+       "aircraft": "Airbus A321",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 5096",
+       "winter": "15:05→18:55",
+       "summer": "15:10→19:05",
+       "aircraft": "Boeing 737 MAX 8",
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2026-11-17"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 3082",
+       "winter": "15:05→19:00",
+       "summer": "15:55→20:00",
+       "aircraft": "Airbus A320neo",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "16:20→20:15",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 8024",
+       "winter": "18:05→22:00",
+       "summer": "18:05→22:10",
+       "aircraft": "Airbus A320",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 364",
+       "winter": "18:55→23:00",
+       "summer": "19:00→23:10",
+       "aircraft": "Airbus A321",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 8020",
+       "winter": "19:55→00:05",
+       "summer": "19:55→23:55",
+       "aircraft": "Boeing 737 MAX 8",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "20:10→00:05",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 357",
+       "winter": "08:05→10:10",
+       "summer": "08:15→10:20",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8079",
+       "winter": "09:15→11:25",
+       "summer": "09:40→11:40",
+       "aircraft": "Airbus A320neo",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8099",
+       "winter": "10:50→12:55",
+       "summer": "10:40→12:50",
+       "aircraft": "Airbus A321",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 5095",
+       "winter": "12:00→14:00",
+       "summer": "11:50→14:05",
+       "aircraft": "Boeing 737 MAX 8",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 3081",
+       "winter": "12:50→14:55",
+       "summer": "12:45→14:40",
+       "aircraft": "Airbus A320neo",
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2026-11-17"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "12:50→15:00",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8023",
+       "winter": "15:00→17:05",
+       "summer": "14:50→16:50",
+       "aircraft": "Airbus A320",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 363",
+       "winter": "15:50→17:55",
+       "summer": "15:55→17:55",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2026-11-20"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8019",
+       "winter": "16:00→17:55",
+       "summer": "16:55→18:55",
+       "aircraft": "Boeing 737 MAX 8",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "17:00→18:55",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "17:00→19:00",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 361",
+       "winter": "20:25→22:30",
+       "summer": "20:05→22:00",
+       "aircraft": "Airbus A321",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 3035",
+       "winter": "23:00→01:05",
+       "summer": "23:35→01:30",
+       "aircraft": "Boeing 737 MAX 8",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "KQ",
+     "airline": "Kenya Airways",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes (787)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "KQ 886",
+       "winter": "14:40→18:35",
+       "summer": "15:05→19:00",
+       "aircraft": "Boeing 787-8 Dreamliner",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "KQ 887",
+       "winter": "21:40→23:35",
+       "summer": "22:10→23:35",
+       "aircraft": "Boeing 787-8 Dreamliner",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "MU",
+     "airline": "China Eastern",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "MU 2078",
+       "winter": "03:10→06:45",
+       "summer": "03:00→06:45",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "MU 2077",
+       "winter": "00:05→02:05",
+       "summer": "23:05→01:15",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      }
+     ]
+    },
+    {
+     "code": "TG",
+     "airline": "Thai Airways",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "TG 668",
+       "winter": "09:20→13:20",
+       "summer": "10:30→14:30",
+       "aircraft": "Boeing 787-8 Dreamliner",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "TG 678",
+       "winter": "15:25→19:05",
+       "summer": "16:00→19:50",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "TG 669",
+       "winter": "14:50→17:10",
+       "summer": "15:45→17:45",
+       "aircraft": "Boeing 787-8 Dreamliner",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "TG 679",
+       "winter": "20:25→22:45",
+       "summer": "21:05→23:05",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "9C",
+     "airline": "Spring Airlines",
+     "kind": "lcc",
+     "bangkok_airport": "BKK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "21:55→01:50",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2026-11-17"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "21:55→02:00",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "05:55→07:50",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      }
+     ]
+    },
+    {
+     "code": "AQ",
+     "airline": "9 Air",
+     "kind": "lcc",
+     "bangkok_airport": "BKK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "00:10→04:00",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "21:10→23:10",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "FD",
+     "airline": "Thai AirAsia",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "FD 530",
+       "winter": "18:55→23:00",
+       "summer": "19:05→23:10",
+       "aircraft": "Airbus A320",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "FD 531",
+       "winter": "00:05→01:55",
+       "summer": "00:10→01:55",
+       "aircraft": "Airbus A320",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      }
+     ]
+    },
+    {
+     "code": "SL",
+     "airline": "Thai Lion Air",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "SL 900",
+       "winter": "21:50→01:50",
+       "summer": "21:40→01:40",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "SL 901",
+       "winter": "02:50→04:50",
+       "summer": "02:45→04:45",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      }
+     ]
+    }
+   ],
+   "news": [
+    "THAI 2 daily BKK–CAN (TG668/669; TG678/679 from 1 Aug 2026) — AeroRoutes 29 Jun 2026 https://www.aeroroutes.com/eng/260629-tgaug26can; winter on Google: 09:20→13:20 & 15:25→19:05 out, 14:50→17:10 & 20:25→22:45 back.",
+    "Spring Airlines (9C) BKK–CAN launched 29 Mar 2026 (trip.com); Google shows it continuing in winter (BKK 21:55→02:00, CAN 05:55→07:50).",
+    "9 Air (AQ) BKK 00:10→04:00 / CAN 21:10→23:10 daily on Google winter samples (not in 2LNR's Oct table).",
+    "Kenya Airways KQ886/887 (fifth-freedom, 787) some days; China Eastern MU2077/2078 daily red-eye."
+   ],
+   "fit_2d1n": {
+    "morning_out": [
+     "CZ 362 08:10→11:55",
+     "TG 668 09:20→13:20"
+    ],
+    "late_back": [
+     "CZ 361 20:25→22:30",
+     "CZ 3035 23:00→01:05",
+     "KQ 887 21:40→23:35 [some days]",
+     "TG 679 20:25→22:45",
+     "AQ 21:10→23:10"
+    ]
+   }
+  },
+  {
+   "code": "SZX",
+   "city": "Shenzhen",
+   "city_th": "เซินเจิ้น",
+   "carriers": [
+    {
+     "code": "CZ",
+     "airline": "China Southern",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes (small J cabin on A320/A321/737)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "CZ 8158",
+       "winter": "02:40→07:00",
+       "summer": "02:40→07:05",
+       "aircraft": "Airbus A320neo",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 8076",
+       "winter": "12:10→15:55",
+       "summer": "12:40→16:40",
+       "aircraft": "Airbus A321",
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2026-11-20"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "12:10→16:05",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "CZ 8324",
+       "winter": null,
+       "summer": "17:25→21:40",
+       "aircraft": "Airbus A321",
+       "summer_days": "daily",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "19:15→22:55",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8075",
+       "winter": "08:50→11:10",
+       "summer": "09:05→11:20",
+       "aircraft": "Airbus A321",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "09:00→11:10",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "09:10→11:10",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "1/5 sample dates",
+       "seen_dates": [
+        "2026-11-17"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8323",
+       "winter": null,
+       "summer": "14:20→16:25",
+       "aircraft": "Airbus A321",
+       "summer_days": "daily",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "15:55→18:15",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "16:10→18:15",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "CZ 8157",
+       "winter": "22:55→01:40",
+       "summer": "23:35→01:40",
+       "aircraft": "Airbus A320neo",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "ZH",
+     "airline": "Shenzhen Airlines",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "ZH 306",
+       "winter": "02:20→06:15",
+       "summer": "03:15→07:10",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "ZH 310",
+       "winter": "12:10→15:55",
+       "summer": "12:10→16:05",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "ZH 308",
+       "winter": "18:10→22:15",
+       "summer": "19:15→23:10",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "ZH 309",
+       "winter": "09:10→11:10",
+       "summer": "09:10→11:10",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "ZH 307",
+       "winter": "15:05→17:05",
+       "summer": "15:55→18:15",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "ZH 305",
+       "winter": "23:20→01:20",
+       "summer": "00:15→02:15",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "FD",
+     "airline": "Thai AirAsia",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "FD 596",
+       "winter": "19:05→22:50",
+       "summer": "18:30→22:25",
+       "aircraft": "Airbus A320",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "FD 597",
+       "winter": "23:55→01:50",
+       "summer": "23:30→01:15",
+       "aircraft": "Airbus A320",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22"
+       ],
+       "freq": "some days",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "SL",
+     "airline": "Thai Lion Air",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "SL 902",
+       "winter": "22:45→02:35",
+       "summer": "22:40→02:30",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "SL 903",
+       "winter": null,
+       "summer": "03:30→05:15",
+       "aircraft": "Boeing 737-800",
+       "summer_days": "Mon/Wed",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      }
+     ]
+    }
+   ],
+   "news": [
+    "Shenzhen Airlines timetable (to 24 Oct 2026): ZH306/305, ZH310/309, ZH308/307 daily — globalpage.shenzhenair.com FlightTimetable_EN20260821.pdf; THAI sells ZH306 as codeshare TG6456. A THAI-operated BKK–SZX route was reported as 'planned late 2026' (travelandtourworld.com) but nothing is filed — not included.",
+    "Thai AirAsia DMK–SZX (FD596/597) cut to 4–5 weekly May–Jul 2026; daily in 2LNR Oct table and on Google Nov samples.",
+    "No daytime morning BKK→SZX flight: before 11:00 only red-eyes (ZH 02:20, CZ 02:40). For a true morning-out 2D1N, fly to HKG and cross the border."
+   ],
+   "fit_2d1n": {
+    "morning_out": [
+     "CZ 8158 02:40→07:00 (red-eye)",
+     "ZH 306 02:20→06:15 (red-eye)"
+    ],
+    "late_back": [
+     "CZ 8157 22:55→01:40",
+     "ZH 305 23:20→01:20",
+     "FD 597 23:55→01:50 [some days]"
+    ]
+   }
+  },
+  {
+   "code": "MFM",
+   "city": "Macau",
+   "city_th": "มาเก๊า",
+   "carriers": [
+    {
+     "code": "NX",
+     "airline": "Air Macau",
+     "kind": "full",
+     "bangkok_airport": "BKK",
+     "business": "yes",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "NX 995",
+       "winter": "10:35→14:35",
+       "summer": "10:35→14:20",
+       "aircraft": "Airbus A321",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "NX 935",
+       "winter": "13:30→17:35",
+       "summer": "14:40→18:25",
+       "aircraft": "Airbus A321neo family",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "20:05→23:30",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "out",
+       "flt": "NX 991",
+       "winter": null,
+       "summer": "22:05→01:50",
+       "aircraft": "Airbus A321neo family",
+       "summer_days": "daily",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "NX 996",
+       "winter": "08:05→09:40",
+       "summer": "07:45→09:35",
+       "aircraft": "Airbus A321",
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "NX 936",
+       "winter": "10:20→12:30",
+       "summer": "11:35→13:40",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "16:50→19:05",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "NX 992",
+       "winter": null,
+       "summer": "18:55→21:10",
+       "aircraft": "Airbus A321neo family",
+       "summer_days": "daily",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "FD",
+     "airline": "Thai AirAsia",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": null,
+       "winter": "06:45→10:20",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "FD 762",
+       "winter": null,
+       "summer": "10:00→13:45",
+       "aircraft": "Airbus A320",
+       "summer_days": "daily",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "FD 766",
+       "winter": "13:50→17:25",
+       "summer": "14:35→18:20",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": null,
+       "winter": "10:50→12:45",
+       "summer": null,
+       "aircraft": null,
+       "seen_winter": "3/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "FD 763",
+       "winter": null,
+       "summer": "14:15→16:05",
+       "aircraft": "Airbus A320",
+       "summer_days": "daily",
+       "freq": "Oct (summer) only / not matched in winter samples",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "FD 767",
+       "winter": "17:55→19:50",
+       "summer": "19:00→20:45",
+       "aircraft": "Airbus A320",
+       "seen_winter": "5/5 sample dates",
+       "seen_dates": [
+        "2026-11-17",
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "daily",
+       "fits_2d1n": false
+      }
+     ]
+    },
+    {
+     "code": "SL",
+     "airline": "Thai Lion Air",
+     "kind": "lcc",
+     "bangkok_airport": "DMK",
+     "business": "no",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "SL 372",
+       "winter": "10:15→13:50",
+       "summer": "10:10→13:50",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": true
+      },
+      {
+       "dir": "out",
+       "flt": "SL 370",
+       "winter": "17:25→21:05",
+       "summer": "17:25→21:05",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "SL 373",
+       "winter": "14:45→16:25",
+       "summer": "14:50→16:30",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "2/5 sample dates",
+       "seen_dates": [
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "from Jan 2027",
+       "fits_2d1n": false
+      },
+      {
+       "dir": "back",
+       "flt": "SL 371",
+       "winter": "22:05→23:50",
+       "summer": "22:05→23:50",
+       "aircraft": "Boeing 737-800",
+       "seen_winter": "4/5 sample dates",
+       "seen_dates": [
+        "2026-11-20",
+        "2026-11-22",
+        "2027-01-16",
+        "2027-03-06"
+       ],
+       "freq": "some days",
+       "fits_2d1n": true
+      }
+     ]
+    },
+    {
+     "code": "VZ",
+     "airline": "Thai Vietjet Air",
+     "kind": "lcc",
+     "bangkok_airport": "BKK",
+     "business": "no (SkyBoss fare only)",
+     "flights": [
+      {
+       "dir": "out",
+       "flt": "VZ 3732",
+       "winter": "16:45→20:40",
+       "summer": null,
+       "freq": "Wed/Fri/Sun",
+       "start": null,
+       "fits_2d1n": false,
+       "source": "airportia.com VZ3732; airpaz.com",
+       "note": "Charter-style flight number, 3 weekly (Sep–Oct 2026); not on Google Flights; winter continuation unconfirmed."
+      },
+      {
+       "dir": "back",
+       "flt": "VZ 3733",
+       "winter": "21:40→23:25",
+       "summer": null,
+       "freq": "Wed/Fri/Sun",
+       "start": null,
+       "fits_2d1n": true,
+       "source": "planemapper.com / airpaz.com VZ3733; FR24 lists 13:40→16:25 for early Oct",
+       "note": "Return time conflicts between sources (21:40 vs 13:40) — verify."
+      }
+     ]
+    }
+   ],
+   "news": [
+    "Air Macau 3 daily BKK–MFM (NX995/996, NX935/936, NX991/992); winter retimes on Google: 10:35, 13:30, 20:05 out; 08:05 (some days), 10:20, 16:50 back — no departure from MFM after 16:50 in winter.",
+    "Thai AirAsia DMK–MFM winter: 06:45→10:20 & 13:50→17:25 out, 10:50→12:45 & 17:55→19:50 back (Google). Thai Lion Air SL372/373 and SL370/371 daily (2LNR).",
+    "Thai Vietjet BKK–MFM VZ3732/3733 3 weekly (Wed/Fri/Sun) — airportia/planemapper; not on Google Flights.",
+    "Google prices Thai Lion Air one-ways but shows Air Macau and Thai AirAsia as 'price unavailable' (16 Jan probe: SL 10:15 out ฿2,745, SL 22:05 back ฿2,535)."
+   ],
+   "fit_2d1n": {
+    "morning_out": [
+     "NX 995 10:35→14:35",
+     "FD 06:45→10:20 [some days]",
+     "SL 372 10:15→13:50 [from Jan 2027]"
+    ],
+    "late_back": [
+     "SL 371 22:05→23:50 [some days]",
+     "VZ 3733 21:40→23:25 [Wed/Fri/Sun]"
+    ]
+   }
+  }
+ ]
+}
