@@ -1,0 +1,24 @@
+{
+ "_note": "Shared departure-time bands + ratings for all public dashboards (TG, budget, GBA) and future routine runs. Edit here only; builders inject via time_bands.py. Times = local departure time of that leg; 'to' inclusive (HH:MM).",
+ "out": [
+  {"id": "o1", "from": "05:00", "to": "12:59", "label": "ดีมาก", "tone": "vg"},
+  {"id": "o2", "from": "13:00", "to": "17:59", "label": "ดี", "tone": "g"},
+  {"id": "o3", "from": "18:00", "to": "22:59", "label": "กลาง", "tone": "mid"},
+  {"id": "o4", "from": "23:00", "to": "04:59", "label": "แย่", "tone": "bad"}
+ ],
+ "back": [
+  {"id": "b1", "from": "05:00", "to": "12:59", "label": "แย่มาก", "tone": "vbad"},
+  {"id": "b2", "from": "13:00", "to": "17:59", "label": "ดี", "tone": "g"},
+  {"id": "b3", "from": "18:00", "to": "23:59", "label": "ดีมาก", "tone": "vg"},
+  {"id": "b4", "from": "00:00", "to": "04:59", "label": "แย่", "tone": "bad"}
+ ],
+ "tones": {
+  "vg":   {"bg": "#dcf3e4", "fg": "#11703c", "bd": "#a9dcbb", "rank": 0},
+  "g":    {"bg": "#d9f1f0", "fg": "#0b6461", "bd": "#a3d9d6", "rank": 1},
+  "mid":  {"bg": "#fdf0cf", "fg": "#855400", "bd": "#efd28a", "rank": 2},
+  "bad":  {"bg": "#fde4d6", "fg": "#b23c0b", "bd": "#f3b896", "rank": 3},
+  "vbad": {"bg": "#fbdcdc", "fg": "#a5161b", "bd": "#efa3a5", "rank": 4}
+ },
+ "good_times": {"out": ["vg", "g"], "back": ["g", "vg"]},
+ "legacy_params": {"noout": {"out": ["o4"]}, "hidered": {"out": ["o4"]}, "nored": {"out": ["o4"]}, "noback": {"back": ["b1", "b4"]}}
+}

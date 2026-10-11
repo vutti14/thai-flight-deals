@@ -41,7 +41,8 @@ empty = [dict(c=e["code"], d=e["dep"], r=e["ret"], u=e["url"]) for e in P["empty
 DATA = dict(captured="2026-10-11", opts=opts, sched=sched, empty=empty, cities=cities, rinfo=rinfo, tg=tg, tgx=tgx, tgmap=TGMAP,
             tg_snap=TG["searched_at"])
 js = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("&", "\\u0026")
-html = (ROOT / "budget_template.html").read_text().replace("/*__DATA__*/null", js)
+from time_bands import js_snippet
+html = (ROOT / "budget_template.html").read_text().replace("/*__DATA__*/null", js).replace("/*__BANDS__*/", js_snippet())
 out = ROOT.parent / "site" / "budget"; out.mkdir(parents=True, exist_ok=True)
 (out / "index.html").write_text(html, encoding="utf-8")
 print("built", out / "index.html", len(opts), "options,", len({(o["c"], o["d"], o["r"]) for o in opts}), "priced searches,", len({o["c"] for o in opts}), "cities")

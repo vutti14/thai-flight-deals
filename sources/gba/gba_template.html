@@ -42,6 +42,7 @@ header .sub{color:var(--mut);font-size:13.5px;margin-top:4px}
 .pill .ct{font-size:12px;opacity:.75}
 .pill .dot{width:9px;height:9px;border-radius:50%;flex:none}
 .frow{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:8px}
+.frow .tbrow{flex:1 1 100%;color:var(--p)}
 .sw{display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:14px;min-height:38px;user-select:none}
 .sw input{appearance:none;-webkit-appearance:none;width:40px;height:24px;border-radius:12px;background:#cfc9d8;position:relative;transition:.2s;cursor:pointer;flex:none;margin:0}
 .sw input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
@@ -216,8 +217,7 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
   <div class="bar"><div class="seg" id="typ"></div><button class="pill ftog" id="ftog" aria-expanded="false">ตัวกรอง</button></div>
   <div class="chips" id="cty" style="margin-top:8px"></div>
   <div class="frow"><div class="seg" id="mon"></div>
-   <label class="sw" title="ซ่อนเที่ยวบินขาไปที่ออก 23:00–04:59"><input type="checkbox" id="noout"> ไม่เอาขาไป 5 ทุ่ม–ตี 5</label>
-   <label class="sw" title="ซ่อนขากลับที่ออก 01:00–12:59 (มาเก๊า 2 วัน 1 คืนใช้เวลาตั๋วจริง ทริป 3 วัน 2 คืนใช้ตารางบินของสายนั้น)"><input type="checkbox" id="noback"> ไม่เอาขากลับ ตี 1–บ่ายโมง</label>
+   <div class="tbrow" id="tbo"></div><div class="tbrow" id="tbb"></div>
    <span class="lbl">ไปกี่คน</span><div class="step"><button id="nm" aria-label="ลดจำนวนคน">−</button><input id="n" type="number" inputmode="numeric" min="1" max="99" value="1" aria-label="จำนวนคน"><button id="np" aria-label="เพิ่มจำนวนคน">+</button></div></div>
  </div>
  <details class="note" id="cov"><summary>ข้อมูลครอบคลุมแค่ไหน · ข้อจำกัดที่ควรรู้</summary><div id="covb"></div></details>
@@ -231,6 +231,7 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
 </div>
 <script>
 const DB=/*__DATA__*/null;
+/*__BANDS__*/
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[\x26<>"']/g,c=>({"\x26":"\x26amp;","<":"\x26lt;",">":"\x26gt;",'"':"\x26quot;","'":"\x26#39;"}[c]));
 const TH_DAY=["อา.","จ.","อ.","พ.","พฤ.","ศ.","ส."],TH_MON=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
@@ -254,15 +255,18 @@ const HOL={"2026-10-23":["วันปิยมหาราช"],"2026-12-05":["
  "2026-12-31":["สิ้นปี"],"2027-01-01":["ปีใหม่"],"2027-02-05":["ตรุษจีน","cny"],"2027-02-06":["ตรุษจีน","cny"],"2027-02-07":["ตรุษจีน","cny"],
  "2027-02-21":["มาฆบูชา"],"2027-02-22":["ชดเชยมาฆบูชา"],"2027-04-06":["วันจักรี"],"2027-04-13":["สงกรานต์"],"2027-04-14":["สงกรานต์"],"2027-04-15":["สงกรานต์"]};
 const MONS=["2026-10","2026-11","2026-12","2027-01","2027-02","2027-03","2027-04"];
-const st={typ:"all",c:"all",mon:"all",noout:false,noback:false,n:1,cab:"eco",rc:"HKG"};
+const st={typ:"all",c:"all",mon:"all",n:1,cab:"eco",rc:"HKG"};
 // time filters: outbound rows = exact ticket time, hide dep 23:00–04:59; return: Macau one-way back rows = exact time, 3D2N round trips = the airline's
 // scheduled return times (route data, not the exact ticket) — hidden only if every scheduled return departs 01:00–12:59; 2D1N returns are 18:00+ by search.
-const isRed=o=>!o.bk&&(toMin(o.od)>=1380||toMin(o.od)<300);
-const backWin=m=>m>=60&&m<780;
+// time bands (shared time_bands.json): outbound rows = exact ticket departure; Macau one-way back rows = exact; 2D1N round trips = return searched 18:00–23:59
+// (band ดีมาก); 3D2N round trips = airline scheduled returns ('ตามตารางบิน'): trip passes if ANY scheduled return falls in a selected band.
 let CUR=null;   // trip being evaluated (for scheduled-return lookup)
-function schedBackBad(t,a){if(!t||t.t!=="3D2N")return false;const B=DB.backall[t.c]||{};const L=(B[t.season]||{})[a]||(B[t.season==="winter"?"summer":"winter"]||{})[a];
- return !!(L&&L.length&&L.every(x=>backWin(toMin(x))))}
-const okOpt=o=>o.p!=null&&!o.x&&!(st.noout&&isRed(o))&&!(st.noback&&(o.bk?backWin(toMin(o.od)):schedBackBad(CUR,o.a)));
+function schedBack(t,a){const B=DB.backall[t.c]||{};return (B[t.season]||{})[a]||(B[t.season==="winter"?"summer":"winter"]||{})[a]||[]}
+function retInfo(t,o){if(o.bk)return {t:o.od,x:""};if(!t)return null;if(t.t==="2D1N")return {t:"18:00",x:"ค้นเฉพาะ 18:00+"};
+ const L=schedBack(t,o.a);if(!L.length)return null;const sel=L.filter(x=>tbOk("back",x));const pool=sel.length?sel:L;
+ const bst=pool.slice().sort((p,q)=>tbRank(tbBand("back",p))-tbRank(tbBand("back",q)))[0];return {t:bst,x:"ตามตารางบิน",any:sel.length>0}}
+function backPass(t,o){const r=retInfo(t,o);if(!r)return true;if(o.bk||r.any===undefined)return tbOk("back",r.t);return r.any}
+const okOpt=o=>o.p!=null&&!o.x&&(o.bk?tbOk("back",o.od):(tbOk("out",o.od)&&backPass(CUR,o)));
 const minOpt=L=>(L||[]).filter(okOpt).reduce((a,b)=>!a||b.p<a.p?b:a,null);
 // enrich trips
 DB.trips.forEach(t=>{t.k=`${t.c}_${t.t}_${t.d}`;t.ow=!!(t.eco&&t.eco.ow);
@@ -274,15 +278,15 @@ function best(t,cab){CUR=t;if(cab==="eco"){if(!t.eco)return null;
   const o=minOpt(t.eco.o);return o?{p:o.p,o}:null}
  if(!t.biz)return null;const o=minOpt(t.biz.o);return o?{p:o.p,o}:null}
 const hasRaw=(t,cab)=>cab==="eco"?!!(t.eco&&(t.ow?(t.eco.ow.out&&t.eco.ow.out.o.some(o=>o.p)&&t.eco.ow.back&&t.eco.ow.back.o.some(o=>o.p)):t.eco.o.some(o=>o.p))):!!(t.biz&&t.biz.o.some(o=>o.p));
-const tf=()=>st.noout||st.noback;
+const tf=()=>tbActive();
 function filtered(){return DB.trips.filter(t=>(st.typ==="all"||t.t===st.typ)&&(st.c==="all"||t.c===st.c)&&(st.mon==="all"||t.d.slice(0,7)===st.mon)&&(!tf()||best(t,"eco")||best(t,"biz")||(!hasRaw(t,"eco")&&!hasRaw(t,"biz"))))}
 const per=p=>st.n>1?` · ${st.n} คน ฿${fmt(p*st.n)}`:"";
 function backHint(t,code){const b=((DB.back[t.c]||{})[t.season]||{})[code];return b&&b.length?b.map(x=>`${esc(x[0])} ${x[1]}`).join(", "):null}
 // ---------- controls ----------
 function readHash(){const h=new URLSearchParams(location.hash.slice(1));["typ","c","mon","cab"].forEach(k=>{if(h.get(k))st[k]=h.get(k)});
- if(h.get("n"))st.n=Math.max(1,Math.min(99,+h.get("n")||1));if(h.get("noout")==="1"||h.get("nored")==="1")st.noout=true;if(h.get("noback")==="1")st.noback=true}
+ if(h.get("n"))st.n=Math.max(1,Math.min(99,+h.get("n")||1));tbFromHash(h)}
 function writeHash(){const h=new URLSearchParams();if(st.typ!=="all")h.set("typ",st.typ);if(st.c!=="all")h.set("c",st.c);if(st.mon!=="all")h.set("mon",st.mon);
- if(st.cab!=="eco")h.set("cab",st.cab);if(st.n!==1)h.set("n",st.n);if(st.noout)h.set("noout",1);if(st.noback)h.set("noback",1);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search)}
+ if(st.cab!=="eco")h.set("cab",st.cab);if(st.n!==1)h.set("n",st.n);tbToHash(h);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search)}
 function seg(el,items,k){el.innerHTML=items.map(([v,l])=>`<button data-v="${v}" class="${st[k]===v?"on":""}" aria-pressed="${st[k]===v}">${l}</button>`).join("");
  el.onclick=e=>{const b=e.target.closest("button");if(!b)return;st[k]=b.dataset.v;render()}}
 function controls(){
@@ -291,8 +295,8 @@ function controls(){
  seg($("calcab"),[["eco","ราคาชั้นประหยัด"],["biz","ราคาชั้นธุรกิจ"]],"cab");
  const cnt={};DB.trips.forEach(t=>{if(st.typ==="all"||t.t===st.typ)cnt[t.c]=(cnt[t.c]||0)+1});
  $("cty").innerHTML=[["all","ทุกเมือง"]].concat(CITIES.map(c=>[c,CS[c]])).map(([k,l])=>`<button class="pill ${st.c===k?"on":""}" data-c="${k}" aria-pressed="${st.c===k}">${k!=="all"?`<span class="dot" style="background:var(--${k})"></span>`:""}${l}${k!=="all"?` <span class="ct">${cnt[k]||0}</span>`:""}</button>`).join("");
- $("n").value=st.n;$("noout").checked=st.noout;$("noback").checked=st.noback;
- const nf=(st.mon!=="all")+(st.noout?1:0)+(st.noback?1:0)+(st.n>1?1:0);$("ftog").textContent=nf?`ตัวกรอง (${nf})`:"ตัวกรอง"}
+ $("n").value=st.n;tbChips($("tbo"),"out",render);tbChips($("tbb"),"back",render);
+ const nf=(st.mon!=="all")+(tbAll("out")?0:1)+(tbAll("back")?0:1)+(st.n>1?1:0);$("ftog").textContent=nf?`ตัวกรอง (${nf})`:"ตัวกรอง"}
 // ---------- cards ----------
 function renderCards(T){
  const all=T.map(t=>({t,b:best(t,"eco")})).filter(x=>x.b).sort((a,b)=>a.b.p-b.b.p)[0];
@@ -328,7 +332,7 @@ const alB=a=>`<span class="b al ${a} ${LCC.has(a)?"lcc":""}">${AL[a]||a}</span>`
 function opRow(o,i,top){const cs=o.cs?`<span class="cs">ขายร่วม ${esc(o.cs)}</span>`:"";
  return `<div class="op ${o.x?"x":""} ${top?"top":""}"><div class="who">${alB(o.a)}<span class="b ap-${o.o}" title="${APN[o.o]}">${o.o}</span>${o.f?`<span class="fl">${esc(o.f)}</span>`:""}</div>
   <div class="p ${o.p==null?"u":""}">${o.p==null?"ไม่แสดงราคา":"฿"+fmt(o.p)}</div>
-  <div class="tm">${o.od} → ${o.oa}${o.nx?"<sup>+1</sup>":""} <span class="mut">${Math.floor(o.m/60)} ชม.${o.m%60?" "+o.m%60+" น.":""}</span>${isRed(o)?`<span class="b redeye">ออกดึก</span>`:""}${o.bk&&backWin(toMin(o.od))?`<span class="b redeye">กลับช่วง ตี 1–บ่ายโมง</span>`:""}${!o.bk&&schedBackBad(CUR,o.a)?`<span class="b hol" title="จากตารางบิน ไม่ใช่เวลาของตั๋วใบนี้">ขากลับตามตารางบินออก ตี 1–บ่ายโมง</span>`:""}${o.nx?`<span class="b redeye">ถึงหลังเที่ยงคืน</span>`:""}${o.x?`<span class="b hol">ราคาผิดปกติ ไม่นำมาคิด</span>`:""}${cs}</div></div>`}
+  <div class="tm">${o.od} → ${o.oa}${o.nx?"<sup>+1</sup>":""} <span class="mut">${Math.floor(o.m/60)} ชม.${o.m%60?" "+o.m%60+" น.":""}</span>${o.bk?tbBadge("back",o.od):tbBadge("out",o.od)}${(()=>{if(o.bk)return "";const r=retInfo(CUR,o);return r?tbBadge("back",r.t,r.x+(r.x==="ตามตารางบิน"?" "+r.t:"")):""})()}${o.nx?`<span class="b redeye">ถึงหลังเที่ยงคืน</span>`:""}${o.x?`<span class="b hol">ราคาผิดปกติ ไม่นำมาคิด</span>`:""}${cs}</div></div>`}
 function sortOpts(L){return (L||[]).slice().sort((a,b)=>(a.p==null)-(b.p==null)||(a.x?1:0)-(b.x?1:0)||(a.p||0)-(b.p||0)||a.od.localeCompare(b.od))}
 function pb(t,cab){const b=best(t,cab),bz=cab==="biz";const lbl=bz?"ชั้นธุรกิจ":"ชั้นประหยัด";
  if(!b){const why=tf()&&hasRaw(t,cab)?"ซ่อนตามตัวกรองเวลา":bz?(t.c==="MFM"&&t.t==="2D1N"?"ไม่มีเที่ยวกลับค่ำที่มีชั้นธุรกิจ":(t.biz?"ไม่มีราคา":"ยังไม่ได้ค้นวันนี้")):"ไม่มีราคา";
@@ -344,12 +348,12 @@ function detCol(t,cab){CUR=t;const bz=cab==="biz";
  const rh=t.t==="2D1N"?`<p class="rt">ขากลับ: Google คัดเฉพาะเที่ยวที่ออกจาก${CS[t.c]} 18:00–23:59 · เที่ยวค่ำตามตาราง: ${seenA.map(a=>{const h=backHint(t,a);return h?`${AL[a]} ${h}`:null}).filter(Boolean).join(" · ")||"ดูใน Google Flights"}</p>`:`<p class="rt">เวลาที่แสดงเป็นขาไป · ขากลับเลือกได้ใน Google Flights</p>`;
  return `<div class="${bz?"bzc":""}"><h4>${bz?"ชั้นธุรกิจ":"ชั้นประหยัด"} · ${L.length} เที่ยวบิน (ราคาไป-กลับ)</h4>${L.length?L.map(o=>opRow(o,0,o===m)).join(""):`<div class="mut">Google ไม่พบเที่ยวบิน</div>`}${rh}</div>`}
 function renderList(T){
- $("lleg").innerHTML=`<span><span class="b ty">2 วัน 1 คืน</span> ไปถึงก่อนเที่ยง (ออก 05:00–10:59) กลับวันรุ่งขึ้นหลัง 18:00</span><span><span class="b ty t3">3 วัน 2 คืน</span> เวลาไหนก็ได้</span><span><span class="b redeye">ออกดึก</span> ขาไปออก 23:00–04:59</span><span><span class="b ap-BKK">BKK</span> สุวรรณภูมิ <span class="b ap-DMK">DMK</span> ดอนเมือง</span><span>ราคาต่อคน ไป-กลับ บินตรง</span>`;
+ $("lleg").innerHTML=`<span><span class="b ty">2 วัน 1 คืน</span> ไปถึงก่อนเที่ยง (ออก 05:00–10:59) กลับวันรุ่งขึ้นหลัง 18:00</span><span><span class="b ty t3">3 วัน 2 คืน</span> เวลาไหนก็ได้</span>${tbLegend()}<span><span class="b ap-BKK">BKK</span> สุวรรณภูมิ <span class="b ap-DMK">DMK</span> ดอนเมือง</span><span>ราคาต่อคน ไป-กลับ บินตรง</span>`;
  if(!T.length){$("list").innerHTML=`<div class="empty">ไม่มีทริปตามตัวกรอง</div>`;return}
  let lastM="";$("list").innerHTML=T.map(t=>{const be=best(t,"eco"),o=be&&be.o;const m=t.d.slice(0,7);let mh="";if(m!==lastM){lastM=m;mh=`<div class="mh">${TH_MONF[+m.slice(5)-1]} ${+m.slice(0,4)+543}</div>`}
   const nA=new Set([...(t.eco?(t.ow?[...(t.eco.ow.out?t.eco.ow.out.o:[]),...(t.eco.ow.back?t.eco.ow.back.o:[])]:t.eco.o):[]),...(t.biz?t.biz.o:[])].map(x=>x.a)).size;
   const tags=`<span class="b ty ${t.t==="3D2N"?"t3":""}">${TYP[t.t]}</span>`+t.hol.map(h=>`<span class="b hol ${["ตรุษจีน"].includes(h)?"cny":""}">${h}${h==="ตรุษจีน"?" · ราคาช่วงพีค":""}</span>`).join("");
-  const sumL=o?`ถูกสุด: ${alB(o.a)}<span class="b ap-${o.o}">${o.o}</span> ${o.f?`<span class="fl">${esc(o.f)}</span>`:""} ไป ${o.od}${t.ow?` · กลับ ${alB(be.b.a)} ${be.b.od}`:""}${isRed(o)?` <span class="b redeye">ออกดึก</span>`:""}${t.ow?` <span class="mut">(รวม 2 เที่ยวเดียว)</span>`:""}`:`<span class="mut">ไม่มีราคาชั้นประหยัด</span>`;
+  const sumL=o?`ถูกสุด: ${alB(o.a)}<span class="b ap-${o.o}">${o.o}</span> ${o.f?`<span class="fl">${esc(o.f)}</span>`:""} ไป ${o.od}${t.ow?` · กลับ ${alB(be.b.a)} ${be.b.od}`:""}${tbBadge("out",o.od)}${t.ow?tbBadge("back",be.b.od):(()=>{const r=retInfo(t,o);return r?tbBadge("back",r.t,r.x):""})()}${t.ow?` <span class="mut">(รวม 2 เที่ยวเดียว)</span>`:""}`:`<span class="mut">ไม่มีราคาชั้นประหยัด</span>`;
   return mh+`<article class="trip" id="t_${t.k}" style="--cc:var(--${t.c})"><div class="th"><div class="city"><b>${CS[t.c]}</b><span class="cy">${esc(DB.cities[t.c].en)} · ${t.c}</span>
     <div class="dt">${fdr(t.d,t.r)} ${tags}</div></div><div class="prs">${pb(t,"eco")}${pb(t,"biz")}</div></div>
    <div class="sum">${sumL}</div>
@@ -381,7 +385,7 @@ function renderStatic(){const em=DB.empty;const nT=DB.trips.length;
   <li>Google ไม่แสดงบางเที่ยวบิน: ไทยแอร์เอเชีย ดอนเมือง–ฮ่องกง (FD518 เริ่ม 25 ต.ค. 69), ไทยเวียตเจ็ท สุวรรณภูมิ–มาเก๊า (3 เที่ยว/สัปดาห์) และเที่ยวบินจากดอนเมืองบางวัน · แอร์มาเก๊าและไทยแอร์เอเชียบางเที่ยวขึ้นแต่ “ไม่แสดงราคา” ราคาจริงอาจถูกกว่าที่เห็น ให้เช็กที่เว็บสายการบิน</li>
   <li>Google แสดงผลได้ราว 20 เที่ยวบินต่อการค้นหา เส้นทางที่มีเที่ยวบินเยอะ (ฮ่องกง กวางโจว) อาจไม่เห็นครบทุกเที่ยว</li>
   ${em.length?`<li>ค้นแล้วไม่พบเที่ยวบิน ${em.length} ครั้ง: ${em.map(e=>`${CS[e.c]} ${e.cab==="BIZ"?"ชั้นธุรกิจ":"ชั้นประหยัด"} ${e.t==="OW-BACK"?"ขากลับ":e.t==="OW-OUT"?"ขาไป":e.t} ${fd(e.d)}`).join(" · ")} (ทริปนั้นจึงไม่มีราคารวม)</li>`:""}
-  <li>ตัวกรองเวลา: “ไม่เอาขาไป 5 ทุ่ม–ตี 5” ใช้เวลาออกจริงของตั๋ว · “ไม่เอาขากลับ ตี 1–บ่ายโมง” ใช้เวลาจริงสำหรับมาเก๊า 2 วัน 1 คืน (ตั๋วเที่ยวเดียว) ส่วนทริป 3 วัน 2 คืนใช้<b>ตารางบิน</b>ของสายนั้น (ซ่อนเมื่อทุกเที่ยวกลับของสายนั้นออก 01:00–12:59 ไม่ใช่เวลาของตั๋วใบนั้น) ทริป 2 วัน 1 คืนค้นเฉพาะขากลับหลัง 18:00 อยู่แล้ว · การ์ดราคาถูกสุดและปฏิทินคำนวณตามตัวกรองที่เปิดอยู่</li>
+  <li>ช่วงเวลา (เลือกได้หลายช่วงในตัวกรอง): ขาไปใช้เวลาออกจริงของตั๋ว · ขากลับ: มาเก๊า 2 วัน 1 คืนใช้เวลาจริง (ตั๋วเที่ยวเดียว), ทริป 2 วัน 1 คืนค้นเฉพาะขากลับ 18:00–23:59 (ดีมาก), ทริป 3 วัน 2 คืนใช้<b>ตารางบิน</b>ของสายนั้น (ป้าย “ตามตารางบิน” ไม่ใช่เวลาของตั๋วใบนั้น และซ่อนเมื่อทุกเที่ยวกลับตามตารางอยู่ในช่วงที่ไม่ได้เลือก) · การ์ด ปฏิทิน และรายการคำนวณตามช่วงที่เลือก</li>
   <li>ราคาที่สูงผิดปกติเกิน 4 เท่าของราคากลางในการค้นหาเดียวกัน ขีดฆ่าไว้และไม่นำมาคิดราคาถูกสุด</li>
   <li>ราคาเปลี่ยนได้ทุกวัน ตรวจสอบกับสายการบินก่อนจอง · หน้านี้มีแต่ข้อมูลสาธารณะ ไม่มีข้อมูลส่วนตัว</li></ul>`;
  $("foot").innerHTML=`ข้อมูล: Google Flights (ค้นเมื่อ ${fdy(DB.captured)}) · ตารางบินจาก 2LNR, AeroRoutes, ตารางบินเซินเจิ้นแอร์ไลน์ และข่าวสายการบิน · ดูเพิ่ม: <a href="../">การบินไทย</a> · <a href="../budget/">สายการบินราคาประหยัด</a>`}
@@ -394,7 +398,7 @@ document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g
  const rc=e.target.closest("[data-rc]");if(rc){st.rc=rc.dataset.rc;renderRoutes();return}});
 $("nm").onclick=()=>{st.n=Math.max(1,st.n-1);render()};$("np").onclick=()=>{st.n=Math.min(99,st.n+1);render()};
 $("n").onchange=e=>{st.n=Math.max(1,Math.min(99,Math.round(+e.target.value)||1));render()};
-$("noout").onchange=e=>{st.noout=e.target.checked;render()};$("noback").onchange=e=>{st.noback=e.target.checked;render()};
+
 $("ftog").onclick=()=>{const s=$("stk");s.classList.toggle("open");$("ftog").setAttribute("aria-expanded",s.classList.contains("open"))};
 addEventListener("scroll",()=>$("stk").classList.toggle("sc",scrollY>120),{passive:true});
 readHash();if(st.c!=="all")st.rc=st.c;renderStatic();render();

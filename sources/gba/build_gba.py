@@ -98,7 +98,8 @@ empty = [dict(c=s["c"], cab=s["cab"], t=s["t"], d=s["d"], r=s["r"], u=s["u"]) fo
 DATA = dict(captured=CAPTURED, trips=sorted(trips.values(), key=lambda t: (t["d"], t["c"], t["t"])), cities=cities, sched=sched, back=BACK, backall=BACKALL,
             empty=empty, nsearch=len(S))
 out = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("&", "\\u0026")
-html = (ROOT / "gba_template.html").read_text().replace("/*__DATA__*/null", out)
+from time_bands import js_snippet
+html = (ROOT / "gba_template.html").read_text().replace("/*__DATA__*/null", out).replace("/*__BANDS__*/", js_snippet())
 dst = ROOT.parent / "site" / "gba"; dst.mkdir(parents=True, exist_ok=True); (dst / "index.html").write_text(html, encoding="utf-8")
 nopt = sum(len(x["o"]) for s in S.values() for x in [s]); npr = sum(1 for s in S.values() for o in s["o"] if o["p"])
 print("built", dst / "index.html", "| searches", len(S), "| trips", len(trips), "| flight rows", nopt, "priced", npr, "| empty", len(empty),
