@@ -95,7 +95,8 @@ for r in R["routes"]:
         car=[dict(code=c["code"], kind=c["kind"], apt=c["bangkok_airport"], biz=c["business"],
                   fl=[{k: f.get(k) for k in ("dir", "flt", "winter", "summer", "freq", "fits_2d1n", "aircraft", "start", "note")} for f in c["flights"]]) for c in r["carriers"]]))
 empty = [dict(c=s["c"], cab=s["cab"], t=s["t"], d=s["d"], r=s["r"], u=s["u"]) for s in S.values() if not s["o"]]
-DATA = dict(captured=CAPTURED, trips=sorted(trips.values(), key=lambda t: (t["d"], t["c"], t["t"])), cities=cities, sched=sched, back=BACK, backall=BACKALL,
+FJ = json.loads((ROOT / "fairs.json").read_text())   # gba/make_fairs.py -> fairs.json (routine-refreshed)
+DATA = dict(fairs=[{k: f[k] for k in ("id","city","name","th","venue","start","end","status","url","rel","big")} for f in FJ["fairs"]], fairs_checked=FJ["checked"], fairs_oow=FJ.get("note_out_of_window","").replace("Canton Fair 141st Phase 3 expected 1–5 May 2027 (tentative, outside window).","กวางเจาแฟร์ฤดูใบไม้ผลิ เฟส 3 คาดว่า 1–5 พ.ค. 70 (ยังไม่ยืนยัน)"), captured=CAPTURED, trips=sorted(trips.values(), key=lambda t: (t["d"], t["c"], t["t"])), cities=cities, sched=sched, back=BACK, backall=BACKALL,
             empty=empty, nsearch=len(S))
 out = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("&", "\\u0026")
 from time_bands import js_snippet

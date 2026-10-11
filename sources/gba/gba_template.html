@@ -157,6 +157,21 @@ a.open.bz{background:#fff;color:var(--gold);border:1px solid #e8d49c}
 a.open.sec{background:#fff;color:var(--p);border:1px solid var(--bd)}
 .mut{color:var(--mut);font-size:12.5px}
 .empty{color:var(--mut);padding:16px;text-align:center}
+.fch{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap;max-width:100%;margin:0 0 10px;padding:2px 0}.fch::-webkit-scrollbar{display:none}
+.fnote{font-size:13px;background:#fff6e5;color:#7a4a00;border-radius:10px;padding:8px 11px;margin:0 0 10px;line-height:1.55}
+.flist{display:flex;flex-direction:column;gap:8px}
+.fai{display:grid;grid-template-columns:128px minmax(0,1fr);gap:4px 12px;padding:10px 12px;border:1px solid var(--bd);border-left:4px solid var(--cc);border-radius:12px;background:#fff;scroll-margin-top:150px}
+.fai.past{opacity:.5}.fai.hi{box-shadow:0 0 0 2px var(--p)}
+.fai .fd{font:600 13.5px 'Kanit',sans-serif;line-height:1.35}.fai .fd small{display:block;font:400 12px 'Sarabun',sans-serif;color:var(--mut)}
+.fai .fn{font-weight:700;font-size:14px;line-height:1.35;min-width:0;overflow-wrap:anywhere}.fai .ft{font-size:13px;color:#4a4458;margin-top:2px}
+.fai .fm{font-size:12px;color:var(--mut);margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.fai .fm a{color:var(--p);font-weight:600}
+.b.rel{background:#ede7fb;color:#4b2a9a;border:1px solid #cdbff2;white-space:normal}.b.big{background:#fde4d6;color:#a3360a}.b.tent{background:#f0eef3;color:#6d6678}.b.unk{background:#fff;color:#6d6678;border:1px dashed #c9c3d3}
+.b.fcity{color:#fff;background:var(--cc)}
+.cal .fbs{display:flex;flex-direction:column;gap:2px;margin:2px 0}.cal .fb{display:block;height:4px;border-radius:2px;background:var(--cc);border:0;padding:0;cursor:pointer;width:100%}.cal .fb.rel{height:6px;box-shadow:0 0 0 1px #4b2a9a}
+.tfair{margin-top:8px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center;background:#f6f3fd;border-radius:10px;padding:6px 10px}
+.tfair a{color:var(--p);font-weight:600;text-decoration:none}.tfair a:hover{text-decoration:underline}
+@media(max-width:560px){.fai{grid-template-columns:minmax(0,1fr)}.fai>*{min-width:0}.fai .fd small{display:inline;margin-left:6px}}
 .sznote{margin-top:8px;font-size:12.5px;background:var(--al);color:#7a3e0a;border-radius:10px;padding:7px 10px}
 .tbl{width:100%;border-collapse:collapse;font-size:13px}
 .tbl th,.tbl td{border-bottom:1px solid var(--bd);padding:7px 6px;text-align:left;vertical-align:top}
@@ -225,6 +240,9 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
  <section class="box"><div class="bh"><h2>ปฏิทินวันบินไป</h2><div class="seg" id="calcab"></div></div>
   <div class="legend" id="cleg"></div>
   <div class="months" id="cal"></div></section>
+ <section class="box" id="fairs"><h2>งานแฟร์ในโซน GBA</h2><div class="chips fch" id="fcty"></div>
+  <p class="fnote"><b>ช่วงงานแฟร์ใหญ่ ตั๋วเครื่องบินและโรงแรมแพงขึ้นชัดเจน</b> โดยเฉพาะกวางเจาแฟร์ (Canton Fair) ที่กวางโจว กลาง ต.ค.–ต้น พ.ย. และกลาง เม.ย.–ต้น พ.ค. รวมถึงงานเฟอร์นิเจอร์ CIFF ครึ่งหลังเดือน มี.ค. โรงแรมใกล้ศูนย์ปาโจวมักขึ้นราคาหลายเท่าและเต็มเร็ว ถ้าไม่ได้ไปงาน เลี่ยงวันเหล่านี้ ถ้าจะไปงาน จองล่วงหน้าเร็วๆ</p>
+  <div class="flist" id="flist"></div><p class="mut sm" id="fsrc"></p></section>
  <section class="box"><h2>ทริปทั้งหมด เรียงตามวันบินไป</h2><div class="legend" id="lleg"></div><div class="list" id="list"></div></section>
  <section class="box" id="routes"><div class="bh"><h2>ตารางบินแต่ละเมือง</h2><div class="chips" id="rcty"></div></div><div id="rbody"></div></section>
  <footer id="foot"></footer>
@@ -255,7 +273,7 @@ const HOL={"2026-10-23":["วันปิยมหาราช"],"2026-12-05":["
  "2026-12-31":["สิ้นปี"],"2027-01-01":["ปีใหม่"],"2027-02-05":["ตรุษจีน","cny"],"2027-02-06":["ตรุษจีน","cny"],"2027-02-07":["ตรุษจีน","cny"],
  "2027-02-21":["มาฆบูชา"],"2027-02-22":["ชดเชยมาฆบูชา"],"2027-04-06":["วันจักรี"],"2027-04-13":["สงกรานต์"],"2027-04-14":["สงกรานต์"],"2027-04-15":["สงกรานต์"]};
 const MONS=["2026-10","2026-11","2026-12","2027-01","2027-02","2027-03","2027-04"];
-const st={typ:"all",c:"all",mon:"all",n:1,cab:"eco",rc:"HKG"};
+const st={typ:"all",c:"all",mon:"all",n:1,cab:"eco",rc:"HKG",fc:"all"};
 // time filters: outbound rows = exact ticket time, hide dep 23:00–04:59; return: Macau one-way back rows = exact time, 3D2N round trips = the airline's
 // scheduled return times (route data, not the exact ticket) — hidden only if every scheduled return departs 01:00–12:59; 2D1N returns are 18:00+ by search.
 // time bands (shared time_bands.json): outbound rows = exact ticket departure; Macau one-way back rows = exact; 2D1N round trips = return searched 18:00–23:59
@@ -268,6 +286,12 @@ function retInfo(t,o){if(o.bk)return {t:o.od,x:""};if(!t)return null;if(t.t==="2
 function backPass(t,o){const r=retInfo(t,o);if(!r)return true;if(o.bk||r.any===undefined)return tbOk("back",r.t);return r.any}
 const okOpt=o=>o.p!=null&&!o.x&&(o.bk?tbOk("back",o.od):(tbOk("out",o.od)&&backPass(CUR,o)));
 const minOpt=L=>(L||[]).filter(okOpt).reduce((a,b)=>!a||b.p<a.p?b:a,null);
+// ---------- trade fairs (gba/fairs.json via build_gba.py) ----------
+const FAIRS=(DB.fairs||[]).filter(f=>f.start);
+const FST={UNK:(DB.fairs||[]).filter(f=>!f.start)};
+const fairOn=(ds,c)=>FAIRS.filter(f=>f.start<=ds&&ds<=f.end&&(!c||c==="all"||f.city===c));
+const fairsFor=t=>FAIRS.filter(f=>f.city===t.c&&f.start<=t.r&&t.d<=f.end);
+const relTxt=f=>`เกี่ยวกับธุรกิจคุณ · ${f.rel.join("·")}`;
 // enrich trips
 DB.trips.forEach(t=>{t.k=`${t.c}_${t.t}_${t.d}`;t.ow=!!(t.eco&&t.eco.ow);
  const days=[];for(let x=D(t.d);iso(x)<=t.r;x.setDate(x.getDate()+1))days.push(iso(x));
@@ -317,13 +341,13 @@ function renderCards(T){
 function renderCal(T){const mons=st.mon==="all"?MONS:[st.mon];const by={};T.forEach(t=>{const b=best(t,st.cab);if(b)(by[t.d]=by[t.d]||[]).push({t,b})});
  const minM={};Object.entries(by).forEach(([d,L])=>L.forEach(x=>{const k=d.slice(0,7);if(minM[k]==null||x.b.p<minM[k])minM[k]=x.b.p}));
  const today=iso(new Date());
- $("cleg").innerHTML=`<span><i style="background:${st.cab==="biz"?"#f6dc8f":"#ffd8bf"}"></i>ถูกสุดของเดือน</span><span><i style="box-shadow:inset 0 0 0 2px #f2b8a2;background:#fff"></i>วันหยุด</span>${CITIES.map(c=>`<span><i style="background:var(--${c});border-radius:50%"></i>${CS[c]}</span>`).join("")}<span>ราคาถูกสุดต่อคน ไป-กลับ ${st.cab==="biz"?"ชั้นธุรกิจ":"ชั้นประหยัด"} · กดเพื่อดูทริป</span>`;
+ $("cleg").innerHTML=`<span><i style="background:${st.cab==="biz"?"#f6dc8f":"#ffd8bf"}"></i>ถูกสุดของเดือน</span><span><i style="box-shadow:inset 0 0 0 2px #f2b8a2;background:#fff"></i>วันหยุด</span><span><i style="height:4px;background:#8a8494"></i>แถบ = มีงานแฟร์ (สีตามเมือง · แถบหนา = วัสดุก่อสร้าง·หิน·เฟอร์นิเจอร์ · กดดูงาน)</span>${CITIES.map(c=>`<span><i style="background:var(--${c});border-radius:50%"></i>${CS[c]}</span>`).join("")}<span>ราคาถูกสุดต่อคน ไป-กลับ ${st.cab==="biz"?"ชั้นธุรกิจ":"ชั้นประหยัด"} · กดเพื่อดูทริป</span>`;
  $("cal").innerHTML=mons.map(k=>{const [y,m]=k.split("-").map(Number);const first=new Date(y,m-1,1),days=new Date(y,m,0).getDate();
   let h=`<div class="cal"><h3>${TH_MONF[m-1]} ${y+543}</h3><table><thead><tr>${["จ.","อ.","พ.","พฤ.","ศ.","ส.","อา."].map(x=>`<th>${x}</th>`).join("")}</tr></thead><tbody><tr>`;
   const off=(first.getDay()+6)%7;for(let i=0;i<off;i++)h+=`<td class="x"></td>`;
   for(let d=1;d<=days;d++){const ds=`${k}-${String(d).padStart(2,"0")}`,wd=(off+d-1)%7;
    const g={};(by[ds]||[]).forEach(x=>{if(!g[x.t.c]||x.b.p<g[x.t.c].b.p)g[x.t.c]=x});const L=CITIES.filter(c=>g[c]).map(c=>g[c]);
-   h+=`<td class="${L.length?"has":""} ${wd>=5?"we":""} ${HOL[ds]?"hol":""} ${ds<today?"past":""}"><span class="n">${d}</span>${HOL[ds]?`<span class="hl">${HOL[ds][0]}</span>`:""}`+
+   h+=`<td class="${L.length?"has":""} ${wd>=5?"we":""} ${HOL[ds]?"hol":""} ${ds<today?"past":""}"><span class="n">${d}</span>${HOL[ds]?`<span class="hl">${HOL[ds][0]}</span>`:""}${(()=>{const F=fairOn(ds,st.c);return F.length?`<span class="fbs">${F.slice(0,4).map(f=>`<button class="fb ${f.rel.length?"rel":""}" style="--cc:var(--${f.city})" data-fair="${f.id}" title="${esc(CS[f.city]+" · "+f.name)}" aria-label="งานแฟร์ ${esc(f.name)}"></button>`).join("")}</span>`:""})()}`+
     L.map(x=>`<button class="ch ${st.cab==="biz"?"bz":""} ${x.b.p===minM[k]?"best":""}" data-go="${x.t.k}" title="${CS[x.t.c]} ${TYP[x.t.t]} ฿${fmt(x.b.p)}"><i style="background:var(--${x.t.c})"></i><span class="cty">${CS[x.t.c]}</span><b>${fk(x.b.p)}</b></button>`).join("")+`</td>`;
    if(wd===6&&d<days)h+=`</tr><tr>`}
   const tail=(7-(off+days)%7)%7;for(let i=0;i<tail;i++)h+=`<td class="x"></td>`;return h+`</tr></tbody></table></div>`}).join("")}
@@ -357,6 +381,7 @@ function renderList(T){
   return mh+`<article class="trip" id="t_${t.k}" style="--cc:var(--${t.c})"><div class="th"><div class="city"><b>${CS[t.c]}</b><span class="cy">${esc(DB.cities[t.c].en)} · ${t.c}</span>
     <div class="dt">${fdr(t.d,t.r)} ${tags}</div></div><div class="prs">${pb(t,"eco")}${pb(t,"biz")}</div></div>
    <div class="sum">${sumL}</div>
+   ${(()=>{const F=fairsFor(t);return F.length?`<div class="tfair"><b>ตรงกับงานแฟร์:</b> ${F.map(f=>`<a href="#fair_${f.id}" data-fair="${f.id}">${esc(f.name)}</a> <span class="mut">${fdr(f.start,f.end)}</span>${f.rel.length?`<span class="b rel">${esc(relTxt(f))}</span>`:""}`).join(" · ")}${F.some(f=>f.big)?`<span class="b big">งานใหญ่ ตั๋ว/โรงแรมมักแพง</span>`:""}</div>`:""})()}
    ${t.c==="SZX"&&t.t==="2D1N"?`<div class="sznote">เซินเจิ้นไม่มีเที่ยวบินไปเช้าแบบกลางวัน ก่อน 11 โมงมีแต่เที่ยวออกตี 2–3 (เซินเจิ้นแอร์ไลน์ 02:20, ไชน่าเซาเทิร์น 02:40) ถ้าอยากไปเช้า บินฮ่องกงเช้าแล้วข้ามด่านเข้าเซินเจิ้น (รถไฟความเร็วสูงเกาลูนตะวันตก–ฝูเถียน ราว 15–20 นาที)</div>`:""}
    <button class="xp" data-x="${t.k}" aria-expanded="false">ดูทุกสายการบิน (${nA} สาย) ▾</button><div class="det" hidden></div>
    <div class="links">${t.ow?`<a class="open" href="${esc(t.eco.ow.out.u)}" target="_blank" rel="noopener">ขาไป ↗</a><a class="open" href="${esc(t.eco.ow.back.u)}" target="_blank" rel="noopener">ขากลับ ↗</a>`:t.eco?`<a class="open" href="${esc(t.eco.u)}" target="_blank" rel="noopener">ค้นชั้นประหยัด ↗</a>`:""}${t.biz?`<a class="open bz" href="${esc(t.biz.u)}" target="_blank" rel="noopener">ค้นชั้นธุรกิจ ↗</a>`:t.bizu?`<a class="open bz" href="${esc(t.bizu)}" target="_blank" rel="noopener">ค้นชั้นธุรกิจ ↗</a>`:""}<span class="mut">ราคา ณ ${fdy(DB.captured)}</span></div></article>`}).join("")}
@@ -374,6 +399,17 @@ function renderRoutes(){$("rcty").innerHTML=CITIES.map(c=>`<button class="pill $
   <p class="mut">✓ = เข้าเงื่อนไข 2 วัน 1 คืน · ม.ค.+ = เริ่มเห็นตั้งแต่ ม.ค. 70 · ตัวสีเทา = บินเฉพาะตารางฤดูร้อน · เวลาฤดูหนาว 25 ต.ค. 69 – 27 มี.ค. 70 (จากการค้น Google Flights) · ฤดูร้อน (ต.ค. และตั้งแต่ 28 มี.ค. 70) จากตาราง 2LNR · เลขเที่ยวบินฤดูหนาวจับคู่จากเวลาใกล้เคียง ยืนยันอีกครั้งตอนจอง</p>
   <details><summary class="mut" style="cursor:pointer;min-height:32px">ข่าวและแหล่งข้อมูล (ภาษาอังกฤษ)</summary><ul class="news">${r.news.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></details>`}
 // ---------- static ----------
+function renderFairs(){const C=["all",...CITIES];const today=iso(new Date());
+ const cnt=c=>FAIRS.filter(f=>f.end>=today&&(c==="all"||(c==="rel"?f.rel.length:f.city===c))).length;
+ $("fcty").innerHTML=[...C,"rel"].map(c=>`<button class="pill ${st.fc===c?"on":""}" data-fc="${c}">${c==="all"?"ทุกเมือง":c==="rel"?"วัสดุก่อสร้าง·หิน·เฟอร์นิเจอร์":`<span class="dot" style="background:var(--${c})"></span>${CS[c]}`} <span class="ct">${cnt(c)}</span></button>`).join("");
+ const L=FAIRS.filter(f=>f.end>=today&&(st.fc==="all"||(st.fc==="rel"?f.rel.length:f.city===st.fc)));
+ const row=f=>`<div class="fai" id="fair_${f.id}" style="--cc:var(--${f.city})"><div class="fd">${f.start?fdr(f.start,f.end):"ยังไม่ประกาศวัน"}<small>${CS[f.city]}</small></div>
+  <div><div class="fn">${esc(f.name)}</div><div class="ft">${esc(f.th)}</div>
+  <div class="fm">${f.rel.length?`<span class="b rel">${esc(relTxt(f))}</span>`:""}${f.big?`<span class="b big">งานใหญ่ ตั๋ว/โรงแรมแพง</span>`:""}${f.status==="tentative"?`<span class="b tent">วันที่ยังไม่ยืนยัน</span>`:f.status==="unknown"?`<span class="b unk">ยังไม่ประกาศวัน</span>`:""}<span>${esc(f.venue)}</span><a href="${esc(f.url)}" target="_blank" rel="noopener">เว็บงาน ↗</a></div></div></div>`;
+ $("flist").innerHTML=(L.length?L.map(row).join(""):`<div class="empty">ไม่มีงานแฟร์ตามตัวกรอง</div>`)+FST.UNK.filter(f=>st.fc==="all"||(st.fc==="rel"?f.rel.length:f.city===st.fc)).map(row).join("");
+ $("fsrc").textContent=`ตรวจสอบวันงานเมื่อ ${fdy(DB.fairs_checked)} จากเว็บผู้จัด/HKTB/HKTDC/cantonfair.org.cn · ‘วันที่ยังไม่ยืนยัน’ = มาจากเว็บรวมงานหรือรูปแบบปีก่อน ตรวจกับผู้จัดก่อนจอง · ${DB.fairs_oow||""}`}
+function goFair(id){const f=FAIRS.find(x=>x.id===id);if(!f)return;if(st.fc!=="all"&&st.fc!==f.city&&!(st.fc==="rel"&&f.rel.length)){st.fc="all";renderFairs()}
+ const el=document.getElementById("fair_"+id);if(!el)return;el.scrollIntoView({behavior:"smooth",block:"center"});el.classList.add("hi");setTimeout(()=>el.classList.remove("hi"),2200)}
 function renderStatic(){const em=DB.empty;const nT=DB.trips.length;
  $("hsub").textContent=`บินตรงจากกรุงเทพฯ ทุกสายการบิน · ชั้นประหยัดและชั้นธุรกิจ · ราคาไป-กลับต่อคน · ${nT} ทริป · ค้นเมื่อ ${fdy(DB.captured)}`;
  $("covb").innerHTML=`<ul>
@@ -389,10 +425,12 @@ function renderStatic(){const em=DB.empty;const nT=DB.trips.length;
   <li>ราคาที่สูงผิดปกติเกิน 4 เท่าของราคากลางในการค้นหาเดียวกัน ขีดฆ่าไว้และไม่นำมาคิดราคาถูกสุด</li>
   <li>ราคาเปลี่ยนได้ทุกวัน ตรวจสอบกับสายการบินก่อนจอง · หน้านี้มีแต่ข้อมูลสาธารณะ ไม่มีข้อมูลส่วนตัว</li></ul>`;
  $("foot").innerHTML=`ข้อมูล: Google Flights (ค้นเมื่อ ${fdy(DB.captured)}) · ตารางบินจาก 2LNR, AeroRoutes, ตารางบินเซินเจิ้นแอร์ไลน์ และข่าวสายการบิน · ดูเพิ่ม: <a href="../">การบินไทย</a> · <a href="../budget/">สายการบินราคาประหยัด</a>`}
-function render(){writeHash();controls();const T=filtered();renderCards(T);renderCal(T);renderList(T);renderRoutes()}
+function render(){writeHash();controls();const T=filtered();renderCards(T);renderCal(T);renderFairs();renderList(T);renderRoutes()}
 function go(k){if(!document.getElementById("t_"+k)){st.typ="all";st.c="all";st.mon="all";render()}const el=document.getElementById("t_"+k);if(!el)return;
  openDet(k,true);el.scrollIntoView({behavior:"smooth",block:"start"});el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")}
-document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
+document.addEventListener("click",e=>{const fa=e.target.closest("[data-fair]");if(fa){e.preventDefault();goFair(fa.dataset.fair);return}
+ const fc=e.target.closest("[data-fc]");if(fc){st.fc=fc.dataset.fc;renderFairs();return}
+ const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
  const x=e.target.closest("[data-x]");if(x){openDet(x.dataset.x);return}
  const c=e.target.closest("[data-c]");if(c){st.c=c.dataset.c;render();return}
  const rc=e.target.closest("[data-rc]");if(rc){st.rc=rc.dataset.rc;renderRoutes();return}});
