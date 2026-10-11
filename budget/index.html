@@ -197,7 +197,8 @@ footer{color:var(--mut);font-size:12.5px;padding:6px 4px 40px}
   </div>
   <div class="filters">
    <div class="row frow"><label class="sw bagm"><input type="checkbox" id="bag2"> รวมกระเป๋า 20 กก. <span class="mut">(ประมาณ)</span></label><div class="seg" id="mon"></div><div class="seg" id="dur"></div><div class="seg" id="apt"></div>
-    <label class="sw"><input type="checkbox" id="nored"> ซ่อนเที่ยวบินดึก</label></div>
+    <label class="sw" title="ซ่อนเที่ยวบินขาไปที่ออก 23:00–04:59"><input type="checkbox" id="noout"> ไม่เอาขาไป 5 ทุ่ม–ตี 5</label>
+    <label class="sw" title="ซ่อนถ้าเที่ยวกลับตามตารางบินของสายนั้นออก 01:00–12:59 ทั้งหมด"><input type="checkbox" id="noback"> ไม่เอาขากลับ ตี 1–บ่ายโมง <span class="mut">(ตามตารางบิน)</span></label></div>
    <div class="chips" id="reg"></div>
   </div>
  </div>
@@ -247,23 +248,27 @@ function tags(o){const ri=DB.rinfo[o.c+"|"+o.a];const out=[];if(!ri)return out;
   if(ri.days&&ri.days!=="daily"&&ri.days.includes("/"))out.push(["","บินเฉพาะ "+ri.days.split("/").map(x=>EN_DAY[x]||x).join(" ")]);
   return out}
 const grpT=(p,pre,suf)=>st.n>1?`${pre}${st.n} คน รวม ฿${fmt(p*st.n)}${suf} · `:"";
-const st={n:1,bag:false,mon:"all",dur:"all",apt:"all",reg:"all",nored:false};
+const st={n:1,bag:false,mon:"all",dur:"all",apt:"all",reg:"all",noout:false,noback:false};
 const C=c=>DB.cities[c]||{th:c,country_th:"",region:""};
 // enrich options
 DB.opts.forEach(o=>{o.nt=nights(o.d,o.r);o.qo=q(o.od,o.oa,o.nx);o.rq=retQ(o.c,o.a);const b=bagSector(o.a,o.m);o.bag=b==null?null:b*2;o.key=o.c+"_"+o.d+"_"+o.r});
 const price=o=>o.p+(st.bag&&o.bag!=null?o.bag:0);
 const isRed=o=>o.qo==="red"||o.rq.q==="red";
+// time filters: outbound = exact ticket time (dep 23:00–04:59); return = airline scheduled return times (route data, not the exact ticket): hidden only if every scheduled return departs 01:00–12:59
+const outBad=o=>{const m=toMin(o.od);return m>=1380||m<300};
+function backBad(o){const ri=DB.rinfo[o.c+"|"+o.a];if(!ri||!ri.ret_times||!ri.ret_times.length)return false;
+  const ds=ri.ret_times.map(s=>(s.match(/(\d\d:\d\d)/)||[])[1]).filter(Boolean).map(toMin);return ds.length>0&&ds.every(m=>m>=60&&m<780)}
 const goodBoth=o=>o.qo!=="red"&&(o.rq.q==="good"||o.rq.q==="ok")&&(o.qo==="good"||o.rq.q==="good");
 function filtered(){return DB.opts.filter(o=>(st.mon==="all"||o.d.slice(0,7)===st.mon)&&(st.dur==="all"||o.nt===+st.dur)&&(st.apt==="all"||o.o===st.apt)
-  &&(st.reg==="all"||C(o.c).region===st.reg)&&(!st.nored||!isRed(o))&&(!st.bag||o.bag!=null))}
+  &&(st.reg==="all"||C(o.c).region===st.reg)&&!(st.noout&&outBad(o))&&!(st.noback&&backBad(o))&&(!st.bag||o.bag!=null))}
 function searches(opts){const m={};opts.forEach(o=>{(m[o.key]=m[o.key]||{key:o.key,c:o.c,d:o.d,r:o.r,nt:o.nt,u:o.u,opts:[]}).opts.push(o)});
   return Object.values(m).map(s=>{s.opts.sort((a,b)=>price(a)-price(b));const seen=new Set(),A=[],B=[];s.opts.forEach(o=>{(seen.has(o.a)?B:A).push(o);seen.add(o.a)});s.opts=A.concat(B);s.best=s.opts[0];return s}).sort((a,b)=>a.d.localeCompare(b.d)||price(a.best)-price(b.best))}
 // ---------- header / controls ----------
 function readHash(){const h=new URLSearchParams(location.hash.slice(1));
   if(h.get("n"))st.n=Math.max(1,Math.min(99,+h.get("n")||1));
-  ["mon","dur","apt","reg"].forEach(k=>{if(h.get(k))st[k]=h.get(k)});if(h.get("bag")==="1")st.bag=true;if(h.get("nored")==="1")st.nored=true}
+  ["mon","dur","apt","reg"].forEach(k=>{if(h.get(k))st[k]=h.get(k)});if(h.get("bag")==="1")st.bag=true;if(h.get("noout")==="1"||h.get("nored")==="1")st.noout=true;if(h.get("noback")==="1")st.noback=true}
 function writeHash(){const h=new URLSearchParams();if(st.n!==1)h.set("n",st.n);["mon","dur","apt","reg"].forEach(k=>{if(st[k]!=="all")h.set(k,st[k])});
-  if(st.bag)h.set("bag",1);if(st.nored)h.set("nored",1);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search)}
+  if(st.bag)h.set("bag",1);if(st.noout)h.set("noout",1);if(st.noback)h.set("noback",1);const s=h.toString();history.replaceState(null,"",s?"#"+s:location.pathname+location.search)}
 function seg(el,items,k){el.innerHTML=items.map(([v,l])=>`<button data-v="${v}" class="${st[k]===v?"on":""}" aria-pressed="${st[k]===v}">${l}</button>`).join("");
   el.onclick=e=>{const b=e.target.closest("button");if(!b)return;st[k]=b.dataset.v;render()}}
 function controls(){
@@ -273,8 +278,8 @@ function controls(){
   seg($("apt"),[["all","ทุกสนามบิน"],["DMK","ดอนเมือง DMK"],["BKK","สุวรรณภูมิ BKK"]],"apt");
   const cnt={};DB.opts.forEach(o=>{const r=C(o.c).region;cnt[r]=cnt[r]||new Set();cnt[r].add(o.c)});
   $("reg").innerHTML=REG.filter(([k])=>k==="all"||cnt[k]).map(([k,l])=>`<button class="pill ${st.reg===k?"on":""}" data-r="${k}" aria-pressed="${st.reg===k}">${l}${k!=="all"?` <span class="ct">${cnt[k].size}</span>`:""}</button>`).join("");
-  $("bag").checked=st.bag;$("bag2").checked=st.bag;$("nored").checked=st.nored;
-  const nf=["mon","dur","apt"].filter(k=>st[k]!=="all").length+(st.bag?1:0)+(st.nored?1:0);$("ftog").textContent=nf?`ตัวกรอง (${nf})`:"ตัวกรอง"}
+  $("bag").checked=st.bag;$("bag2").checked=st.bag;$("noout").checked=st.noout;$("noback").checked=st.noback;
+  const nf=["mon","dur","apt"].filter(k=>st[k]!=="all").length+(st.bag?1:0)+(st.noout?1:0)+(st.noback?1:0);$("ftog").textContent=nf?`ตัวกรอง (${nf})`:"ตัวกรอง"}
 // ---------- cards ----------
 function cardOne(k,o,cls){if(!o)return `<div class="card"><div class="k">${k}</div><div class="v">–</div><div class="d2">ไม่มีทริปตามตัวกรอง</div></div>`;
   return `<button class="card ${cls||""}" data-go="${o.key}"><div class="k">${k}</div><div class="v">฿${fmt(price(o))} <small>/คน</small></div>
@@ -310,7 +315,7 @@ function opRow(o,i){const tg=tags(o).map(([c,l])=>`<span class="b tag ${c}">${l}
   const bagTxt=o.bag==null?(o.a==="SL"?"กระเป๋า: ดูหมายเหตุ":"กระเป๋า: ไม่ทราบ"):`+กระเป๋า ~฿${fmt(o.bag)}`;
   return `<div class="op ${i>=2?"hid":""}"><div class="who"><span class="b al-${o.a}">${AL[o.a]}</span><span class="b ap-${o.o}" title="${APN[o.o]}">${o.o}</span>${tg}</div>
    <div class="tm"><div class="ln">ไป ${o.od} → ${o.oa}${o.nx?"<sup>+1</sup>":""} <span class="mut">${Math.floor(o.m/60)} ชม. ${o.m%60?o.m%60+" น.":""}</span> ${qb(o.qo,"ไป")}</div>
-    <div class="ln mut">${o.rq.q!=="na"?`กลับ (เที่ยวที่เวลาดีสุด) ${o.rq.t} → ${o.rq.arr} ${qb(o.rq.q,"กลับ")}`:"กลับ: ดูเวลาใน Google Flights"}</div></div>
+    <div class="ln mut">${o.rq.q!=="na"?`กลับ (เที่ยวที่เวลาดีสุด) ${o.rq.t} → ${o.rq.arr} ${qb(o.rq.q,"กลับ")}`:"กลับ: ดูเวลาใน Google Flights"}${backBad(o)?` <span class="b q-na">ขากลับตามตารางบินออก ตี 1–บ่ายโมง</span>`:""}</div></div>
    <div class="p">฿${fmt(price(o))}<small>${st.bag?(o.bag!=null?"รวมกระเป๋า ~":""):bagTxt}</small></div></div>`}
 function renderList(S){$("lleg").innerHTML=`<span><span class="b q-good">ดี</span> ออก 07:00–15:00 ถึงก่อน 22:00</span><span><span class="b q-ok">พอใช้</span> ออกเช้ามืด 05:00–07:00 หรือ 15:00–20:00</span><span><span class="b q-red">ดึก</span> ออกหลัง 20:00 / ก่อน 05:00 หรือถึงหลังเที่ยงคืน</span><span>ราคาไป-กลับต่อคน ชั้นประหยัด ไม่รวมกระเป๋าโหลด (ถือขึ้นเครื่อง 7 กก.)</span>`;
   if(!S.length){$("list").innerHTML=`<div class="empty">ไม่มีทริปตามตัวกรอง ลองล้างตัวกรองดูนะ</div>`;return}
@@ -351,12 +356,13 @@ function renderStatic(){
    <li>ค้นแล้วไม่เจอราคาเลย ${em.length} ครั้ง: ${em.map(e=>`${esc(C(e.c).th)} ${fdr(e.d,e.r)}`).join(" · ")}</li>
    <li>บางสายการบินไม่ขึ้นใน Google บางเส้นทาง เช่น ไทยแอร์เอเชีย กวางโจว/เฉิงตู, ไทยไลออนแอร์ เซี่ยงไฮ้/เซินเจิ้น, ไทยเวียตเจ็ท ฮานอย/โฮจิมินห์/โกลกาตา ราคาจริงอาจถูกกว่าที่แสดง</li>
    <li>เวลาขากลับใช้ตารางบินปกติของสายการบินนั้น (ไม่ใช่เวลาของตั๋วใบนั้นโดยตรง) · ราคาไม่รวมกระเป๋าโหลด ยกเว้นเปิดสวิตช์ “รวมกระเป๋า” (ประมาณการ)</li>
+   <li>ตัวกรองเวลา: “ไม่เอาขาไป 5 ทุ่ม–ตี 5” ใช้เวลาออกจริงของตั๋ว · “ไม่เอาขากลับ ตี 1–บ่ายโมง” ใช้<b>ตารางบิน</b>ของสายนั้น (ซ่อนเมื่อทุกเที่ยวกลับของสายนั้นออก 01:00–12:59 ไม่ใช่เวลาของตั๋วใบนั้น) · การ์ดราคาถูกสุดคำนวณตามตัวกรองที่เปิดอยู่</li>
    <li>หน้านี้แสดงเฉพาะข้อมูลสาธารณะ ไม่มีข้อมูลส่วนตัว</li></ul>`;
   $("hsub").textContent=`บินตรงจากกรุงเทพฯ (ดอนเมือง / สุวรรณภูมิ) · ราคาไป-กลับต่อคน ชั้นประหยัด · ${new Set(DB.opts.map(o=>o.c)).size} เมือง · ค้นเมื่อ ${fdy(DB.captured)}`;
   $("foot").innerHTML=`ข้อมูล: Google Flights (ค้นเมื่อ ${fdy(DB.captured)}), ตารางบินจาก AeroRoutes · 2LNR · ข่าวสายการบิน, ราคาการบินไทยจาก<a href="../">แดชบอร์ดการบินไทย</a> (รอบ ${fdy(DB.tg_snap)}) · ราคาและตารางบินเปลี่ยนได้ ตรวจสอบกับสายการบินก่อนจองทุกครั้ง`}
 // ---------- render ----------
 function render(){writeHash();controls();const F=filtered();const S=searches(F);renderCards(F);renderCal(S);renderList(S)}
-function go(k){const el=document.getElementById("t_"+k);if(!el){st.mon="all";st.dur="all";st.apt="all";st.reg="all";st.nored=false;render();return go2(k)}go2(k)}
+function go(k){const el=document.getElementById("t_"+k);if(!el){st.mon="all";st.dur="all";st.apt="all";st.reg="all";st.noout=false;st.noback=false;render();return go2(k)}go2(k)}
 function go2(k){const el=document.getElementById("t_"+k);if(!el)return;el.scrollIntoView({behavior:"smooth",block:"start"});el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash")}
 document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
   const m=e.target.closest("[data-more]");if(m){m.parentElement.querySelectorAll(".op.hid").forEach(x=>x.classList.remove("hid"));m.remove();return}
@@ -364,7 +370,7 @@ document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g
   const r=e.target.closest("[data-r]");if(r){st.reg=r.dataset.r;render();return}});
 $("nm").onclick=()=>{st.n=Math.max(1,st.n-1);render()};$("np").onclick=()=>{st.n=Math.min(99,st.n+1);render()};
 $("n").onchange=e=>{st.n=Math.max(1,Math.min(99,Math.round(+e.target.value)||1));render()};
-$("bag").onchange=$("bag2").onchange=e=>{st.bag=e.target.checked;render()};$("nored").onchange=e=>{st.nored=e.target.checked;render()};
+$("bag").onchange=$("bag2").onchange=e=>{st.bag=e.target.checked;render()};$("noout").onchange=e=>{st.noout=e.target.checked;render()};$("noback").onchange=e=>{st.noback=e.target.checked;render()};
 $("ftog").onclick=()=>{const s=$("stk");s.classList.toggle("open");$("ftog").setAttribute("aria-expanded",s.classList.contains("open"))};
 addEventListener("scroll",()=>$("stk").classList.toggle("sc",scrollY>120),{passive:true});
 readHash();renderStatic();render();

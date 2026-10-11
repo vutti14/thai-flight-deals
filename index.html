@@ -148,7 +148,8 @@ body.biz .tabs{background:#120a1f}body.biz .tabs a.on{background:#1d1230;color:#
  </div>
  <div class="bar">
   <div class="seg" id="months"></div>
-  <label class="toggle"><input type="checkbox" id="hideRed"> ซ่อนไฟลต์ดึก</label>
+  <label class="toggle" title="ซ่อนทริปที่ขาไปออกเวลา 23:00–04:59"><input type="checkbox" id="hideOut"> ไม่เอาขาไป 5 ทุ่ม–ตี 5</label>
+  <label class="toggle" title="ซ่อนทริปที่ขากลับออกเวลา 01:00–12:59"><input type="checkbox" id="hideBack"> ไม่เอาขากลับ ตี 1–บ่ายโมง</label>
   <label class="toggle"><input type="checkbox" id="onlySk"> เฉพาะทริปสงกรานต์ 💦</label>
   <label class="toggle"><input type="checkbox" id="showAw" checked> แสดงที่นั่งแลกไมล์ ROP 🎟</label>
  </div>
@@ -200,21 +201,22 @@ const snapLabel=s=>`${fdy(s.searched_at)}${s.label?" · "+s.label:""}`;
 function monthsIn(w){const out=[];let d=D(w.from);d.setDate(1);const e=D(w.to);
   while(d<=e){out.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}`);d.setMonth(d.getMonth()+1)}return out}
 
-const st={cls:"economy",snap:-1,cmp:-1,month:"all",region:"all",hideRed:false,onlySk:false,aw:true};
+const st={cls:"economy",snap:-1,cmp:-1,month:"all",region:"all",hideOut:false,hideBack:false,onlySk:false,aw:true};
 const pool=()=>SNAPS.map((x,i)=>i).filter(i=>cab(SNAPS[i])===st.cls);   // snapshots of the selected cabin, oldest -> newest
 function pickCls(k){st.cls=CLS[k]?k:"economy";let p=pool();if(!p.length){st.cls=cab(SNAPS[SNAPS.length-1]);p=pool()}
   st.snap=p[p.length-1];st.cmp=p.length>1?p[p.length-2]:-1;fillSnap();fillCmp()}
 function init(){
   const hp=new URLSearchParams(location.hash.slice(1));   // e.g. #class=business&region=europe&month=2027-04&hidered=1&songkran=1
   /* old #region= links are ignored: every destination is always shown */if(hp.get("month"))st.month=hp.get("month");
-  if(hp.get("hidered")==="1"){st.hideRed=true;$("hideRed").checked=true}
+  if(hp.get("noout")==="1"||hp.get("hidered")==="1"){st.hideOut=true;$("hideOut").checked=true}
+  if(hp.get("noback")==="1"){st.hideBack=true;$("hideBack").checked=true}
   if(hp.get("songkran")==="1"){st.onlySk=true;$("onlySk").checked=true}
   if(hp.get("awards")==="0"){st.aw=false;$("showAw").checked=false}
   $("showAw").onchange=e=>{st.aw=e.target.checked;render()};
   const s=$("snap"),c=$("cmp");
   s.onchange=()=>{st.snap=+s.value;if(st.cmp===st.snap)st.cmp=-1;fillCmp();render()};
   c.onchange=()=>{st.cmp=+c.value;render()};
-  $("hideRed").onchange=e=>{st.hideRed=e.target.checked;render()};
+  $("hideOut").onchange=e=>{st.hideOut=e.target.checked;render()};$("hideBack").onchange=e=>{st.hideBack=e.target.checked;render()};
   $("onlySk").onchange=e=>{st.onlySk=e.target.checked;if(st.onlySk&&st.month!=="all"&&st.month!=="2027-04")st.month="all";render()};
   pickCls(hp.get("class")||"economy");render();
   window.addEventListener("hashchange",()=>{const h=new URLSearchParams(location.hash.slice(1));if((h.get("class")||"economy")!==st.cls){pickCls(h.get("class")||"economy");render()}});
@@ -225,11 +227,15 @@ function fillCmp(){const c=$("cmp");c.innerHTML="";c.add(new Option("— ไม�
   c.value=st.cmp}
 function writeHash(){const h=new URLSearchParams();if(st.cls!=="economy")h.set("class",st.cls);
   if(st.month!=="all")h.set("month",st.month);
-  if(st.hideRed)h.set("hidered","1");if(st.onlySk)h.set("songkran","1");if(!st.aw)h.set("awards","0");
+  if(st.hideOut)h.set("noout","1");if(st.hideBack)h.set("noback","1");if(st.onlySk)h.set("songkran","1");if(!st.aw)h.set("awards","0");
   const v=h.toString();history.replaceState(null,"",v?"#"+v:location.pathname+location.search)}
 function seg(el,items,cur,cb,html){el.innerHTML="";items.forEach(([k,l])=>{const b=document.createElement("button");
   if(html)b.innerHTML=l;else b.textContent=l;if(k===cur)b.className="on";b.onclick=()=>cb(k);el.appendChild(b)})}
 
+// time filters (exact ticket times): outbound dep 23:00–04:59, return dep 01:00–12:59
+const depMin=s=>{const m=String(s||"").match(/(\d{1,2}):(\d\d)/);return m?+m[1]*60+ +m[2]:null};
+const outBad=t=>{const m=depMin(String(t.out).replace(/^[A-Z0-9]{2}\d+\s*/,""));return m!=null&&(m>=1380||m<300)};
+const backBad=t=>{const m=depMin(String(t.back).replace(/^[A-Z0-9]{2}\d+\s*/,""));return m!=null&&m>=60&&m<780};
 function render(){
   const S=SNAPS[st.snap], C=st.cmp>=0?SNAPS[st.cmp]:null;
   NEWC=new Set(S.routes.filter(r=>r.new).map(r=>r.code));
@@ -242,7 +248,7 @@ function render(){
   if(st.month!=="all"&&!months.includes(st.month))st.month="all";
   seg($("months"),[["all","ทุกเดือน"],...months.map(m=>[m,monShort(m)])],st.month,k=>{st.month=k;render()});
   $("hsub").textContent=`ข้อมูลรอบ ${snapLabel(S)} · ช่วงเดินทาง ${fdy(S.window.from)} – ${fdy(S.window.to)} · ${S.source||"Google Flights"}`;
-  const trips=S.trips.filter(t=>(st.month==="all"||monKey(t.dep)===st.month)&&!(st.hideRed&&t.redeye)&&!(st.onlySk&&!isSk(t)))
+  const trips=S.trips.filter(t=>(st.month==="all"||monKey(t.dep)===st.month)&&!(st.hideOut&&outBad(t))&&!(st.hideBack&&backBad(t))&&!(st.onlySk&&!isSk(t)))
      .sort((a,b)=>a.dep.localeCompare(b.dep)||a.price-b.price);
   renderCmp(S,C);renderCards(S,trips);renderCal(S,trips,months);renderList(trips,C);renderGrid(S,C,months);renderPeak(S);renderAw();writeHash();
   const noTg=S.routes.filter(r=>r.tg_service===false).map(r=>`${r.city} (${r.code})`);

@@ -23,12 +23,14 @@ def dmin(s):
     h = re.search(r"(\d+) hr", s); m = re.search(r"(\d+) min", s); return (int(h.group(1)) if h else 0) * 60 + (int(m.group(1)) if m else 0)
 def mins(t): h, m = map(int, t.split(":")); return h * 60 + m
 # flight-number lookup from routes.json
-FL = {}; BACK = {}
+FL = {}; BACK = {}; BACKALL = {}
 for r in R["routes"]:
     for c in r["carriers"]:
         if is_excluded(c["code"]): continue
         for f in c["flights"]:
             for season in ("winter", "summer"):
+                if f.get(season) and f["dir"] == "back":
+                    BACKALL.setdefault(r["code"], {}).setdefault(season, {}).setdefault(c["code"], []).append(f[season].split("→")[0])
                 if f.get(season) and f.get("flt"):
                     dep, arr = f[season].split("→")
                     FL.setdefault((r["code"], f["dir"], c["code"], season), []).append((dep, f["flt"]))
@@ -62,7 +64,7 @@ for b in blocks:
         od, oa = h24(a), h24(z); legd = dep
         direction = "out" if org in ("BKK", "DMK") else "back"
         opts.append(dict(a=code, cs=cs, o=org if direction == "out" else dst, od=od, oa=oa, nx=nx, m=dmin(f[3]), p=price,
-                         f=fltno(city, direction, code, od, legd)))
+                         f=fltno(city, direction, code, od, legd), **({"bk": 1} if direction == "back" else {})))
     pr = [o["p"] for o in opts if o["p"]]
     if len(pr) >= 3 and cab == "ECO":
         med = statistics.median(pr)
@@ -93,7 +95,7 @@ for r in R["routes"]:
         car=[dict(code=c["code"], kind=c["kind"], apt=c["bangkok_airport"], biz=c["business"],
                   fl=[{k: f.get(k) for k in ("dir", "flt", "winter", "summer", "freq", "fits_2d1n", "aircraft", "start", "note")} for f in c["flights"]]) for c in r["carriers"]]))
 empty = [dict(c=s["c"], cab=s["cab"], t=s["t"], d=s["d"], r=s["r"], u=s["u"]) for s in S.values() if not s["o"]]
-DATA = dict(captured=CAPTURED, trips=sorted(trips.values(), key=lambda t: (t["d"], t["c"], t["t"])), cities=cities, sched=sched, back=BACK,
+DATA = dict(captured=CAPTURED, trips=sorted(trips.values(), key=lambda t: (t["d"], t["c"], t["t"])), cities=cities, sched=sched, back=BACK, backall=BACKALL,
             empty=empty, nsearch=len(S))
 out = json.dumps(DATA, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/").replace("&", "\\u0026")
 html = (ROOT / "gba_template.html").read_text().replace("/*__DATA__*/null", out)
