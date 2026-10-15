@@ -18,6 +18,9 @@ ECO_3D2N = [("2026-10-23","หยุดยาวปิยมหาราช"),("
   ("2027-02-20","มาฆบูชา + ชดเชย"),("2027-03-12","สุดสัปดาห์"),("2027-04-04","วันจักรี (อา.–อ.)"),("2027-04-13","สงกรานต์ (อ.–พฤ.)"),("2027-04-23","สุดสัปดาห์หลังสงกรานต์")]
 BIZ_2D1N = ["2026-10-24","2026-11-14","2026-12-19","2027-01-16","2027-02-20","2027-03-13"]
 BIZ_3D2N = ["2026-10-23","2026-11-18","2026-12-10","2026-12-31","2027-02-05","2027-03-12","2027-04-13"]
+TODAY = dt.date.today().isoformat()   # drop depart dates already in the past (routine refresh 15 Oct 2026)
+ECO_2D1N = [x for x in ECO_2D1N if x[0] >= TODAY]; ECO_3D2N = [x for x in ECO_3D2N if x[0] >= TODAY]
+BIZ_2D1N = [d for d in BIZ_2D1N if d >= TODAY]; BIZ_3D2N = [d for d in BIZ_3D2N if d >= TODAY]
 def plus(d, n): return (dt.date.fromisoformat(d) + dt.timedelta(days=n)).isoformat()
 rows = []   # (city, cabin, type, depart, return|-, url_spec)
 for c in CITIES:

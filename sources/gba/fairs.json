@@ -1,8 +1,8 @@
 {
- "_note": "GBA trade fairs 11 Oct 2026 – 30 Apr 2027 for /gba/. Routine: refresh by editing gba/make_fairs.py (check organiser sites, flip tentative->confirmed, add new), run it, then build_gba.py. rel = generic business-relevance tags (building materials / stone / furniture / decor / design); no personal data.",
- "checked": "2026-10-11",
+ "_note": "GBA trade fairs 15 Oct 2026 – 30 Apr 2027 for /gba/. Routine: refresh by editing gba/make_fairs.py (check organiser sites, flip tentative->confirmed, add new), run it, then build_gba.py. rel = generic business-relevance tags (building materials / stone / furniture / decor / design); no personal data.",
+ "checked": "2026-10-15",
  "window": [
-  "2026-10-11",
+  "2026-10-15",
   "2027-04-30"
  ],
  "note_out_of_window": "Canton Fair 141st Phase 3 expected 1–5 May 2027 (tentative, outside window).",
@@ -46,9 +46,9 @@
    "start": "2026-10-13",
    "end": "2026-10-15",
    "industry": "Hospitality · furniture · building/decor materials",
-   "status": "tentative",
-   "url": "https://www.connexion.cn/en",
-   "src": "connexion.cn (Oct 2026) · expofinder.com / jufair.com (13–15 Oct)",
+   "status": "confirmed",
+   "url": "https://www.hdeexpo.com/en/hotel-shop-plus-shenzhen/",
+   "src": "hdeexpo.com (organiser, Sinoexpo Informa: SWECC 13–15 Oct 2026) · connexion.cn (4th Connexion ShenZhen 2026.10.13-15)",
    "rel": [
     "หิน·แผ่นซินเทอร์",
     "เฟอร์นิเจอร์",
@@ -385,9 +385,9 @@
    "start": "2026-11-27",
    "end": "2026-12-06",
    "industry": "Automotive",
-   "status": "tentative",
+   "status": "confirmed",
    "url": "https://www.autoguangzhou.org.cn/",
-   "src": "cantonfair.net listing (organiser site did not load)",
+   "src": "autoguangzhou.org.cn (official: vehicles 27 Nov–6 Dec, auto supply-chain halls 27–30 Nov 2026)",
    "rel": [],
    "big": true
   },
@@ -438,6 +438,24 @@
    "url": "https://partnernet.hktb.com/usa/en/trade_support/trade_events/conventions_exhibitions/index.html",
    "src": "https://partnernet.hktb.com/usa/en/trade_support/trade_events/conventions_exhibitions/index.html",
    "rel": [],
+   "big": false
+  },
+  {
+   "id": "sz-jzj",
+   "city": "SZX",
+   "name": "53rd Shenzhen Home Decoration Festival (深圳家装节)",
+   "th": "งานแต่งบ้าน-รีโนเวต วัสดุตกแต่ง เฟอร์นิเจอร์ (งานผู้บริโภค)",
+   "venue": "Shenzhen Convention & Exhibition Center (Futian)",
+   "start": "2026-12-10",
+   "end": "2026-12-14",
+   "industry": "Home renovation · decor materials (consumer)",
+   "status": "confirmed",
+   "url": "https://www.szcec.com/szcec/cn-schedule/current/index.html",
+   "src": "szcec.com venue schedule (第五十三届深圳家装节 12月10日–14日)",
+   "rel": [
+    "ของแต่งบ้าน",
+    "วัสดุตกแต่ง"
+   ],
    "big": false
   },
   {
@@ -556,13 +574,13 @@
    "city": "CAN",
    "name": "Guangzhou Custom Home Furnishing Exhibition 2027",
    "th": "บ้านบิลท์อิน ท็อปเคาน์เตอร์ หินเทียม แผ่นหินไมโครคริสตัล วัสดุตกแต่ง",
-   "venue": "Guangzhou (venue TBC)",
+   "venue": "Poly World Trade Center Expo, Haizhu",
    "start": "2027-03-27",
    "end": "2027-03-30",
    "industry": "Custom home · countertops · stone",
-   "status": "tentative",
-   "url": "https://en.jufair.com/exhibition/cchf/periodical/",
-   "src": "jufair.com listing only",
+   "status": "confirmed",
+   "url": "https://chfgz.com/en/about/summary",
+   "src": "chfgz.com (official, 16th CCHF: 27–30 Mar 2027, Poly World Trade Center Expo)",
    "rel": [
     "หิน·ท็อปเคาน์เตอร์",
     "วัสดุตกแต่ง"
@@ -590,7 +608,7 @@
   {
    "id": "hk-elec-s",
    "city": "HKG",
-   "name": "HKTDC Hong Kong Electronics Fair (Spring) + InnoEX",
+   "name": "HKTDC Hong Kong Electronics Fair (April edition) + InnoEX",
    "th": "อิเล็กทรอนิกส์ (ฤดูใบไม้ผลิ) นวัตกรรม",
    "venue": "HKCEC Wan Chai",
    "start": "2027-04-13",
@@ -605,7 +623,7 @@
   {
    "id": "cf141-1",
    "city": "CAN",
-   "name": "Canton Fair 141st (Spring) – Phase 1",
+   "name": "Canton Fair 141st (Apr–May 2027) – Phase 1",
    "th": "กวางเจาแฟร์ฤดูใบไม้ผลิ เฟส 1: เครื่องใช้ไฟฟ้า เครื่องจักร ฮาร์ดแวร์",
    "venue": "Canton Fair Complex, Pazhou",
    "start": "2027-04-15",
@@ -613,7 +631,7 @@
    "industry": "Electronics · machinery · hardware",
    "status": "tentative",
    "url": "https://www.cantonfair.org.cn/en-US",
-   "src": "third-party guides (sorvatrade.com 26 Sep 2026: not yet published by organiser)",
+   "src": "third-party guides only (sorvatrade.com, jufair.com, exposoon.com); cantonfair.org.cn has not published 141st dates as of 15 Oct 2026",
    "rel": [
     "ฮาร์ดแวร์·เครื่องมือ"
    ],
@@ -622,7 +640,7 @@
   {
    "id": "hk-light-s",
    "city": "HKG",
-   "name": "HKTDC Hong Kong International Lighting Fair (Spring) + Smart Lighting Expo",
+   "name": "HKTDC Hong Kong International Lighting Fair (April edition) + Smart Lighting Expo",
    "th": "งานไฟส่องสว่าง (ฤดูใบไม้ผลิ)",
    "venue": "HKCEC Wan Chai",
    "start": "2027-04-20",
@@ -639,7 +657,7 @@
   {
    "id": "cf141-2",
    "city": "CAN",
-   "name": "Canton Fair 141st (Spring) – Phase 2 (Building & Furniture)",
+   "name": "Canton Fair 141st (Apr–May 2027) – Phase 2 (Building & Furniture)",
    "th": "กวางเจาแฟร์ฤดูใบไม้ผลิ เฟส 2: วัสดุก่อสร้าง เฟอร์นิเจอร์ ของแต่งบ้าน",
    "venue": "Canton Fair Complex, Pazhou",
    "start": "2027-04-23",
@@ -647,7 +665,7 @@
    "industry": "Building materials · furniture · housewares",
    "status": "tentative",
    "url": "https://www.cantonfair.org.cn/en-US",
-   "src": "third-party guides (organiser not yet published)",
+   "src": "third-party guides only; cantonfair.org.cn has not published 141st dates as of 15 Oct 2026",
    "rel": [
     "วัสดุก่อสร้าง",
     "เฟอร์นิเจอร์",
@@ -683,9 +701,28 @@
    "industry": "Environment · green building",
    "status": "unknown",
    "url": "https://www.ipim.gov.mo/en/",
-   "src": "ipim.gov.mo (2026 edition 26–28 Mar 2026); 2027 not published",
+   "src": "macaomiecf.com / ipim.gov.mo (2026 edition 26–28 Mar 2026); 2027 dates not published as of 15 Oct 2026 (third-party listings conflict)",
    "rel": [
     "อาคารเขียว"
+   ],
+   "big": false
+  },
+  {
+   "id": "sz-cbd",
+   "city": "SZX",
+   "name": "CBD Shenzhen – China (Shenzhen) International Smart Home & Building Decoration Fair",
+   "th": "งานวัสดุก่อสร้าง-ตกแต่งเซินเจิ้น: เฟอร์นิเจอร์บิลท์อิน ประตูหน้าต่าง หิน วัสดุก่อสร้าง — ยังไม่ประกาศวัน (ผู้จัดระบุจัดเดือน พ.ย. ที่เป่าอัน)",
+   "venue": "Shenzhen World (Bao'an)",
+   "start": null,
+   "end": null,
+   "industry": "Building decoration · stone · doors & windows",
+   "status": "unknown",
+   "url": "https://www.ciff-zh.com/szcbd/",
+   "src": "ciff-zh.com/szcbd (organiser: dates 'updating' as of 15 Oct 2026; series pattern Mar Shanghai / Jul Guangzhou / Nov Shenzhen)",
+   "rel": [
+    "วัสดุก่อสร้าง",
+    "หิน",
+    "ประตูหน้าต่าง"
    ],
    "big": false
   }
