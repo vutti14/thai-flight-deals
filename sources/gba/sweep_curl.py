@@ -4,7 +4,7 @@ aria-label flight strings, save raw labels to raw/sweep2-labels.json (incrementa
 import subprocess, re, html, json, time, os, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-OUT = ROOT / "raw/sweep2-labels.json"
+OUT = ROOT / os.environ.get("SWEEP_OUT", "raw/sweep2-labels.json")
 data = json.loads(OUT.read_text()) if OUT.exists() else {}
 U = [l.split() for l in (ROOT / "urls-sweep1.txt").read_text().splitlines() if l.strip()]
 def fetch(u):

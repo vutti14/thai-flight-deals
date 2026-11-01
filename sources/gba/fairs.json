@@ -1,6 +1,6 @@
 {
  "_note": "GBA trade fairs 15 Oct 2026 – 30 Apr 2027 for /gba/. Routine: refresh by editing gba/make_fairs.py (check organiser sites, flip tentative->confirmed, add new), run it, then build_gba.py. rel = generic business-relevance tags (building materials / stone / furniture / decor / design); no personal data.",
- "checked": "2026-10-15",
+ "checked": "2026-11-01",
  "window": [
   "2026-10-15",
   "2027-04-30"
@@ -313,6 +313,24 @@
    "big": true
   },
   {
+   "id": "gz-hxjb",
+   "city": "CAN",
+   "name": "2026 Guangzhou Huaxia Home Expo (广州华夏家博会)",
+   "th": "งานแต่งบ้าน-วัสดุ สุขภัณฑ์ พื้น ประตูหน้าต่าง เฟอร์นิเจอร์ (งานผู้บริโภค)",
+   "venue": "Poly World Trade Center Expo",
+   "start": "2026-11-14",
+   "end": "2026-11-16",
+   "industry": "Home decor · building materials (consumer)",
+   "status": "tentative",
+   "url": "https://www.91jiabohui.com/post/235.html",
+   "src": "ticketing/listing sites only (91jiabohui.com, jiabo123.com), checked 1 Nov 2026; not on an official venue schedule",
+   "rel": [
+    "ของแต่งบ้าน",
+    "วัสดุก่อสร้าง"
+   ],
+   "big": false
+  },
+  {
    "id": "sz-apec",
    "city": "SZX",
    "name": "APEC Economic Leaders' Meeting 2026 (Shenzhen)",
@@ -392,6 +410,41 @@
    "big": true
   },
   {
+   "id": "sz-hxjb",
+   "city": "SZX",
+   "name": "2026 Shenzhen Huaxia Home Expo – Winter (深圳华夏家博会冬季展)",
+   "th": "งานแต่งบ้าน-วัสดุ เซรามิก สุขภัณฑ์ พื้น ประตูหน้าต่าง เฟอร์นิเจอร์ (งานผู้บริโภค)",
+   "venue": "Shenzhen Convention & Exhibition Center (Futian)",
+   "start": "2026-11-27",
+   "end": "2026-11-29",
+   "industry": "Home decor · building materials (consumer)",
+   "status": "confirmed",
+   "url": "https://www.szcec.com/szcec/cn-schedule/zl/index.html",
+   "src": "szcec.com venue schedule (2026深圳华夏家博会冬季展 11月27日–29日), checked 1 Nov 2026",
+   "rel": [
+    "ของแต่งบ้าน",
+    "วัสดุก่อสร้าง"
+   ],
+   "big": false
+  },
+  {
+   "id": "hk-mipim",
+   "city": "HKG",
+   "name": "MIPIM Asia Summit 2026",
+   "th": "ประชุมผู้นำอสังหาริมทรัพย์เอเชียแปซิฟิก (งานประชุม)",
+   "venue": "Rosewood Hong Kong",
+   "start": "2026-12-02",
+   "end": "2026-12-03",
+   "industry": "Real estate (summit)",
+   "status": "confirmed",
+   "url": "https://www.mipimasia.com/",
+   "src": "mipimasia.com (organiser RX: 2–3 December 2026, Rosewood Hong Kong), checked 1 Nov 2026",
+   "rel": [
+    "อสังหาริมทรัพย์"
+   ],
+   "big": false
+  },
+  {
    "id": "gz-design",
    "city": "CAN",
    "name": "Guangzhou Design Week 2026",
@@ -402,7 +455,7 @@
    "industry": "Interior design · decor & building materials",
    "status": "confirmed",
    "url": "https://www.gzdesignweek.com/intro/5222.html",
-   "src": "gzdesignweek.com (official notice)",
+   "src": "gzdesignweek.com official notice (Poly hall extended to 3–7 Dec; Area C/Haizhu 4–7 Dec). Note 1 Nov 2026: gzdesignweek.com/zhjs intro page shows 4–8 Dec (Poly) / 5–8 Dec — conflicting, recheck",
    "rel": [
     "ออกแบบ·ตกแต่งภายใน",
     "วัสดุก่อสร้าง",
@@ -443,18 +496,36 @@
   {
    "id": "sz-jzj",
    "city": "SZX",
-   "name": "53rd Shenzhen Home Decoration Festival (深圳家装节)",
+   "name": "57th Shenzhen Home Decoration Festival (深圳家装节)",
    "th": "งานแต่งบ้าน-รีโนเวต วัสดุตกแต่ง เฟอร์นิเจอร์ (งานผู้บริโภค)",
    "venue": "Shenzhen Convention & Exhibition Center (Futian)",
-   "start": "2026-12-10",
-   "end": "2026-12-14",
+   "start": "2026-12-18",
+   "end": "2026-12-20",
    "industry": "Home renovation · decor materials (consumer)",
    "status": "confirmed",
-   "url": "https://www.szcec.com/szcec/cn-schedule/current/index.html",
-   "src": "szcec.com venue schedule (第五十三届深圳家装节 12月10日–14日)",
+   "url": "https://www.szcec.com/szcec/cn-schedule/zl/index.html",
+   "src": "szcec.com venue schedule rechecked 1 Nov 2026: 第五十七届深圳家装节 12月18日–20日 (was listed 10–14 Dec on 15 Oct)",
    "rel": [
     "ของแต่งบ้าน",
     "วัสดุตกแต่ง"
+   ],
+   "big": false
+  },
+  {
+   "id": "hk-homex",
+   "city": "HKG",
+   "name": "26th Hong Kong Homex (in Hong Kong Mega Showcase)",
+   "th": "งานเฟอร์นิเจอร์ ของแต่งบ้าน ตกแต่งภายใน ครัว-ห้องน้ำ (งานผู้บริโภค)",
+   "venue": "HKCEC Hall 1",
+   "start": "2026-12-24",
+   "end": "2026-12-27",
+   "industry": "Furniture · interior decor (consumer)",
+   "status": "confirmed",
+   "url": "https://home-expo.com.hk/hong-kong-homex.html",
+   "src": "home-expo.com.hk (organiser) · hkcec.com event calendar, checked 1 Nov 2026",
+   "rel": [
+    "เฟอร์นิเจอร์",
+    "ของแต่งบ้าน"
    ],
    "big": false
   },
@@ -631,7 +702,7 @@
    "industry": "Electronics · machinery · hardware",
    "status": "tentative",
    "url": "https://www.cantonfair.org.cn/en-US",
-   "src": "third-party guides only (sorvatrade.com, jufair.com, exposoon.com); cantonfair.org.cn has not published 141st dates as of 15 Oct 2026",
+   "src": "third-party guides only (sorvatrade.com, jufair.com, exposoon.com); cantonfair.org.cn has not published 141st dates as of 1 Nov 2026",
    "rel": [
     "ฮาร์ดแวร์·เครื่องมือ"
    ],
@@ -665,7 +736,7 @@
    "industry": "Building materials · furniture · housewares",
    "status": "tentative",
    "url": "https://www.cantonfair.org.cn/en-US",
-   "src": "third-party guides only; cantonfair.org.cn has not published 141st dates as of 15 Oct 2026",
+   "src": "third-party guides only; cantonfair.org.cn has not published 141st dates as of 1 Nov 2026",
    "rel": [
     "วัสดุก่อสร้าง",
     "เฟอร์นิเจอร์",
@@ -701,7 +772,7 @@
    "industry": "Environment · green building",
    "status": "unknown",
    "url": "https://www.ipim.gov.mo/en/",
-   "src": "macaomiecf.com / ipim.gov.mo (2026 edition 26–28 Mar 2026); 2027 dates not published as of 15 Oct 2026 (third-party listings conflict)",
+   "src": "macaomiecf.com / ipim.gov.mo (2026 edition 26–28 Mar 2026); 2027 dates not published on official sites as of 1 Nov 2026 (one third-party listing shows 18–20 Mar 2027; unconfirmed)",
    "rel": [
     "อาคารเขียว"
    ],
@@ -718,7 +789,7 @@
    "industry": "Building decoration · stone · doors & windows",
    "status": "unknown",
    "url": "https://www.ciff-zh.com/szcbd/",
-   "src": "ciff-zh.com/szcbd (organiser: dates 'updating' as of 15 Oct 2026; series pattern Mar Shanghai / Jul Guangzhou / Nov Shenzhen)",
+   "src": "ciff-zh.com/szcbd (organiser: dates still 'updating' as of 1 Nov 2026; series pattern Mar Shanghai / Jul Guangzhou / Nov Shenzhen)",
    "rel": [
     "วัสดุก่อสร้าง",
     "หิน",

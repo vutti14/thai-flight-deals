@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Build the public Zone GBA dashboard -> ../site/gba/index.html (self-contained, data inline).
-Inputs: raw/sweep2-google.md (sweep 1 archived as raw/sweep1-google-2026-10-11.md) (Google Flights results, index = line number in urls-sweep1.txt; a later block with the same index
+Inputs: raw/sweep3-google.md (earlier rounds archived: raw/sweep1-google-2026-10-11.md, raw/sweep2-google-2026-10-15.md) (Google Flights results, index = line number in urls-sweep1.txt; a later block with the same index
 (recheck) replaces the earlier one), urls-sweep1.txt, routes.json, tfs_gba.js (Business links for Economy-only dates)."""
 import json, re, pathlib, subprocess, statistics, datetime as dt, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from excluded_airlines import is_excluded   # permanent rule: Spring (9C/IJ) and 9 Air (AQ) rows are dropped
 ROOT = pathlib.Path(__file__).resolve().parent
-CAPTURED = "2026-10-15"
-SWEEP = "raw/sweep2-google.md"   # latest Google Flights sweep (curl, sweep_curl.py + fmt_sweep.py)
+CAPTURED = "2026-11-01"
+SWEEP = "raw/sweep3-google.md"   # latest Google Flights sweep (curl, sweep_curl.py + fmt_sweep.py)
 R = json.loads((ROOT / "routes.json").read_text())
 U = [l.split() for l in (ROOT / "urls-sweep1.txt").read_text().splitlines() if l.strip()]
 UK = {tuple(x[:4]): x for x in U}
