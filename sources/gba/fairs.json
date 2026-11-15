@@ -1,11 +1,11 @@
 {
  "_note": "GBA trade fairs 15 Oct 2026 – 30 Apr 2027 for /gba/. Routine: refresh by editing gba/make_fairs.py (check organiser sites, flip tentative->confirmed, add new), run it, then build_gba.py. rel = generic business-relevance tags (building materials / stone / furniture / decor / design); no personal data.",
- "checked": "2026-11-01",
+ "checked": "2026-11-15",
  "window": [
   "2026-10-15",
   "2027-04-30"
  ],
- "note_out_of_window": "Canton Fair 141st Phase 3 expected 1–5 May 2027 (tentative, outside window).",
+ "note_out_of_window": "Canton Fair 141st Phase 3 is 1–5 May 2027 (official, outside window).",
  "fairs": [
   {
    "id": "gs-ce",
@@ -641,6 +641,23 @@
    "big": true
   },
   {
+   "id": "mo-miecf",
+   "city": "MFM",
+   "name": "MIECF 2027 (Macao International Environmental Co-operation Forum & Exhibition)",
+   "th": "งานสิ่งแวดล้อม/อาคารเขียวมาเก๊า — วันที่ 18–20 มี.ค. 2027 ตามรายการของบุคคลที่สาม ยังไม่ยืนยันจากผู้จัด",
+   "venue": "Cotai Expo, The Venetian Macao",
+   "start": "2027-03-18",
+   "end": "2027-03-20",
+   "industry": "Environment · green building",
+   "status": "tentative",
+   "url": "https://www.ipim.gov.mo/en/",
+   "src": "third-party listings only (maigoo.com, qiplume.com, exposale.net: 18–20 Mar 2027, Venetian Macao); macaomiecf.com / ipim.gov.mo have not published 2027 dates as of 15 Nov 2026",
+   "rel": [
+    "อาคารเขียว"
+   ],
+   "big": false
+  },
+  {
    "id": "gz-cchf",
    "city": "CAN",
    "name": "Guangzhou Custom Home Furnishing Exhibition 2027",
@@ -700,9 +717,9 @@
    "start": "2027-04-15",
    "end": "2027-04-19",
    "industry": "Electronics · machinery · hardware",
-   "status": "tentative",
-   "url": "https://www.cantonfair.org.cn/en-US",
-   "src": "third-party guides only (sorvatrade.com, jufair.com, exposoon.com); cantonfair.org.cn has not published 141st dates as of 1 Nov 2026",
+   "status": "confirmed",
+   "url": "https://www.cantonfair.org.cn/en-US/content-detail?id=35f39bd75e684ea5802b4ebb1c4d6c7e",
+   "src": "cantonfair.org.cn General Information (released 3 Nov 2026) + 141st exhibitor notice (4 Nov 2026): Phase 1 15–19 Apr, Phase 2 23–27 Apr, Phase 3 1–5 May 2027",
    "rel": [
     "ฮาร์ดแวร์·เครื่องมือ"
    ],
@@ -734,9 +751,9 @@
    "start": "2027-04-23",
    "end": "2027-04-27",
    "industry": "Building materials · furniture · housewares",
-   "status": "tentative",
-   "url": "https://www.cantonfair.org.cn/en-US",
-   "src": "third-party guides only; cantonfair.org.cn has not published 141st dates as of 1 Nov 2026",
+   "status": "confirmed",
+   "url": "https://www.cantonfair.org.cn/en-US/content-detail?id=35f39bd75e684ea5802b4ebb1c4d6c7e",
+   "src": "cantonfair.org.cn General Information (released 3 Nov 2026) + 141st exhibitor notice (4 Nov 2026): Phase 1 15–19 Apr, Phase 2 23–27 Apr, Phase 3 1–5 May 2027",
    "rel": [
     "วัสดุก่อสร้าง",
     "เฟอร์นิเจอร์",
@@ -760,23 +777,6 @@
     "ของแต่งบ้าน"
    ],
    "big": true
-  },
-  {
-   "id": "mo-miecf",
-   "city": "MFM",
-   "name": "MIECF 2027 (Macao International Environmental Co-operation Forum & Exhibition)",
-   "th": "งานสิ่งแวดล้อม/อาคารเขียวมาเก๊า — ยังไม่ประกาศวัน (ปี 2026 จัด 26–28 มี.ค.)",
-   "venue": "Cotai Expo, The Venetian Macao",
-   "start": null,
-   "end": null,
-   "industry": "Environment · green building",
-   "status": "unknown",
-   "url": "https://www.ipim.gov.mo/en/",
-   "src": "macaomiecf.com / ipim.gov.mo (2026 edition 26–28 Mar 2026); 2027 dates not published on official sites as of 1 Nov 2026 (one third-party listing shows 18–20 Mar 2027; unconfirmed)",
-   "rel": [
-    "อาคารเขียว"
-   ],
-   "big": false
   },
   {
    "id": "sz-cbd",

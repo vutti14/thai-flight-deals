@@ -1,13 +1,13 @@
 # GBA sweep 1 — URL plan
 
-**145 URLs** in `urls-sweep1.txt` (format `<IATA> <ECO|BIZ> <2D1N|3D2N|OW-OUT|OW-BACK> <depart> <return|-> <url>`).
+**152 URLs** in `urls-sweep1.txt` (format `<IATA> <ECO|BIZ> <2D1N|3D2N|OW-OUT|OW-BACK> <depart> <return|-> <url>`).
 
 | City | ECO 2D1N | ECO OW-OUT | ECO OW-BACK | ECO 3D2N | BIZ 2D1N | BIZ 3D2N | Total |
 |---|---|---|---|---|---|---|---|
-| HKG | 11 | 0 | 0 | 13 | 5 | 6 | 35 |
-| CAN | 11 | 0 | 0 | 13 | 5 | 6 | 35 |
-| SZX | 11 | 0 | 0 | 13 | 5 | 6 | 35 |
-| MFM | 0 | 11 | 11 | 12 | 0 | 6 | 40 |
+| HKG | 11 | 0 | 0 | 13 | 6 | 7 | 37 |
+| CAN | 11 | 0 | 0 | 13 | 6 | 7 | 37 |
+| SZX | 11 | 0 | 0 | 13 | 6 | 7 | 37 |
+| MFM | 0 | 11 | 11 | 12 | 0 | 7 | 41 |
 
 - All airlines (no airline filter), nonstop only (leg f5=0), 1 adult, THB, origin BKK+DMK combined. Business dates ⊂ Economy dates (Economy and Business side by side).
 - **2D1N** round trips add Google's per-leg departure-hour window (leg f8 = earliest, f9 = latest hour, inclusive; verified live 11 Oct 2026): out leaves Bangkok 05:00–10:59, back leaves GBA 18:00–23:59, so Google's price is already a morning-out/late-back pairing.
@@ -20,8 +20,7 @@
 
 | Depart → return | Trip | Why | Economy | Business |
 |---|---|---|---|---|
-| 2026-11-14 → 2026-11-15 | 2D1N | สุดสัปดาห์ | 4 cities (MFM as 2 one-ways) | HKG/CAN/SZX |
-| 2026-11-24 → 2026-11-25 | 2D1N | กลางสัปดาห์ | 4 cities (MFM as 2 one-ways) | – |
+| 2026-11-24 → 2026-11-25 | 2D1N | กลางสัปดาห์ | 4 cities (MFM as 2 one-ways) | HKG/CAN/SZX |
 | 2026-12-05 → 2026-12-06 | 2D1N | วันพ่อ (หยุดยาว 5–7 ธ.ค.) | 4 cities (MFM as 2 one-ways) | – |
 | 2026-12-10 → 2026-12-11 | 2D1N | วันรัฐธรรมนูญ | 4 cities (MFM as 2 one-ways) | – |
 | 2026-12-19 → 2026-12-20 | 2D1N | สุดสัปดาห์ก่อนคริสต์มาส | 4 cities (MFM as 2 one-ways) | HKG/CAN/SZX |
@@ -31,7 +30,7 @@
 | 2027-02-20 → 2027-02-21 | 2D1N | หยุดยาวมาฆบูชา 20–22 ก.พ. | 4 cities (MFM as 2 one-ways) | HKG/CAN/SZX |
 | 2027-03-13 → 2027-03-14 | 2D1N | สุดสัปดาห์ | 4 cities (MFM as 2 one-ways) | HKG/CAN/SZX |
 | 2027-04-06 → 2027-04-07 | 2D1N | วันจักรี | 4 cities (MFM as 2 one-ways) | – |
-| 2026-11-06 → 2026-11-08 | 3D2N | สุดสัปดาห์ | 4 cities | – |
+| 2027-05-08 → 2027-05-09 | 2D1N | สุดสัปดาห์ | 4 cities (MFM as 2 one-ways) | HKG/CAN/SZX |
 | 2026-11-18 → 2026-11-20 | 3D2N | กลางสัปดาห์ | 4 cities | 4 cities |
 | 2026-12-05 → 2026-12-07 | 3D2N | วันพ่อ + ชดเชย | 4 cities | – |
 | 2026-12-10 → 2026-12-12 | 3D2N | วันรัฐธรรมนูญ (พฤ.–ส.) | 4 cities | 4 cities |
@@ -44,3 +43,4 @@
 | 2027-04-04 → 2027-04-06 | 3D2N | วันจักรี (อา.–อ.) | 4 cities | – |
 | 2027-04-13 → 2027-04-15 | 3D2N | สงกรานต์ (อ.–พฤ.) | 4 cities | 4 cities |
 | 2027-04-23 → 2027-04-25 | 3D2N | สุดสัปดาห์หลังสงกรานต์ | HKG/CAN/SZX | – |
+| 2027-05-07 → 2027-05-09 | 3D2N | สุดสัปดาห์ | 4 cities | 4 cities |
