@@ -3,7 +3,7 @@
 Ranking order + names come from the page's embedded state (businessId/businessName/rank); each item's trip.com URL is
 the hotel-detail / attraction link with the same id found in the rendered page. Nothing is typed in by hand."""
 import json, re, sys, pathlib, html as H
-SRC = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "/tmp/tb")
+SRC = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else pathlib.Path(__file__).resolve().parent / "cache")
 ROOT = pathlib.Path(__file__).resolve().parent
 REG = {"glob_lux":"global","glob_scen":"global","glob_ttd":"global","glob_fama":"global",
        "asia_lux":"asia","asia_scen":"asia","asia_cult":"asia","asia_ttd":"asia","asia_fama":"asia","asia_night":"asia"}
@@ -45,7 +45,17 @@ for f in list(REG) + sorted(p.stem for p in SRC.glob("c_*.html")):
                 items.append(dict(pos=e.get("position"), name=it.get("name"), url=u, rating=(it.get("aggregateRating") or {}).get("ratingValue"),
                                   slug=mm.group(1), pid=mm.group(2), kind="hotel" if "/hotels/" in u else "attr"))
     items.sort(key=lambda x: x["pos"])
+    for it in items:   # hotel location tag shown on the card, e.g. "Near Haikou Meilan International Airport | ..."
+        for i in (j for j, l in enumerate(txt) if l == it["name"] or l.startswith(it["name"])):
+            loc = next((l for l in txt[i+1:i+4] if l.startswith("Near ")), None)
+            if loc: it["loc"] = loc; break
     if not items: print("no items", f); continue
     out.append(dict(id=f, title=title, url=ogu.group(1) if ogu else None, scope=REG.get(f, "city"), kind=items[0]["kind"], n=len(items), items=items))
     print(f, len(items), title[:70])
-(ROOT / "raw/tripbest-lists.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
+# merge: lists fetched this run replace the stored copy with the same id; others are kept (cache may be partial)
+P = ROOT / "raw/tripbest-lists.json"
+old = json.loads(P.read_text()) if P.exists() else []
+new = {l["id"]: l for l in out}
+merged = [new.pop(l["id"], l) for l in old] + list(new.values())
+if out: P.write_text(json.dumps(merged, ensure_ascii=False, indent=1))
+print("lists stored:", len(merged), "updated:", len(out))

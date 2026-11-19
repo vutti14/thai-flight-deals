@@ -60,6 +60,8 @@ details.note ul{margin:6px 0 2px 18px;padding:0}details.note li{margin:3px 0}
 .fly b{color:var(--grn)}
 .fly .al{display:inline-block;margin:2px 6px 0 0;white-space:nowrap}
 .fly .ap{font-size:11px;background:#fff;border-radius:6px;padding:0 5px;margin-left:3px;color:var(--grn);border:1px solid #bfe3cd}
+.biz{background:#eef4fb;border-radius:10px;padding:7px 10px;font-size:13px;margin:6px 0 4px}.biz b{color:#1d4f8a}.biz ul{margin:4px 0 0 0;padding:0;list-style:none}.biz li{margin:3px 0}.biz .lc{color:var(--mut);font-size:11.5px}
+.fly.nd{background:#fdf0ef}.fly.nd b{color:#b42318}.rt1{display:block;margin:2px 0}
 .dnote{font-size:12.5px;color:var(--gold);background:var(--goldl);border-radius:8px;padding:4px 8px;margin:4px 0}
 .sec h4{margin:12px 0 4px;font:600 14.5px 'Kanit',sans-serif;color:var(--p)}
 .it{list-style:none;margin:0;padding:0}
@@ -106,13 +108,14 @@ footer{color:var(--mut);font-size:12.5px;padding:18px 4px 40px}
 </div>
 <script>
 const DATA=/*__DATA__*/null;
-const G=[["all","ทั้งหมด"],["gba","โซน GBA"],["china","จีน · ไต้หวัน"],["asia","เอเชีย"],["me","ตะวันออกกลาง"],["europe","ยุโรป"],["oceania","ออสเตรเลีย · แอฟริกา"]];
-const GN={gba:"🇭🇰 โซน GBA",china:"🇨🇳 จีนแผ่นดินใหญ่ · ไต้หวัน",asia:"🌏 เอเชีย",me:"🕌 ตะวันออกกลาง",europe:"🇪🇺 ยุโรป",oceania:"🦘 ออสเตรเลีย · แอฟริกา",africa:"🦘 ออสเตรเลีย · แอฟริกา"};
+const G=[["all","ทั้งหมด"],["gba","โซน GBA"],["china","จีน · ไต้หวัน"],["asia","เอเชีย"],["india","อินเดีย"],["me","ตะวันออกกลาง"],["europe","ยุโรป"],["oceania","ออสเตรเลีย · แอฟริกา"]];
+const GN={gba:"🇭🇰 โซน GBA",china:"🇨🇳 จีนแผ่นดินใหญ่ · ไต้หวัน",hainan:"🏝 จีน · มณฑลไห่หนาน (ไห่โข่ว · ซานย่า)",shandong:"🍺 จีน · มณฑลซานตง (ชิงเต่า)",india:"🇮🇳 อินเดีย · เมืองที่การบินไทยบินตรง",asia:"🌏 เอเชีย",me:"🕌 ตะวันออกกลาง",europe:"🇪🇺 ยุโรป",oceania:"🦘 ออสเตรเลีย · แอฟริกา",africa:"🦘 ออสเตรเลีย · แอฟริกา"};
 const T=[["all","ทั้งหมด"],["h","🏨 โรงแรม"],["a","📍 ที่เที่ยว"]];
 const TH_M=["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.","ก.ค.","ส.ค.","ก.ย.","ต.ค.","พ.ย.","ธ.ค."];
 const thd=s=>{const [y,m,d]=s.split("-").map(Number);return `${d} ${TH_M[m-1]} ${y+543}`};
 const esc=s=>String(s??"").replace(/[\x26<>"]/g,c=>({"\x26":"\x26amp;","<":"\x26lt;",">":"\x26gt;",'"':"\x26quot;"}[c]));
-const grpOf=d=>d.g==="africa"?"oceania":d.g;
+const grpOf=d=>d.g==="africa"?"oceania":(d.g==="hainan"||d.g==="shandong")?"china":d.g;   // filter group
+const headOf=d=>d.g==="africa"?"oceania":d.g;   // heading group (Hainan / Shandong get their own heading inside China)
 const st={g:"all",t:"all",q:"",open:{}};
 function readHash(){const h=new URLSearchParams(location.hash.slice(1));if(h.get("g"))st.g=h.get("g");if(h.get("t"))st.t=h.get("t");if(h.get("q"))st.q=h.get("q")}
 function writeHash(){const h=new URLSearchParams();if(st.g!=="all")h.set("g",st.g);if(st.t!=="all")h.set("t",st.t);if(st.q)h.set("q",st.q);history.replaceState(null,"",h.toString()?"#"+h:location.pathname)}
@@ -139,7 +142,9 @@ function card(d){
  return `<article class="dest ${d.g}" id="d-${d.code}"><div class="dh"><span class="fl">${d.flag}</span><div><h3>${esc(d.th)}<small>${esc(d.en)} · ${esc(d.ap)}</small></h3></div>
  <div class="cnt">${d.h.length?`<span class="pill">🏨 ${d.h.length}</span>`:""}${d.a.length?`<span class="pill o">📍 ${d.a.length}</span>`:""}</div></div>
  <div class="why">${esc(d.why)}</div>
- <div class="fly">✈️ <b>บินตรงจากกรุงเทพฯ</b>${d.fl.dur?` · เร็วสุด ${dur(d.fl.dur)}`:""}${d.fl.perday?` · ${d.fl.perday} เที่ยว/วัน (วันตัวอย่าง)`:""}<br>${al}</div>
+ ${d.fl.airlines.length?`<div class="fly">✈️ <b>บินตรงจากกรุงเทพฯ</b>${d.fl.dur?` · เร็วสุด ${dur(d.fl.dur)}`:""}${d.fl.perday?` · ${d.fl.perday} เที่ยว/วัน (วันตัวอย่าง)`:""}<br>${al}${d.fl.tg?`<span class="rt1">🟣 ${esc(d.fl.tg)}</span>`:""}</div>`
+  :`<div class="fly nd">✈️ <b>ยังไม่มีบินตรง</b> · ต่อเครื่อง 1 ครั้ง (BKK/DMK · Google Flights ${d.fl.ndates||""} วันตัวอย่าง)${(d.fl.routes||[]).map(r=>`<span class="rt1">• ${esc(r.al)} — ต่อที่ ${esc(r.via)} · เร็วสุด ${dur(r.dur)}${r.lay?` (รอต่อ ${dur(r.lay)})`:""}${r.price?` · เริ่ม ฿${r.price.toLocaleString("en-US")}`:""}</span>`).join("")}</div>`}
+ ${d.biz&&d.biz.length?`<div class="biz">💼 <b>สำหรับไปทำงาน</b> · โรงแรมในลิสต์ Trip.Best ที่ Trip.com ระบุว่าอยู่ใกล้จุดธุรกิจ<ul>${d.biz.map(([n,u,l,lc])=>`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a> — ${esc(l)}<br><span class="lc">${esc(lc)}</span></li>`).join("")}</ul></div>`:""}
  ${d.note?`<div class="dnote">${esc(d.note)}</div>`:""}
  ${sec(d,"h",h,qq,open)}${sec(d,"a",a,qq,open)}
  <div class="lk">${d.links.map(([l,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">Trip.Best ${esc(l)} ↗</a>`).join("")}${d.rel.map(([l,u])=>`<a href="${u}">${esc(l)} →</a>`).join("")}</div></article>`}
@@ -148,7 +153,7 @@ function render(){
  const ds=DATA.dest.filter(d=>st.g==="all"||grpOf(d)===st.g);
  let html="",cur=null,buf="";
  const flush=()=>{if(buf)html+=`<h2 class="grp">${GN[cur]}</h2><div class="dests">${buf}</div>`;buf=""};
- for(const d of ds){const g=grpOf(d);if(g!==cur){flush();cur=g}buf+=card(d)}
+ for(const d of ds){const g=headOf(d);if(g!==cur){flush();cur=g}buf+=card(d)}
  flush();
  document.getElementById("list").innerHTML=html||`<div class="empty">ไม่พบรายการที่ตรงกับคำค้น</div>`;
  document.getElementById("idx").innerHTML=ds.map(d=>`<a class="chip" href="#d-${d.code}" data-j="${d.code}">${d.flag} ${esc(d.th)} <b>${d.h.length+d.a.length}</b></a>`).join("");
@@ -159,13 +164,15 @@ const qi=document.getElementById("q");let tm;qi.addEventListener("input",()=>{cl
 readHash();qi.value=st.q;
 const M=DATA.meta;
 document.getElementById("hsub").textContent=`จากลิสต์ Trip.com Trip.Best 2027 (Global 100 · Asia 100) และ Top ของแต่ละเมือง · คัดเฉพาะเมืองที่มีเที่ยวบินตรงจาก BKK/DMK · อัปเดต ${thd(M.captured)}`;
-document.getElementById("stats").innerHTML=[[M.ndest,"เมืองที่บินตรงได้"],[M.nh,"โรงแรมติดอันดับ"],[M.na,"ที่เที่ยวติดอันดับ"],[M.lists.length,"ลิสต์ Global/Asia 100 ที่ใช้"]].map(([v,l])=>`<div class="stat"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+document.getElementById("stats").innerHTML=[[M.ndest,"เมือง"],[M.nh,"โรงแรมติดอันดับ"],[M.na,"ที่เที่ยวติดอันดับ"],[M.lists.length,"ลิสต์ Global/Asia 100 ที่ใช้"]].map(([v,l])=>`<div class="stat"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
 document.getElementById("covb").innerHTML=`<ul>
 <li>อันดับ ชื่อ และลิงก์ทุกรายการมาจากหน้า Trip.Best ของ Trip.com โดยตรง (ดึงเมื่อ ${thd(M.captured)}) กดชื่อเพื่อเปิดหน้าโรงแรม/ที่เที่ยวบน Trip.com ส่วนป้ายสีเหลือง/ม่วงพาไปหน้าลิสต์อันดับนั้น</li>
 <li>ลิสต์ระดับโลก/เอเชียที่ใช้: ${M.lists.map(([l,u,n])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(l)}</a> (${n})`).join(" · ")}</li>
 <li>ลิสต์ “Top ในเมือง” (ป้ายสีม่วง) Trip.com อัปเดตรายเดือน เราเก็บแค่ ${8} อันดับแรกที่หน้าเว็บแสดงต่อเมือง เฉพาะเมืองจีน/GBA, สิงคโปร์, โตเกียว และดูไบ</li>
 <li>บินตรง = Google Flights ค้นแบบ “Nonstop only” จาก BKK/DMK วันตัวอย่าง ${M.sample.map(thd).join(" และ ")} ชื่อสายการบินตามที่ Google แสดง (บางเที่ยวอาจเป็นเที่ยวบินร่วม/codeshare) ตารางบินเปลี่ยนตามฤดูกาล เช็กอีกครั้งก่อนจอง</li>
-<li>ไม่รวมเมืองในไทย และไม่รวมเมืองที่ติดลิสต์แต่ไม่มีบินตรง (เช่น ซานย่า ฮาร์บิน ลี่เจียง กุ้ยหลิน เชจู โอ๊คแลนด์) · คะแนน ★ = คะแนนรีวิวบน Trip.com ไม่ใช่ราคา</li></ul>`;
+<li>ไห่โข่ว ซานย่า และชิงเต่า ใส่ไว้เป็นพิเศษสำหรับคนที่ไปทำงานบ่อย (ซานย่ายังไม่มีบินตรง จึงแสดงเส้นทางต่อเครื่องแทน; ไม่แสดงสปริงแอร์ไลน์ส/9 แอร์) · กล่อง 💼 อิงจากป้ายทำเลบนการ์ดโรงแรมใน Trip.com เท่านั้น</li>
+<li>อินเดีย: ทุกเมืองที่การบินไทยบินตรงจากสุวรรณภูมิในตารางฤดูหนาว 69/70 (นิวเดลี มุมไบ โกลกาตา เจนไน เบงกาลูรู ไฮเดอราบาด อาห์มดาบาด คยา) · โรงแรมมาจากลิสต์ Trip.Best “Premium/Luxury” ของแต่ละเมือง คัดเฉพาะระดับ 5 ดาว (ตัดแบรนด์ระดับ 4 ดาว/อพาร์ตเมนต์ เช่น Courtyard, Novotel, Radisson ออก) ยกเว้นพุทธคยาที่ไม่มีโรงแรม 5 ดาวเครือใหญ่ · เลขเที่ยวบิน TG อ้างอิงตารางที่การบินไทยยื่น (AeroRoutes 7 ก.ค. 69) เทียบกับเวลาใน Google Flights วันตัวอย่าง</li>
+<li>ไม่รวมเมืองในไทย และไม่รวมเมืองที่ติดลิสต์แต่ไม่มีบินตรง (เช่น ฮาร์บิน ลี่เจียง กุ้ยหลิน เชจู โอ๊คแลนด์) · คะแนน ★ = คะแนนรีวิวบน Trip.com ไม่ใช่ราคา</li></ul>`;
 document.getElementById("foot").innerHTML=`ข้อมูลอันดับ © Trip.com Trip.Best · หน้านี้เป็นข้อมูลสาธารณะสำหรับวางแผนเที่ยว ไม่ใช่การจองหรือโฆษณา · ราคาตั๋วดูที่แท็บการบินไทย / สายการบินราคาประหยัด / โซน GBA`;
 seg(document.getElementById("grp"),G,"g");seg(document.getElementById("typ"),T,"t");render();
 </script>

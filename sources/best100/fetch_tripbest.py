@@ -15,6 +15,13 @@ async def main(urls):
             for i in range(n):
                 await pg.evaluate(f"(()=>{{const e=document.querySelectorAll('.lazyload')[{i}]; if(e) e.scrollIntoView({{block:'center'}});}})()")
                 await pg.wait_for_timeout(250)
+            # city lists render 10 cards and add more on scroll: wheel down until the page stops growing
+            last = 0
+            for _ in range(40):
+                await pg.mouse.wheel(0, 1500); await pg.wait_for_timeout(700)
+                h = await pg.evaluate("document.body.scrollHeight")
+                if h == last: break
+                last = h
             await pg.wait_for_timeout(1000)
             html = await pg.content(); text = await pg.inner_text("body")
             open(out+".html","w").write(html); open(out+".txt","w").write(text)
